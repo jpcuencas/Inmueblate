@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				
+<joined-subclass name="InmobiliariaEN" extends="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN" table="Inmobiliaria"> 
+	<key>
+    	
+				<column name="id"/>
+		
+    	
+   	</key>
+
+						
+					<property name="Descripcion" type="string"> 
+						<column name="descripcion"  not-null="true"/>
+					</property>
+					<property name="Cif" type="string"> 
+						<column name="cif"  not-null="true"/>
+					</property>
+			
+		  			
+						<bag name="Inmuebles" >
+							<key>
+							
+								<column name="FK_id_inmuebles"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.InmuebleEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="PaginaCorporativa" >
+							<key>
+							
+								<column name="FK_id_paginaCorporativa"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.PaginaCorporativaEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Eventos" >
+							<key>
+							
+								<column name="FK_id_eventos"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.EventoEN"/>
+					    </bag>
+					
+			
+			
+					
+					
+					
+					
+					
+		
+ 	  
+		 </joined-subclass>
+		  
+		  <query name="InmobiliariaENReadAllHQL">from InmobiliariaEN</query>
+		  <query name="InmobiliariaENdameInmobiliariaFiltroHQL"><![CDATA[FROM InmobiliariaEN AS i WHERE i.Nombre LIKE CASE WHEN :p_nombre = null THEN i.Nombre ELSE :p_nombre END AND i.Cif LIKE CASE WHEN :p_cif = null THEN i.Cif ELSE :p_cif END AND i.Email LIKE CASE WHEN :p_email = null THEN i.Email ELSE :p_email END AND i.Descripcion LIKE CASE WHEN :p_descripcion = null THEN i.Descripcion ELSE :p_descripcion END AND i.Direccion LIKE CASE WHEN :p_direccion = null THEN i.Direccion ELSE :p_direccion END AND i.Poblacion LIKE CASE WHEN :p_poblacion = null THEN i.Poblacion ELSE :p_poblacion END]]></query>
+		</hibernate-mapping>
+	

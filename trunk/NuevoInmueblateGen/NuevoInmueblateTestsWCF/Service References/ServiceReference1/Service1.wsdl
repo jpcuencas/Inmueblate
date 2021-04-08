@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://Service/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://Service/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Service/Imports">
+      <xsd:import schemaLocation="http://localhost:53967/Service.svc?xsd=xsd0" namespace="http://Service/" />
+      <xsd:import schemaLocation="http://localhost:53967/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53967/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" />
+      <xsd:import schemaLocation="http://localhost:53967/Service.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" />
+      <xsd:import schemaLocation="http://localhost:53967/Service.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_Anonimo_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_Anonimo_Login" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_Anonimo_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_Anonimo_LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllAnuncio_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllAnuncio" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllAnuncio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllAnuncioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllEvento_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllEvento" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllEvento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllMensaje_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllMensaje" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllMensaje_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllMensajeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllElementoMultimedia_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllElementoMultimedia" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllElementoMultimedia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllElementoMultimediaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllInmobiliaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllInmobiliaria" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllInmobiliaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllInmobiliariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllGrupo" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllPaginaCorporativa_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllPaginaCorporativa" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllPaginaCorporativa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllPaginaCorporativaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllInmueble_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllInmueble" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllInmueble_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllInmuebleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllEntrada_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllEntrada" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Moderador_GetAllEntrada_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Moderador_GetAllEntradaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Anuncio_CrearAnuncio_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Anuncio_CrearAnuncio" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Anuncio_CrearAnuncio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Anuncio_CrearAnuncioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Anuncio_ModificarAnuncio_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Anuncio_ModificarAnuncio" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Anuncio_ModificarAnuncio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Anuncio_ModificarAnuncioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Anuncio_BorrarAnuncio_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Anuncio_BorrarAnuncio" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Anuncio_BorrarAnuncio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Anuncio_BorrarAnuncioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Anuncio_DameTodosLosAnuncios_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Anuncio_DameTodosLosAnuncios" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Anuncio_DameTodosLosAnuncios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Anuncio_DameTodosLosAnunciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_CrearUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_CrearUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_CrearUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_CrearUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_ModificarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_ModificarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_ModificarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_ModificarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_BorrarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_BorrarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_BorrarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_BorrarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_DameUsuarioPorOID_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_DameUsuarioPorOID" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_DameUsuarioPorOID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_DameUsuarioPorOIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinosResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllFotosOfFusuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllFotosOfFusuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllFotosOfFusuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllFotosOfFusuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllVideosOfVusuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllVideosOfVusuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllVideosOfVusuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllVideosOfVusuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllEntradaUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllEntradaUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllEntradaUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllEntradaUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllMensajeUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllMensajeUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Usuario_GetAllMensajeUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Usuario_GetAllMensajeUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_CrearGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_CrearGrupo" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_CrearGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_CrearGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_ModificarGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_ModificarGrupo" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_ModificarGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_ModificarGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_BorrarGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_BorrarGrupo" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_BorrarGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_BorrarGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_DameTodosLosGrupos_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_DameTodosLosGrupos" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_DameTodosLosGrupos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_DameTodosLosGruposResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_CrearInmobiliaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_CrearInmobiliaria" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_CrearInmobiliaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_CrearInmobiliariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_ModificarInmobilaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_ModificarInmobilaria" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_ModificarInmobilaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_ModificarInmobilariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_BorrarInmobiliariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_DameTodasInmobiliariasResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Mensaje_CrearMensaje_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Mensaje_CrearMensaje" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Mensaje_CrearMensaje_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Mensaje_CrearMensajeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Mensaje_ModificarMensaje_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Mensaje_ModificarMensaje" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Mensaje_ModificarMensaje_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Mensaje_ModificarMensajeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Mensaje_BorrarMensaje_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Mensaje_BorrarMensaje" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Mensaje_BorrarMensaje_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Mensaje_BorrarMensajeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_CrearElementoMultimediaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimediaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimediaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimediaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_GetAllFotografia_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_GetAllFotografia" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_GetAllFotografia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_GetAllFotografiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_GetAllVideo_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_GetAllVideo" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_ElementoMultimedia_GetAllVideo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_ElementoMultimedia_GetAllVideoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_CrearInmueble_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_CrearInmueble" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_CrearInmueble_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_CrearInmuebleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_ModificarInmueble_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_ModificarInmueble" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_ModificarInmueble_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_ModificarInmuebleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_BorrarInmueble_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_BorrarInmueble" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_BorrarInmueble_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_BorrarInmuebleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmuebleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Evento_CrearEvento_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Evento_CrearEvento" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Evento_CrearEvento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Evento_CrearEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Evento_ModificarEvento_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Evento_ModificarEvento" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Evento_ModificarEvento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Evento_ModificarEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Evento_BorrarEvento_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Evento_BorrarEvento" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Evento_BorrarEvento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Evento_BorrarEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Evento_DameTodosLosEventos_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Evento_DameTodosLosEventos" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Evento_DameTodosLosEventos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Evento_DameTodosLosEventosResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Muro_GetAllEntradasOfMuro_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Muro_GetAllEntradasOfMuro" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Muro_GetAllEntradasOfMuro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Muro_GetAllEntradasOfMuroResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_CrearEntrada_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_CrearEntrada" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_CrearEntrada_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_CrearEntradaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_ModificarEntrada_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_ModificarEntrada" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_ModificarEntrada_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_ModificarEntradaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_BorrarEntrada_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_BorrarEntrada" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_BorrarEntrada_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_BorrarEntradaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_ObtenerEntradasPorModerar_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_ObtenerEntradasPorModerar" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_ObtenerEntradasPorModerar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_ObtenerEntradasPorModerarResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Fotografia_BorrarFotografia_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Fotografia_BorrarFotografia" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Fotografia_BorrarFotografia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Fotografia_BorrarFotografiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerarResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Video_BorrarVideo_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Video_BorrarVideo" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Video_BorrarVideo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Video_BorrarVideoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Video_ObtenerTodosVideosPorModerar_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Video_ObtenerTodosVideosPorModerar" />
+  </wsdl:message>
+  <wsdl:message name="Service_NuevoInmueblate_Video_ObtenerTodosVideosPorModerar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoInmueblate_Video_ObtenerTodosVideosPorModerarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service">
+    <wsdl:operation name="NuevoInmueblate_Moderador_Anonimo_Login">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_Anonimo_Login" message="tns:Service_NuevoInmueblate_Moderador_Anonimo_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_Anonimo_LoginResponse" message="tns:Service_NuevoInmueblate_Moderador_Anonimo_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllAnuncio">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllAnuncio" message="tns:Service_NuevoInmueblate_Moderador_GetAllAnuncio_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllAnuncioResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllAnuncio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllEvento">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllEvento" message="tns:Service_NuevoInmueblate_Moderador_GetAllEvento_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllEventoResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllEvento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllMensaje">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllMensaje" message="tns:Service_NuevoInmueblate_Moderador_GetAllMensaje_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllMensajeResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllMensaje_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllElementoMultimedia">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllElementoMultimedia" message="tns:Service_NuevoInmueblate_Moderador_GetAllElementoMultimedia_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllElementoMultimediaResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllElementoMultimedia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllInmobiliaria">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllInmobiliaria" message="tns:Service_NuevoInmueblate_Moderador_GetAllInmobiliaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllInmobiliariaResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllInmobiliaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllGrupo">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllGrupo" message="tns:Service_NuevoInmueblate_Moderador_GetAllGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllGrupoResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllPaginaCorporativa">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllPaginaCorporativa" message="tns:Service_NuevoInmueblate_Moderador_GetAllPaginaCorporativa_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllPaginaCorporativaResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllPaginaCorporativa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllUsuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllUsuario" message="tns:Service_NuevoInmueblate_Moderador_GetAllUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllUsuarioResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllInmueble">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllInmueble" message="tns:Service_NuevoInmueblate_Moderador_GetAllInmueble_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllInmuebleResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllInmueble_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllEntrada">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllEntrada" message="tns:Service_NuevoInmueblate_Moderador_GetAllEntrada_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Moderador_GetAllEntradaResponse" message="tns:Service_NuevoInmueblate_Moderador_GetAllEntrada_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Anuncio_CrearAnuncio">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Anuncio_CrearAnuncio" message="tns:Service_NuevoInmueblate_Anuncio_CrearAnuncio_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Anuncio_CrearAnuncioResponse" message="tns:Service_NuevoInmueblate_Anuncio_CrearAnuncio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Anuncio_ModificarAnuncio">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Anuncio_ModificarAnuncio" message="tns:Service_NuevoInmueblate_Anuncio_ModificarAnuncio_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Anuncio_ModificarAnuncioResponse" message="tns:Service_NuevoInmueblate_Anuncio_ModificarAnuncio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Anuncio_BorrarAnuncio">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Anuncio_BorrarAnuncio" message="tns:Service_NuevoInmueblate_Anuncio_BorrarAnuncio_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Anuncio_BorrarAnuncioResponse" message="tns:Service_NuevoInmueblate_Anuncio_BorrarAnuncio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Anuncio_DameTodosLosAnuncios">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Anuncio_DameTodosLosAnuncios" message="tns:Service_NuevoInmueblate_Anuncio_DameTodosLosAnuncios_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Anuncio_DameTodosLosAnunciosResponse" message="tns:Service_NuevoInmueblate_Anuncio_DameTodosLosAnuncios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_CrearUsuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_CrearUsuario" message="tns:Service_NuevoInmueblate_Usuario_CrearUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_CrearUsuarioResponse" message="tns:Service_NuevoInmueblate_Usuario_CrearUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_ModificarUsuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_ModificarUsuario" message="tns:Service_NuevoInmueblate_Usuario_ModificarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_ModificarUsuarioResponse" message="tns:Service_NuevoInmueblate_Usuario_ModificarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_BorrarUsuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_BorrarUsuario" message="tns:Service_NuevoInmueblate_Usuario_BorrarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_BorrarUsuarioResponse" message="tns:Service_NuevoInmueblate_Usuario_BorrarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_DameUsuarioPorOID">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_DameUsuarioPorOID" message="tns:Service_NuevoInmueblate_Usuario_DameUsuarioPorOID_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_DameUsuarioPorOIDResponse" message="tns:Service_NuevoInmueblate_Usuario_DameUsuarioPorOID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario" message="tns:Service_NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuarioResponse" message="tns:Service_NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos" message="tns:Service_NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinosResponse" message="tns:Service_NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllFotosOfFusuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllFotosOfFusuario" message="tns:Service_NuevoInmueblate_Usuario_GetAllFotosOfFusuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllFotosOfFusuarioResponse" message="tns:Service_NuevoInmueblate_Usuario_GetAllFotosOfFusuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllVideosOfVusuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllVideosOfVusuario" message="tns:Service_NuevoInmueblate_Usuario_GetAllVideosOfVusuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllVideosOfVusuarioResponse" message="tns:Service_NuevoInmueblate_Usuario_GetAllVideosOfVusuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllEntradaUsuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllEntradaUsuario" message="tns:Service_NuevoInmueblate_Usuario_GetAllEntradaUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllEntradaUsuarioResponse" message="tns:Service_NuevoInmueblate_Usuario_GetAllEntradaUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllMensajeUsuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllMensajeUsuario" message="tns:Service_NuevoInmueblate_Usuario_GetAllMensajeUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Usuario_GetAllMensajeUsuarioResponse" message="tns:Service_NuevoInmueblate_Usuario_GetAllMensajeUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_CrearGrupo">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_CrearGrupo" message="tns:Service_NuevoInmueblate_Grupo_CrearGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_CrearGrupoResponse" message="tns:Service_NuevoInmueblate_Grupo_CrearGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_ModificarGrupo">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_ModificarGrupo" message="tns:Service_NuevoInmueblate_Grupo_ModificarGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_ModificarGrupoResponse" message="tns:Service_NuevoInmueblate_Grupo_ModificarGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_BorrarGrupo">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_BorrarGrupo" message="tns:Service_NuevoInmueblate_Grupo_BorrarGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_BorrarGrupoResponse" message="tns:Service_NuevoInmueblate_Grupo_BorrarGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_DameTodosLosGrupos">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_DameTodosLosGrupos" message="tns:Service_NuevoInmueblate_Grupo_DameTodosLosGrupos_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_DameTodosLosGruposResponse" message="tns:Service_NuevoInmueblate_Grupo_DameTodosLosGrupos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas" message="tns:Service_NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadasResponse" message="tns:Service_NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo" message="tns:Service_NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupoResponse" message="tns:Service_NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_CrearInmobiliaria">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_CrearInmobiliaria" message="tns:Service_NuevoInmueblate_Inmobiliaria_CrearInmobiliaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_CrearInmobiliariaResponse" message="tns:Service_NuevoInmueblate_Inmobiliaria_CrearInmobiliaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_ModificarInmobilaria">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_ModificarInmobilaria" message="tns:Service_NuevoInmueblate_Inmobiliaria_ModificarInmobilaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_ModificarInmobilariaResponse" message="tns:Service_NuevoInmueblate_Inmobiliaria_ModificarInmobilaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria" message="tns:Service_NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_BorrarInmobiliariaResponse" message="tns:Service_NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias" message="tns:Service_NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_DameTodasInmobiliariasResponse" message="tns:Service_NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria" message="tns:Service_NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliariaResponse" message="tns:Service_NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria" message="tns:Service_NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliariaResponse" message="tns:Service_NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria" message="tns:Service_NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliariaResponse" message="tns:Service_NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_CrearMensaje">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Mensaje_CrearMensaje" message="tns:Service_NuevoInmueblate_Mensaje_CrearMensaje_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Mensaje_CrearMensajeResponse" message="tns:Service_NuevoInmueblate_Mensaje_CrearMensaje_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_ModificarMensaje">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Mensaje_ModificarMensaje" message="tns:Service_NuevoInmueblate_Mensaje_ModificarMensaje_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Mensaje_ModificarMensajeResponse" message="tns:Service_NuevoInmueblate_Mensaje_ModificarMensaje_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_BorrarMensaje">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Mensaje_BorrarMensaje" message="tns:Service_NuevoInmueblate_Mensaje_BorrarMensaje_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Mensaje_BorrarMensajeResponse" message="tns:Service_NuevoInmueblate_Mensaje_BorrarMensaje_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion" message="tns:Service_NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracionResponse" message="tns:Service_NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia" message="tns:Service_NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_CrearElementoMultimediaResponse" message="tns:Service_NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia" message="tns:Service_NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimediaResponse" message="tns:Service_NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia" message="tns:Service_NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimediaResponse" message="tns:Service_NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion" message="tns:Service_NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracionResponse" message="tns:Service_NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia" message="tns:Service_NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimediaResponse" message="tns:Service_NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_GetAllFotografia">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_GetAllFotografia" message="tns:Service_NuevoInmueblate_ElementoMultimedia_GetAllFotografia_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_GetAllFotografiaResponse" message="tns:Service_NuevoInmueblate_ElementoMultimedia_GetAllFotografia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_GetAllVideo">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_GetAllVideo" message="tns:Service_NuevoInmueblate_ElementoMultimedia_GetAllVideo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_ElementoMultimedia_GetAllVideoResponse" message="tns:Service_NuevoInmueblate_ElementoMultimedia_GetAllVideo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_CrearInmueble">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_CrearInmueble" message="tns:Service_NuevoInmueblate_Inmueble_CrearInmueble_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_CrearInmuebleResponse" message="tns:Service_NuevoInmueblate_Inmueble_CrearInmueble_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_ModificarInmueble">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_ModificarInmueble" message="tns:Service_NuevoInmueblate_Inmueble_ModificarInmueble_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_ModificarInmuebleResponse" message="tns:Service_NuevoInmueblate_Inmueble_ModificarInmueble_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_BorrarInmueble">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_BorrarInmueble" message="tns:Service_NuevoInmueblate_Inmueble_BorrarInmueble_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_BorrarInmuebleResponse" message="tns:Service_NuevoInmueblate_Inmueble_BorrarInmueble_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion" message="tns:Service_NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracionResponse" message="tns:Service_NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble" message="tns:Service_NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmuebleResponse" message="tns:Service_NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa" message="tns:Service_NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativaResponse" message="tns:Service_NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa" message="tns:Service_NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativaResponse" message="tns:Service_NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa" message="tns:Service_NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativaResponse" message="tns:Service_NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Evento_CrearEvento">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Evento_CrearEvento" message="tns:Service_NuevoInmueblate_Evento_CrearEvento_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Evento_CrearEventoResponse" message="tns:Service_NuevoInmueblate_Evento_CrearEvento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Evento_ModificarEvento">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Evento_ModificarEvento" message="tns:Service_NuevoInmueblate_Evento_ModificarEvento_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Evento_ModificarEventoResponse" message="tns:Service_NuevoInmueblate_Evento_ModificarEvento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Evento_BorrarEvento">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Evento_BorrarEvento" message="tns:Service_NuevoInmueblate_Evento_BorrarEvento_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Evento_BorrarEventoResponse" message="tns:Service_NuevoInmueblate_Evento_BorrarEvento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Evento_DameTodosLosEventos">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Evento_DameTodosLosEventos" message="tns:Service_NuevoInmueblate_Evento_DameTodosLosEventos_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Evento_DameTodosLosEventosResponse" message="tns:Service_NuevoInmueblate_Evento_DameTodosLosEventos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Muro_GetAllEntradasOfMuro">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Muro_GetAllEntradasOfMuro" message="tns:Service_NuevoInmueblate_Muro_GetAllEntradasOfMuro_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Muro_GetAllEntradasOfMuroResponse" message="tns:Service_NuevoInmueblate_Muro_GetAllEntradasOfMuro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_CrearEntrada">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_CrearEntrada" message="tns:Service_NuevoInmueblate_Entrada_CrearEntrada_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_CrearEntradaResponse" message="tns:Service_NuevoInmueblate_Entrada_CrearEntrada_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_ModificarEntrada">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_ModificarEntrada" message="tns:Service_NuevoInmueblate_Entrada_ModificarEntrada_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_ModificarEntradaResponse" message="tns:Service_NuevoInmueblate_Entrada_ModificarEntrada_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_BorrarEntrada">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_BorrarEntrada" message="tns:Service_NuevoInmueblate_Entrada_BorrarEntrada_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_BorrarEntradaResponse" message="tns:Service_NuevoInmueblate_Entrada_BorrarEntrada_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_ObtenerEntradasPorModerar">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPorModerar" message="tns:Service_NuevoInmueblate_Entrada_ObtenerEntradasPorModerar_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPorModerarResponse" message="tns:Service_NuevoInmueblate_Entrada_ObtenerEntradasPorModerar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo" message="tns:Service_NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupoResponse" message="tns:Service_NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario" message="tns:Service_NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuarioResponse" message="tns:Service_NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Fotografia_BorrarFotografia">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Fotografia_BorrarFotografia" message="tns:Service_NuevoInmueblate_Fotografia_BorrarFotografia_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Fotografia_BorrarFotografiaResponse" message="tns:Service_NuevoInmueblate_Fotografia_BorrarFotografia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar" message="tns:Service_NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerarResponse" message="tns:Service_NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Video_BorrarVideo">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Video_BorrarVideo" message="tns:Service_NuevoInmueblate_Video_BorrarVideo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Video_BorrarVideoResponse" message="tns:Service_NuevoInmueblate_Video_BorrarVideo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Video_ObtenerTodosVideosPorModerar">
+      <wsdl:input wsaw:Action="http://Service/Service/NuevoInmueblate_Video_ObtenerTodosVideosPorModerar" message="tns:Service_NuevoInmueblate_Video_ObtenerTodosVideosPorModerar_InputMessage" />
+      <wsdl:output wsaw:Action="http://Service/Service/NuevoInmueblate_Video_ObtenerTodosVideosPorModerarResponse" message="tns:Service_NuevoInmueblate_Video_ObtenerTodosVideosPorModerar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

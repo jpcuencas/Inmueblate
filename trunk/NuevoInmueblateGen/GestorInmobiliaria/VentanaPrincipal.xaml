@@ -1,0 +1,51 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" x:Class="GestorInmobiliaria.VentanaPrincipal"
+        Title="InmuÉblate" Height="561" Width="842" ResizeMode="NoResize" WindowState="Maximized" Background="#FFD1D6CF" WindowStyle="None">
+    <Grid Background="{x:Null}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="190"/>
+            <RowDefinition Height="100*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="230" />
+            <ColumnDefinition Width="100*" />
+        </Grid.ColumnDefinitions>
+        
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="200" />
+            </Grid.ColumnDefinitions>
+            
+            <Rectangle Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Fill="{StaticResource NaranjaCabecera}"></Rectangle>
+            <Label Content="Inmuéblate" Grid.Row="0" Grid.Column="0" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="28" />
+            <Label Content="{Binding CurrentPage.Title}" Grid.Row="0" Grid.Column="1" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="28" />
+            <Label Content="Moderador" Grid.Row="0" Grid.Column="2" Height="Auto" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,20,20" Foreground="Black" FontSize="18" />
+            <Label Content="{Binding Breadcrumbs}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Height="30" HorizontalAlignment="Left" Margin="50,0,0,0" Name="label4" VerticalAlignment="Center" VerticalContentAlignment="Center" />
+
+        </Grid>
+        
+        <Frame x:Name="frameContenido" NavigationUIVisibility="Hidden" Margin="0,0,50,50" Content="{Binding CurrentPage, Mode=OneWay}" Grid.Row="1" Grid.Column="1" Background="{x:Null}" d:LayoutOverrides="GridBox"/>
+        <Frame VerticalAlignment="Top" Grid.Column="0" x:Name="frameMenu" Content="{Binding CurrentPageNav, Mode=OneWay}" Grid.Row="1" BorderThickness="5" BorderBrush="{x:Null}" Background="{x:Null}"/>
+        
+        <Button x:Name="btnCerrar" Content="" HorizontalAlignment="Right" Margin="0,0,0,16" Style="{DynamicResource BotonCerrar}" Width="32" Grid.Column="1" Click="btnCerrar_Click" Grid.RowSpan="2" />
+        
+        <Button Content="Volver" FontSize="15" Height="40" HorizontalAlignment="Left" Margin="50,0,0,50" Name="button3" VerticalAlignment="Bottom" Width="130" Grid.Row="2">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding VolverCommand}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+    </Grid>
+</Window>

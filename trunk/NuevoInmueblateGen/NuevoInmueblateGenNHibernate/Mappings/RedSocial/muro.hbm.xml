@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="MuroEN" table="Muro"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="PendienteModeracion" type="boolean"> 
+						<column name="pendienteModeracion"  not-null="true"/>
+					</property>
+			
+			
+			
+		  			
+					
+							   <one-to-one name="PropietarioUsuario" class="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN" property-ref="Muro" />							
+					 
+						
+			
+		  			
+					
+							   <one-to-one name="PropietarioGrupo" class="NuevoInmueblateGenNHibernate.EN.RedSocial.GrupoEN" property-ref="Muro" />							
+					 
+						
+			
+		  			
+						<bag name="Entradas" >
+							<key>
+							
+								<column name="FK_id_entradas"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.EntradaEN"/>
+					    </bag>
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="MuroENReadAllHQL">from MuroEN</query>
+		  <query name="MuroENobtenerMuroPorUsuarioHQL"><![CDATA[FROM MuroEN AS mu WHERE mu.PropietarioUsuario is not empty AND mu.PropietarioUsuario.Id = :p_usuario]]></query>
+		  <query name="MuroENobtenerMuroPendienteModeracionHQL"><![CDATA[FROM MuroEN AS mu WHERE mu.PendienteModeracion = true]]></query>
+		  <query name="MuroENobtenerMuroPorGrupoHQL"><![CDATA[FROM MuroEN AS mu WHERE mu.PropietarioGrupo is not empty AND mu.PropietarioGrupo.Id = :p_grupo]]></query>
+		</hibernate-mapping>
+	

@@ -1,0 +1,58 @@
+﻿@model InmueblateWeb.Models.Inmueble
+@{
+    ViewBag.Title = "BuscarInmueble";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+<div class="well bs-component">
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm("DetalleInmueble", "BusquedaUS", FormMethod.Post, new { id = "Form" }))
+{
+    Html.ValidationSummary(true, "Se han producido errores en la validacion de los campos corrija los errores y vuelva a intentarlo.");
+    
+        <fieldset>
+            <legend>Formulario de Busqueda Inmuebles</legend>
+
+            <div class="editor-label" id="labelEventoNombre">
+                @Html.LabelFor(m => m.MetrosCuadrados)
+            </div>
+            <div class="editor-field" id="inputEventoNombre">
+                @Html.TextBoxFor(m => m.MetrosCuadrados, new { @class = "form-control inputName"})
+                @Html.ValidationMessageFor(m => m.MetrosCuadrados)
+            </div>
+
+            <div class="editor-label" id="labelEventoDescripcion">
+                @Html.LabelFor(m => m.Precio)
+            </div>
+            <div class="editor-field" id="inputEventoDescripcion">
+                @Html.TextBoxFor(m => m.Precio, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Precio)
+            </div>
+            <div class="editor-label" id="labelInmuebleAlquiler">
+                @Html.LabelFor(m => m.Alquiler)
+            </div>
+            <div class="editor-field" id="inputInmuebleAlquiler">
+                 @Html.CheckBoxFor(m => m.Alquiler, new { @class = "form-control", @checked=true})
+                @Html.ValidationMessageFor(m => m.Alquiler)
+           </div>
+             <div class="editor-label" id="labelCategoria">
+                @Html.LabelFor(m => m.Categoria)
+            </div>
+            <div class="editor-field" id="inputCategoria">
+                @Html.DropDownListFor(m => m.Categoria, new SelectList(@ViewBag.lista), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Categoria)
+            </div>
+             
+            </fieldset>
+            <br />
+           <hr />
+            <p>
+              <input type="submit" id="btnBuscar" class="btn btn-default" value="Buscar" />
+            </p>
+
+}
+
+</div>

@@ -1,0 +1,3 @@
+determinar los criterios de busqueda de compañero y oferta
+Las carpetas de puntuacion
+Terminar incluir evento

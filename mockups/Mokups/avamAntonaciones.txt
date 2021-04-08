@@ -1,0 +1,30 @@
+General:
+-El título lo ponemos en el bloque de arriba de 12x1?
+-Si algo no entra en la retícula propuesta, se puede hacer más alta añadiendo filas. Los elementos de las columnas laterales mantendrán su tamaño pero el bloque del centro se hará más alto.
+
+Búsqueda de un compañero:
+-En el cuadro de arriba faltan criterios de búsqueda
+-Los cuadros que muestran a los usuarios encontrados no tienen el mismo alto
+
+
+Búsqueda de un piso:
+-La dirección debería de aparecer la portada
+-Los descuentos no están ya en el modelo
+-Intentaría buscar la información más relevante para esta pantalla para no tener que navegar por tanta oferta 
+(a menos que se haga que cada oferta haga un efecto acordeón para mostrar más información)
+
+
+Búsqueda de un piso 2:
+-Si no se gasta el bloque de 2 filas, sería mejor utilizar otra retícula
+-No estaría mal que aparecieran una lista de checkboxes cerca de la parte superior
+
+
+Incluir inmueble:
+-Falta la navegación de arriba, el diseño se podría aprovechar el de registro
+-Faltan campos que están definidos en el modelo
+-Si para subir fotos y video hay un enlace, no entiendo el uso de la retícula con navegación
+
+
+Incluir inmueble (fotos y vídeo):
+-El botón pone examinar, y el de video pone subir
+-No hay opción de crear galería, o gestionar galería

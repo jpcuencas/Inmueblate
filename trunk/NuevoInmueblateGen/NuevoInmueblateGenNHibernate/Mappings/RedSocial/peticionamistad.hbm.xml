@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="PeticionAmistadEN" table="PeticionAmistad"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="Asunto" type="string"> 
+						<column name="asunto"  not-null="true"/>
+					</property>
+					<property name="Cuerpo" type="string"> 
+						<column name="cuerpo"  not-null="true"/>
+					</property>
+					<property name="Estado" > 
+						<column name="estado"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Emisor" class="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN" >	
+								<column name="FK_id_emisor"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Receptor" class="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN" >	
+								<column name="FK_id_receptor"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="PeticionAmistadENReadAllHQL">from PeticionAmistadEN</query>
+		  <query name="PeticionAmistadENdamePeticionPorEmisorHQL"><![CDATA[FROM PeticionAmistadEN AS pe WHERE pe.Emisor = :pe_emisor]]></query>
+		  <query name="PeticionAmistadENdamePeticionPorReceptorHQL"><![CDATA[FROM PeticionAmistadEN AS pe WHERE pe.Receptor = :pe_receptor]]></query>
+		  <query name="PeticionAmistadENobtenerPeticionesAmistadEstadoHQL"><![CDATA[FROM PeticionAmistadEN AS pe WHERE pe.Receptor = :pe_receptor AND pe.Estado =  CASE WHEN :pe_estado = -1 THEN pe.Estado ELSE :pe_estado END]]></query>
+		  <query name="PeticionAmistadENdamePeticionDeParaHQL"><![CDATA[FROM PeticionAmistadEN AS pe WHERE pe.Emisor = :pe_emisor AND pe.Receptor = :pe_receptor]]></query>
+		  <query name="PeticionAmistadENobtenerPeticionesAmisitadEstadoEmisorHQL"><![CDATA[FROM PeticionAmistadEN AS pe WHERE pe.Emisor = :pe_emisor AND pe.Estado =  CASE WHEN :pe_estado = -1 THEN pe.Estado ELSE :pe_estado END]]></query>
+		</hibernate-mapping>
+	

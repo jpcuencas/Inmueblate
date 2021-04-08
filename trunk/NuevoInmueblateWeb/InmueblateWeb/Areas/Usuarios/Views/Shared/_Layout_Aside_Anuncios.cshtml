@@ -1,0 +1,12 @@
+﻿@using InmueblateWeb.Helpers;
+@{
+    ViewBag.Title = "_Layout_Aside_Anuncios";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }  
+}
+
+@Html.AnunciosSide()
+<!--<img alt="anuncios" style="width:120px;" src="Url.Content("Content/img/anuncios/anuncios.JPG")"/>-->

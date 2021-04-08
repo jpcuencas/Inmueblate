@@ -1,0 +1,28 @@
+E:\ProyectosPetstore\Petstore_UI_Patterns_Master_2013_Completo\Petstore_UI_Patterns_Master_2013\MicroMvvm\bin\Debug\MicroMvvm.dll
+E:\ProyectosPetstore\Petstore_UI_Patterns_Master_2013_Completo\Petstore_UI_Patterns_Master_2013\MicroMvvm\bin\Debug\MicroMvvm.pdb
+E:\ProyectosPetstore\Petstore_UI_Patterns_Master_2013_Completo\Petstore_UI_Patterns_Master_2013\MicroMvvm\obj\Debug\ResolveAssemblyReference.cache
+E:\ProyectosPetstore\Petstore_UI_Patterns_Master_2013_Completo\Petstore_UI_Patterns_Master_2013\MicroMvvm\obj\Debug\MicroMvvm.dll
+E:\ProyectosPetstore\Petstore_UI_Patterns_Master_2013_Completo\Petstore_UI_Patterns_Master_2013\MicroMvvm\obj\Debug\MicroMvvm.pdb
+E:\ProyectosPetstore\Petstore_MVVM\MicroMvvm\bin\Debug\MicroMvvm.dll
+E:\ProyectosPetstore\Petstore_MVVM\MicroMvvm\bin\Debug\MicroMvvm.pdb
+E:\ProyectosPetstore\Petstore_MVVM\MicroMvvm\obj\Debug\ResolveAssemblyReference.cache
+E:\ProyectosPetstore\Petstore_MVVM\MicroMvvm\obj\Debug\MicroMvvm.dll
+E:\ProyectosPetstore\Petstore_MVVM\MicroMvvm\obj\Debug\MicroMvvm.pdb
+C:\Documents and Settings\EPS\Escritorio\Petstore_MVVM\MicroMvvm\bin\Debug\MicroMvvm.dll
+C:\Documents and Settings\EPS\Escritorio\Petstore_MVVM\MicroMvvm\bin\Debug\MicroMvvm.pdb
+C:\Documents and Settings\EPS\Escritorio\Petstore_MVVM\MicroMvvm\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\EPS\Escritorio\Petstore_MVVM\MicroMvvm\obj\Debug\MicroMvvm.dll
+C:\Documents and Settings\EPS\Escritorio\Petstore_MVVM\MicroMvvm\obj\Debug\MicroMvvm.pdb
+D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\MicroMvvm\obj\Debug\CommonMvvm.csprojResolveAssemblyReference.cache
+D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\MicroMvvm\obj\Debug\MicroMvvm.pdb
+D:\Master\SVNProyecto\20140422\trunk\NuevoInmueblateGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+D:\Master\SVNProyecto\20140422\trunk\NuevoInmueblateGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+D:\Master\SVNProyecto\20140422\trunk\NuevoInmueblateGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+D:\Master\SVNProyecto\20140422\trunk\NuevoInmueblateGen\MicroMvvm\obj\Debug\MicroMvvm.pdb
+C:\Users\Zeta\Desktop\Inmueblate\trunk\NuevoInmueblateGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+C:\Users\Zeta\Desktop\Inmueblate\trunk\NuevoInmueblateGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+C:\Users\Zeta\Desktop\Inmueblate\trunk\NuevoInmueblateGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+C:\Users\Zeta\Desktop\Inmueblate\trunk\NuevoInmueblateGen\MicroMvvm\obj\Debug\MicroMvvm.pdb

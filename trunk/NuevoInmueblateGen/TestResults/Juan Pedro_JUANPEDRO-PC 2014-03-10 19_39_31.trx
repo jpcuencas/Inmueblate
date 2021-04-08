@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0c021dff-d452-4b35-96a6-489eae959838" name="Juan Pedro@JUANPEDRO-PC 2014-03-10 19:39:31" runUser="JuanPedro-PC\Juan Pedro" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Configuración de pruebas predeterminada" id="cc038a82-3e90-4a9e-a185-c0f9642f0291">
+    <Deployment runDeploymentRoot="Juan Pedro_JUANPEDRO-PC 2014-03-10 19_39_31">
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateCP\bin\Debug\NuevoInmueblateCP.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\nunit.core.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\LinFu.DynamicProxy.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NuevoInmueblateGenNHibernate.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\packages\NUnit.2.6.3\lib\nunit.framework.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-03-10T19:39:31.9531298+01:00" queuing="2014-03-10T19:39:36.3367375+01:00" start="2014-03-10T19:39:36.5551379+01:00" finish="2014-03-10T19:39:38.3491411+01:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Aceptar_Peticion_Correcta" storage="d:\desktop\svn inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="6951d93d-f414-3fc5-e412-43b9c41666e9">
+      <Description>Aceptar_Peticion_Correcta</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="ee3bd7cf-25a5-44e4-89f4-1548fb545482" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Desktop/SVN Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Correcta" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6951d93d-f414-3fc5-e412-43b9c41666e9" executionId="ee3bd7cf-25a5-44e4-89f4-1548fb545482" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ee3bd7cf-25a5-44e4-89f4-1548fb545482" testId="6951d93d-f414-3fc5-e412-43b9c41666e9" testName="Aceptar_Peticion_Correcta" computerName="JUANPEDRO-PC" duration="00:00:00.3305028" startTime="2014-03-10T19:39:36.7267382+01:00" endTime="2014-03-10T19:39:38.1931408+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee3bd7cf-25a5-44e4-89f4-1548fb545482">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor no es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor no es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser distinto de -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.ScenarioCleanup() en D:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.Aceptar_Peticion_Correcta() en d:\Desktop\SVN Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature:línea 9
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

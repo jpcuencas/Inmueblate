@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				
+<joined-subclass name="GaleriaEN" extends="NuevoInmueblateGenNHibernate.EN.RedSocial.ElementoMultimediaEN" table="Galeria"> 
+	<key>
+    	
+				<column name="id"/>
+		
+    	
+   	</key>
+
+						
+			
+		  			
+						<bag name="ElementosMultimedia" cascade="delete">
+							<key>
+							
+								<column name="FK_id_elementosMultimedia"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ElementoMultimediaEN"/>
+					    </bag>
+					
+					
+		
+ 	  
+		 </joined-subclass>
+		  
+		  <query name="GaleriaENReadAllHQL">from GaleriaEN</query>
+		  <query name="GaleriaENobtenerGaleriasPorUsuarioHQL"><![CDATA[FROM GaleriaEN AS ga WHERE ga.Usuario IS NOT NULL AND ga.Usuario.Id = :pe_usuario ORDER BY ga.Fecha DESC]]></query>
+		  <query name="GaleriaENobtenerGaleriaPerfilHQL"><![CDATA[FROM GaleriaEN AS ga WHERE ga.Usuario IS NOT NULL AND ga.Usuario.Id = :pe_usuario AND ga.Nombre = 'Perfil']]></query>
+		</hibernate-mapping>
+	

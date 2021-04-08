@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="ComentarioEN" table="Comentario"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="Cuerpo" type="string"> 
+						<column name="cuerpo"  not-null="true"/>
+					</property>
+					<property name="PendienteModeracion" type="boolean"> 
+						<column name="pendienteModeracion"  not-null="true"/>
+					</property>
+					<property name="FechaPublicacion" type="timestamp"> 
+						<column name="fechaPublicacion"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Creador" class="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN" >	
+								<column name="FK_id_creador"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="Reportadores" table="[UsuarioComentario]"  >
+							<key>
+								
+									<column name="FK_id_comentariosReportados"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN">
+									<column name="FK_id_reportadores"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<many-to-one name="Entrada" class="NuevoInmueblateGenNHibernate.EN.RedSocial.EntradaEN" >	
+								<column name="FK_id_entrada"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="ElementosMultimedia" table="[ComentarioElementoMultimedia]" inverse="true" >
+							<key>
+								
+									<column name="FK_id_aparicionComentarios"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ElementoMultimediaEN">
+									<column name="FK_id_elementosMultimedia"/> 
+      						</many-to-many>
+    					</bag>
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="ComentarioENReadAllHQL">from ComentarioEN</query>
+		  <query name="ComentarioENobtenerComentarioPendienteModeracionHQL"><![CDATA[FROM ComentarioEN AS co WHERE co.PendienteModeracion = true]]></query>
+		  <query name="ComentarioENobtenerComentariosPorEntradaHQL"><![CDATA[FROM ComentarioEN AS c WHERE c.Entrada.Id = :p_entrada ORDER BY c.FechaPublicacion DESC]]></query>
+		</hibernate-mapping>
+	

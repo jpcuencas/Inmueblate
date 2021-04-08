@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="AnuncioEN" table="Anuncio"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="Imagen" type="string"> 
+						<column name="imagen"  not-null="true"/>
+					</property>
+					<property name="Descripcion" type="string"> 
+						<column name="descripcion"  not-null="true"/>
+					</property>
+					<property name="FechaCaducidad" type="date"> 
+						<column name="fechaCaducidad"  not-null="true"/>
+					</property>
+					<property name="Tipo" > 
+						<column name="tipo"  not-null="true"/>
+					</property>
+					<property name="URL" type="string"> 
+						<column name="URL"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="AnuncioENReadAllHQL">from AnuncioEN</query>
+		  <query name="AnuncioENdameAnunciosFiltroHQL"><![CDATA[FROM AnuncioEN AS a WHERE a.Tipo = CASE WHEN :p_tipo = -1 THEN a.Tipo ELSE :p_tipo END AND a.FechaCaducidad <= CASE WHEN :p_fechaCaducidad = null THEN a.FechaCaducidad ELSE :p_fechaCaducidad END AND a.URL LIKE CASE WHEN :p_url = null THEN a.URL ELSE :p_url END AND a.Descripcion LIKE CASE WHEN :p_descripcion = null THEN a.Descripcion ELSE :p_descripcion END]]></query>
+		</hibernate-mapping>
+	

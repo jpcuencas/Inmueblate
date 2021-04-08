@@ -1,0 +1,3 @@
+Falta gestion Paginas
+Falta Estadisticas
+Falta login

@@ -1,0 +1,19 @@
+﻿@{
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }   
+ }
+<div class="navbar-header">
+    <h2> @Html.ActionLink("Inmuéblate", "Index", "HomeUS", new { id = id_sesion, area = "Usuarios" }, new { @class = "btn btn-link letraTitulo" })</h2>
+    @*<h2>@ViewBag.subtitulo</h2>*@
+</div>
+<div class="peticiones-menu">
+    
+    </div>
+<div class="men-iz">
+    <div class="nav navbar-nav navbar-right">
+        @Html.Partial("~/Areas/Usuarios/Views/Shared/_LogOnPartial.cshtml")
+    </div>
+</div>

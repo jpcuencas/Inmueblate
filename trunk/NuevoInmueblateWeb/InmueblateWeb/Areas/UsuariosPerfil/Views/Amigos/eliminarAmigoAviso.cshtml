@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Eliminar Amigo</title>
+</head>
+<body>
+    <div class="elmAmi">
+        <h3>Vas a eliminar de tu lista de amigos a @ViewBag.Usuario.Nombre</h3>
+        <h4>¿Estás seguro?</h4>
+        <div>
+        @Html.ActionLink("Eliminar","elminarAmigo", new { id = ViewBag.Usuario.Id}, new {area = "UsuariosPerfil", @class="btn btn-primary btn-large"})
+            @*<button type="submit" class="btn btn-primary btn-large">Eliminar</button>*@
+        
+        
+        </div>
+    </div>
+</body>
+</html>

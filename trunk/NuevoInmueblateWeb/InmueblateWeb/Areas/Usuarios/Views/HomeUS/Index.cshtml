@@ -1,0 +1,128 @@
+﻿@model InmueblateWeb.Models.Entrada
+@{
+    ViewBag.Title = "Página principal";
+    ViewBag.Titulo = "Últimas Noticias";
+}
+
+<h3>@ViewBag.Titulo</h3>
+    <article>
+
+    <div class="well bs-component">
+    <div class="bs-component">
+       @using (Html.BeginForm("NuevaEntrada", "HomeUS", FormMethod.Post, new { @class = "form-horizontal new-val" }))
+       {
+
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    @Html.LabelFor(m => m.Titulo)
+                </div>
+                @*<label for="txtComentario" class="col-md-3 control-label">Comentario: </label>*@
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.Titulo, new
+               {
+                   @class = "form-control",
+                   placeholder = "Introduce un comentario..."
+               })
+                    @Html.ValidationMessageFor(m => m.Titulo)
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    @Html.LabelFor(m => m.Cuerpo)
+                </div>
+                @*<label for="txtComentario" class="col-md-3 control-label">Comentario: </label>*@
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.Cuerpo, new
+               {
+                   @class = "form-control",
+                   placeholder = "Introduce un comentario..."
+               })
+                    @Html.ValidationMessageFor(m => m.Cuerpo)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-1" id="btnEnviar">
+                    <button type="submit" class="btn btn-primary">Enviar</button> 
+                </div>
+            </div>
+       }
+        </div>
+</div>
+	  
+	    <br />
+        <hr />
+    </article>
+@if (ViewBag.Entradas != null)
+{
+    for (int i = 0; i < ViewBag.Entradas.Count; i++)
+    { 
+   <article class="well bs-component">
+        <div class="row" id="ent-mur">
+            <img src="@Url.Content("~/img")@ViewBag.FotosEnt[i]" alt="@Url.Content("~/img/default/user-default.jpg")"/>
+            @if (@ViewBag.Usuarios[i].Nombre == "Inmuéblate" && @ViewBag.Usuarios[i].Apellidos == "")
+            {
+                <label>@ViewBag.Usuarios[i].Nombre</label>
+            }
+            else
+            {
+                @Html.ActionLink((string)@ViewBag.Usuarios[i].Nombre + " " + (string)@ViewBag.Usuarios[i].Apellidos, "Index", "HomeUSPE", new { id = @ViewBag.Usuarios[i].Id }, new { @class = "nombre" })
+            }
+
+            @if (ViewBag.Entradas[i].Titulo != "")
+            {
+                <label>: @ViewBag.Entradas[i].Titulo</label>
+            }
+            <p class="ent-cue">@ViewBag.Entradas[i].Cuerpo</p>
+            <div class="col-md-4">
+                <p class="fec-ent">Enviado a las <strong>@ViewBag.Entradas[i].FechaPublicacion</strong></p>
+            </div>
+            
+            <div class="col-md-8">
+                <ul class="nav nav-pills" style="float:right;">
+		            <li><a class="btn btn-primary btn-xs" href="">comentar</a></li>
+	            </ul>
+            </div>
+        </div>
+    </article>
+    }
+}
+<!--    <article class="well bs-component" style=" height:200px;">
+	    <span class="glyphicon glyphicon-user" style="font-size: 50px;"></span>
+	    <label>Ana María Díaz: </label>
+	    <label style="font-weight:normal;" >Ha puntuado a su compañero <a href="#" style="font-weight:bold;">Pedro Pérez</a> con <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></label>
+	    <br/><a href="#">Valorar a Pedro Pérez</a>
+	     <hr/>
+        <ul class="nav nav-pills" style="float:right;">
+		    <li><a class="btn btn-primary" href="">comentar</a></li>
+		    <li><a class="btn btn-primary" href="">me mola</a></li>
+		    <li><a class="btn btn-primary" href="">compartir</a></li>
+	    </ul>        
+	    <br />
+    </article>
+    <article class="well bs-component" style=" height:650px;">
+	    <span class="glyphicon glyphicon-user" style="font-size: 50px;"></span>
+	    <label>Ángel Caido: </label>
+	    <label style="font-weight:normal;">Me he mudado a una casa mucho mas grande!</label>
+	    <img alt="fotoMudanza" src="img/granpiso.jpg" height="480" width="600"/>
+	     <hr/>
+        <ul class="nav nav-pills" style="float:right;">
+		    <li><a class="btn btn-primary" href="">comentar</a></li>
+		    <li><a class="btn btn-primary" href="">me mola</a></li>
+		    <li><a class="btn btn-primary" href="">compartir</a></li>
+	    </ul>
+	    <br />
+    </article>
+    <article class="well bs-component" style=" height:650px;">
+	    <span class="glyphicon glyphicon-user" style="font-size: 50px;"></span>
+	    <label>Isidro Santacruz Lillo: </label> 
+	    <label style="font-weight:normal;">He publicado mi antigua habitacion</label><span style="float:right;" class="glyphicon glyphicon-remove"></span>
+	    <img alt="fotoMudanza" src="img/granpiso.jpg" height="480" width="600"/>
+	     <hr/>
+        <ul class="nav nav-pills" style="float:right;">
+		    <li><a class="btn btn-primary" href="">comentar</a></li>
+		    <li><a class="btn btn-primary" href="">me mola</a></li>
+		    <li><a class="btn btn-primary" href="">compartir</a></li>
+	    </ul>
+	    <br />
+    </article>-->

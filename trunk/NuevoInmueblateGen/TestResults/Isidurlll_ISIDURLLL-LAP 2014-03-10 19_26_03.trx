@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a125c223-b227-4b74-b52d-cd576af9dfc1" name="Isidurlll@ISIDURLLL-LAP 2014-03-10 19:26:03" runUser="Isidurlll-Lap\Isidurlll" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1cc17540-264b-4f0b-824a-de0046a06e2c">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Isidurlll_ISIDURLLL-LAP 2014-03-10 19_26_03">
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NuevoInmueblateGenNHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\packages\NUnit.2.6.3\lib\nunit.framework.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateCP\bin\Debug\NuevoInmueblateCP.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-03-10T19:26:03.4317123+01:00" queuing="2014-03-10T19:26:03.7587310+01:00" start="2014-03-10T19:26:05.0038022+01:00" finish="2014-03-10T19:26:19.8626521+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="8" executed="8" passed="6" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Login_LogeoErroneo" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="045d05a4-cbf6-728f-368d-3c4852e02d35">
+      <Description>Login_Logeo erroneo</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="edbd5bc2-0cff-4470-b263-6d94af1d6e4c" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoErroneo" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoModerador" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="01cfc0a0-5fb4-aedb-fe2e-1ed5623507f2">
+      <Description>Login_Logeo como moderador</Description>
+      <Execution id="3bf2ebb1-cee7-43ec-9d56-db70129cf4bf" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoModerador" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener5Anuncios" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="db9255f2-fa2c-71cd-8d2e-3a49670c6bd6">
+      <Description>ObtenerAnunciosRandom_Obtener 5 anuncios</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="bda8745a-3145-4f2e-9415-2171b962cea6" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener5Anuncios" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoInmobiliaria" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="00952f56-31d6-d22b-e313-b7986565c621">
+      <Description>Login_Logeo como Inmobiliaria</Description>
+      <Execution id="3cbeb6e8-0f41-45d2-8fce-3c2b2df3ea1d" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoInmobiliaria" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="1d573309-85dd-68be-b0c6-d2c46acf4ceb">
+      <Description>ObtenerAnunciosRandom_Obtener 3 anuncios distintos</Description>
+      <Execution id="093926bf-65cb-43e3-804f-40c91f8d9df8" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoUsuario" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="ea4b81a9-1664-4046-9b10-00e87cb982e5">
+      <Description>Login_Logeo como usuario</Description>
+      <Execution id="a60ebd1d-2ebf-4c68-a2ed-783c1b4eefb1" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoUsuario" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener_5Anuncios" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="345f4970-bc1c-2ce6-5fc0-e43fe4b1ae6b">
+      <Description>ObtenerAnunciosRandom_Obtener -5 anuncios</Description>
+      <Execution id="3a401a61-e647-4122-b643-56c755264bda" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener_5Anuncios" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener15Anuncios" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="45dbb885-c276-72e4-847f-ec8c00850b98">
+      <Description>ObtenerAnunciosRandom_Obtener 15 anuncios</Description>
+      <Execution id="051bc363-9f22-4f6b-a7cd-5920dc1773e1" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener15Anuncios" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="00952f56-31d6-d22b-e313-b7986565c621" executionId="3cbeb6e8-0f41-45d2-8fce-3c2b2df3ea1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="01cfc0a0-5fb4-aedb-fe2e-1ed5623507f2" executionId="3bf2ebb1-cee7-43ec-9d56-db70129cf4bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="045d05a4-cbf6-728f-368d-3c4852e02d35" executionId="edbd5bc2-0cff-4470-b263-6d94af1d6e4c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d573309-85dd-68be-b0c6-d2c46acf4ceb" executionId="093926bf-65cb-43e3-804f-40c91f8d9df8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="345f4970-bc1c-2ce6-5fc0-e43fe4b1ae6b" executionId="3a401a61-e647-4122-b643-56c755264bda" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45dbb885-c276-72e4-847f-ec8c00850b98" executionId="051bc363-9f22-4f6b-a7cd-5920dc1773e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db9255f2-fa2c-71cd-8d2e-3a49670c6bd6" executionId="bda8745a-3145-4f2e-9415-2171b962cea6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea4b81a9-1664-4046-9b10-00e87cb982e5" executionId="a60ebd1d-2ebf-4c68-a2ed-783c1b4eefb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3cbeb6e8-0f41-45d2-8fce-3c2b2df3ea1d" testId="00952f56-31d6-d22b-e313-b7986565c621" testName="Login_LogeoComoInmobiliaria" computerName="ISIDURLLL-LAP" duration="00:00:11.1206486" startTime="2014-03-10T19:26:05.0238034+01:00" endTime="2014-03-10T19:26:18.2595604+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3cbeb6e8-0f41-45d2-8fce-3c2b2df3ea1d">
+      <Output>
+        <StdOut>Given Una inmobiliara con email "jpcs@inm.es" y contraseña "jpcs"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnaInmobiliaraConEmailYContrasena("jpcs@inm.es", "jpcs") (0,0s)
+When quiero logearme en la red social como "Inmobiliaria"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'jpcs@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Inmobiliaria") (10,9s)
+Then debo logearme como usuario y devolver 4
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(4) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3bf2ebb1-cee7-43ec-9d56-db70129cf4bf" testId="01cfc0a0-5fb4-aedb-fe2e-1ed5623507f2" testName="Login_LogeoComoModerador" computerName="ISIDURLLL-LAP" duration="00:00:00.0140376" startTime="2014-03-10T19:26:18.2615605+01:00" endTime="2014-03-10T19:26:18.2935624+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bf2ebb1-cee7-43ec-9d56-db70129cf4bf">
+      <Output>
+        <StdOut>Given Un moderador con email "avam@inm.es" y contraseña "avam"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnModeradorConEmailYContrasena("avam@inm.es", "avam") (0,0s)
+When quiero logearme en la red social como "Moderador"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'avam@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Moderador") (0,0s)
+Then debo logearme como usuario y devolver 2
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(2) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="edbd5bc2-0cff-4470-b263-6d94af1d6e4c" testId="045d05a4-cbf6-728f-368d-3c4852e02d35" testName="Login_LogeoErroneo" computerName="ISIDURLLL-LAP" duration="00:00:00.0107075" startTime="2014-03-10T19:26:18.2965625+01:00" endTime="2014-03-10T19:26:18.3115634+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edbd5bc2-0cff-4470-b263-6d94af1d6e4c">
+      <Output>
+        <StdOut>Given Un usuario con email "ddv@inm.es" y contraseña "ddv"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ddv@inm.es", "ddv") (0,0s)
+When quiero logearme en la red social como "Usuario"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ddv@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Usuario") (0,0s)
+Then debo logearme como usuario y devolver 1
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(1) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="093926bf-65cb-43e3-804f-40c91f8d9df8" testId="1d573309-85dd-68be-b0c6-d2c46acf4ceb" testName="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" computerName="ISIDURLLL-LAP" duration="00:00:00.2004307" startTime="2014-03-10T19:26:18.3145636+01:00" endTime="2014-03-10T19:26:18.5285758+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="093926bf-65cb-43e3-804f-40c91f8d9df8">
+      <Output>
+        <StdOut>Given quiero 3 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(3) (0,0s)
+When creo dos listas de mis anuncios
+NHibernate: SELECT this_.[id] as column1_6_0_, this_.[imagen] as column2_6_0_, this_.[descripcion] as column3_6_0_, this_.[fechaCaducidad] as column4_6_0_, this_.[tipo] as column5_6_0_, this_.[URL] as column6_6_0_ FROM [Anuncio] this_
+NHibernate: SELECT this_.[id] as column1_6_0_, this_.[imagen] as column2_6_0_, this_.[descripcion] as column3_6_0_, this_.[fechaCaducidad] as column4_6_0_, this_.[tipo] as column5_6_0_, this_.[URL] as column6_6_0_ FROM [Anuncio] this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenCreoDosListasDeMisAnuncios() (0,2s)
+Then las listas deberian ser distintas
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.ThenLasListasDeberianSerDistintas() (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3a401a61-e647-4122-b643-56c755264bda" testId="345f4970-bc1c-2ce6-5fc0-e43fe4b1ae6b" testName="ObtenerAnunciosRandom_Obtener_5Anuncios" computerName="ISIDURLLL-LAP" duration="00:00:00.0051620" startTime="2014-03-10T19:26:18.5365763+01:00" endTime="2014-03-10T19:26:18.5475769+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a401a61-e647-4122-b643-56c755264bda">
+      <Output>
+        <StdOut>Given quiero -5 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(-5) (0,0s)
+When busco mis anuncios
+NHibernate: SELECT this_.[id] as column1_6_0_, this_.[imagen] as column2_6_0_, this_.[descripcion] as column3_6_0_, this_.[fechaCaducidad] as column4_6_0_, this_.[tipo] as column5_6_0_, this_.[URL] as column6_6_0_ FROM [Anuncio] this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() (0,0s)
+Then deberia otener 0 anuncios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.ThenDeberiaOtenerAnuncios(0) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="051bc363-9f22-4f6b-a7cd-5920dc1773e1" testId="45dbb885-c276-72e4-847f-ec8c00850b98" testName="ObtenerAnunciosRandom_Obtener15Anuncios" computerName="ISIDURLLL-LAP" duration="00:00:00.6150741" startTime="2014-03-10T19:26:18.5525772+01:00" endTime="2014-03-10T19:26:19.1716126+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="051bc363-9f22-4f6b-a7cd-5920dc1773e1">
+      <Output>
+        <StdOut>Given quiero 15 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(15) (0,0s)
+When busco mis anuncios
+NHibernate: SELECT this_.[id] as column1_6_0_, this_.[imagen] as column2_6_0_, this_.[descripcion] as column3_6_0_, this_.[fechaCaducidad] as column4_6_0_, this_.[tipo] as column5_6_0_, this_.[URL] as column6_6_0_ FROM [Anuncio] this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() (0,0s)
+Then deberia otener 10 anuncios
+-&gt; error: Error de Assert.AreEqual. Se esperaba &lt;10&gt;, pero es &lt;3&gt;.</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.AreEqual. Se esperaba &lt;10&gt;, pero es &lt;3&gt;. </Message>
+          <StackTrace>   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomSteps.ThenDeberiaOtenerAnuncios(Int32 pe_esperado) en D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandomSteps.cs:línea 42
+   en lambda_method(Closure , IContextManager , Int32 )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ScenarioCleanup() en D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener15Anuncios() en d:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature:línea 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bda8745a-3145-4f2e-9415-2171b962cea6" testId="db9255f2-fa2c-71cd-8d2e-3a49670c6bd6" testName="ObtenerAnunciosRandom_Obtener5Anuncios" computerName="ISIDURLLL-LAP" duration="00:00:00.0064168" startTime="2014-03-10T19:26:19.1766129+01:00" endTime="2014-03-10T19:26:19.1856134+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bda8745a-3145-4f2e-9415-2171b962cea6">
+      <Output>
+        <StdOut>Given quiero 5 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(5) (0,0s)
+When busco mis anuncios
+NHibernate: SELECT this_.[id] as column1_6_0_, this_.[imagen] as column2_6_0_, this_.[descripcion] as column3_6_0_, this_.[fechaCaducidad] as column4_6_0_, this_.[tipo] as column5_6_0_, this_.[URL] as column6_6_0_ FROM [Anuncio] this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() (0,0s)
+Then deberia otener 5 anuncios
+-&gt; error: Error de Assert.AreEqual. Se esperaba &lt;5&gt;, pero es &lt;3&gt;.</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.AreEqual. Se esperaba &lt;5&gt;, pero es &lt;3&gt;. </Message>
+          <StackTrace>   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomSteps.ThenDeberiaOtenerAnuncios(Int32 pe_esperado) en D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandomSteps.cs:línea 42
+   en lambda_method(Closure , IContextManager , Int32 )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ScenarioCleanup() en D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener5Anuncios() en d:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature:línea 7
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a60ebd1d-2ebf-4c68-a2ed-783c1b4eefb1" testId="ea4b81a9-1664-4046-9b10-00e87cb982e5" testName="Login_LogeoComoUsuario" computerName="ISIDURLLL-LAP" duration="00:00:00.0596856" startTime="2014-03-10T19:26:19.1906137+01:00" endTime="2014-03-10T19:26:19.2546173+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a60ebd1d-2ebf-4c68-a2ed-783c1b4eefb1">
+      <Output>
+        <StdOut>Given Un usuario con email "ijsl@inm.es" y contraseña "ijsl"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ijsl@inm.es", "ijsl") (0,0s)
+When quiero logearme en la red social como "Usuario"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Usuario") (0,1s)
+Then debo logearme como usuario y devolver 3
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(3) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,143 @@
+﻿@model InmueblateWeb.Models.Mensaje
+@{
+    ViewBag.Title = "Mensajes";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+
+<h2>@ViewBag.Title</h2>
+
+    
+<h2>@ViewBag.Title de @ViewBag.Usuario</h2>
+<div class="well bs-component">
+    <div class="bs-component">
+       @using (Html.BeginForm("EnviarMensaje","MensajeUS",FormMethod.Post, new { @class="form-horizontal new-val" }))
+        {
+
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    @Html.LabelFor(m => m.Asunto)
+                </div>
+                @*<label for="txtComentario" class="col-md-3 control-label">Comentario: </label>*@
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.Asunto, new {@class = "form-control",
+                                                                placeholder = "Introduce un comentario..."})
+                    @Html.ValidationMessageFor(m => m.Asunto)
+                </div>
+            </div>
+           <div class="form-group">
+           <div class="editor-label col-md-3" id="labelAmigos">
+                @Html.LabelFor(m => m.Receptor)
+            </div>
+            <div class="editor-field col-md-9" id="inputUsuarioCategoria">
+                @Html.DropDownListFor(m => m.Receptor, new SelectList(@ViewBag.Amigos, "amigos"), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Receptor)
+            </div>
+           </div>
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    @Html.LabelFor(m => m.Cuerpo)
+                </div>
+                @*<label for="txtComentario" class="col-md-3 control-label">Comentario: </label>*@
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.Cuerpo, new
+               {
+                   @class = "form-control",
+                   placeholder = "Introduce un comentario..."
+               })
+                    @Html.ValidationMessageFor(m => m.Cuerpo)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-1" id="btnValorar">
+                    <button type="submit" class="btn btn-primary">Enviar</button> 
+                </div>
+            </div>
+        }
+        </div>
+</div>
+<div class="well bs-component">
+    <div class="bs-component">
+
+    
+
+    <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+      <li ><a href="#enviados" data-toggle="tab">Enviados</a></li>
+      <li ><a href="#recibidos" data-toggle="tab">Recibidos</a></li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+@if(ViewBag.MensajesReci!=null)
+{
+      <div class="tab-pane fade active in" id="enviados">
+
+        @for (int i = 0; i < ViewBag.MensajesReci.Count; i++)
+        {
+            <div class="row">
+                <div class="well bs-component">
+                    <fieldset>
+                            <legend>Evento selecionado</legend>
+
+                            <div class="editor-label" id="labelMensajeAsunto1">
+                             Nombre:   @ViewBag.ViewBag.MensajesReci[i].Asunto
+                            </div>
+                            <div class="editor-label" id="labelMensajeCuerpo1">
+                             Descripcion:   @ViewBag.Evento.Cuerpo
+                            </div>
+                            <div class="editor-label" id="labelMensajeFecha1">
+                             Fecha:   @ViewBag.Evento.FechaPublicacion
+                            </div>
+
+            
+                    </fieldset>
+                </div>
+            </div>
+            
+        }
+
+      </div>
+        }
+@if (ViewBag.MensajesEnv != null)
+ {
+      <div class="tab-pane fade" id="realizadas">
+        @for (int i = 0; i < ViewBag.MensajesEnv.Count; i++)
+        {
+            <div class="row">
+                 <div class="well bs-component">
+                    <fieldset>
+                            <legend>Evento selecionado</legend>
+
+                            <div class="editor-label" id="labelMensajeAsunto2">
+                             Nombre:   @ViewBag.ViewBag.MensajesReci[i].Asunto
+                            </div>
+                            <div class="editor-label" id="labelMensajeCuerpo2">
+                             Descripcion:   @ViewBag.Evento.Cuerpo
+                            </div>
+                            <div class="editor-label" id="labelMensajeFecha2">
+                             Fecha:   @ViewBag.Evento.FechaPublicacion
+                            </div>
+
+            
+                    </fieldset>
+                </div>
+            </div>
+               
+        }
+      </div>
+ }    
+    </div>
+    </div>
+    <span style="float:right">
+     <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+      <li ><a href="#enviados">Enviados</a></li>
+      <li ><a href="#recibidos">Recibidos</a></li>
+    </ul>
+    </span>
+    <div>
+        @Html.ActionLink("Volver", "Index", "MensajeUS", new { id = id_sesion, area = "Usuarios" }, null)
+    </div>
+ </div>
+

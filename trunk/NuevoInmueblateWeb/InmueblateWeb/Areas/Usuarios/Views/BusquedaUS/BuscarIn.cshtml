@@ -1,0 +1,65 @@
+﻿@model InmueblateWeb.Models.Busqueda
+@{
+    ViewBag.Title = "Buscar Inmobiliaria";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        //$("#SignupForm").formToWizard({ submitButton: 'SaveAccount' });
+
+      
+        });
+</script>
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("DetalleIn", "BusquedaUS", FormMethod.Post, new { id = "SearchForm" }))
+{
+    Html.ValidationSummary(true, "Se han producido errores en la validacion de los campos corrija los errores y vuelva a intentarlo.");
+    <div class="well bs-component">
+        <fieldset>
+            <legend>Formulario de busqueda</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Nombre)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control inputName" })
+                @Html.ValidationMessageFor(m => m.Nombre)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Email)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+             <div class="editor-label" id="labelUsuarioDireccion">
+                @Html.LabelFor(m => m.Direccion)
+            </div>
+            <div class="editor-field" id="inputUsuarioDireccion">
+                @Html.TextBoxFor(m => m.Direccion, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Direccion)
+            </div>
+             <div class="editor-label">
+                @Html.LabelFor(m => m.Poblacion)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Poblacion, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Poblacion)
+            </div>
+        </fieldset>
+        <hr />
+        <p>
+          <input type="submit" id="btnBuscar" class="btn btn-default" value="Buscar" />
+        </p>
+        <div>
+           @Html.ActionLink("Volver", "Index", "HomeUS", new { id = id_sesion, area = "Usuarios" }, null)
+        </div>
+    </div>
+
+}

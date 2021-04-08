@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="PaginaCorporativaEN" table="PaginaCorporativa"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="Contenido" type="string"> 
+						<column name="contenido"  not-null="true"/>
+					</property>
+					<property name="URL" type="string"> 
+						<column name="URL"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+		  			
+						<many-to-one name="Inmobiliaria" class="NuevoInmueblateGenNHibernate.EN.RedSocial.InmobiliariaEN" >	
+								<column name="FK_id_inmobiliaria"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="PaginaCorporativaENReadAllHQL">from PaginaCorporativaEN</query>
+		</hibernate-mapping>
+	

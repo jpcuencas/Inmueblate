@@ -1,0 +1,189 @@
+﻿<Page x:Class="GestorInmobiliaria.views.Anuncio.Anuncios"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="Anuncios">
+    
+    <Page.Resources>
+        <ItemsPanelTemplate x:Key="ListBox_HorizontalItems">
+            <UniformGrid Columns="{Binding Path=Items.Count,RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"/>
+        </ItemsPanelTemplate>
+
+        <DataTemplate x:Key="ListBox_DataTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding Imagen}" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Label Content="{Binding URL}" Width="Auto"></Label>
+            </Grid>
+        </DataTemplate>
+
+        <Style x:Key="ListBox_Style_Horizontal" TargetType="ListBox">
+            <Setter Property="ItemTemplate" Value="{StaticResource ListBox_DataTemplate}" />
+            <Setter Property="ItemsPanel" Value="{StaticResource ListBox_HorizontalItems}" />
+        </Style>
+        
+    </Page.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="230"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="290"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="10" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="50*" />
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="50*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="4" RadiusX="20" RadiusY="20" Fill="{StaticResource FondoGrisTabla}" Stroke="{StaticResource BordeNaranjaTabla}" StrokeThickness="{StaticResource BordeTabla}"></Rectangle>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Descripción:" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding DescripcionFiltro}" FontSize="{StaticResource TamFuenteDetalle}" HorizontalAlignment="Stretch" Height="28" VerticalAlignment="Center" Margin="0,0,20,0" VerticalContentAlignment="Center"/>
+            
+            <Label Grid.Row="1" Grid.Column="2" Content="URL:" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding UrlFiltro}" FontSize="{StaticResource TamFuenteDetalle}" HorizontalAlignment="Stretch" Height="28" VerticalAlignment="Center" Margin="0,0,20,0" VerticalContentAlignment="Center"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Tipo:" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <ComboBox Grid.Column="1" Grid.Row="2" Margin="0,0,20,0" ItemsSource="{Binding Tipos}" SelectedItem="{Binding TipoFiltroString}" HorizontalAlignment="Stretch" Name="comboBoxTipos" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" Height="28"/>
+
+            <Label Grid.Row="2" Grid.Column="2" Content="Fecha de caducidad:" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <DatePicker SelectedDate="{Binding FechaFiltro}" Margin="0,0,20,0" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Stretch" Name="datePicker2" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" Height="28"/>
+
+            <Button Margin="0,0,20,0" FontSize="15" Content="Filtrar" Grid.Column="3" Grid.Row="3" Height="40" HorizontalAlignment="Right" Name="button7" VerticalAlignment="Bottom" Width="130">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding FiltrarCommand}">
+                        </i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+        </Grid>
+        
+        <ListBox Name="lbxImages" Style="{StaticResource ListBox_Style_Horizontal}" ItemsSource="{Binding Anuncios}" SelectedItem="{Binding SelectedItem}" Grid.ColumnSpan="8" Grid.Row="1" Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <i:InvokeCommandAction Command="{Binding SelectionChangedCommand}" CommandParameter="{Binding SelectedItem, ElementName=lbxImages}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ListBox>
+
+        <Button Content="&lt;" Grid.Row="1" Name="button1" IsEnabled="{Binding PaginacionRetrocederEnabled}" >
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding PaginacionRetrocederCommand}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+        <Button Content=">" Name="button2" Grid.Column="10" Grid.Row="1" IsEnabled="{Binding PaginacionAvanzarEnabled}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding PaginacionAvanzarCommand}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+        
+        <Grid Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="10" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="150" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Row="0" Grid.Column="0" Grid.RowSpan="8" Grid.ColumnSpan="3" Fill="{StaticResource FondoGrisTabla}" RadiusX="20" RadiusY="20" Stroke="{Binding Source={StaticResource BordeNaranjaTabla}}" StrokeThickness="{Binding Source={StaticResource BordeTabla}}"></Rectangle>
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Content="ID:" Height="Auto" Name="label1" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Grid.Column="1" Grid.Row="1" Content="{Binding SelectedItem.Id}" Name="lblImagen" FontSize="{StaticResource TamFuenteDetalle}" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Center" Margin="0,0,20,0" VerticalContentAlignment="Center" />
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Content="Descripción:" Height="Auto" Name="label2" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Grid.Column="1" Grid.Row="2" Content="{Binding SelectedItem.Descripcion}" HorizontalAlignment="Stretch" Name="lblDescripcion" VerticalAlignment="Stretch" FontSize="{StaticResource TamFuenteDetalle}" Margin="0,0,20,0" VerticalContentAlignment="Center" Height="Auto"/>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" Content="Fecha de caducidad:" Height="Auto" Name="label3" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}"/>
+            <Label ContentStringFormat="dd/MM/yyyy" Margin="0,0,20,0" Grid.Column="1" Grid.Row="3" Content="{Binding SelectedItem.FechaCaducidad}" HorizontalAlignment="Stretch" Name="datePicker1" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" Height="Auto"/>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="4" Content="Tipo:" Height="Auto" Name="label4" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}"/>
+            <Label Grid.Column="1" Grid.Row="4" Margin="0,0,20,0" Content="{Binding SelectedItem.Tipo}" HorizontalAlignment="Stretch" Name="lblTipo" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" Height="Auto"/>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="5" Content="URL:" Height="Auto" Name="label5" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}"/>
+            <Label VerticalAlignment="Center" Grid.Column="1" Grid.Row="5" Height="Auto">
+                <TextBlock TextTrimming="CharacterEllipsis" Margin="0,0,20,0" Text="{Binding SelectedItem.URL}" FontSize="{StaticResource TamFuenteDetalle}" Grid.Row="4" Grid.Column="1" Height="Auto"/>
+            </Label>
+
+            <StackPanel Grid.Column="3" Grid.Row="1" Height="163" HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Center" Width="130" Grid.RowSpan="5">
+                <Button Content="Crear anuncio" Height="40" Name="button6" Width="130" FontSize="{StaticResource TamFuenteDetalle}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding NuevoAnuncioCommand}">
+                            </i:InvokeCommandAction>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+
+                <Button Content="Ver completo" Height="40" Name="button3" Width="130" FontSize="{StaticResource TamFuenteDetalle}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding SelectionChangedCommand}" CommandParameter="{Binding SelectedItem, ElementName=lbxImages}">
+                            </i:InvokeCommandAction>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+                <Button Content="Modificar" Height="40" Name="button4" Width="130" FontSize="{StaticResource TamFuenteDetalle}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding AnuncioModificarCommand}" CommandParameter="{Binding SelectedItem, ElementName=lbxImages}">
+                            </i:InvokeCommandAction>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+                <Button Content="Borrar" Height="40" Name="button5" Width="130" FontSize="{StaticResource TamFuenteDetalle}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding AnuncioBorrarCommand}" CommandParameter="{Binding SelectedItem, ElementName=lbxImages}">
+                            </i:InvokeCommandAction>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>

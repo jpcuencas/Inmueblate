@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://Service/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="CustomBinding_Service_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://Service/" location="http://localhost:53967/Service.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="CustomBinding_Service" type="i0:Service">
+    <wsp:PolicyReference URI="#CustomBinding_Service_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="NuevoInmueblate_Entrada_CrearEntrada">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_CrearEntrada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_ModificarEntrada">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_ModificarEntrada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_BorrarEntrada">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_BorrarEntrada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_ObtenerEntradasPorModerar">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPorModerar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_DameTodasLasEntradas">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_DameTodasLasEntradas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_DameEntradasFiltro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_DameEntradasFiltro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_DameEntradasPorMuro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_DameEntradasPorMuro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Entrada_ObtenerEntradasPorMuro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Entrada_ObtenerEntradasPorMuro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Fotografia_BorrarFotografia">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Fotografia_BorrarFotografia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Fotografia_DameTodasLasFotografias">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Fotografia_DameTodasLasFotografias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Video_BorrarVideo">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Video_BorrarVideo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Video_ObtenerTodosVideosPorModerar">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Video_ObtenerTodosVideosPorModerar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Video_DameTodosLosVideos">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Video_DameTodosLosVideos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PreferenciasBusqueda_DamePreferenciasBusquedaPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_PreferenciasBusqueda_DamePreferenciasBusquedaPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PreferenciasBusqueda_GetGeolocalizacionOfPreferenciasBusqueda">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_PreferenciasBusqueda_GetGeolocalizacionOfPreferenciasBusqueda" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Geolocalizacion_DameGeolocalizacionPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Geolocalizacion_DameGeolocalizacionPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Gustos_DameGustosPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Gustos_DameGustosPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_SuperUsuario_DameSuperUsuarioPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_SuperUsuario_DameSuperUsuarioPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_SuperUsuario_DameSuperUsuariosGrupo">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_SuperUsuario_DameSuperUsuariosGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Caracteristica_DameCaracteristicaPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Caracteristica_DameCaracteristicaPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Habitacion_DameHabitacionFiltro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Habitacion_DameHabitacionFiltro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Habitacion_DameHabitacionPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Habitacion_DameHabitacionPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subirAnuncio">
+      <soap12:operation soapAction="http://Service/Service/subirAnuncio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_Anonimo_Login">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_Anonimo_Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllAnuncio">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllAnuncio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllEvento">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllEvento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllMensaje">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllMensaje" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllElementoMultimedia">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllElementoMultimedia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllInmobiliaria">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllInmobiliaria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllGrupo">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllPaginaCorporativa">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllPaginaCorporativa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllInmueble">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllInmueble" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllEntrada">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllEntrada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Moderador_GetAllSuperUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Moderador_GetAllSuperUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Anuncio_CrearAnuncio">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Anuncio_CrearAnuncio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Anuncio_ModificarAnuncio">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Anuncio_ModificarAnuncio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Anuncio_BorrarAnuncio">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Anuncio_BorrarAnuncio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Anuncio_DameTodosLosAnuncios">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Anuncio_DameTodosLosAnuncios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Anuncio_DameAnunciosFiltro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Anuncio_DameAnunciosFiltro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_CrearUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_CrearUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_ModificarUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_ModificarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_BorrarUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_BorrarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_DameUsuarioPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_DameUsuarioPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_DameTodosLosUsuarios">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_DameTodosLosUsuarios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_DameUsuariosFiltro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_DameUsuariosFiltro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_ObtenerAmigos">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_ObtenerAmigos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_ObtenerBloqueados">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_ObtenerBloqueados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllFotosOfFusuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_GetAllFotosOfFusuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetPreferenciasBusquedaOfUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_GetPreferenciasBusquedaOfUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetGustosOfUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_GetGustosOfUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllElementosOfUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_GetAllElementosOfUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllEntradaUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_GetAllEntradaUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Usuario_GetAllMensajeUsuario">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Usuario_GetAllMensajeUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_CrearGrupo">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Grupo_CrearGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_ModificarGrupo">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Grupo_ModificarGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_BorrarGrupo">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Grupo_BorrarGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_DameTodosLosGrupos">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Grupo_DameTodosLosGrupos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_DameGruposFiltro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Grupo_DameGruposFiltro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_CrearInmobiliaria">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmobiliaria_CrearInmobiliaria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_ModificarInmobilaria">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmobiliaria_ModificarInmobilaria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_DameInmobiliariaPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmobiliaria_DameInmobiliariaPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_DameInmobiliariaFiltro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmobiliaria_DameInmobiliariaFiltro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_CrearMensaje">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Mensaje_CrearMensaje" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_ModificarMensaje">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Mensaje_ModificarMensaje" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_BorrarMensaje">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Mensaje_BorrarMensaje" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_DameTodosLosMensajes">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Mensaje_DameTodosLosMensajes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_DameMensajeFiltro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Mensaje_DameMensajeFiltro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Mensaje_CrearMensajeDeModerador">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Mensaje_CrearMensajeDeModerador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimediaP">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimediaP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_GetAllFotografia">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_ElementoMultimedia_GetAllFotografia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_ElementoMultimedia_GetAllVideo">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_ElementoMultimedia_GetAllVideo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_CrearInmueble">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmueble_CrearInmueble" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_ModificarInmueble">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmueble_ModificarInmueble" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_BorrarInmueble">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmueble_BorrarInmueble" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_DameTodosLosInmuebles">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmueble_DameTodosLosInmuebles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_DameInmuebleFiltro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmueble_DameInmuebleFiltro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_DameInmueblePorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmueble_DameInmueblePorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PaginaCorporativa_DameTodasLasPaginas">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_PaginaCorporativa_DameTodasLasPaginas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_PaginaCorporativa_DamePaginaCorporativaPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_PaginaCorporativa_DamePaginaCorporativaPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Evento_CrearEvento">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Evento_CrearEvento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Evento_ModificarEvento">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Evento_ModificarEvento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Evento_BorrarEvento">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Evento_BorrarEvento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Evento_DameTodosLosEventos">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Evento_DameTodosLosEventos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Evento_DameEventosFiltro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Evento_DameEventosFiltro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Muro_DameMuroPorOID">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Muro_DameMuroPorOID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NuevoInmueblate_Muro_GetAllEntradasOfMuro">
+      <soap12:operation soapAction="http://Service/Service/NuevoInmueblate_Muro_GetAllEntradasOfMuro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="CustomBinding_Service" binding="tns:CustomBinding_Service">
+      <soap12:address location="http://localhost:53967/Service.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:53967/Service.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

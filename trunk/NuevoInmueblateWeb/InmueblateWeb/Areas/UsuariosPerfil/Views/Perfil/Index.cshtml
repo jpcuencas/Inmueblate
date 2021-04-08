@@ -1,0 +1,250 @@
+﻿@model InmueblateWeb.Models.Usuario
+           
+@{
+    ViewBag.Title = "Perfil";
+}
+
+@section Head {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnAceptar").hide();
+            $("#btnCancelar").hide();
+            $("#inf").click(function () {
+                $("#datosInf").fadeToggle();
+                $("#inf").val(($("#inf").val() == "Mostrar" ? "Ocultar" : "Mostrar"));
+            });
+            $("#btnModificar").click(function () {
+                $("#btnCancelar").show();
+                $("#btnAceptar").show();
+                $("#btnModificar").hide();
+                $("#divMod").find('input').removeAttr("disabled");
+            });
+            $("#btnCancelar").click(function () {
+                $("#btnCancelar").hide();
+                $("#btnAceptar").hide();
+                $("#btnModificar").show();
+                $("#divMod").find('input').attr('disabled', true);
+            });
+            $("#lblFotoPerfil").click(function () {
+                $("#form-foto").fadeToggle();
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cuadroDetalle').modal({ show: false })
+            $('#btnEnvPet').click(function () {
+                $.ajax({
+                    url: "@Url.Action("enviarPeticionAviso", "HomeUSPE")",
+                    type: "POST",
+                    data: { id: $(this).attr("dato") },
+                    dataType: "html"
+                }).done(function (data) {
+                    $("#cuerpoDetalle").html(data);
+                    $('#cuadroDetalle').modal('show');
+                });
+            });
+        });
+    </script>
+}
+
+
+<div class="well bs-component">
+    <h1>Perfil</h1>
+</div>
+
+<div class="well bs-component">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="@Url.Content("~/img")@ViewBag.FotoPerfil.URL" alt="@ViewBag.FotoPerfil.Nombre" class="img-perfil"/>
+            @if (ViewBag.UsuarioSession)
+            {
+                <label id="lblFotoPerfil" class="btn btn-primary lbl-fot-per">Cambiar foto</label>
+                using (Html.BeginForm("SubirImagen", "Perfil", FormMethod.Post, new { id= "form-foto", style="display:none;", enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+                     
+                        <div class="editor-field">
+                            
+                            @Html.TextBox("file", "", new { @class = "filestyle", type = "file" })
+                        </div> 
+                        <div class="editor-field">
+                            <input type="submit" value="Subir" class="btn btn-primary lbl-fot-per"/>
+                        </div>
+                }
+
+
+            }
+        </div>
+        <div class="col-md-5">
+            <h2> @ViewBag.Usuario.Nombre @ViewBag.Usuario.Apellidos </h2>
+        </div>
+
+        <div class="col-md-4 val-punt">
+            <h2>Valoración</h2>
+            <div class="">
+                <strong class="punt-num">@ViewBag.Usuario.ValoracionMedia   </strong>
+                @for (int j = 1; j <= ViewBag.Usuario.ValoracionMedia; j++)
+                {
+                    if (j % 2 == 0)
+                    {
+                            <span class="glyphicon glyphicon-star"></span>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <div class="row" id="form-foto" style="display:none">
+        
+    </div>
+    @if (ViewBag.MostrarDatos)
+    {
+        <div class="row btn-inf-perfil">
+            <input type="button" id="inf" name="btn1" value="Mostrar" class="btn btn-primary btn-xs"/>
+        </div>
+    }
+    else
+    {
+        <div class="row btn-inf-perfil" >
+                <button id="btnEnvPet" dato="@HttpContext.Current.Request.RequestContext.RouteData.Values["id"]" type="button" class="btn btn-default btn-xs">
+                    Enviar petición de amistad
+                </button>
+            </div>
+        
+        <div class="modal fade" id="cuadroDetalle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    @Html.ActionLink("X", "Index", "Perfil", null, new { @class = "close" })
+                    @*<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>*@
+                    <h4 class="modal-title" id="myModalLabel">Enviar petición</h4>
+                  </div>
+                  <div class="modal-body" id="cuerpoDetalle">
+
+                  </div>
+                  <div class="modal-footer">
+                    @Html.ActionLink("Cerrar", "Index", "Perfil", null, new { @class = "btn btn-primary btn-large" })
+                    @*<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>*@
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+    }
+</div>
+
+@if (ViewBag.MostrarDatos)
+{
+    <div id="datosInf" style="display:none">
+    @using (Html.BeginForm("Edit", "Perfil", FormMethod.Post, new { id = Session["idUsuario"] }))
+    {
+        <div class="well bs-component" id="divMod">
+            <div class="row">
+                <div class="col-md-4 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.nombre)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.nombre, new { id = "txtNombre", @class = "form-control", @Value = @ViewBag.Usuario.Nombre, @disabled = "true" })
+                            
+                    </div>
+                </div>
+
+                <div class="col-md-8 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.apellidos)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.apellidos, new { id = "txtApellidos", @class = "form-control", @Value = @ViewBag.Usuario.Apellidos, @disabled = "true" })
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.email)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.email, new { id = "txtEmail", @class = "form-control", @Value = @ViewBag.Usuario.Email, @disabled = "true" })
+                        
+                    </div>
+                </div>
+                <div class="col-md-3 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.telefono)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.telefono, new { id = "txtTelefono", @class = "form-control", @Value = @ViewBag.Usuario.Telefono, @disabled = "true" })
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.fechaNacimiento)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.fechaNacimiento, new { id = "txtFechaNac", @class = "form-control", @Value = @ViewBag.Usuario.FechaNacimiento, @disabled = "true" })
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-3 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.nif)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.nif, new { id = "txtNIF", @class = "form-control", @Value = @ViewBag.Usuario.Nif, @disabled = "true" })
+                    </div>
+                </div>
+                <div class="col-md-3 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.pais)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.pais, new { id = "txtPais", @class = "form-control", @Value = @ViewBag.Usuario.Pais, @disabled = "true" })
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.direccion)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.direccion, new { id = "txtDireccion", @class = "form-control", @Value = @ViewBag.Usuario.Direccion, @disabled = "true" })
+                    </div>
+                </div>
+                <div class="col-md-3 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.poblacion)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.poblacion, new { id = "txtPoblacion", @class = "form-control", @Value = @ViewBag.Usuario.Poblacion, @disabled = "true" })
+                    </div>
+                </div>
+                <div class="col-md-3 form-group">
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.codigoPostal)
+                    </div>
+                    <div class="editor-field">
+                        @Html.TextBoxFor(m => m.codigoPostal, new { id = "txtCP", @class = "form-control", @Value = @ViewBag.Usuario.CodigoPostal, @disabled = "true" })
+                     </div>
+                </div>
+            </div>
+            @if (ViewBag.UsuarioSession)
+            {
+                <div class="row">
+                    <div class="form-group">
+                        <div class="btn-modificar">
+                            <label id="btnModificar" class="btn btn-primary">Modificar</label>
+                            <button id="btnAceptar" type="submit" class="btn btn-primary">Aceptar</button>
+                            <label id="btnCancelar" class="btn btn-primary">Cancelar</label>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>  
+    }
+    </div>
+}

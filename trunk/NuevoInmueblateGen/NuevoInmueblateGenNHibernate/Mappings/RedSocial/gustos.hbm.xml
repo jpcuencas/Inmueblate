@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="GustosEN" table="Gustos"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="PendienteModeracion" type="boolean"> 
+						<column name="pendienteModeracion"  not-null="true"/>
+					</property>
+					<bag name="Musica" table="musica"> 
+						<key>
+						
+						</key>
+						<element column="Musica" type="string"/> 
+    				</bag>
+					<bag name="Libros" table="libros"> 
+						<key>
+						
+						</key>
+						<element column="Libros" type="string"/> 
+    				</bag>
+					<bag name="Peliculas" table="peliculas"> 
+						<key>
+						
+						</key>
+						<element column="Peliculas" type="string"/> 
+    				</bag>
+					<bag name="Juegos" table="juegos"> 
+						<key>
+						
+						</key>
+						<element column="Juegos" type="string"/> 
+    				</bag>
+			
+			
+			
+			
+			
+			
+			
+		  			
+					
+							   <one-to-one name="Usuario" class="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN" property-ref="Gustos" />							
+					 
+						
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="GustosENReadAllHQL">from GustosEN</query>
+		  <query name="GustosENobtenerGustosPendienteModeracionHQL"><![CDATA[FROM GustosEN AS gu WHERE gu.PendienteModeracion = true]]></query>
+		</hibernate-mapping>
+	

@@ -1,0 +1,119 @@
+﻿@model InmueblateWeb.Models.Valoracion
+
+@{
+    ViewBag.Title = "Valoraciones";
+}
+
+<div class="well bs-component">
+    <h1>Valoraciones</h1>
+
+    <div class="bs-component">
+    @if (!ViewBag.ExisteValoracion)
+    {
+        using (Html.BeginForm("Valorar","Valoracion",FormMethod.Post, new { @class="form-horizontal new-val" }))
+        {
+            @Html.ValidationSummary(true)
+            <h2>Todavía no has valorado a tu amigo, ¡Valoralo!</h2>
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    @Html.LabelFor(m => m.Descripcion)
+                </div>
+                @*<label for="txtComentario" class="col-md-3 control-label">Comentario: </label>*@
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.Descripcion, new {@class = "form-control",
+                                                                placeholder = "Introduce un comentario..."})
+                    @Html.ValidationMessageFor(m => m.Descripcion)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    @Html.LabelFor(m => m.valora)
+                </div>
+                @*<label for="txtValoracion" class="col-md-3 control-label">Valoración: </label>*@
+                <div class="col-md-2">
+                    @Html.TextBoxFor(m => m.valora, new { @class = "form-control"})
+                    @Html.ValidationMessageFor(m => m.valora)
+                </div>   
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-1" id="btnValorar">
+                    <button type="submit" class="btn btn-primary">Valorar</button> 
+                </div>
+            </div>
+        }
+    }
+
+    <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+      <li class="@ViewBag.RecibidasV"><a href="#recibidas" data-toggle="tab">Recibidas</a></li>
+      <li class="@ViewBag.RealizadasV"><a href="#realizadas" data-toggle="tab">Realizadas</a></li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade active in" id="recibidas">
+        @for (int i = 0; i < ViewBag.LValoracionesReci.Count; i++)
+        {
+            <div class="row">
+                <div class="col-md-2"><img src="@Url.Content("~/img")@ViewBag.LFotosValRec[i]" alt="Foto" /></div>
+                <div class="col-md-2 nom">
+                    @Html.ActionLink((string)ViewBag.LUsuariosValRec[i].Nombre + " " + (string)@ViewBag.LUsuariosValRec[i].Apellidos,
+                                     "Index", "HomeUSPE", new { id = ViewBag.LUsuariosValRec[i].Id }, new { @class = "nombre" })
+                    @*@ViewBag.LUsuariosValRec[i].Nombre*@
+                </div>
+                <div class="col-md-5">@ViewBag.LValoracionesReci[i].Descripcion</div>
+                <div class="col-md-2">
+                    @ViewBag.LValoracionesReci[i].Valoracion
+                    <div>
+                        @for (int j = 1; j <= ViewBag.LValoracionesReci[i].Valoracion; j++)
+                        {
+                            if (j % 2 == 0)
+                            {
+                                 <span class="glyphicon glyphicon-star"></span>
+                            }
+                        }
+                    </div> 
+                </div>
+            </div>
+            if (ViewBag.LUsuariosValRec[i].Id == (int)Session["idUsuario"])
+            {
+                <div class="row val-elim">
+                    @Html.ActionLink("Eliminar valoración", "EliminarValoracion", "Valoracion", null, null)
+                </div>
+            }
+        }
+      </div>
+      <div class="tab-pane fade" id="realizadas">
+        @for (int i = 0; i < ViewBag.LValoracionesReal.Count; i++)
+        {
+            <div class="row">
+                <div class="col-md-2"><img src="@Url.Content("~/img")@ViewBag.LFotosValRea[i]" alt="Foto" /></div>
+                <div class="col-md-2 nom">
+                    @Html.ActionLink((string)ViewBag.LUsuariosValRea[i].Nombre + " " + (string)@ViewBag.LUsuariosValRea[i].Apellidos,
+                                     "Index", "HomeUSPE", new { id = ViewBag.LUsuariosValRea[i].Id }, new { @class = "nombre" })
+                    @*@ViewBag.LUsuariosValRea[i].Nombre*@
+                </div>
+                <div class="col-md-5">@ViewBag.LValoracionesReal[i].Descripcion</div>
+                <div class="col-md-2">
+                    @ViewBag.LValoracionesReal[i].Valoracion
+                    <div>
+                        @for (int j = 1; j <= ViewBag.LValoracionesReal[i].Valoracion; j++)
+                        {
+                            if (j % 2 == 0)
+                            {
+                                 <span class="glyphicon glyphicon-star"></span>
+                            }
+                        }
+                    </div> 
+                </div>
+            </div>
+                        if (ViewBag.UsuarioSes)
+                        {
+                <div class="row val-elim">
+                    @Html.ActionLink("Eliminar valoración", "EliminarValoracion", "Valoracion", new { id = ViewBag.LUsuariosValRea[i].Id }, null)
+                </div>
+            }
+        }
+      </div>
+      
+    </div>
+    </div>
+</div>

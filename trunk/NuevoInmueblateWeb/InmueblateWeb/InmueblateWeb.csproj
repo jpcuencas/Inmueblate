@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EE44905-EAE6-42B7-9CD7-9DAB456D7080}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InmueblateWeb</RootNamespace>
+    <AssemblyName>InmueblateWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\InmobiliariaPerfil\Controllers\HomeINPEController.cs" />
+    <Compile Include="Areas\InmobiliariaPerfil\Controllers\PaginaController.cs" />
+    <Compile Include="Areas\InmobiliariaPerfil\Controllers\PerfilController.cs" />
+    <Compile Include="Areas\InmobiliariaPerfil\InmobiliariaPerfilAreaRegistration.cs" />
+    <Compile Include="Areas\Inmobiliaria\Controllers\EventosController.cs" />
+    <Compile Include="Areas\Inmobiliaria\Controllers\HomeINController.cs" />
+    <Compile Include="Areas\Inmobiliaria\Controllers\InmueblesController.cs" />
+    <Compile Include="Areas\Inmobiliaria\InmobiliariaAreaRegistration.cs" />
+    <Compile Include="Areas\UsuariosPerfil\Controllers\AmigosController.cs" />
+    <Compile Include="Areas\UsuariosPerfil\Controllers\GaleriaController.cs" />
+    <Compile Include="Areas\UsuariosPerfil\Controllers\HomeUSPEController.cs" />
+    <Compile Include="Areas\UsuariosPerfil\Controllers\PerfilController.cs" />
+    <Compile Include="Areas\UsuariosPerfil\Controllers\PeticionController.cs" />
+    <Compile Include="Areas\UsuariosPerfil\Controllers\ValoracionController.cs" />
+    <Compile Include="Areas\UsuariosPerfil\UsuariosPerfilAreaRegistration.cs" />
+    <Compile Include="Areas\Usuarios\Controllers\BusquedaUSController.cs" />
+    <Compile Include="Areas\Usuarios\Controllers\HomeUSController.cs" />
+    <Compile Include="Areas\Usuarios\Controllers\MensajeUSController.cs" />
+    <Compile Include="Models\Evento.cs" />
+    <Compile Include="Models\Galeria.cs" />
+    <Compile Include="Models\Inmueble.cs" />
+    <Compile Include="Models\Mensaje.cs" />
+    <Compile Include="Models\Busqueda.cs" />
+    <Compile Include="Areas\Usuarios\UsuariosAreaRegistration.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\MenuHelpers.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Entrada.cs" />
+    <Compile Include="Models\Peticion.cs" />
+    <Compile Include="Models\Security\MemberShip.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\Valoracion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\estilos.css" />
+    <Content Include="Content\Favicon.png" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\img\anuncios\anuncios.JPG" />
+    <Content Include="Content\img\galeria\logo.png" />
+    <Content Include="Content\img\galeria\logo2.png" />
+    <Content Include="Content\img\ID0001\Imagen\b3.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\fen_20143106_103142.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\fen_20143506_103531.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\f_20140706_090751.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\f_20141506_091526.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\f_20142906_092942.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\f_20143406_093416.png" />
+    <Content Include="Content\img\ID0001\Imagen\f_20143706_093734.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\f_20144106_094145.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\f_20144306_094309.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\f_20144706_094738.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\image.jpeg" />
+    <Content Include="Content\img\ID0001\Imagen\jirafa_0.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\perfilaaaa5706_085747.png" />
+    <Content Include="Content\img\ID0001\Imagen\perfil_20144706_094750.jpeg" />
+    <Content Include="Content\img\ID0001\Imagen\pruebaaaa.jpg" />
+    <Content Include="Content\img\ID0001\Imagen\user-default.jpg" />
+    <Content Include="Content\img\muro\granpiso.JPG" />
+    <Content Include="Content\img\galeria\image1-small.jpg" />
+    <Content Include="Content\img\galeria\image1.jpg" />
+    <Content Include="Content\img\galeria\image2-small.jpg" />
+    <Content Include="Content\img\galeria\image2.jpg" />
+    <Content Include="Content\img\galeria\image3-small.jpg" />
+    <Content Include="Content\img\galeria\image3.jpg" />
+    <Content Include="Content\img\galeria\image4-small.jpg" />
+    <Content Include="Content\img\galeria\image4.jpg" />
+    <Content Include="Content\themes\base\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\images\calendar.gif" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Content\themes\base\minified\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="img\anuncios.JPG" />
+    <Content Include="img\anuncios\anuncios.JPG" />
+    <Content Include="img\galeria\image1-small.jpg" />
+    <Content Include="img\galeria\image1.jpg" />
+    <Content Include="img\galeria\image2-small.jpg" />
+    <Content Include="img\galeria\image2.jpg" />
+    <Content Include="img\galeria\image3-small.jpg" />
+    <Content Include="img\galeria\image3.jpg" />
+    <Content Include="img\galeria\image4-small.jpg" />
+    <Content Include="img\galeria\image4.jpg" />
+    <Content Include="img\galeria\logo2.png" />
+    <Content Include="img\granpiso.JPG" />
+    <Content Include="img\image1-small.jpg" />
+    <Content Include="img\image1.jpg" />
+    <Content Include="img\image2-small.jpg" />
+    <Content Include="img\image2.jpg" />
+    <Content Include="img\image3-small.jpg" />
+    <Content Include="img\image3.jpg" />
+    <Content Include="img\image4-small.jpg" />
+    <Content Include="img\image4.jpg" />
+    <Content Include="img\muro\granpiso.JPG" />
+    <Content Include="README.jQuery.vsdoc.txt" />
+    <Content Include="Scripts\bootstrap-filestyle.min.js" />
+    <Content Include="Scripts\bootstrap-tab.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\formToWizard.js" />
+    <Content Include="Scripts\jquery-2.1.0-vsdoc.js" />
+    <Content Include="Scripts\jquery-2.1.0.js" />
+    <Content Include="Scripts\jquery-2.1.0.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.min.js" />
+    <Content Include="Scripts\jquery.passstrength.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-2.7.2.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Areas\Usuarios\Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\InmobiliariaPerfil\Models\" />
+    <Folder Include="Areas\InmobiliariaPerfil\Views\Shared\" />
+    <Folder Include="Areas\Inmobiliaria\Models\" />
+    <Folder Include="Areas\Usuarios\Models\" />
+    <Folder Include="Content\img\ID0001\Video\" />
+    <Folder Include="Content\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Usuarios\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Usuarios\Views\Shared\_Layout_Footer.cshtml" />
+    <Content Include="Areas\Usuarios\Views\Shared\_Layout_Header.cshtml" />
+    <Content Include="Areas\Usuarios\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Usuarios\Views\HomeUS\Index.cshtml" />
+    <Content Include="Areas\Usuarios\Views\Web.config" />
+    <Content Include="Areas\Inmobiliaria\Views\Web.config" />
+    <Content Include="Areas\Inmobiliaria\Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Shared\_Layout_Footer.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Shared\_Layout_Header.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\HomeIN\Index.cshtml" />
+    <Content Include="Areas\Usuarios\Views\Shared\_Layout_Menu_Lateral.cshtml" />
+    <Content Include="Areas\Usuarios\Views\HomeUS\Mensajes.cshtml" />
+    <Content Include="Areas\Usuarios\Views\HomeUS\Galeria.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Web.config" />
+    <Content Include="Areas\UsuariosPerfil\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Shared\_Layout_Menu_Lateral.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\HomeUSPE\Index.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Shared\_Layout_Aside_Anuncios.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Areas\Usuarios\Views\Shared\_Layout_Aside_Anuncios.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Shared\_Layout_Menu_Lateral.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\HomeIN\Galeria.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Amigos\Index.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Amigos\eliminarAmigoAviso.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Valoracion\Index.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Perfil\Index.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Peticion\Index.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\HomeUSPE\enviarPeticionAviso.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Inmuebles\Index.cshtml" />
+    <Content Include="Areas\Usuarios\Views\BusquedaUS\BuscarAm.cshtml" />
+    <Content Include="Areas\Usuarios\Views\BusquedaUS\DetalleAm.cshtml" />
+    <Content Include="Areas\Usuarios\Views\BusquedaUS\DetalleIn.cshtml" />
+    <Content Include="Areas\Usuarios\Views\BusquedaUS\BuscarIn.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Eventos\Index.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Eventos\Details.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Eventos\Create.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Eventos\Edit.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Perfil\cambiarFotoPerfil.cshtml" />
+    <Content Include="Areas\Usuarios\Views\MensajeUS\Index.cshtml" />
+    <Content Include="Areas\Usuarios\Views\MensajeUS\Mensajes.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Inmuebles\Details.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Inmuebles\Create.cshtml" />
+    <Content Include="Areas\Inmobiliaria\Views\Inmuebles\Edit.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Galeria\Details.cshtml" />
+    <Content Include="Areas\UsuariosPerfil\Views\Galeria\Index.cshtml" />
+    <Content Include="Areas\InmobiliariaPerfil\Views\Web.config" />
+    <Content Include="Areas\InmobiliariaPerfil\Views\HomeINPE\Index.cshtml" />
+    <Content Include="Areas\InmobiliariaPerfil\Views\Perfil\Index.cshtml" />
+    <Content Include="Areas\InmobiliariaPerfil\Views\Pagina\Index.cshtml" />
+    <Content Include="Areas\Usuarios\Views\BusquedaUS\BuscarInmueble.cshtml" />
+    <Content Include="Areas\Usuarios\Views\BusquedaUS\DetalleInmueble.cshtml" />
+    <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Views\Shared\_Layout_Header.cshtml" />
+    <Content Include="Views\Shared\_Layout_Footer.cshtml" />
+    <None Include="Scripts\jquery-2.1.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\NuevoInmueblateGen\NuevoInmueblateCP\NuevoInmueblateCP.csproj">
+      <Project>{9C11BF3A-755E-4D1F-810D-558AC9BA90B9}</Project>
+      <Name>NuevoInmueblateCP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NuevoInmueblateGenNHibernate.csproj">
+      <Project>{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}</Project>
+      <Name>NuevoInmueblateGenNHibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuevoInmueblateGen\NuevoInmueblateGen_NuevoInmueblateLocal\NuevoInmueblateGen_NuevoInmueblateLocal.csproj">
+      <Project>{B79F07F6-DF6A-4AA5-A21F-6305EA8831E1}</Project>
+      <Name>NuevoInmueblateGen_NuevoInmueblateLocal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2712</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

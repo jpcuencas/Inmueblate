@@ -1,0 +1,71 @@
+﻿@model InmueblateWeb.Models.LogOnModel
+
+@{
+    ViewBag.Title = "Bienvenidos";
+}
+
+<div class="row">
+<h2>@ViewBag.Message</h2>
+</div>
+<div class="row">
+    <div class="col-lg-7">
+        <img class="img-hom" src="@Url.Content("Content/img/galeria/logo2.png")" alt="Imagen de portada"/>
+    </div>
+
+    <div class="col-lg-5">
+        <div class="well bs-component">
+           @using (Html.BeginForm("LogOn","Account",FormMethod.Post, new { @class = "form-horizontal"}))
+           {
+                <fieldset>
+                    <legend>¡Entra a tu Inmuéblate!</legend>
+                    <div class="form-group">
+                        <label for="txtEmail" class="col-lg-3 control-label">Email:</label>
+                        <div class="col-lg-9">
+                            @Html.TextBoxFor(m => m.UserName, new { type = "email", 
+                                                                    @class = "form-control", 
+                                                                    id = "txtEmail", name = "email", 
+                                                                    placeholder = "Dirección de correo electrónico", 
+                                                                    required = "required" })
+                            
+                            @*<input type="email" class="form-control" id="txtEmail" name="email" 
+                            placeholder="Dirección de correo electrónico" required />*@
+                        </div>
+                    </div>
+                    <div class="form-group" id="caja-pass">
+                        <label for="txtPass" class="col-lg-3 control-label">Contraseña:</label>
+                        <div class="col-lg-9">
+                            @Html.TextBoxFor(m => m.Password, new { type = "password", 
+                                                                    @class = "form-control",
+                                                                    id = "txtPass",
+                                                                    name = "contrasenya",
+                                                                    placeholder = "Contraseña", 
+                                                                    required = "required" })
+                            @*<input type="password" class="form-control" id="txtPass" name="contrasenya" 
+                            placeholder="Contraseña" required />*@
+                            <div class="checkbox">
+                                <label>
+                                @Html.CheckBoxFor(m => m.RememberMe) ¿Recordarme?
+                                @*<input type="checkbox"> ¿Recordarme?*@
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-9 col-lg-1" id="btnEntrar">
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </div>
+                    </div>
+                </fieldset>
+           }
+        </div>
+        <div class="well bs-component">
+            <fieldset>
+                <legend>Si no tienes cuenta, créate una. Es fácil y rápido</legend>
+                <div class="col-lg-1 col-lg-offset-4">
+                    <button id="btnRegistro" class="btn btn-primary btn-lg" onclick="window.location.href='@Url.Action("Register", "Account")'">Registrarse</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+</div>

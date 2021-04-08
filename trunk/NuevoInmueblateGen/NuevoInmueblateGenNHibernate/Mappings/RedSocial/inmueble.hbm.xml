@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="InmuebleEN" table="Inmueble"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="PendienteModeracion" type="boolean"> 
+						<column name="pendienteModeracion"  not-null="true"/>
+					</property>
+					<property name="Descripcion" type="string"> 
+						<column name="descripcion"  not-null="true"/>
+					</property>
+					<property name="Tipo" > 
+						<column name="tipo"  not-null="true"/>
+					</property>
+					<property name="MetrosCuadrados" type="integer"> 
+						<column name="metrosCuadrados"  not-null="true"/>
+					</property>
+					<property name="Alquiler" type="boolean"> 
+						<column name="alquiler"  not-null="true"/>
+					</property>
+					<property name="Precio" type="float"> 
+						<column name="precio"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<bag name="Inquilinos" table="[UsuarioInmueble]"  >
+							<key>
+								
+									<column name="FK_id_inmuebles"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN">
+									<column name="FK_id_inquilinos"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+					
+							   <one-to-one name="Geolocalizacion" class="NuevoInmueblateGenNHibernate.EN.RedSocial.GeolocalizacionEN" property-ref="Inmueble" />							
+					 
+						
+			
+		  			
+						<bag name="Caracteristicas" table="[CaracteristicaInmueble]"  >
+							<key>
+								
+									<column name="FK_id_inmuebles"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.CaracteristicaEN">
+									<column name="FK_id_caracteristicas"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="Habitaciones" >
+							<key>
+							
+								<column name="FK_id_habitaciones"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.HabitacionEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="ElementosMultimedia" >
+							<key>
+							
+								<column name="FK_id_elementosMultimedia"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ElementoMultimediaEN"/>
+					    </bag>
+					
+			
+		  			
+						<many-to-one name="Inmobiliaria" class="NuevoInmueblateGenNHibernate.EN.RedSocial.InmobiliariaEN" >	
+								<column name="FK_id_inmobiliaria"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="InmuebleENReadAllHQL">from InmuebleEN</query>
+		  <query name="InmuebleENobtenerInmueblePendienteModeracionHQL"><![CDATA[FROM InmuebleEN AS im WHERE im.PendienteModeracion = true]]></query>
+		  <query name="InmuebleENdameInmuebleFiltroHQL"><![CDATA[FROM InmuebleEN AS i WHERE i.Inmobiliaria = CASE WHEN :p_inmobiliaria = -1 THEN i.Inmobiliaria ELSE :p_inmobiliaria END AND i.Descripcion LIKE CASE WHEN :p_descripcion = null THEN i.Descripcion ELSE :p_descripcion END AND i.Tipo = CASE WHEN :p_tipo = -1 THEN i.Tipo ELSE :p_tipo END AND i.MetrosCuadrados = CASE WHEN :p_metrosCuadrados = -1 THEN i.MetrosCuadrados ELSE :p_metrosCuadrados END AND i.Precio = CASE WHEN :p_precio = -1 THEN i.Precio ELSE :p_precio END AND i.Geolocalizacion.Direccion LIKE CASE WHEN :p_direccion = null THEN i.Geolocalizacion.Direccion ELSE :p_direccion END AND i.Geolocalizacion.Poblacion LIKE CASE WHEN :p_poblacion = null THEN i.Geolocalizacion.Poblacion ELSE :p_poblacion END ORDER BY i.MetrosCuadrados DESC, i.Precio DESC]]></query>
+		</hibernate-mapping>
+	

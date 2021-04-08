@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Galeria";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#featured > ul").tabs({ fx: { opacity: "toggle"} }).tabs("rotate", 5000, true);
+    });
+</script>
+<h2>@ViewBag.Title</h2>
+<div id="featured">
+	<ul class="ui-tabs-nav" style="display:block;float:right;">
+@if (ViewBag.Galeria != null)
+{
+    for (int i = 0; i < ViewBag.Galeria.Count; i++)
+    {
+        if (i == 2)
+        {
+	        <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-@i"><a href="#fragment-@i"><img src="/Content/img/galeria/image3-small.jpg" alt="imagen-small3"/><span>@ViewBag.Galeria[i].Descipcion</span></a></li>
+        }
+        else
+        {
+            <li class="ui-tabs-nav-item" id="nav-fragment-@i"><a href="#fragment-@i"><img src="/Content/img/galeria/image2-small.jpg" alt="imagen-small2"/><span>@ViewBag.Galeria[i].Descripcion</span></a></li>
+        }
+    }
+ }
+    </ul>
+@if (ViewBag.Galeria != null)
+{   
+    for (int i = 0; i < ViewBag.Galeria.Count; i++)
+    {
+
+        if (i == 2)
+        {
+                <div id="fragment-@i" class="ui-tabs-panel" style="">
+                <!-- @ViewBag.Galeria[i].url -->
+		        <img src="/Content/img/galeria/image2.jpg" alt="imagen@i"/>
+			        <div class="info">
+			        <h2><a href="#">@ViewBag.Galeria[i].Titulo</a></h2>
+			        <p>@ViewBag.Galeria.Descripcion</p>
+			        </div>
+	        </div>
+         }
+         else
+         {
+	        <!-- Third Content -->
+	        <div id="fragment-@i" class="ui-tabs-panel ui-tabs-hide" style="">
+		        <!--"@Url.Content("~/Content/img/galeria/image3.jpg")"-->
+                <img src="/Content/img/galeria/image3.jpg" alt="imagen@i"/>
+			        <div class="info">
+			        <h2><a href="#">@ViewBag.Galeria[i].Titulo</a></h2>
+			        <p>@ViewBag.Galeria[i].Descripcion</p>
+	                </div>
+	        </div>
+        }
+    }
+}
+</div>
+
+<div>
+    @Html.ActionLink("Volver", "Index", "HomeUS", new { id = id_sesion, area = "Usuarios" }, null)
+</div>
+

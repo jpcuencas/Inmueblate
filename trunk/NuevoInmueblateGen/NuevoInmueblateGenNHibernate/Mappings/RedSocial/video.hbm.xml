@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				
+<joined-subclass name="VideoEN" extends="NuevoInmueblateGenNHibernate.EN.RedSocial.ElementoMultimediaEN" table="Video"> 
+	<key>
+    	
+				<column name="id"/>
+		
+    	
+   	</key>
+
+						
+		
+ 	  
+		 </joined-subclass>
+		  
+		  <query name="VideoENReadAllHQL">from VideoEN</query>
+		  <query name="VideoENobtenerTodosVideosPorModerarHQL"><![CDATA[FROM VideoEN AS vi WHERE vi.PendienteModeracion = true]]></query>
+		  <query name="VideoENobtenerVideosPorUsuarioHQL"><![CDATA[FROM VideoEN AS vi WHERE vi.Usuario IS NOT NULL AND vi.Usuario.Id = :pe_usuario ORDER BY vi.Fecha DESC]]></query>
+		  <query name="VideoENobtenerVideosPorGaleriaHQL"><![CDATA[FROM VideoEN AS vi WHERE vi.Galeria.Id = :pe_galeria ORDER BY vi.Fecha DESC]]></query>
+		</hibernate-mapping>
+	

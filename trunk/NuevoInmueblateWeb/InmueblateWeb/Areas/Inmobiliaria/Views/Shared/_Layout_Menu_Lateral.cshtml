@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "_Layout_Menu_Lateral";
+    int id_sesion=0;
+    if((int)HttpContext.Current.Session["idUsuario"]!=null)
+    {   
+     id_sesion= (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+
+
+
+<h2 class="tituloMenu">Menú</h2> 
+	<ul class="nav nav-pills nav-stacked">
+
+        <li>@Html.ActionLink("Ultimas Noticias", "Index", "HomeIN", new { id = id_sesion, area = "Inmobiliaria" }, null)</li>
+        <li>@Html.ActionLink("Insertar Inmuebles", "Index", "Inmuebles", null, null)</li>
+        <li>@Html.ActionLink("Insertar Eventos", "Index", "Eventos", new { id = id_sesion, area = "Inmobiliaria" }, null)</li>
+        <li>@Html.ActionLink("Galería de pisos", "Galeria", "HomeIN", new { id = id_sesion, area = "Inmobiliaria" }, null)</li>
+
+    </ul>

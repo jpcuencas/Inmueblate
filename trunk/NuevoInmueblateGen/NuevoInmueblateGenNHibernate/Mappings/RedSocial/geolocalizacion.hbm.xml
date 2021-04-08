@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="GeolocalizacionEN" table="Geolocalizacion"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="Longitud" type="float"> 
+						<column name="longitud"  not-null="true"/>
+					</property>
+					<property name="Latitud" type="float"> 
+						<column name="latitud"  not-null="true"/>
+					</property>
+					<property name="Direccion" type="string"> 
+						<column name="direccion"  not-null="true"/>
+					</property>
+					<property name="Poblacion" type="string"> 
+						<column name="poblacion"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+		  			
+					
+							   <one-to-one name="PreferenciasBusqueda" class="NuevoInmueblateGenNHibernate.EN.RedSocial.PreferenciasBusquedaEN" property-ref="Geolocalizacion" />							
+					 
+						
+			
+		  			
+					
+							<many-to-one name="Inmueble" class="NuevoInmueblateGenNHibernate.EN.RedSocial.InmuebleEN" >
+								<column name="FK_id_inmueble"/> 
+        					</many-to-one>
+					 
+						
+			
+		  			
+					
+							   <one-to-one name="Evento" class="NuevoInmueblateGenNHibernate.EN.RedSocial.EventoEN" property-ref="Geolocalizacion" />							
+					 
+						
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="GeolocalizacionENReadAllHQL">from GeolocalizacionEN</query>
+		</hibernate-mapping>
+	

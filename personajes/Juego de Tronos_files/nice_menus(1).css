@@ -1,0 +1,84 @@
+/* Menú De la Mesa al Campo*/
+#navbar-drupal {
+	margin: 0 auto;
+	width: 982px;
+	background-color: white;
+	height: 40px;
+	border-bottom: 2px solid #D3D3D3;
+
+}
+#nice-menu-1 {
+	list-style: none;
+	background-color: #414141;
+    text-transform: uppercase;
+	letter-spacing:1px;
+	border-bottom:3px solid #748D6F;	
+}
+#navbar-drupal li{
+	float: left;
+	text-align:left;
+	background-color: #414141;
+	height: 25px;
+	padding-top: 7px;
+	padding-left:5px;
+	text-align:left;
+}
+
+#nice-menu-1 .menu-4111{
+	width: 8em;
+}
+#nice-menu-1 .menu-4112{
+	width: 16.5em;
+}
+#nice-menu-1 .menu-4113{
+	width: 6.5em;
+}
+#nice-menu-1 .menu-4125{
+	width: 7.5em;
+}
+#nice-menu-1 .menu-4126{
+	width: 7.5em;
+}
+#nice-menu-1 .menu-4133{
+	width: 8.5em;
+}
+#nice-menu-1 .menu-4145{
+	width: 11.5em;
+}
+
+
+#nice-menu-1  li a:link,
+#nice-menu-1  li a:active,
+#nice-menu-1  li a.link,
+#nice-menu-1  li a:visited,
+#nice-menu-1  li a.visited {
+	color: white;
+}
+#nice-menu-1  li:hover {
+	background-color: #748D6F;
+	color: black;
+	height: 25px;
+	 border-radius: 5px 45px 8px 8px;
+   -moz-border-radius: 5px 45px 8px 8px;
+	-ms-border-radius: 5px 45px 8px 8px;
+	-webkit-border-radius: 5px 45px 8px 8px;
+}
+#nice-menu-1 ul li ul {
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+#nice-menu-1 ul li ul li,
+#nice-menu-1  ul li ul li:hover {
+	height: 15px;
+	background-color: #414141;
+	margin: 0;
+	border: 0;
+	font-size: 12px;
+	width: 160px;
+}
+#nice-menu-1  ul li ul li a:hover {
+	color: #bed606;
+}
+/* Fin Menú De la Mesa al Campo*/
+
+

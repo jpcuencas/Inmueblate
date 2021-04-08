@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<workflow>
+  <property name="dataSourcePassword" value=""/>
+  <property name="es.ua.dlsi.ooh.navigational.model" value=""/>
+  <property name="dataSourcePort" value=""/>
+  <property name="es.ua.dlsi.ooh.conceptual.model" value=""/>
+  <property name="src-gen" value="../NuevoInmueblateGen"/>
+  <property name="dataSourceUser" value=""/>
+  <property name="projectName" value="'NuevoInmueblateGen'"/>
+  <property name="dataSourceHost" value=""/>
+  <cartridge file="workflow::nhibernate::generator.mwe" inheritAll="true"/>
+  <cartridge file="workflow::wcf::generator.mwe" inheritAll="true"/>
+</workflow>

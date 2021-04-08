@@ -1,0 +1,65 @@
+﻿<Page x:Class="GestorInmobiliaria.views.ElementoMultimedia.ListaElementosMultimedia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+      mc:Ignorable="d" 
+      d:DesignHeight="401" d:DesignWidth="718"
+	Title="ListaElementosMultimedia">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Label Content="{Binding Tipo}" Width="Auto" Height="Auto" Grid.Row="0" FontSize="15" HorizontalAlignment="Left" Margin="50,0,0,0" x:Name="lbl_Usuarios" VerticalAlignment="Center" />
+        <xcdg:DataGridControl Grid.Row="1" SelectedItem="{Binding SelectedItem}" Margin="50,0,50,0" Name="dataGridElementos" ItemsSource="{Binding Elementos}" AutoCreateColumns="False" ReadOnly="True" SelectionMode="Single" NavigationBehavior="RowOnly" HideSelection="True">
+            <xcdg:DataGridControl.Columns>
+                <xcdg:Column FieldName="Id" Title="Identificador"></xcdg:Column>
+                <xcdg:Column FieldName="Nombre" Title="Nombre"></xcdg:Column>
+                <xcdg:Column FieldName="Descripcion" Title="Descripcion"></xcdg:Column>
+                <xcdg:Column FieldName="URL" Title="Url"></xcdg:Column>
+            </xcdg:DataGridControl.Columns>
+
+            <xcdg:DataGridControl.Resources>
+                <Style TargetType="{x:Type xcdg:TableViewScrollViewer}">
+                    <Setter Property="VerticalScrollBarVisibility" Value="Hidden" />
+                </Style>
+            </xcdg:DataGridControl.Resources>
+
+            <xcdg:DataGridControl.View>
+                <xcdg:TableView ShowRowSelectorPane="False" IsAlternatingRowStyleEnabled="True" UseDefaultHeadersFooters="False" ColumnStretchMode="All" Theme="Windows7Theme">
+                    <xcdg:TableView.FixedHeaders>
+
+                        <DataTemplate>
+
+                            <xcdg:ColumnManagerRow />
+
+                        </DataTemplate>
+
+                    </xcdg:TableView.FixedHeaders>
+
+                </xcdg:TableView>
+
+            </xcdg:DataGridControl.View>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <i:InvokeCommandAction Command="{Binding SelectionChangedCommand}"
+                                           CommandParameter="{Binding SelectedItem, ElementName=dataGridElemntos}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </xcdg:DataGridControl>
+        <Button Content="Volver" FontSize="15" Grid.Row="2" HorizontalAlignment="Left" Name="button3" Width="130" Margin="50,0,0,0" Height="40" VerticalAlignment="Center">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding VolverCommand}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+    </Grid>
+</Page>

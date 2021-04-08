@@ -1,0 +1,5 @@
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\bin\Release\MicroMvvm.dll
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\bin\Release\MicroMvvm.pdb
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\obj\Release\ResolveAssemblyReference.cache
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\obj\Release\MicroMvvm.dll
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\obj\Release\MicroMvvm.pdb

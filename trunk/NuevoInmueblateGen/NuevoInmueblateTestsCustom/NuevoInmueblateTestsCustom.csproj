@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9519CC8D-7107-47AA-8C61-C56B79160409}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NuevoInmueblateTestsCustom</RootNamespace>
+    <AssemblyName>NuevoInmueblateTestsCustom</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\NuevoInmueblateGenNHibernate\bin\Debug\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\NuevoInmueblateGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\NuevoInmueblateGenNHibernate\bin\Debug\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy">
+      <HintPath>..\NuevoInmueblateGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\NuevoInmueblateGenNHibernate\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate">
+      <HintPath>..\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NuevoInmueblatePruebas\AnuncioCEN_DameAnunciosFiltro1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnuncioCEN_DameAnunciosFiltro.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\AnuncioCEN_DameAnunciosFiltroSteps.cs" />
+    <Compile Include="NuevoInmueblatePruebas\AnuncioCEN_DameAnunciosPorFiltro1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnuncioCEN_DameAnunciosPorFiltro.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\AnuncioCEN_DameAnunciosPorFiltroSteps.cs" />
+    <Compile Include="NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnuncioCEN_ObtenerAnunciosRandom.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandomSteps.cs" />
+    <Compile Include="NuevoInmueblatePruebas\ComentarioCEN_AnyadirReportador.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComentarioCEN_AnyadirReportador.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\ComentarioCEN_AnyadirReportadorSteps.cs" />
+    <Compile Include="NuevoInmueblatePruebas\ComentarioCEN_BorrarReportadores1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComentarioCEN_BorrarReportadores.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\ComentarioCEN_BorrarReportadoresSteps.cs" />
+    <Compile Include="NuevoInmueblatePruebas\EntradaCEN_AnyadirUsuariosMeGusta1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntradaCEN_AnyadirUsuariosMeGusta.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\EntradaCEN_AnyadirUsuariosMeGustaSteps.cs" />
+    <Compile Include="NuevoInmueblatePruebas\EntradaCEN_DameEntradasFiltro1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntradaCEN_DameEntradasFiltro.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\EntradaCEN_DameEntradasFiltroSteps.cs" />
+    <Compile Include="NuevoInmueblatePruebas\EventoCEN_DameEventosFiltro.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventoCEN_DameEventosFiltro.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\EventoCEN_DameEventosFiltroSteps.cs" />
+    <Compile Include="NuevoInmueblatePruebas\MensajeCEN_CrearMensajeDeModerador.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MensajeCEN_CrearMensajeDeModerador.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\MensajeCEN_CrearMensajeDeModeradorSteps.cs" />
+    <Compile Include="NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuperUsuarioCEN_Login.feature</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoInmueblatePruebas\SuperUsuarioCEN_LoginSteps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="NuevoInmueblatePruebas\AnuncioCEN_DameAnunciosFiltro.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnuncioCEN_DameAnunciosFiltro1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="NuevoInmueblatePruebas\AnuncioCEN_DameAnunciosPorFiltro.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnuncioCEN_DameAnunciosPorFiltro1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnuncioCEN_ObtenerAnunciosRandom.feature.cs</LastGenOutput>
+    </None>
+    <None Include="NuevoInmueblatePruebas\ComentarioCEN_AnyadirReportador.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ComentarioCEN_AnyadirReportador.feature.cs</LastGenOutput>
+    </None>
+    <None Include="NuevoInmueblatePruebas\ComentarioCEN_BorrarReportadores.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ComentarioCEN_BorrarReportadores1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="NuevoInmueblatePruebas\EntradaCEN_AnyadirUsuariosMeGusta.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EntradaCEN_AnyadirUsuariosMeGusta1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="NuevoInmueblatePruebas\EntradaCEN_DameEntradasFiltro.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EntradaCEN_DameEntradasFiltro1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="NuevoInmueblatePruebas\EventoCEN_DameEventosFiltro.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EventoCEN_DameEventosFiltro.feature.cs</LastGenOutput>
+    </None>
+    <None Include="NuevoInmueblatePruebas\MensajeCEN_CrearMensajeDeModerador.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MensajeCEN_CrearMensajeDeModerador.feature.cs</LastGenOutput>
+    </None>
+    <None Include="NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SuperUsuarioCEN_Login.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NuevoInmueblateCP\NuevoInmueblateCP.csproj">
+      <Project>{9C11BF3A-755E-4D1F-810D-558AC9BA90B9}</Project>
+      <Name>NuevoInmueblateCP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NuevoInmueblateGenNHibernate\NuevoInmueblateGenNHibernate.csproj">
+      <Project>{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}</Project>
+      <Name>NuevoInmueblateGenNHibernate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

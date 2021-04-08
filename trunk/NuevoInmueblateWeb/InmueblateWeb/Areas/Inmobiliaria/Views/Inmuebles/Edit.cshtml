@@ -1,0 +1,124 @@
+﻿@model InmueblateWeb.Models.Inmueble
+@{
+    ViewBag.Title = "Editar Inmueble";
+  int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //$("#SignupForm").formToWizard({ submitButton: 'SaveAccount' });
+
+        $('#Latitud').change(function () {
+
+            updateMap()
+        });
+        $('#Longitud').change(function () {
+
+            updateMap()
+        });
+        updateMap()
+    });
+    function updateMap() {
+        lat = $('#Latitud').val();
+        lng = $('#Longitud').val();
+        var latlng = new google.maps.LatLng(lat, lng);
+
+        var opciones = { zoom: 15, center: latlng, mapTypeId: google.maps.MapTypeId.SATELLITE };
+
+        var map = new google.maps.Map(document.getElementById("mapa"), opciones);
+
+        //Para poner una marca
+        var marker = new google.maps.Marker(
+				{ position: new google.maps.LatLng(lat, lng), map: map }
+				);
+
+    }
+       
+		
+</script>
+
+<div class="well bs-component">
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm("Edit", "Inmuebles", FormMethod.Post, new { id = "EditForm" }))
+{
+    Html.ValidationSummary(true, "Se han producido errores en la validacion de los campos corrija los errores y vuelva a intentarlo.");
+    
+        <fieldset>
+            <legend>Formulario de edición de Inmuebles</legend>
+
+
+            <div class="editor-label" id="labelInmuebleDescripcion">
+                @Html.LabelFor(m => m.Descripcion)
+            </div>
+            <div class="editor-field" id="inputInmuebleDescripcion">
+                @Html.TextBoxFor(m => m.Descripcion, new { @class = "form-control inputName", Value = ViewBag.inmueble.Descripcion })
+                @Html.ValidationMessageFor(m => m.Descripcion)
+            </div>
+
+          
+            <div class="editor-label" id="labelInmuebleMetros">
+                 @Html.LabelFor(m => m.MetrosCuadrados)
+            </div>
+            <div class="editor-field" id="inputInmuebleMetros">
+                @Html.TextBoxFor(m => m.MetrosCuadrados, new { @class = "form-control inputName", Value = ViewBag.inmueble.MetrosCuadrados })
+                @Html.ValidationMessageFor(m => m.MetrosCuadrados)
+            </div>
+
+             <div class="editor-label" id="labelInmueblePrecio">
+                @Html.LabelFor(m => m.Precio)
+            </div>
+            <div class="editor-field" id="inputInmueblePrecio">
+                @Html.TextBoxFor(m => m.Precio, new { @class = "form-control inputName", Value = ViewBag.inmueble.Precio })
+                @Html.ValidationMessageFor(m => m.Precio)
+            </div>
+             <div class="editor-label" id="labelInmuebleAlquiler">
+                @Html.LabelFor(m => m.Alquiler)
+            </div>
+            <div class="editor-field" id="inputInmuebleAlquiler">
+                 @Html.CheckBoxFor(m => m.Alquiler, new { @class = "form-control" , @checked=ViewBag.inmueble.Alquiler })
+                @Html.ValidationMessageFor(m => m.Alquiler)
+           </div>
+              <div class="editor-label" id="labelEventoGeolocalizacionLaltitud">
+                @Html.LabelFor(m => m.Latitud)
+            </div>
+            <div class="editor-field" id="inputEventoGeolocalizacionLaltitud">
+                @Html.TextBoxFor(m => m.Latitud, new { @class = "form-control", @Value = @ViewBag.Latitud })
+                @Html.ValidationMessageFor(m => m.Latitud)
+            </div>
+             <div class="editor-label" id="labelEventoGeolocalizacionLongitud">
+                @Html.LabelFor(m => m.Longitud)
+            </div>
+            <div class="editor-field" id="inputEventoGeolocalizacionLongitud">
+                @Html.TextBoxFor(m => m.Longitud, new { @class = "form-control", @Value = @ViewBag.Longuitud })
+                @Html.ValidationMessageFor(m => m.Longitud)
+            </div>
+            <div class="editor-label" id="labelCategoria">
+                @Html.LabelFor(m => m.Categoria)
+            </div>
+            <div class="editor-field" id="inputUsuarioCategoria">
+                @Html.DropDownListFor(m => m.Categoria, new SelectList(@ViewBag.lista, ViewBag.Tipo), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Categoria)
+            </div>
+            </fieldset>
+     <article id="entradaMapa">
+			    <h2>Geolocalizaciòn</h2>
+			<div id="mapa" style="width:100%;height:400px;">
+			</div>
+
+		</article>
+            <hr />
+            <hr />
+            <p>
+              <input type="submit" id="btnEditar" class="btn btn-default" value="Editar" />
+            </p>
+}
+            <div>
+                @Html.ActionLink("Volver", "Index", "Inmuebles", new { id = id_sesion, area = "Inmobiliaria" }, null)
+            </div>
+
+    </div>

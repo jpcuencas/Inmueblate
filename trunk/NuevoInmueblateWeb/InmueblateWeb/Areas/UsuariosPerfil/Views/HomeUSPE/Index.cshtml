@@ -1,0 +1,166 @@
+﻿@model InmueblateWeb.Models.Entrada
+           
+@{
+    ViewBag.Title = "Home";
+}
+
+@section Head {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cuadroDetalle').modal({ show: false })
+            $('#btnEnvPet').click(function () {
+                $.ajax({
+                    url: "@Url.Action("enviarPeticionAviso", "HomeUSPE")",
+                    type: "POST",
+                    data: { id: $(this).attr("dato") },
+                    dataType: "html"
+                }).done(function (data) {
+                    $("#cuerpoDetalle").html(data);
+                    $('#cuadroDetalle').modal('show');
+                });
+            });
+            $("#textentrada").keyup(function(e) {
+                while($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth"))) {
+                    $(this).height($(this).height()+1);
+                };
+            });
+        });
+    </script>
+}
+
+<div class="well bs-component">
+<h1>@ViewBag.Titulo</h1>
+</div>
+@if (ViewBag.EsAmigo)
+{
+    using (Html.BeginForm("NuevaEntrada", "HomeUSPE", FormMethod.Post, new {enctype = "multipart/form-data", @class = "form-horizontal" }))
+    {
+        <div class="form-group">
+            <div class="col-md-11">
+                @Html.LabelFor(m => m.Cuerpo)
+            </div>
+            <div class="col-md-12">
+                @Html.TextAreaFor(m => m.Cuerpo, new { id = "textentrada", @class = "form-control inp-ent", placeholder = "Comporate algo con tus amigos..." })
+                @Html.ValidationMessageFor(m => m.Cuerpo)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2">
+                <input type="submit" class="btn btn-primary" value="Publicar"/>
+            </div>
+            <div class="col-md-5">
+                @Html.TextBox("file", "", new { @class = "filestyle", type = "file" })
+            </div>
+        </div>
+    }
+
+    for (int i = 0; i < ViewBag.Entradas.Count; i++)
+    {
+    <article class="well bs-component">
+        <div class="row" id="ent-mur">
+            <img src="@Url.Content("~/img")@ViewBag.FotosEnt[i]" alt="@Url.Content("~/img/default/user-default.jpg")"/>
+            @if (@ViewBag.Usuarios[i].Nombre == "Inmuéblate" && @ViewBag.Usuarios[i].Apellidos == "")
+            {
+                <label>@ViewBag.Usuarios[i].Nombre</label>
+            }
+            else
+            {
+                @Html.ActionLink((string)@ViewBag.Usuarios[i].Nombre + " " + (string)@ViewBag.Usuarios[i].Apellidos, "Index", "HomeUSPE", new { id = @ViewBag.Usuarios[i].Id }, new { @class = "nombre" })
+            }
+
+            @if (ViewBag.Entradas[i].Titulo != "")
+            {
+                <label>: @ViewBag.Entradas[i].Titulo</label>
+            }
+            <p class="ent-cue">@ViewBag.Entradas[i].Cuerpo</p>
+            @if (ViewBag.FotosEntCue[i] != "")
+            {
+                <p class="ent-cue">
+                    <img id="fot-cue" src="@Url.Content("~/img")@ViewBag.FotosEntCue[i]" alt="foto" />
+                </p>
+            }
+            <div class="col-md-4">
+                <p class="fec-ent">Enviado a las <strong>@ViewBag.Entradas[i].FechaPublicacion</strong></p>
+            </div>
+            
+            <div class="col-md-8">
+                <ul class="nav nav-pills" style="float:right;">
+		            <li><a class="btn btn-primary btn-xs" href="">comentar</a></li>
+	            </ul>
+            </div>
+        </div>
+    </article>
+    }
+    <div class="btn-mst-mas" style="display:none;">
+        @Html.ActionLink("Mas Entradas", "Index", "HomeUSPE", new { page = 0 + 1 }, new { @class = "btn btn-primary" })
+    </div>
+}
+else
+{
+    if (ViewBag.EstadoPetcion == "Pendiente")
+    {
+        <div class="well bs-component">
+            <div class="alert alert-dismissable alert-info est-peti-inf">
+              <strong>Petición de amistad pendiente de aceptar.</strong>
+            </div>
+            @*<label class="btn btn-default btn-xs">Petición de amistad pendiente de aceptar.</label>*@
+        </div>
+    }
+    else if (ViewBag.EstadoPetcion == "Bloqueada")
+    {
+        <div class="well bs-component">
+            <div class="alert alert-dismissable alert-info est-peti-inf">
+              <strong>El usuario te tiene en su lista de bloqueados.</strong>
+            </div>
+            @*<label class="btn btn-default btn-xs">Tienes al usuario en tu lista de bloqueados.</label>*@
+        </div>
+    }
+    else if (ViewBag.EstadoPetcion == "PendienteAceptar")
+    {
+        <div class="well bs-component">
+            <div class="alert alert-dismissable alert-info est-peti-inf">
+              <strong>Tienes que aceptar primero su petición de amistad.</strong>
+            </div>
+            @*<label class="btn btn-default btn-xs">Tienes que aceptar primero su petición de amistad.</label>*@
+        </div>
+    }
+    else if (ViewBag.EstadoPetcion == "Bloqueado")
+    {
+        <div class="well bs-component">
+            <div class="alert alert-dismissable alert-info est-peti-inf">
+              <strong>Tienes al usuario en tu lista de bloqueados.</strong>
+            </div>
+            @*<label class="btn btn-default btn-xs">El usuario te tiene en su lista de bloqueados.</label>*@
+        </div>
+    }
+    else
+    {
+        <div class="well bs-component">
+            @*@Html.ActionLink("Enviar petición de amistad", "enviarPeticion", null, null, new { @class = "btn btn-primary btn-large" })*@
+    
+            <div class="row btn-inf-perfil">
+                <button id="btnEnvPet" dato="@HttpContext.Current.Request.RequestContext.RouteData.Values["id"]" type="button" class="btn btn-default btn-xs">
+                    Enviar petición de amistad
+                </button>
+            </div>
+        </div>  
+            <div class="modal fade" id="cuadroDetalle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    @Html.ActionLink("X", "Index", "HomeUSPE", null, new { @class = "close" })
+                    @*<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>*@
+                    <h4 class="modal-title" id="myModalLabel">Enviar petición</h4>
+                  </div>
+                  <div class="modal-body" id="cuerpoDetalle">
+
+                  </div>
+                  <div class="modal-footer">
+                    @Html.ActionLink("Cerrar", "Index", "HomeUSPE", null, new { @class = "btn btn-primary btn-large" })
+                    @*<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>*@
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+    }
+}

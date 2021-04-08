@@ -1,0 +1,71 @@
+﻿<Page x:Class="GestorInmobiliaria.views.Paginas.Paginas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+      mc:Ignorable="d" 
+      d:DesignHeight="442" d:DesignWidth="710"
+	Title="Paginas" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100*" />
+        </Grid.RowDefinitions>
+        <!--<Button Content="Crear pagina" Height="23" HorizontalAlignment="Left" Margin="56,42,0,0" Name="button1" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding NuevoPaginaCommand}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>-->
+        <Label FontSize="15" Content="Paginas" Height="Auto" HorizontalAlignment="Left" Margin="50,0,0,0" Name="label1" VerticalAlignment="Center" Grid.Row="0" />
+        <!--<DataGrid AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding Paginas}" Margin="34,82,80,229" Name="dataGridPaginas" SelectedItem="{Binding SelectedItem}" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="30" />
+                <DataGridTextColumn Binding="{Binding Contenido}" Header="Contenido" Width="100" />
+                <DataGridTextColumn Binding="{Binding URL}" Header="URL" Width="275" />
+                <DataGridTextColumn Binding="{Binding Inmobiliaria}" Header="Inmobiliaria" Width="100" />
+            </DataGrid.Columns>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding SelectionChangedCommand}" CommandParameter="{Binding SelectedItem, ElementName=dataGridPaginas}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </DataGrid>-->
+
+        <xcdg:DataGridControl Grid.Row="1" SelectedItem="{Binding SelectedItem}" Margin="50,0,50,50" Name="dataGridPaginas" ItemsSource="{Binding Paginas}" AutoCreateColumns="False" ReadOnly="True" SelectionMode="Single" NavigationBehavior="RowOnly" HideSelection="True">
+            <xcdg:DataGridControl.Columns>
+                <xcdg:Column FieldName="Id" Title="Identificador"></xcdg:Column>
+                <xcdg:Column FieldName="Contenido" Title="Contenido"></xcdg:Column>
+                <xcdg:Column FieldName="URL" Title="Dirección"></xcdg:Column>
+            </xcdg:DataGridControl.Columns>
+
+            <xcdg:DataGridControl.Resources>
+                <Style TargetType="{x:Type xcdg:TableViewScrollViewer}">
+                    <Setter Property="VerticalScrollBarVisibility" Value="Hidden" />
+                </Style>
+            </xcdg:DataGridControl.Resources>
+
+            <xcdg:DataGridControl.View>
+                <xcdg:TableView ShowRowSelectorPane="False" IsAlternatingRowStyleEnabled="True" UseDefaultHeadersFooters="False" ColumnStretchMode="All" Theme="Windows7Theme">
+                    <xcdg:TableView.FixedHeaders>
+                        <DataTemplate>
+                            <xcdg:ColumnManagerRow />
+                        </DataTemplate>
+                    </xcdg:TableView.FixedHeaders>
+                </xcdg:TableView>
+            </xcdg:DataGridControl.View>
+            
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <i:InvokeCommandAction Command="{Binding SelectionChangedCommand}"
+                                           CommandParameter="{Binding SelectedItem, ElementName=dataGridPaginas}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </xcdg:DataGridControl>
+
+    </Grid>
+</Page>

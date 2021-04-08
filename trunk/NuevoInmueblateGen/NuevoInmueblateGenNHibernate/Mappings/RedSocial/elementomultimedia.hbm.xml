@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="ElementoMultimediaEN" table="ElementoMultimedia"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="Fecha" type="timestamp"> 
+						<column name="fecha"  not-null="true"/>
+					</property>
+					<property name="Descripcion" type="string"> 
+						<column name="descripcion"  not-null="true"/>
+					</property>
+					<property name="Nombre" type="string"> 
+						<column name="nombre"  not-null="true"/>
+					</property>
+					<property name="PendienteModeracion" type="boolean"> 
+						<column name="pendienteModeracion"  not-null="true"/>
+					</property>
+					<property name="URL" type="string"> 
+						<column name="URL"  not-null="true"/>
+					</property>
+			
+			
+		  			
+						<bag name="Mensaje" table="[MensajesElementoMultimedia]"  >
+							<key>
+								
+									<column name="FK_id_elementosMultimedia"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.MensajeEN">
+									<column name="FK_id_mensaje"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<many-to-one name="Galeria" class="NuevoInmueblateGenNHibernate.EN.RedSocial.GaleriaEN" >	
+								<column name="FK_id_galeria"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="Entradas" table="[EntradaElementoMultimedia]"  >
+							<key>
+								
+									<column name="FK_id_elementosMultimedia"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.EntradaEN">
+									<column name="FK_id_entradas"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="AparicionComentarios" table="[ComentarioElementoMultimedia]"  >
+							<key>
+								
+									<column name="FK_id_elementosMultimedia"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ComentarioEN">
+									<column name="FK_id_aparicionComentarios"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<many-to-one name="Inmueble" class="NuevoInmueblateGenNHibernate.EN.RedSocial.InmuebleEN" >	
+								<column name="FK_id_inmueble"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Usuario" class="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN" >	
+								<column name="FK_id_fusuario"/> 
+						</many-to-one>
+											 					
+			
+			
+			
+			
+			
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="ElementoMultimediaENReadAllHQL">from ElementoMultimediaEN</query>
+		  <query name="ElementoMultimediaENobtenerElementoPendienteModeracionHQL"><![CDATA[FROM ElementoMultimediaEN AS em WHERE em.PendienteModeracion = true]]></query>
+		  <query name="ElementoMultimediaENobtenerElementosMultimediaPorUsuarioHQL"><![CDATA[FROM ElementoMultimediaEN AS el WHERE el.Usuario IS NOT NULL AND el.Usuario.Id = :pe_usuario ORDER BY el.Fecha DESC]]></query>
+		</hibernate-mapping>
+	

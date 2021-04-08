@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>cambiarFotoPerfil</title>
+</head>
+<body>
+@*, new { enctype = "multipart/form-data" }*@
+    <div>
+        @using (Html.BeginForm("SubirImagen", "Perfil", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            <fieldset>
+                <legend>Cambiar foto de perfil</legend> 
+                <div class="editor-field"> 
+                    @Html.TextBox("fichero", "", new { type = "file" }) 
+                </div> 
+                <div class="editor-field">
+                    <input type="submit" value="Subir" />
+                </div> 
+                </fieldset>
+        }
+    </div>
+</body>
+</html>

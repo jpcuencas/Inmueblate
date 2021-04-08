@@ -1,0 +1,84 @@
+﻿@model InmueblateWeb.Models.Busqueda
+
+@{
+    ViewBag.Title = "Busqueda Amigos";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+       // $("#SearchForm").formToWizard({ submitButton: 'DetalleAm' });
+
+        $('#btn_calendar').click(function () {
+                $("#FechaNacimiento").datepicker().focus();
+            });
+        });
+</script>
+<div class="well bs-component">
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm("DetalleAm", "BusquedaUS", FormMethod.Post, new { id = "SearchForm" }))
+{
+    Html.ValidationSummary(true, "Se han producido errores en la validacion de los campos corrija los errores y vuelva a intentarlo.");
+    
+        <fieldset>
+            <legend>Formulario de busqueda</legend>
+
+             <div class="editor-label" id="labelUsuarioApellidos">
+                @Html.LabelFor(m => m.Apellidos)
+            </div>
+            <div class="editor-field" id="inputUsuarioApellidos">
+                @Html.TextBoxFor(m => m.Apellidos, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Apellidos)
+            </div>
+
+            <div class="editor-label" id="labelUsuarioEmail">
+                @Html.LabelFor(m => m.Email)
+            </div>
+            <div class="editor-field" id="inputUsuarioEmail">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+
+            <div class="editor-label" id="labelFechaNac">
+                @Html.LabelFor(m => m.FechaNacimiento)
+            </div>
+            <div class="editor-field" id="inputFechaNac">
+                <div class="form-group">
+                    <div class="input-group smallInput">
+                        @Html.TextBoxFor(m => m.FechaNacimiento, new { @class = "form-control" })
+                        <span class="input-group-addon" id="btn_calendar" style="cursor:pointer;">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                @Html.ValidationMessageFor(m => m.FechaNacimiento)
+            </div>
+
+            <div class="editor-label" id="labelUsuarioDireccion">
+                @Html.LabelFor(m => m.Direccion)
+            </div>
+            <div class="editor-field" id="inputUsuarioDireccion">
+                @Html.TextBoxFor(m => m.Direccion, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Direccion)
+            </div>
+             <div class="editor-label" id="labelUsuarioPoblacion">
+                @Html.LabelFor(m => m.Poblacion)
+            </div>
+            <div class="editor-field" id="inputUsuario">
+                @Html.TextBoxFor(m => m.Poblacion, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Poblacion)
+            </div>
+            </fieldset>
+            <hr />
+            <p>
+              <input type="submit" id="btnBuscar" class="btn btn-default" value="Buscar" />
+            </p>
+            <div>
+                @Html.ActionLink("Volver", "Index", "HomeUS", new { id = id_sesion, area = "Usuarios" }, null)
+            </div>
+}
+
+</div>

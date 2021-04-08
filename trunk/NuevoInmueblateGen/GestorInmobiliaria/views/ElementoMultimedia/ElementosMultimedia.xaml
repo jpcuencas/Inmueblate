@@ -1,0 +1,39 @@
+﻿<Page x:Class="GestorInmobiliaria.views.ElementoMultimedia.ElementosMultimedia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      mc:Ignorable="d" 
+      d:DesignHeight="398" d:DesignWidth="521"
+	Title="ElementosMultimedia">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="199*" />
+            <RowDefinition Height="199*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*" />
+            <ColumnDefinition Width="130*" />
+            <ColumnDefinition Width="130*" />
+            <ColumnDefinition Width="131*" />
+        </Grid.ColumnDefinitions>
+        <Button Content="Fotos" Height="110" Margin="0,145,57,0" Name="btnFotos" VerticalAlignment="Top" Grid.RowSpan="2" HorizontalAlignment="Right" Width="144" Grid.ColumnSpan="2">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding FotosCommand}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+        <Button Content="Videos" Height="110" HorizontalAlignment="Left" Margin="56,145,0,0" Name="btnVideos" VerticalAlignment="Top" Width="144" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding VideosCommand}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+    </Grid>
+</Page>

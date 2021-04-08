@@ -1,0 +1,47 @@
+﻿@model InmueblateWeb.Models.Peticion
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Enviar petición</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("enviarPeticion", "HomeUSPE", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    @Html.LabelFor(m => m.Titulo)
+                </div>
+                <div class="col-md-5 ">
+                    @Html.TextBoxFor(m => m.Titulo, new {@class="form-control",
+                                                          placeholder = "Titulo de la petición..." })
+                    @Html.ValidationMessageFor(m => m.Titulo)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3 control-label">
+                    @Html.LabelFor(m => m.Mensaje)
+                </div>
+                <div class="col-md-9">
+                    @Html.TextBoxFor(m => m.Mensaje, new {@class = "form-control",
+                                                          placeholder = "Mensaje para el usuario..."})
+                    @Html.ValidationMessageFor(m => m.Mensaje)
+                </div>
+            </div>
+            
+            <div class="fomr-group">
+                <div class="col-md-offset-3 col-md-1">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+            
+        }
+    </div>
+</body>
+</html>

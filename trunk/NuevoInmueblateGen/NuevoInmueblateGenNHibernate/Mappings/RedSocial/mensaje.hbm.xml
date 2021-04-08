@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="MensajeEN" table="Mensaje"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="PendienteModeracion" type="boolean"> 
+						<column name="pendienteModeracion"  not-null="true"/>
+					</property>
+					<property name="FechaEnvio" type="timestamp"> 
+						<column name="fechaEnvio"  not-null="true"/>
+					</property>
+					<property name="Asunto" type="string"> 
+						<column name="asunto"  not-null="true"/>
+					</property>
+					<property name="Cuerpo" type="string"> 
+						<column name="cuerpo"  not-null="true"/>
+					</property>
+					<property name="Leido" type="boolean"> 
+						<column name="leido"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Emisor" class="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN" >	
+								<column name="FK_id_emisor"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Receptor" class="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN" >	
+								<column name="FK_id_receptor"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="ElementosMultimedia" table="[MensajesElementoMultimedia]" inverse="true" >
+							<key>
+								
+									<column name="FK_id_mensaje"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ElementoMultimediaEN">
+									<column name="FK_id_elementosMultimedia"/> 
+      						</many-to-many>
+    					</bag>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="MensajeENReadAllHQL">from MensajeEN</query>
+		  <query name="MensajeENobtenerMensajePendienteModeracionHQL"><![CDATA[FROM MensajeEN AS me WHERE me.PendienteModeracion = true]]></query>
+		  <query name="MensajeENobtenerMensajesPorUsuarioHQL"><![CDATA[FROM MensajeEN m where m.Receptor = :p_idUsuario]]></query>
+		  <query name="MensajeENdameMensajeFiltroConModeracionHQL"><![CDATA[FROM MensajeEN AS m WHERE m.Asunto LIKE CASE WHEN :p_asunto = null THEN m.Asunto ELSE :p_asunto END AND m.Cuerpo LIKE CASE WHEN :p_cuerpo = null THEN m.Cuerpo ELSE :p_cuerpo END AND m.FechaEnvio = CASE WHEN :p_fechaEnvio = null THEN m.FechaEnvio ELSE :p_fechaEnvio END AND m.PendienteModeracion = :p_pendienteModeracion AND m.Emisor = CASE WHEN :p_emisor = -1 THEN m.Emisor ELSE :p_emisor END AND m.Receptor = CASE WHEN :p_receptor = -1 THEN m.Receptor ELSE :p_receptor END]]></query>
+		  <query name="MensajeENdameMensajeFiltroSinModeracionHQL"><![CDATA[FROM MensajeEN AS m WHERE m.Asunto LIKE CASE WHEN :p_asunto = null THEN m.Asunto ELSE :p_asunto END AND m.Cuerpo LIKE CASE WHEN :p_cuerpo = null THEN m.Cuerpo ELSE :p_cuerpo END AND m.FechaEnvio = CASE WHEN :p_fechaEnvio = null THEN m.FechaEnvio ELSE :p_fechaEnvio END AND m.Emisor = CASE WHEN :p_emisor = -1 THEN m.Emisor ELSE :p_emisor END AND m.Receptor = CASE WHEN :p_receptor = -1 THEN m.Receptor ELSE :p_receptor END]]></query>
+		</hibernate-mapping>
+	

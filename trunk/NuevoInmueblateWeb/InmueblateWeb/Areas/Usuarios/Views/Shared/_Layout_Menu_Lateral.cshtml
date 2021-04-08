@@ -1,0 +1,32 @@
+﻿@using InmueblateWeb.Helpers;
+@{
+    ViewBag.Title = "_Layout_Menu_Lateral";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }  
+}
+
+@Html.MenuIzquierdaUsuario((string)ViewBag.opcionMenu)
+
+@*<span class="navbar navbar-default col-md-3 menuLateral" role="navigation"  style="">
+<h2 class="tituloMenu">Menu</h2> 
+	<ul class="nav nav-pills nav-stacked">
+        
+		<li><a href="#">Ultimas noticias</a></li>
+		<li>@Html.ActionLink("Inmuebles Buscar", "BuscarIn", "HomeUS", null, null)</li>
+		<li>@Html.ActionLink("Mensajes", "Mensajes", "HomeUS", null, null)</li>
+        <li>@Html.ActionLink("Galeria de pisos", "Galeria", "HomeUS", null, null)</li>
+        <li>@Html.ActionLink("Buscar Amigos", "BuscarAm", "HomeUS", null, null)</li>
+		<li>
+			<fieldset>
+				<legend class="tituloMenu">Grupos <a href="" class="lnk-addGurpos">(+<span> Añadir</span>)</a></legend>
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="#">Pisos San Vicente</a></li>
+					<li><a href="#">Pisos Alicante</a></li>
+				</ul>
+			</fieldset>
+		</li>
+	</ul>
+</span>*@

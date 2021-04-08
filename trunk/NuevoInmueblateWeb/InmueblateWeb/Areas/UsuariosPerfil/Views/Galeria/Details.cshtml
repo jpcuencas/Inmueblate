@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Fotografias";
+}
+
+<div class="well bs-component">
+    <label>Fotografías</label>
+    <div id="fotos">
+        @if (ViewBag.Mios)
+        {
+        <div class="row" id="subir-img">
+            @using (Html.BeginForm("SubirImagenF", "Galeria", new { gal = @ViewBag.Galeria }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                     
+                    <div class="editor-field">
+                        @Html.TextBox("file", "", new { @class = "filestyle", type = "file" })
+                    </div> 
+                    <div class="editor-field">
+                        <input type="submit" value="Subir" class="btn btn-primary lbl-fot-per"/>
+                    </div>
+            }
+            </div>
+        }
+            @if (ViewBag.Fotos.Count > 0)
+            {
+                int id = 0;
+                for (int i = 0; i < ViewBag.Fotos.Count; i++)
+                {
+                    <div class="row">
+                    @for (int j = 0; j < 4 && id < ViewBag.Fotos.Count; j++)
+                    {
+                        <div class="col-md-3">
+                            <img src="@Url.Content("~/img")@ViewBag.Fotos[id].URL" alt="@ViewBag.Fotos[id].Nombre"/>
+                        </div>
+                        i++;
+                        id++;
+                    }
+                    </div>
+                }
+            }
+        </div>
+    </div>

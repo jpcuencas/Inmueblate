@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B79F07F6-DF6A-4AA5-A21F-6305EA8831E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NuevoInmueblateGen_NuevoInmueblateLocal</RootNamespace>
+    <AssemblyName>NuevoInmueblateGen_NuevoInmueblateLocal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\NuevoInmueblateGenNHibernate\AppLib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\NuevoInmueblateGenNHibernate\AppLib\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\NuevoInmueblateGenNHibernate\AppLib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy">
+      <HintPath>..\NuevoInmueblateGenNHibernate\AppLib\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\NuevoInmueblateGenNHibernate\AppLib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\NuevoInmueblateGenNHibernate\AppLib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\NuevoInmueblateGenNHibernate\AppLib\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\NuevoInmueblateGenNHibernate\AppLib\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CAD\RedSocial\SuperUsuarioCADNav.cs" />
+    <Compile Include="CAD\RedSocial\ValoracionCADNav.cs" />
+    <Compile Include="CAD\RedSocial\UsuarioCADNav.cs" />
+    <Compile Include="CAD\RedSocial\GrupoCADNav.cs" />
+    <Compile Include="CAD\RedSocial\ModeradorCADNav.cs" />
+    <Compile Include="CAD\RedSocial\InmobiliariaCADNav.cs" />
+    <Compile Include="CAD\RedSocial\PeticionAmistadCADNav.cs" />
+    <Compile Include="CAD\RedSocial\PreferenciasBusquedaCADNav.cs" />
+    <Compile Include="CAD\RedSocial\MuroCADNav.cs" />
+    <Compile Include="CAD\RedSocial\EntradaCADNav.cs" />
+    <Compile Include="CAD\RedSocial\ComentarioCADNav.cs" />
+    <Compile Include="CAD\RedSocial\GustosCADNav.cs" />
+    <Compile Include="CAD\RedSocial\MensajeCADNav.cs" />
+    <Compile Include="CAD\RedSocial\ElementoMultimediaCADNav.cs" />
+    <Compile Include="CAD\RedSocial\FotografiaCADNav.cs" />
+    <Compile Include="CAD\RedSocial\VideoCADNav.cs" />
+    <Compile Include="CAD\RedSocial\GaleriaCADNav.cs" />
+    <Compile Include="CAD\RedSocial\GeolocalizacionCADNav.cs" />
+    <Compile Include="CAD\RedSocial\CaracteristicaCADNav.cs" />
+    <Compile Include="CAD\RedSocial\InmuebleCADNav.cs" />
+    <Compile Include="CAD\RedSocial\HabitacionCADNav.cs" />
+    <Compile Include="CAD\RedSocial\PaginaCorporativaCADNav.cs" />
+    <Compile Include="CAD\RedSocial\EventoCADNav.cs" />
+    <Compile Include="CAD\RedSocial\AnuncioCADNav.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NuevoInmueblateCP\NuevoInmueblateCP.csproj">
+      <Project>{9C11BF3A-755E-4D1F-810D-558AC9BA90B9}</Project>
+      <Name>NuevoInmueblateCP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NuevoInmueblateGenNHibernate\NuevoInmueblateGenNHibernate.csproj">
+      <Project>{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}</Project>
+      <Name>NuevoInmueblateGenNHibernate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

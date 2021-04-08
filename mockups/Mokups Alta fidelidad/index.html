@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>Red Social Inmueblate - Muro</title>
+	
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script> 
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script> 
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+	<link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Stoke' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Stardos+Stencil' rel='stylesheet' type='text/css'>
+	
+	<link href="css/style.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="js/funciones.js"></script> 
+</head>
+<body style="background: #D1D6CF;">
+	<div class="container">
+        <header class="jumbotron row" style="background: -moz-linear-gradient(#FF934D 75%, #D97D4A);border-bottom-left-radius:30px; border-bottom-right-radius:30px;">
+            <hgroup >
+			    <h1 style="font-family: 'Fredoka One', cursive; color: #FFF;float:left;">InmuEblate</h1>
+					
+			    <span style="float:right;"><input type="search" name="txtbusqueda" placeholder="Buscar..."><br/><br/><span class="glyphicon glyphicon-user" style="font-size: 50px;"></span><h4 style="clear:both;color: #1F6366">Isidro Santacruz Lillo</h4><a href="#" style="color: #1F6366">Desconectar</a></span>
+		    </hgroup>
+				
+	    </header>
+	    <section class="row">
+            <nav class="navbar navbar-default col-md-3" role="navigation"  style="background: -moz-linear-gradient(left, #B5BAB3 60%, #90938E); border-radius:40px;">
+			    <ul class="nav nav-pills nav-stacked" style="font-family: 'Stoke', serif;">
+				    <li><a href="#">Ultimas noticias</a></li>
+				    <li><a href="#">Inmuebles(Mostrar / Buscar)dependiendo de usuario</a></li>
+				    <li><a href="#">Mensajes</a></li>
+				    <li><a href="#">Galeria de pisos (solo usuario?¿)</a></li>
+				    <li><a href="#">Buscar Amigos</a></li>
+				    <li>
+					    <fieldset>
+						    <legend>Grupos <a href="" style="font-size:25px;color:black;">+<span style="font-size:10px;"> Añadir</span></a></legend>
+						    <ul class="nav nav-pills nav-stacked">
+							    <li><a href="#">Pisos San Vicente</a></li>
+							    <li><a href="#">Pisos Alicante</a></li>
+						    </ul>
+					    </fieldset>
+				    </li>
+			    </ul>
+
+		    </nav>
+		    <div class="col-md-7" style="padding-top:5px;padding-left:15px;padding-right:15px;">
+                <article>
+			        <div class="form-group">
+				        <label for="textoCompartir" class="control-label">¿Algo que comentar?</label>
+				        <input type="text" class="form-control" id="textCompartir" placeholder="¿En qué piensas?"/>
+						<div>
+							<span class="text-left">
+								<select class="btn btn-default" />
+									<option value="1" selected>Todas entradas</option>
+									<option value="2">Solo Mis entradas</option>
+									<option value="3">Solo entradas de inmobiliarias</option>
+								</select>
+							</span>
+							<span class="text-right" style="float:right;">
+								<input type="submit" class="btn btn-default" value="Compartir" />
+							</span>
+						</div>
+			        </div>
+			        <hr/>
+		        </article>
+		        <article class="well" style=" height:200px;">
+			        <span class="glyphicon glyphicon-user" style="font-size: 50px;"></span>
+			        <label>Pedro Pérez: </label>
+			        <label style="font-weight:normal;">Busco compañero de piso urgente!!!</label>
+					<br/><a href="#">ver mas.</a>
+					<hr/>
+                    <ul class="nav nav-pills" style="float:right;">
+				        <li><a href="">comentar</a></li>
+				        <li><a href="">me mola</a></li>
+				        <li><a href="">compartir</a></li>
+			        </ul>
+		        </article>
+		        <article class="well" style=" height:200px;">
+			        <span class="glyphicon glyphicon-user" style="font-size: 50px;"></span>
+			        <label>Ana María Díaz: </label>
+			        <label style="font-weight:normal;" >Ha puntuado a su compañero <a href="#" style="font-weight:bold;">Pedro Pérez</a> con <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></label>
+			        <br/><a href="#">Valorar a Pedro Pérez</a>
+					<hr/>
+			        <ul class="nav nav-pills" style="float:right;">
+				        <li><a href="">comentar</a></li>
+				        <li><a href="">me mola</a></li>
+				        <li><a href="">compartir</a></li>
+			        </ul>
+
+		        </article>
+		        <article class="well" style=" height:650px;">
+			        <span class="glyphicon glyphicon-user" style="font-size: 50px;"></span>
+			        <label>Ángel Caido: </label>
+			        <label style="font-weight:normal;">Me he mudado a una casa mucho mas grande!</label>
+			        <img alt="fotoMudanza" src="img/granpiso.jpg" height="480" width="600"/>
+					<hr/>
+			        <ul class="nav nav-pills" style="float:right;">
+				        <li><a href="">comentar</a></li>
+				        <li><a href="">me mola</a></li>
+				        <li><a href="">compartir</a></li>
+			        </ul>
+		        </article>
+				<article class="well" style=" height:650px;">
+			        <span class="glyphicon glyphicon-user" style="font-size: 50px;"></span>
+			        <label>Isidro Santacruz Lillo: </label> 
+			        <label style="font-weight:normal;">He publicado mi antigua habitacion</label><span style="float:right;" class="glyphicon glyphicon-remove"></span>
+			        <img alt="fotoMudanza" src="img/granpiso.jpg" height="480" width="600"/>
+					<hr/>
+			        <ul class="nav nav-pills" style="float:right;">
+				        <li><a href="">comentar</a></li>
+				        <li><a href="">me mola</a></li>
+				        <li><a href="">compartir</a></li>
+			        </ul>
+		        </article>
+            </div>
+            <aside class="col-md-2">
+				<img alt="anuncios" src="img/anuncios.JPG"/>
+	        </aside>
+			<aside class="col-md-2" style="top:10px;padding-top:5px;background-color:#A9ADA7;border-top-left-radius:30px; border-top-right-radius:30px;background-color:#A9ADA7;border-bottom-left-radius:30px; border-bottom-right-radius:30px;">
+				
+				       
+				        <div class="text-right">
+                           <label for="escribirMensaje" style="color:black;text-aling:center;" class="control-label">Ultimos mensajes</label> <input type="submit" id="escribirMensaje" class="btn btn-default" value="Escribir mensaje nuevo" />
+                        
+						</div><br/>
+						 <textarea class="form-control" id="leerMensaje1">Pepe Perez: kjasdfkjhadsfhfoasf</textarea>
+						 <hr/>
+						 <textarea class="form-control" id="leerMensaje2">Maria pepon: kjasdfkjhadsfdfoasf</textarea>
+						 <hr/>
+	        </aside>
+	    </section>
+	
+	    <footer class="well row" style="text-align:center;background: -moz-linear-gradient(#D97D4A 25%, #FF934D);border-top-left-radius:30px; border-top-right-radius:30px;">
+		    <p>Todos los derechos reservados &copy; 2013 - 2014</p>
+	    </footer>
+    </div>
+</body>
+</html>	

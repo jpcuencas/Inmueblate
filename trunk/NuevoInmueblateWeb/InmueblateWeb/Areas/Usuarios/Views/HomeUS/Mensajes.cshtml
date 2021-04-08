@@ -1,0 +1,55 @@
+﻿@model InmueblateWeb.Models.Mensaje
+@{
+    ViewBag.Title = "Mensajes";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+
+<h2>@ViewBag.Title</h2>
+@if (ViewBag.Mensaje != null)
+{
+<div class="well bs-component">
+	<table id="tblList">
+        <tr><td><caption>Asunto</caption></td><td><caption>Cuerpo</caption><td><caption>De parte</caption></td></td></tr>
+        @for (int i = 0; i < ViewBag.Mensaje.Count; i++)
+        { 
+            <tr class="well bs-component"><td>@ViewBag.Mensaje[i].Asunto</td><td>@ViewBag.Mensaje[i].Cuerpo</td><td>@ViewBag.Mensaje[i].Emisor</td></tr>    
+        }
+	</table>
+</div>
+}
+@using (Html.BeginForm("EnviarMensaje", "HomeUS", FormMethod.Post, new { id = "MensajeForm" }))
+{
+    @Html.ValidationSummary(true, "Se han producido errores en la validacion de los campos corrija los errores y vuelva a intentarlo.")
+    <div class="well bs-component">
+        <fieldset>
+            <legend>Formulario de busqueda</legend>
+
+            <div class="editor-label" id="labelMensajeAsunto">
+                @Html.LabelFor(m => m.Asunto)
+            </div>
+            <div class="editor-field" id="inputMensajeAsunto">
+                @Html.TextBoxFor(m => m.Asunto, new { @class = "form-control inputName" })
+                @Html.ValidationMessageFor(m => m.Asunto)
+            </div>
+
+            <div class="editor-label" id="labelMensajeCuerpo">
+                @Html.LabelFor(m => m.Cuerpo)
+            </div>
+            <div class="editor-field" id="inputMensajeCuerpo">
+                @Html.TextBoxFor(m => m.Cuerpo, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Cuerpo)
+            </div>
+        </fieldset>
+        <p>
+          <input type="submit" id="btnMensaje" class="btn btn-default" value="Enviar" />
+        </p>
+        <div>
+            @Html.ActionLink("Volver", "Index", "HomeUS", new { id = id_sesion, area = "Usuarios" }, null)
+        </div>
+        
+    </div>
+}

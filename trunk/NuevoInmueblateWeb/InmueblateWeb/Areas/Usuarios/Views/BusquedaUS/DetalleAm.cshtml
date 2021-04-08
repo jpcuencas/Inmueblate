@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Detalle de Amigos";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="well bs-component">
+	<table id="tblList">
+     @if (ViewBag.Amigo != null)
+     {
+        for (int i = 0; i < ViewBag.Amigo.Count; i++)
+        { 
+            <tr>
+                <td><h4><strong>Nombre:</strong> @ViewBag.Amigo[i].Nombre</h4></td>
+            </tr>
+            <tr>
+                <td><h4><strong>Apellidos:</strong> @ViewBag.Amigo[i].Apellidos</h4></td>
+            </tr>
+            <tr>
+                <td><h4><strong>Fecha Nacimiento:</strong> @ViewBag.Amigo[i].FechaNacimiento</h4></td>
+            </tr>
+            <tr>
+                <td><h4><strong>Email:</strong> @ViewBag.Amigo[i].Email</h4></td>
+            </tr>
+            <tr>
+                <td><h4><strong>Poblacion:</strong> @ViewBag.Amigo[i].Poblacion</h4></td>
+            </tr>
+            <tr>
+                <td><h4><strong>Direccion:</strong> @ViewBag.Amigo[i].Direccion</h4></td>
+            </tr>
+            <tr>
+                <td>@Html.ActionLink("Ver perfil", "Index", "HomeUSPE", new { id = ViewBag.Amigo[i].Id, area = "UsuariosPerfil" }, new { @class = "nombre" })</td>
+            </tr>   
+            <tr>
+                <td><hr /></td>
+            </tr>
+        }
+     }
+     </table>
+     <div>
+        @Html.ActionLink("Volver", "BuscarAm", "BusquedaUS", new { id = id_sesion, area = "Usuarios" }, null)
+      </div>
+
+</div>

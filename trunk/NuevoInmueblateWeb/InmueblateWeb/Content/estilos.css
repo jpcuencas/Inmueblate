@@ -1,0 +1,635 @@
+﻿html, body {
+    height: 100%;
+    background-color: #D1D6CF;
+}
+
+html, body, h1, h2, h3, h4, h5, header, footer, nav {
+    padding: 0px 0px 0px 0px;
+    margin: 5px 10px 10px 10px;
+}
+
+header {
+    height: 120px;
+    color: #FFFFFF;
+}
+header h1 {
+    font-size: 5em;
+}
+header h2 {
+        font-size: 2em;
+}
+
+footer {
+    text-align: center;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 0 -60px;
+    padding: 0 0 80px;
+}
+
+nav{
+    font-size: 1.4em;
+}
+
+#contenido {
+    font-size: 12px;
+}
+
+#cuerpo 
+{
+    margin-bottom: 50px;
+}
+
+.cuerpo-perfil
+{
+    margin-top: 80px;
+}
+
+.cuerpo-perfil h1
+{
+    text-align: center;
+}
+
+#btnEntrar
+{
+    padding-left: 29px;
+    margin-top: -30px;
+}
+
+.img-hom
+{
+    width: 600px;
+    height: 500px;
+}
+
+#btnRegistro
+{
+    width: 160px;
+    height: 80px;
+    margin-left: -28px;
+}
+
+.btnSalir
+{
+    color:White !important;    
+}
+#menu-Lat li.active a
+{
+    background-color: #B83C11;
+}
+
+/*Cabecera*/
+.ico-ami
+{
+    color: #000000;
+}
+/*Fin Cabecera*/
+/*Menu Izquierda*/
+.menu-iz
+{
+    text-align: center;
+}
+.menu-iz img
+{
+}
+.nav .nav-pills .nav-stacked .menu-iz a
+{
+    color: #333333;
+}
+.menu-iz a
+{
+    color: #333333;
+    font-size: 10px;
+    line-height: 1.42857143;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.img-perfil-menu
+{
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+}
+/*Fin Menu Izquierda*/
+/*Muro*/
+.ent-new
+{
+    margin-bottom: 10px;
+    width: 80%;
+    
+}
+.inp-ent
+{
+    margin-bottom: 0px;
+}
+
+#ent-mur
+{
+    margin: 5px 10px 5px 10px;
+}
+
+#ent-mur img
+{
+    width: 50px;
+    height: 50px;
+}
+.ent-cue
+{
+    margin: 15px 0px 5px 0px;
+    padding-left: 50px;
+}
+.fec-ent
+{
+    margin-top: 25px;
+    font-size: x-small;
+}
+
+#ent-mur a.nombre
+{
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#ent-mur img#fot-cue
+{
+    width:100%;
+    height:100%;
+}
+
+/*Fin muro*/
+/*Perfil*/
+.val-punt
+{
+    text-align: center;
+}
+.punt-num
+{
+    font-size: 25px;
+}
+.btn-modificar
+{
+    text-align: center;
+}
+.btn-inf-perfil
+{
+    text-align: center;
+}
+.img-perfil
+{
+    width: 175px;
+    height: 175px;
+}
+.lbl-fot-per
+{
+    margin-top: 5px;
+    text-align: center;
+    width: 175px;
+}
+/*Fin Perfil*/
+/*Amigos*/
+.btn-buscarAmigo
+{
+    margin-left: 100px;
+    width: 150px;
+}
+.amig
+{
+    text-align: center;
+}
+.amig img
+{
+    width: 100px;
+    height: 100px;
+}
+.amig label
+{
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.amig a
+{
+    padding-top: 10px;
+    font-size: 12px;
+}
+.amig a.nombre
+{
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.lst-amig
+{
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+}
+
+.lst-amig .row
+{
+    margin:30px 0px 20px 0px;
+}
+
+/*Fin Amigos*/
+/*Eliminar Amigo*/
+.elmAmi
+{
+    text-align: center;
+}
+.elmAmi button
+{
+    margin-top: 15px;
+}
+/*Fin Eliminar Amigo*/
+/*Valoraciones*/
+#realizadas .row
+{
+    margin-bottom: 15px;
+    height: 50px;
+}
+#realizadas .row .col-md-2
+{
+    text-align: center;
+}
+
+#recibidas .row
+{
+    margin-bottom: 15px;
+    height: 50px;
+}
+#recibidas .row .col-md-2
+{
+    text-align: center;
+}
+
+.nom a.nombre
+{
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+#recibidas .val-elim
+{
+    margin-top: -10px;
+    height: 25px;
+    text-align:center;
+    font-size: 11px;
+    font-weight: bold;
+}
+#realizadas .val-elim
+{
+    margin-top: -10px;
+    height: 25px;
+    text-align:center;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#recibidas img
+{
+    width: 75px;
+    height: 75px;
+}
+
+#realizadas img
+{
+    width: 75px;
+    height: 75px;
+}
+
+/*Fin Valoraciones*/
+/*Peticiones*/
+.peti
+{
+    margin: 10px 0px 10px 10px;
+}
+.peti img
+{
+    width: 75px;
+    height: 75px;
+}
+.peti label
+{
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.peti a
+{
+    padding-top: 10px;
+    font-size: 12px;
+}
+.peti a.nombre
+{
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.peti-bloq .well
+{
+    margin-top: 10px;
+    background-color: #D1D6CF;
+    border: 1px solid #B5BAB3;
+    border-radius: 20px;
+    border-width: medium;
+}
+
+.peti-sep h2
+{
+    text-align: center;
+}
+
+.peti-sep
+{
+    border-bottom: 1px solid #000000;
+}
+.peti-btn
+{
+    text-align: center;
+}
+ .est-peti-inf
+ {
+     text-align: center;
+ }
+/*Fin Peticiones*/
+/*GAleria*/
+#galeria .row
+{
+    padding: 10px 5px 10px 5px;
+    margin: 0px 15px 0px 15px;
+    border-bottom: 1px solid #000000;
+}
+#fotos .row
+{
+    margin-bottom: 10px;
+}
+#fotos img
+{
+    width: 100px;
+    height: 100px;
+    
+}
+#fotos .col-md-3
+{
+    
+}
+#subir-img
+{
+    margin: 5px;
+}
+/*Fin GAleria*/
+.letraTitulo
+{
+    color: #1F6366;
+    font-size: 30px;
+    padding-left:30px;    
+}
+.letraTitulo:hover
+{
+    color: #1F6366;
+    font-size: 30px;
+    padding-left:30px;
+    text-decoration: none;
+}
+
+.men-iz
+{
+    padding: 30px 30px 0px 0px;
+}
+
+.tituloMenu
+{
+    color:White;
+}
+.menuLateral
+{
+    margin-top: 80px;
+    border-radius:40px;    
+}
+.menuLateral > ul
+{
+    font-family: 'Stoke', serif;margin-bottom:20px;    
+}
+.lnk-addGurpos
+{
+    font-size:15px;
+}
+.lnk-addGurpos > span
+{
+    font-size:10px;
+}
+.well 
+{
+    border: 1px solid #FF934D;
+    border-radius: 20px;
+    border-width: medium;
+}
+
+legend
+{
+    font-size: 18px;
+}
+
+.menuPerfil
+{
+    
+    margin-top: 80px;
+}
+.nav > li > a:hover, .nav > li > a:focus
+{
+	background-color:#B83C11 !important;
+}
+.nav-pills li a
+{
+    color: #FFFFFF;
+}
+
+#SignupForm .prev, .next      
+{
+    background-color: #FF934D;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    margin-top: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+#SignupForm .prev:hover, .next:hover { background-color: #DD4814; color: #FFFFFF; text-decoration:none;}
+#SignupForm .prev { float:left; border-radius: 20px 5px 5px 20px;}
+#SignupForm .next { float:right; border-radius: 5px 20px 20px 5px;}
+#steps { list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;}
+#steps li {font-size:24px; float:left; padding:10px; color:#b0b1b3;}
+#steps li span {font-size:11px; display:block;}
+#steps li.current { color:#000;}
+
+#SignupForm #SaveAccount { display: inline-block; float: right; position: relative; top: -35px;}
+
+#SignupForm .botonesRegistro { margin: 20px auto; text-align: center; }
+
+#SignupForm .botonesRegistro button { margin-right: 20px; margin-left: 20px; }
+
+#SignupForm .botonesRegistro button.activo {
+    background-color: #DD4814;
+}
+
+#SignupForm .botonesRegistro button {
+    background-color: #FF934D;
+    border: 1px solid #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#SignupForm .botonesRegistro button:hover {
+    background-color: #DD4814;
+}
+
+#SignupForm .oculto 
+{
+    display: none;
+}
+
+table#ResumenRegistro 
+{
+    border-spacing: 10px;
+    border-collapse: separate;
+    background-color: white;
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#ResumenRegistro td:first-child {
+    font-weight: bold;
+}
+
+#SaveAccount:hover {
+    background-color: #DD4814;
+}
+
+#SaveAccount {
+    background-color: #FF934D;
+    border: 1px solid #FFFFFF;
+}
+
+#SignupForm .smallInput
+{
+    width: 20%;
+}
+
+#SignupForm .editor-field
+{
+    margin-bottom: 10px;
+}
+
+#SignupForm .field-validation-error
+{
+    color: crimson;
+}
+
+/**
+* para la galeria
+**/
+#featured{ 
+	width:690px; 
+	padding-right:250px; 
+	position:relative; 
+	border:5px solid #ccc; 
+	height:300px; overflow:hidden;
+	background:#fff;
+}
+#featured ul.ui-tabs-nav{ 
+	position:absolute; 
+	top:0; left:400px; 
+	list-style:none; 
+	padding:0; margin:0; 
+	width:250px; height:250px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+#featured ul.ui-tabs-nav li{ 
+	padding:1px 0; padding-left:13px;  
+	font-size:12px; 
+	color:#666; 
+}
+#featured ul.ui-tabs-nav li img{ 
+	float:left; margin:2px 5px; 
+	background:#fff; 
+	padding:2px; 
+	border:1px solid #eee;
+}
+#featured ul.ui-tabs-nav li span{ 
+	font-size:11px; font-family:Verdana; 
+	line-height:18px; 
+}
+#featured li.ui-tabs-nav-item a{ 
+	display:block; 
+	height:60px; text-decoration:none;
+	color:#333;  background:#fff; 
+	line-height:20px; outline:none;
+}
+#featured li.ui-tabs-nav-item a:hover{ 
+	background:#f2f2f2; 
+}
+#featured li.ui-tabs-selected, #featured li.ui-tabs-active{ 
+	background:url('images/selected-item.gif') top left no-repeat;  
+}
+#featured ul.ui-tabs-nav li.ui-tabs-selected a, #featured ul.ui-tabs-nav li.ui-tabs-active a{ 
+	background:#ccc; 
+}
+#featured .ui-tabs-panel{ 
+	width:400px; height:250px; 
+	background:#999; position:relative;
+}
+#featured .ui-tabs-panel .info{ 
+	position:absolute; 
+	bottom:0; left:0; 
+	height:70px; 
+	background: url('images/transparent-bg.png'); 
+}
+#featured .ui-tabs-panel .info a.hideshow{
+	position:absolute; font-size:11px; font-family:Verdana; color:#f0f0f0; right:10px; top:-20px; line-height:20px; margin:0; outline:none; background:#333;
+}
+#featured .info h2{ 
+	font-size:1.2em; font-family:Georgia, serif; 
+	color:#fff; padding:5px; margin:0; font-weight:normal;
+	overflow:hidden; 
+}
+#featured .info p{ 
+	margin:0 5px; 
+	font-family:Verdana; font-size:11px; 
+	line-height:15px; color:#f0f0f0;
+}
+#featured .info a{ 
+	text-decoration:none; 
+	color:#fff; 
+}
+#featured .info a:hover{ 
+	text-decoration:underline; 
+}
+#featured .ui-tabs-hide{ 
+	display:none; 
+}
+/*****/

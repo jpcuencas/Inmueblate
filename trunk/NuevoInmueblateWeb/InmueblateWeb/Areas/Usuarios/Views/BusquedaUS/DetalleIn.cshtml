@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Detalle de Inmobiliarias";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="well bs-component">
+	<table id="tblList">
+       @if (ViewBag.Inmobilaria != null)
+     {
+         for (int i = 0; i < ViewBag.Inmobilaria.Count; i++)
+        { 
+           
+              <tr><td><h4><strong>Nombre:</strong> @ViewBag.Inmobilaria[i].Nombre</h4></td></tr>
+              <tr><td><h4><strong>Descripcion:</strong>@ViewBag.Inmobilaria[i].Descripcion</h4></td></tr>
+              <tr><td><h4><strong>Email:</strong>@ViewBag.Inmobilaria[i].Email</h4></td></tr>
+              <tr><td><h4><strong>Direccion:</strong>@ViewBag.Inmobilaria[i].Direccion</h4></td></tr>
+              <tr><td><h4><strong>Poblacion:</strong>@ViewBag.Inmobilaria[i].Poblacion</h4></td></tr>
+        <tr><td><hr /></td></tr>
+           }
+     }
+   </table>
+   <div>
+        @Html.ActionLink("Volver", "BuscarIn", "BusquedaUS", new { id = id_sesion, area = "Usuarios" }, null)
+      </div>
+</div>

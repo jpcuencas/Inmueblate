@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="180b6198-595d-4b27-a4c9-9e5fe5f9ffa4" name="avam@AVAMSERVIDOR 2014-03-11 20:13:44" runUser="AVAMSERVIDOR\avam" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d1257e75-8b55-4ab2-9b84-d5d9040e27ea">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="avam_AVAMSERVIDOR 2014-03-11 20_13_44">
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\packages\Moq.4.2.1312.1622\lib\net40\Moq.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\nunit.core.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\packages\NUnit.2.6.3\lib\nunit.framework.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NuevoInmueblateGenNHibernate.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateCP\bin\Debug\NuevoInmueblateCP.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\LinFu.DynamicProxy.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Antlr3.Runtime.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-03-11T20:13:44.0050571+01:00" queuing="2014-03-11T20:13:55.3207091+01:00" start="2014-03-11T20:13:55.6977896+01:00" finish="2014-03-11T20:14:05.8931501+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="22" executed="22" passed="12" error="0" failed="2" timeout="0" aborted="0" inconclusive="8" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="a6c42b4a-8388-2bde-bb84-218399a678cf">
+      <Description>ObtenerAnunciosRandom_Obtener 3 anuncios distintos</Description>
+      <Execution id="75b5e1b9-5f78-4435-a832-4881231908e0" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" />
+    </UnitTest>
+    <UnitTest name="ResgistrarUsuario_NuevoPeroYaExiste" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="5165bcb4-336c-8ad0-f412-09726cec7a6c">
+      <Description>ResgistrarUsuario_Nuevo pero ya Existe</Description>
+      <Execution id="292ff992-c5b6-4b2d-9966-c63fa1d8ade0" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_ResgistrarUsuario</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ResgistrarUsuario_NuevoPeroYaExiste" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoErroneo" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="a3bc3898-adb8-5bb3-3ecb-99329aba4396">
+      <Description>Login_Logeo erroneo</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="0aab941b-f2d5-43da-a683-3a80c3c146a8" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoErroneo" />
+    </UnitTest>
+    <UnitTest name="EnviarPetcion_UsuarioAToA" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="b0f950f9-726e-26dd-e9a2-0383d6c3889f">
+      <Description>EnviarPetcion_Usuario a to a</Description>
+      <Execution id="fd52cd65-95be-410b-847e-f8566d4ab23c" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPetcion_UsuarioAToA" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta3" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="f65e809a-8a70-bb0b-7adc-b5578c726787">
+      <Description>Aceptar_Peticion_Incorrecta3</Description>
+      <Execution id="bcb77b11-e629-4c44-abc8-206f0d5ff62f" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta3" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta3" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="dc60f9ef-ccae-5e87-5821-861d849908d4">
+      <Description>Aceptar_Peticion_Incorrecta3</Description>
+      <Execution id="f7a2ab92-e331-4335-a562-99343f958e15" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta3" />
+    </UnitTest>
+    <UnitTest name="Rechazar_Peticion_Incorrecta1" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="0cb3bce0-6e44-075f-32b3-bfc1013e2a4b">
+      <Description>Rechazar_Peticion_Incorrecta1</Description>
+      <Execution id="cb598869-2d20-4f03-98f3-64a2601eab94" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Rechazar_Peticion_Incorrecta1" />
+    </UnitTest>
+    <UnitTest name="EnviarPeticion_AUsuarioQueNoExiste" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="38477b57-b245-c466-d984-52365250b758">
+      <Description>EnviarPeticion_A Usuario que no existe</Description>
+      <Execution id="aa45f73f-90cd-4639-89c9-84f3802b668e" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPeticion_AUsuarioQueNoExiste" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoUsuario" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="a7c7cd35-ba0b-c491-68a8-373535ee269b">
+      <Description>Login_Logeo como usuario</Description>
+      <Execution id="910f8b1a-060e-4719-9cc9-191e7e197d6e" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoUsuario" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoModerador" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="bf6f8018-6c87-aaf9-8636-e464d8dabd51">
+      <Description>Login_Logeo como moderador</Description>
+      <Execution id="690063be-c959-4baf-b2a6-deca92891516" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoModerador" />
+    </UnitTest>
+    <UnitTest name="EnviarPeticion_UsuarioAToB" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="4a5efe0e-29fc-6f13-b293-784cefe007b5">
+      <Description>EnviarPeticion_Usuario a to b</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="6cb598ba-257d-4272-8e9b-0225ffee60f2" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPeticion_UsuarioAToB" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoInmobiliaria" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="d0897818-d2aa-a1a3-545c-7b0c51c1776c">
+      <Description>Login_Logeo como Inmobiliaria</Description>
+      <Execution id="a30b942d-72e7-44c6-aff6-7a2c2789a798" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoInmobiliaria" />
+    </UnitTest>
+    <UnitTest name="Rechazar_Peticion_Correcta" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="9399c62f-dfb7-3267-a92b-b94eef466f10">
+      <Description>Rechazar_Peticion_Correcta</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="bcb29ed2-45f1-4375-a011-f3133a8edcab" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Rechazar_Peticion_Correcta" />
+    </UnitTest>
+    <UnitTest name="Rechazar_Peticion_Incorrecta2" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="5b50e441-63ef-87aa-63e8-30641e020210">
+      <Description>Rechazar_Peticion_Incorrecta2</Description>
+      <Execution id="d38759fb-417e-48ac-ade5-8a76efbe60a3" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Rechazar_Peticion_Incorrecta2" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener_5Anuncios" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="1b957298-fb96-3fab-fc31-b7eb42676af6">
+      <Description>ObtenerAnunciosRandom_Obtener -5 anuncios</Description>
+      <Execution id="370df47a-9c20-40ed-9fa5-925040070566" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener_5Anuncios" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener15Anuncios" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="fe790a83-12fd-8062-c3ce-a2b323a3dcea">
+      <Description>ObtenerAnunciosRandom_Obtener 15 anuncios</Description>
+      <Execution id="89d6a8ff-ccf6-4db5-ae1b-48de9d0ebc61" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener15Anuncios" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta1" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="1dfa8ac7-09b9-66f3-6ee9-c7f24a18280a">
+      <Description>Aceptar_Peticion_Incorrecta1</Description>
+      <Execution id="3ef736cb-3540-4e59-849d-5cadc4f5159d" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta1" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta2" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="dcea4d4c-3b4c-f245-c9ec-997ef13bfb01">
+      <Description>Aceptar_Peticion_Incorrecta2</Description>
+      <Execution id="236a4f4a-2d5b-44b0-aeaa-51ac0a70b40c" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta2" />
+    </UnitTest>
+    <UnitTest name="ResgistrarUsuario_Nuevo" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="518eb9ff-7c9c-b40b-befc-dc0166e524ff">
+      <Description>ResgistrarUsuario_Nuevo</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="18484ac3-6d72-4743-ae30-a8b11ab99e0f" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_ResgistrarUsuario</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ResgistrarUsuario_Nuevo" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener5Anuncios" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="701d9078-5cf6-fd0b-4ae6-db03ae770fd8">
+      <Description>ObtenerAnunciosRandom_Obtener 5 anuncios</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="4777e304-74b6-4d93-b8b4-5c5c291fe222" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener5Anuncios" />
+    </UnitTest>
+    <UnitTest name="EnviarPeticion_YaExistePeticion" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="016c5d57-ee6a-e77b-591b-df22e86568fe">
+      <Description>EnviarPeticion_Ya existe peticion</Description>
+      <Execution id="f4b3b8de-a339-44a8-bbd6-6fc60dfc1bd6" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPeticion_YaExistePeticion" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Correcta" storage="c:\users\avam\desktop\inmueblate\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="6951d93d-f414-3fc5-e412-43b9c41666e9">
+      <Description>Aceptar_Peticion_Correcta</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="1de4b067-3d64-42fe-b6b7-6938603bde23" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Users/avam/Desktop/Inmueblate/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Correcta" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="016c5d57-ee6a-e77b-591b-df22e86568fe" executionId="f4b3b8de-a339-44a8-bbd6-6fc60dfc1bd6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0cb3bce0-6e44-075f-32b3-bfc1013e2a4b" executionId="cb598869-2d20-4f03-98f3-64a2601eab94" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b957298-fb96-3fab-fc31-b7eb42676af6" executionId="370df47a-9c20-40ed-9fa5-925040070566" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dfa8ac7-09b9-66f3-6ee9-c7f24a18280a" executionId="3ef736cb-3540-4e59-849d-5cadc4f5159d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38477b57-b245-c466-d984-52365250b758" executionId="aa45f73f-90cd-4639-89c9-84f3802b668e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a5efe0e-29fc-6f13-b293-784cefe007b5" executionId="6cb598ba-257d-4272-8e9b-0225ffee60f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5165bcb4-336c-8ad0-f412-09726cec7a6c" executionId="292ff992-c5b6-4b2d-9966-c63fa1d8ade0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="518eb9ff-7c9c-b40b-befc-dc0166e524ff" executionId="18484ac3-6d72-4743-ae30-a8b11ab99e0f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b50e441-63ef-87aa-63e8-30641e020210" executionId="d38759fb-417e-48ac-ade5-8a76efbe60a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6951d93d-f414-3fc5-e412-43b9c41666e9" executionId="1de4b067-3d64-42fe-b6b7-6938603bde23" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="701d9078-5cf6-fd0b-4ae6-db03ae770fd8" executionId="4777e304-74b6-4d93-b8b4-5c5c291fe222" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9399c62f-dfb7-3267-a92b-b94eef466f10" executionId="bcb29ed2-45f1-4375-a011-f3133a8edcab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3bc3898-adb8-5bb3-3ecb-99329aba4396" executionId="0aab941b-f2d5-43da-a683-3a80c3c146a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6c42b4a-8388-2bde-bb84-218399a678cf" executionId="75b5e1b9-5f78-4435-a832-4881231908e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7c7cd35-ba0b-c491-68a8-373535ee269b" executionId="910f8b1a-060e-4719-9cc9-191e7e197d6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0f950f9-726e-26dd-e9a2-0383d6c3889f" executionId="fd52cd65-95be-410b-847e-f8566d4ab23c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf6f8018-6c87-aaf9-8636-e464d8dabd51" executionId="690063be-c959-4baf-b2a6-deca92891516" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0897818-d2aa-a1a3-545c-7b0c51c1776c" executionId="a30b942d-72e7-44c6-aff6-7a2c2789a798" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc60f9ef-ccae-5e87-5821-861d849908d4" executionId="f7a2ab92-e331-4335-a562-99343f958e15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dcea4d4c-3b4c-f245-c9ec-997ef13bfb01" executionId="236a4f4a-2d5b-44b0-aeaa-51ac0a70b40c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f65e809a-8a70-bb0b-7adc-b5578c726787" executionId="bcb77b11-e629-4c44-abc8-206f0d5ff62f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe790a83-12fd-8062-c3ce-a2b323a3dcea" executionId="89d6a8ff-ccf6-4db5-ae1b-48de9d0ebc61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f4b3b8de-a339-44a8-bbd6-6fc60dfc1bd6" testId="016c5d57-ee6a-e77b-591b-df22e86568fe" testName="EnviarPeticion_YaExistePeticion" computerName="AVAMSERVIDOR" duration="00:00:03.6660418" startTime="2014-03-11T20:13:55.9112613+01:00" endTime="2014-03-11T20:14:00.3043343+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4b3b8de-a339-44a8-bbd6-6fc60dfc1bd6">
+      <Output>
+        <StdOut>Given Usuario a con direccion: "4@inm.es"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = '4@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioAConDireccion("4@inm.es") (3,5s)
+And Usuario b con direccion: "5@inm.es"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = '5@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioBConDireccion("5@inm.es") (0,0s)
+When el Usuario a le envía la petición al Usuario b
+NHibernate: SELECT usuarioen0_.[id] as column1_28_0_, usuarioen0_1_.[nombre] as column2_28_0_, usuarioen0_1_.[telefono] as column3_28_0_, usuarioen0_1_.[email] as column4_28_0_, usuarioen0_1_.[direccion] as column5_28_0_, usuarioen0_1_.[poblacion] as column6_28_0_, usuarioen0_1_.[codigoPostal] as column7_28_0_, usuarioen0_1_.[pais] as column8_28_0_, usuarioen0_1_.[password] as column9_28_0_, usuarioen0_1_.[valoracionMedia] as column10_28_0_, usuarioen0_1_.[FK_id_muro] as column11_28_0_, usuarioen0_.[apellidos] as column2_29_0_, usuarioen0_.[nif] as column3_29_0_, usuarioen0_.[fechaNacimiento] as column4_29_0_, usuarioen0_.[privacidad] as column5_29_0_, usuarioen0_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen0_.[FK_id_gustos] as column7_29_0_, case when usuarioen0_2_.[id] is not null then 3 when usuarioen0_.[id] is not null then 1 end as clazz_0_ FROM [Usuario] usuarioen0_ inner join [SuperUsuario] usuarioen0_1_ on usuarioen0_.[id]=usuarioen0_1_.[id] left outer join [Moderador] usuarioen0_2_ on usuarioen0_.[id]=usuarioen0_2_.[id] WHERE usuarioen0_.[id]=@p0;@p0 = 4
+NHibernate: SELECT usuarioen0_.[id] as column1_28_0_, usuarioen0_1_.[nombre] as column2_28_0_, usuarioen0_1_.[telefono] as column3_28_0_, usuarioen0_1_.[email] as column4_28_0_, usuarioen0_1_.[direccion] as column5_28_0_, usuarioen0_1_.[poblacion] as column6_28_0_, usuarioen0_1_.[codigoPostal] as column7_28_0_, usuarioen0_1_.[pais] as column8_28_0_, usuarioen0_1_.[password] as column9_28_0_, usuarioen0_1_.[valoracionMedia] as column10_28_0_, usuarioen0_1_.[FK_id_muro] as column11_28_0_, usuarioen0_.[apellidos] as column2_29_0_, usuarioen0_.[nif] as column3_29_0_, usuarioen0_.[fechaNacimiento] as column4_29_0_, usuarioen0_.[privacidad] as column5_29_0_, usuarioen0_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen0_.[FK_id_gustos] as column7_29_0_, case when usuarioen0_2_.[id] is not null then 3 when usuarioen0_.[id] is not null then 1 end as clazz_0_ FROM [Usuario] usuarioen0_ inner join [SuperUsuario] usuarioen0_1_ on usuarioen0_.[id]=usuarioen0_1_.[id] left outer join [Moderador] usuarioen0_2_ on usuarioen0_.[id]=usuarioen0_2_.[id] WHERE usuarioen0_.[id]=@p0;@p0 = 5
+NHibernate: SELECT listabloqu0_.[FK_id_listaBloqueados] as column1_1_, listabloqu0_.[FK_id_noNavegableBloqueados] as column2_1_, usuarioen1_.[id] as column1_28_0_, usuarioen1_1_.[nombre] as column2_28_0_, usuarioen1_1_.[telefono] as column3_28_0_, usuarioen1_1_.[email] as column4_28_0_, usuarioen1_1_.[direccion] as column5_28_0_, usuarioen1_1_.[poblacion] as column6_28_0_, usuarioen1_1_.[codigoPostal] as column7_28_0_, usuarioen1_1_.[pais] as column8_28_0_, usuarioen1_1_.[password] as column9_28_0_, usuarioen1_1_.[valoracionMedia] as column10_28_0_, usuarioen1_1_.[FK_id_muro] as column11_28_0_, usuarioen1_.[apellidos] as column2_29_0_, usuarioen1_.[nif] as column3_29_0_, usuarioen1_.[fechaNacimiento] as column4_29_0_, usuarioen1_.[privacidad] as column5_29_0_, usuarioen1_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen1_.[FK_id_gustos] as column7_29_0_, case when usuarioen1_2_.[id] is not null then 3 when usuarioen1_.[id] is not null then 1 end as clazz_0_ FROM [UsuarioUsuarioBloqueados] listabloqu0_ left outer join [Usuario] usuarioen1_ on listabloqu0_.[FK_id_noNavegableBloqueados]=usuarioen1_.[id] left outer join [SuperUsuario] usuarioen1_1_ on usuarioen1_.[id]=usuarioen1_1_.[id] left outer join [Moderador] usuarioen1_2_ on usuarioen1_.[id]=usuarioen1_2_.[id] WHERE listabloqu0_.[FK_id_listaBloqueados]=@p0;@p0 = 5
+NHibernate: SELECT listaamigo0_.[FK_id_listaAmigos] as column1_1_, listaamigo0_.[FK_id_noNavegableAmigos] as column2_1_, usuarioen1_.[id] as column1_28_0_, usuarioen1_1_.[nombre] as column2_28_0_, usuarioen1_1_.[telefono] as column3_28_0_, usuarioen1_1_.[email] as column4_28_0_, usuarioen1_1_.[direccion] as column5_28_0_, usuarioen1_1_.[poblacion] as column6_28_0_, usuarioen1_1_.[codigoPostal] as column7_28_0_, usuarioen1_1_.[pais] as column8_28_0_, usuarioen1_1_.[password] as column9_28_0_, usuarioen1_1_.[valoracionMedia] as column10_28_0_, usuarioen1_1_.[FK_id_muro] as column11_28_0_, usuarioen1_.[apellidos] as column2_29_0_, usuarioen1_.[nif] as column3_29_0_, usuarioen1_.[fechaNacimiento] as column4_29_0_, usuarioen1_.[privacidad] as column5_29_0_, usuarioen1_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen1_.[FK_id_gustos] as column7_29_0_, case when usuarioen1_2_.[id] is not null then 3 when usuarioen1_.[id] is not null then 1 end as clazz_0_ FROM [UsuarioUsuarioAmigos] listaamigo0_ left outer join [Usuario] usuarioen1_ on listaamigo0_.[FK_id_noNavegableAmigos]=usuarioen1_.[id] left outer join [SuperUsuario] usuarioen1_1_ on usuarioen1_.[id]=usuarioen1_1_.[id] left outer join [Moderador] usuarioen1_2_ on usuarioen1_.[id]=usuarioen1_2_.[id] WHERE listaamigo0_.[FK_id_listaAmigos]=@p0;@p0 = 5
+NHibernate: SELECT peticiones0_.[FK_id_receptor] as column6_1_, peticiones0_.[id] as column1_1_, peticiones0_.[id] as column1_3_0_, peticiones0_.[asunto] as column2_3_0_, peticiones0_.[cuerpo] as column3_3_0_, peticiones0_.[estado] as column4_3_0_, peticiones0_.[FK_id_emisor] as column5_3_0_, peticiones0_.[FK_id_receptor] as column6_3_0_ FROM [PeticionAmistad] peticiones0_ WHERE peticiones0_.[FK_id_receptor]=@p0;@p0 = 5
+-&gt; done: UsuarioCP_EnviarPeticionSteps.WhenElUsuarioALeEnviaLaPeticionAlUsuarioB() (0,1s)
+Then el resultado deberia ser 3
+-&gt; done: UsuarioCP_EnviarPeticionSteps.ThenElResultadoDeberiaSer(3) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cb598869-2d20-4f03-98f3-64a2601eab94" testId="0cb3bce0-6e44-075f-32b3-bfc1013e2a4b" testName="Rechazar_Peticion_Incorrecta1" computerName="AVAMSERVIDOR" duration="00:00:00.3473295" startTime="2014-03-11T20:14:00.3226960+01:00" endTime="2014-03-11T20:14:00.6939063+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb598869-2d20-4f03-98f3-64a2601eab94">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor no es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.Rechazar_Peticion_Incorrecta1() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature:línea 16
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="370df47a-9c20-40ed-9fa5-925040070566" testId="1b957298-fb96-3fab-fc31-b7eb42676af6" testName="ObtenerAnunciosRandom_Obtener_5Anuncios" computerName="AVAMSERVIDOR" duration="00:00:03.4128827" startTime="2014-03-11T20:14:00.7149073+01:00" endTime="2014-03-11T20:14:04.4989550+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="370df47a-9c20-40ed-9fa5-925040070566">
+      <Output>
+        <StdOut>Given quiero -5 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(-5) (0,0s)
+When busco mis anuncios
+NHibernate: SELECT this_.[id] as column1_35_0_, this_.[imagen] as column2_35_0_, this_.[descripcion] as column3_35_0_, this_.[fechaCaducidad] as column4_35_0_, this_.[tipo] as column5_35_0_, this_.[URL] as column6_35_0_ FROM [Anuncio] this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() (3,3s)
+Then deberia otener 0 anuncios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.ThenDeberiaOtenerAnuncios(0) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3ef736cb-3540-4e59-849d-5cadc4f5159d" testId="1dfa8ac7-09b9-66f3-6ee9-c7f24a18280a" testName="Aceptar_Peticion_Incorrecta1" computerName="AVAMSERVIDOR" duration="00:00:00.0039204" startTime="2014-03-11T20:14:04.5049554+01:00" endTime="2014-03-11T20:14:04.5169557+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ef736cb-3540-4e59-849d-5cadc4f5159d">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor no es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.Aceptar_Peticion_Incorrecta1() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature:línea 16
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="aa45f73f-90cd-4639-89c9-84f3802b668e" testId="38477b57-b245-c466-d984-52365250b758" testName="EnviarPeticion_AUsuarioQueNoExiste" computerName="AVAMSERVIDOR" duration="00:00:00.0328305" startTime="2014-03-11T20:14:04.5199544+01:00" endTime="2014-03-11T20:14:04.5569568+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa45f73f-90cd-4639-89c9-84f3802b668e">
+      <Output>
+        <StdOut>Given Usuario a con direccion: "ijsl@inm.es"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioAConDireccion("ijsl@inm.es") (0,0s)
+And Usuario b con direccion: "noexsite@inm.es"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'noexsite@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioBConDireccion("noexsite@inm.es") (0,0s)
+When el Usuario a le envía la petición al Usuario b
+NHibernate: SELECT usuarioen0_.[id] as column1_28_0_, usuarioen0_1_.[nombre] as column2_28_0_, usuarioen0_1_.[telefono] as column3_28_0_, usuarioen0_1_.[email] as column4_28_0_, usuarioen0_1_.[direccion] as column5_28_0_, usuarioen0_1_.[poblacion] as column6_28_0_, usuarioen0_1_.[codigoPostal] as column7_28_0_, usuarioen0_1_.[pais] as column8_28_0_, usuarioen0_1_.[password] as column9_28_0_, usuarioen0_1_.[valoracionMedia] as column10_28_0_, usuarioen0_1_.[FK_id_muro] as column11_28_0_, usuarioen0_.[apellidos] as column2_29_0_, usuarioen0_.[nif] as column3_29_0_, usuarioen0_.[fechaNacimiento] as column4_29_0_, usuarioen0_.[privacidad] as column5_29_0_, usuarioen0_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen0_.[FK_id_gustos] as column7_29_0_, case when usuarioen0_2_.[id] is not null then 3 when usuarioen0_.[id] is not null then 1 end as clazz_0_ FROM [Usuario] usuarioen0_ inner join [SuperUsuario] usuarioen0_1_ on usuarioen0_.[id]=usuarioen0_1_.[id] left outer join [Moderador] usuarioen0_2_ on usuarioen0_.[id]=usuarioen0_2_.[id] WHERE usuarioen0_.[id]=@p0;@p0 = 1
+NHibernate: SELECT usuarioen0_.[id] as column1_28_0_, usuarioen0_1_.[nombre] as column2_28_0_, usuarioen0_1_.[telefono] as column3_28_0_, usuarioen0_1_.[email] as column4_28_0_, usuarioen0_1_.[direccion] as column5_28_0_, usuarioen0_1_.[poblacion] as column6_28_0_, usuarioen0_1_.[codigoPostal] as column7_28_0_, usuarioen0_1_.[pais] as column8_28_0_, usuarioen0_1_.[password] as column9_28_0_, usuarioen0_1_.[valoracionMedia] as column10_28_0_, usuarioen0_1_.[FK_id_muro] as column11_28_0_, usuarioen0_.[apellidos] as column2_29_0_, usuarioen0_.[nif] as column3_29_0_, usuarioen0_.[fechaNacimiento] as column4_29_0_, usuarioen0_.[privacidad] as column5_29_0_, usuarioen0_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen0_.[FK_id_gustos] as column7_29_0_, case when usuarioen0_2_.[id] is not null then 3 when usuarioen0_.[id] is not null then 1 end as clazz_0_ FROM [Usuario] usuarioen0_ inner join [SuperUsuario] usuarioen0_1_ on usuarioen0_.[id]=usuarioen0_1_.[id] left outer join [Moderador] usuarioen0_2_ on usuarioen0_.[id]=usuarioen0_2_.[id] WHERE usuarioen0_.[id]=@p0;@p0 = -1
+-&gt; done: UsuarioCP_EnviarPeticionSteps.WhenElUsuarioALeEnviaLaPeticionAlUsuarioB() (0,0s)
+Then el resultado deberia ser 1
+-&gt; done: UsuarioCP_EnviarPeticionSteps.ThenElResultadoDeberiaSer(1) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6cb598ba-257d-4272-8e9b-0225ffee60f2" testId="4a5efe0e-29fc-6f13-b293-784cefe007b5" testName="EnviarPeticion_UsuarioAToB" computerName="AVAMSERVIDOR" duration="00:00:00.2372721" startTime="2014-03-11T20:14:04.5599565+01:00" endTime="2014-03-11T20:14:04.8009599+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cb598ba-257d-4272-8e9b-0225ffee60f2">
+      <Output>
+        <StdOut>Given Usuario a con direccion: "ijsl@inm.es"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioAConDireccion("ijsl@inm.es") (0,0s)
+And Usuario b con direccion: "crt@inm.es"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'crt@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioBConDireccion("crt@inm.es") (0,0s)
+When el Usuario a le envía la petición al Usuario b
+NHibernate: SELECT usuarioen0_.[id] as column1_28_0_, usuarioen0_1_.[nombre] as column2_28_0_, usuarioen0_1_.[telefono] as column3_28_0_, usuarioen0_1_.[email] as column4_28_0_, usuarioen0_1_.[direccion] as column5_28_0_, usuarioen0_1_.[poblacion] as column6_28_0_, usuarioen0_1_.[codigoPostal] as column7_28_0_, usuarioen0_1_.[pais] as column8_28_0_, usuarioen0_1_.[password] as column9_28_0_, usuarioen0_1_.[valoracionMedia] as column10_28_0_, usuarioen0_1_.[FK_id_muro] as column11_28_0_, usuarioen0_.[apellidos] as column2_29_0_, usuarioen0_.[nif] as column3_29_0_, usuarioen0_.[fechaNacimiento] as column4_29_0_, usuarioen0_.[privacidad] as column5_29_0_, usuarioen0_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen0_.[FK_id_gustos] as column7_29_0_, case when usuarioen0_2_.[id] is not null then 3 when usuarioen0_.[id] is not null then 1 end as clazz_0_ FROM [Usuario] usuarioen0_ inner join [SuperUsuario] usuarioen0_1_ on usuarioen0_.[id]=usuarioen0_1_.[id] left outer join [Moderador] usuarioen0_2_ on usuarioen0_.[id]=usuarioen0_2_.[id] WHERE usuarioen0_.[id]=@p0;@p0 = 1
+NHibernate: SELECT usuarioen0_.[id] as column1_28_0_, usuarioen0_1_.[nombre] as column2_28_0_, usuarioen0_1_.[telefono] as column3_28_0_, usuarioen0_1_.[email] as column4_28_0_, usuarioen0_1_.[direccion] as column5_28_0_, usuarioen0_1_.[poblacion] as column6_28_0_, usuarioen0_1_.[codigoPostal] as column7_28_0_, usuarioen0_1_.[pais] as column8_28_0_, usuarioen0_1_.[password] as column9_28_0_, usuarioen0_1_.[valoracionMedia] as column10_28_0_, usuarioen0_1_.[FK_id_muro] as column11_28_0_, usuarioen0_.[apellidos] as column2_29_0_, usuarioen0_.[nif] as column3_29_0_, usuarioen0_.[fechaNacimiento] as column4_29_0_, usuarioen0_.[privacidad] as column5_29_0_, usuarioen0_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen0_.[FK_id_gustos] as column7_29_0_, case when usuarioen0_2_.[id] is not null then 3 when usuarioen0_.[id] is not null then 1 end as clazz_0_ FROM [Usuario] usuarioen0_ inner join [SuperUsuario] usuarioen0_1_ on usuarioen0_.[id]=usuarioen0_1_.[id] left outer join [Moderador] usuarioen0_2_ on usuarioen0_.[id]=usuarioen0_2_.[id] WHERE usuarioen0_.[id]=@p0;@p0 = 3
+NHibernate: SELECT listabloqu0_.[FK_id_listaBloqueados] as column1_1_, listabloqu0_.[FK_id_noNavegableBloqueados] as column2_1_, usuarioen1_.[id] as column1_28_0_, usuarioen1_1_.[nombre] as column2_28_0_, usuarioen1_1_.[telefono] as column3_28_0_, usuarioen1_1_.[email] as column4_28_0_, usuarioen1_1_.[direccion] as column5_28_0_, usuarioen1_1_.[poblacion] as column6_28_0_, usuarioen1_1_.[codigoPostal] as column7_28_0_, usuarioen1_1_.[pais] as column8_28_0_, usuarioen1_1_.[password] as column9_28_0_, usuarioen1_1_.[valoracionMedia] as column10_28_0_, usuarioen1_1_.[FK_id_muro] as column11_28_0_, usuarioen1_.[apellidos] as column2_29_0_, usuarioen1_.[nif] as column3_29_0_, usuarioen1_.[fechaNacimiento] as column4_29_0_, usuarioen1_.[privacidad] as column5_29_0_, usuarioen1_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen1_.[FK_id_gustos] as column7_29_0_, case when usuarioen1_2_.[id] is not null then 3 when usuarioen1_.[id] is not null then 1 end as clazz_0_ FROM [UsuarioUsuarioBloqueados] listabloqu0_ left outer join [Usuario] usuarioen1_ on listabloqu0_.[FK_id_noNavegableBloqueados]=usuarioen1_.[id] left outer join [SuperUsuario] usuarioen1_1_ on usuarioen1_.[id]=usuarioen1_1_.[id] left outer join [Moderador] usuarioen1_2_ on usuarioen1_.[id]=usuarioen1_2_.[id] WHERE listabloqu0_.[FK_id_listaBloqueados]=@p0;@p0 = 3
+NHibernate: SELECT listaamigo0_.[FK_id_listaAmigos] as column1_1_, listaamigo0_.[FK_id_noNavegableAmigos] as column2_1_, usuarioen1_.[id] as column1_28_0_, usuarioen1_1_.[nombre] as column2_28_0_, usuarioen1_1_.[telefono] as column3_28_0_, usuarioen1_1_.[email] as column4_28_0_, usuarioen1_1_.[direccion] as column5_28_0_, usuarioen1_1_.[poblacion] as column6_28_0_, usuarioen1_1_.[codigoPostal] as column7_28_0_, usuarioen1_1_.[pais] as column8_28_0_, usuarioen1_1_.[password] as column9_28_0_, usuarioen1_1_.[valoracionMedia] as column10_28_0_, usuarioen1_1_.[FK_id_muro] as column11_28_0_, usuarioen1_.[apellidos] as column2_29_0_, usuarioen1_.[nif] as column3_29_0_, usuarioen1_.[fechaNacimiento] as column4_29_0_, usuarioen1_.[privacidad] as column5_29_0_, usuarioen1_.[FK_id_preferenciasBusqueda] as column6_29_0_, usuarioen1_.[FK_id_gustos] as column7_29_0_, case when usuarioen1_2_.[id] is not null then 3 when usuarioen1_.[id] is not null then 1 end as clazz_0_ FROM [UsuarioUsuarioAmigos] listaamigo0_ left outer join [Usuario] usuarioen1_ on listaamigo0_.[FK_id_noNavegableAmigos]=usuarioen1_.[id] left outer join [SuperUsuario] usuarioen1_1_ on usuarioen1_.[id]=usuarioen1_1_.[id] left outer join [Moderador] usuarioen1_2_ on usuarioen1_.[id]=usuarioen1_2_.[id] WHERE listaamigo0_.[FK_id_listaAmigos]=@p0;@p0 = 3
+NHibernate: SELECT peticiones0_.[FK_id_receptor] as column6_1_, peticiones0_.[id] as column1_1_, peticiones0_.[id] as column1_3_0_, peticiones0_.[asunto] as column2_3_0_, peticiones0_.[cuerpo] as column3_3_0_, peticiones0_.[estado] as column4_3_0_, peticiones0_.[FK_id_emisor] as column5_3_0_, peticiones0_.[FK_id_receptor] as column6_3_0_ FROM [PeticionAmistad] peticiones0_ WHERE peticiones0_.[FK_id_receptor]=@p0;@p0 = 3
+NHibernate: SELECT peticiones0_.[FK_id_emisor] as column5_1_, peticiones0_.[id] as column1_1_, peticiones0_.[id] as column1_3_0_, peticiones0_.[asunto] as column2_3_0_, peticiones0_.[cuerpo] as column3_3_0_, peticiones0_.[estado] as column4_3_0_, peticiones0_.[FK_id_emisor] as column5_3_0_, peticiones0_.[FK_id_receptor] as column6_3_0_ FROM [PeticionAmistad] peticiones0_ WHERE peticiones0_.[FK_id_emisor]=@p0;@p0 = 1
+NHibernate: INSERT INTO [PeticionAmistad] ([asunto], [cuerpo], [estado], [FK_id_emisor], [FK_id_receptor]) VALUES (@p0, @p1, @p2, @p3, @p4); select SCOPE_IDENTITY();@p0 = 'Amistad', @p1 = 'Se mi amigo', @p2 = 0, @p3 = 1, @p4 = 3
+NHibernate: UPDATE [PeticionAmistad] SET [FK_id_emisor] = @p0 WHERE [id] = @p1;@p0 = 1, @p1 = 6
+NHibernate: UPDATE [PeticionAmistad] SET [FK_id_receptor] = @p0 WHERE [id] = @p1;@p0 = 3, @p1 = 6
+-&gt; done: UsuarioCP_EnviarPeticionSteps.WhenElUsuarioALeEnviaLaPeticionAlUsuarioB() (0,2s)
+Then el resultado deber ser ditinto a -1
+NHibernate: SELECT peticionam0_.[id] as column1_3_0_, peticionam0_.[asunto] as column2_3_0_, peticionam0_.[cuerpo] as column3_3_0_, peticionam0_.[estado] as column4_3_0_, peticionam0_.[FK_id_emisor] as column5_3_0_, peticionam0_.[FK_id_receptor] as column6_3_0_ FROM [PeticionAmistad] peticionam0_ WHERE peticionam0_.[id]=@p0;@p0 = 6
+NHibernate: DELETE FROM [PeticionAmistad] WHERE [id] = @p0;@p0 = 6
+-&gt; done: UsuarioCP_EnviarPeticionSteps.ThenElResultadoDeberSerDitintoA(-1) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="292ff992-c5b6-4b2d-9966-c63fa1d8ade0" testId="5165bcb4-336c-8ad0-f412-09726cec7a6c" testName="ResgistrarUsuario_NuevoPeroYaExiste" computerName="AVAMSERVIDOR" duration="00:00:00.0090297" startTime="2014-03-11T20:14:04.8049597+01:00" endTime="2014-03-11T20:14:04.8209591+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="292ff992-c5b6-4b2d-9966-c63fa1d8ade0">
+      <Output>
+        <StdOut>Given El usuario "Isido" con mail "ijsl@inm.es" se quiere registrar
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.GivenElUsuarioConMailSeQuiereRegistrar("Isido", "ijsl@inm.es") (0,0s)
+When lo resgitro en mi base de datos
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.WhenLoResgitroEnMiBaseDeDatos() (0,0s)
+Then el resultado debe ser -1
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.ThenElResultadoDebeSer(-1) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="18484ac3-6d72-4743-ae30-a8b11ab99e0f" testId="518eb9ff-7c9c-b40b-befc-dc0166e524ff" testName="ResgistrarUsuario_Nuevo" computerName="AVAMSERVIDOR" duration="00:00:00.3591219" startTime="2014-03-11T20:14:04.8253961+01:00" endTime="2014-03-11T20:14:05.1898348+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18484ac3-6d72-4743-ae30-a8b11ab99e0f">
+      <Output>
+        <StdOut>Given El usuario "Diana" con mail "ddvc@inm.es" se quiere registrar
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.GivenElUsuarioConMailSeQuiereRegistrar("Diana", "ddvc@inm.es") (0,0s)
+When lo resgitro en mi base de datos
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ddvc@inm.es'
+NHibernate: INSERT INTO [Muro] ([pendienteModeracion]) VALUES (@p0); select SCOPE_IDENTITY();@p0 = False
+NHibernate: INSERT INTO [Entrada] ([fechaPublicacion], [titulo], [cuerpo], [pendienteModeracion], [FK_id_muro], [FK_id_creador]) VALUES (@p0, @p1, @p2, @p3, @p4, @p5); select SCOPE_IDENTITY();@p0 = 3/11/2014 12:00:00 AM, @p1 = 'Bienvenid@ Diana', @p2 = 'Disfuta de nuestra red social, aquí podrás encontrar el inmuble que buscas', @p3 = False, @p4 = 10, @p5 = NULL
+NHibernate: INSERT INTO [SuperUsuario] ([nombre], [telefono], [email], [direccion], [poblacion], [codigoPostal], [pais], [password], [valoracionMedia], [FK_id_muro]) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); select SCOPE_IDENTITY();@p0 = 'Diana', @p1 = '34234', @p2 = 'ddvc@inm.es', @p3 = 'casa', @p4 = 'pueblo', @p5 = '00', @p6 = 'españa', @p7 = '7bed657a775c37c2570786d0cbeefd88', @p8 = 0, @p9 = 10
+NHibernate: INSERT INTO [Usuario] ([apellidos], [nif], [fechaNacimiento], [privacidad], [FK_id_preferenciasBusqueda], [FK_id_gustos], [id]) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);@p0 = 'a1', @p1 = '444', @p2 = 3/11/2014 12:00:00 AM, @p3 = 2, @p4 = NULL, @p5 = NULL, @p6 = 12
+NHibernate: UPDATE [Entrada] SET [FK_id_muro] = @p0 WHERE [id] = @p1;@p0 = 10, @p1 = 10
+NHibernate: UPDATE [Entrada] SET [FK_id_muro] = @p0 WHERE [id] = @p1;@p0 = 10, @p1 = 10
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.WhenLoResgitroEnMiBaseDeDatos() (0,1s)
+Then el resultado debe ser distinto de -1
+NHibernate: SELECT superusuar0_.[id] as column1_28_0_, superusuar0_.[nombre] as column2_28_0_, superusuar0_.[telefono] as column3_28_0_, superusuar0_.[email] as column4_28_0_, superusuar0_.[direccion] as column5_28_0_, superusuar0_.[poblacion] as column6_28_0_, superusuar0_.[codigoPostal] as column7_28_0_, superusuar0_.[pais] as column8_28_0_, superusuar0_.[password] as column9_28_0_, superusuar0_.[valoracionMedia] as column10_28_0_, superusuar0_.[FK_id_muro] as column11_28_0_, superusuar0_1_.[apellidos] as column2_29_0_, superusuar0_1_.[nif] as column3_29_0_, superusuar0_1_.[fechaNacimiento] as column4_29_0_, superusuar0_1_.[privacidad] as column5_29_0_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_0_, superusuar0_1_.[FK_id_gustos] as column7_29_0_, superusuar0_2_.[descripcion] as column2_33_0_, superusuar0_2_.[cif] as column3_33_0_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_0_ FROM [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] WHERE superusuar0_.[id]=@p0;@p0 = 12
+NHibernate: DELETE FROM [GrupoSuperUsuarios] WHERE [FK_id_miembros] = @p0;@p0 = 12
+NHibernate: UPDATE [Mensaje] SET [FK_id_emisor] = null WHERE [FK_id_emisor] = @p0;@p0 = 12
+NHibernate: UPDATE [Mensaje] SET [FK_id_receptor] = null WHERE [FK_id_receptor] = @p0;@p0 = 12
+NHibernate: UPDATE [Valoracion] SET [FK_id_emisor] = null WHERE [FK_id_emisor] = @p0;@p0 = 12
+NHibernate: UPDATE [Valoracion] SET [FK_id_receptor] = null WHERE [FK_id_receptor] = @p0;@p0 = 12
+NHibernate: UPDATE [Entrada] SET [FK_id_creador] = null WHERE [FK_id_creador] = @p0;@p0 = 12
+NHibernate: UPDATE [Comentario] SET [FK_id_creador] = null WHERE [FK_id_creador] = @p0;@p0 = 12
+NHibernate: UPDATE [PeticionAmistad] SET [FK_id_emisor] = null WHERE [FK_id_emisor] = @p0;@p0 = 12
+NHibernate: UPDATE [PeticionAmistad] SET [FK_id_receptor] = null WHERE [FK_id_receptor] = @p0;@p0 = 12
+NHibernate: UPDATE [ElementoMultimedia] SET [FK_id_fusuario] = null WHERE [FK_id_fusuario] = @p0;@p0 = 12
+NHibernate: UPDATE [ElementoMultimedia] SET [FK_id_vusuario] = null WHERE [FK_id_vusuario] = @p0;@p0 = 12
+NHibernate: DELETE FROM [UsuarioUsuarioAmigos] WHERE [FK_id_listaAmigos] = @p0;@p0 = 12
+NHibernate: DELETE FROM [UsuarioUsuarioBloqueados] WHERE [FK_id_listaBloqueados] = @p0;@p0 = 12
+NHibernate: DELETE FROM [Usuario] WHERE [id] = @p0;@p0 = 12
+NHibernate: DELETE FROM [SuperUsuario] WHERE [id] = @p0;@p0 = 12
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.ThenElResultadoDebeSerDistintoDe(-1) (0,3s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d38759fb-417e-48ac-ade5-8a76efbe60a3" testId="5b50e441-63ef-87aa-63e8-30641e020210" testName="Rechazar_Peticion_Incorrecta2" computerName="AVAMSERVIDOR" duration="00:00:00.0052984" startTime="2014-03-11T20:14:05.1958291+01:00" endTime="2014-03-11T20:14:05.2248298+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d38759fb-417e-48ac-ade5-8a76efbe60a3">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor no es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.Rechazar_Peticion_Incorrecta2() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature:línea 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1de4b067-3d64-42fe-b6b7-6938603bde23" testId="6951d93d-f414-3fc5-e412-43b9c41666e9" testName="Aceptar_Peticion_Correcta" computerName="AVAMSERVIDOR" duration="00:00:00.0118390" startTime="2014-03-11T20:14:05.2258299+01:00" endTime="2014-03-11T20:14:05.2408302+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1de4b067-3d64-42fe-b6b7-6938603bde23">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor no es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor no es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser distinto de -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.Aceptar_Peticion_Correcta() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature:línea 9
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4777e304-74b6-4d93-b8b4-5c5c291fe222" testId="701d9078-5cf6-fd0b-4ae6-db03ae770fd8" testName="ObtenerAnunciosRandom_Obtener5Anuncios" computerName="AVAMSERVIDOR" duration="00:00:00.0725440" startTime="2014-03-11T20:14:05.2438282+01:00" endTime="2014-03-11T20:14:05.3201415+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4777e304-74b6-4d93-b8b4-5c5c291fe222">
+      <Output>
+        <StdOut>Given quiero 5 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(5) (0,0s)
+When busco mis anuncios
+NHibernate: SELECT this_.[id] as column1_35_0_, this_.[imagen] as column2_35_0_, this_.[descripcion] as column3_35_0_, this_.[fechaCaducidad] as column4_35_0_, this_.[tipo] as column5_35_0_, this_.[URL] as column6_35_0_ FROM [Anuncio] this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() (0,0s)
+Then deberia otener 5 anuncios
+-&gt; error: Error de Assert.AreEqual. Se esperaba &lt;5&gt;, pero es &lt;1&gt;.</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.AreEqual. Se esperaba &lt;5&gt;, pero es &lt;1&gt;. </Message>
+          <StackTrace>   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomSteps.ThenDeberiaOtenerAnuncios(Int32 pe_esperado) en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandomSteps.cs:línea 42
+   en lambda_method(Closure , IContextManager , Int32 )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature.cs:línea 0
+   en NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener5Anuncios() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature:línea 7
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bcb29ed2-45f1-4375-a011-f3133a8edcab" testId="9399c62f-dfb7-3267-a92b-b94eef466f10" testName="Rechazar_Peticion_Correcta" computerName="AVAMSERVIDOR" duration="00:00:00.0058301" startTime="2014-03-11T20:14:05.3361409+01:00" endTime="2014-03-11T20:14:05.3451426+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcb29ed2-45f1-4375-a011-f3133a8edcab">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser distinto de -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.Rechazar_Peticion_Correcta() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature:línea 9
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0aab941b-f2d5-43da-a683-3a80c3c146a8" testId="a3bc3898-adb8-5bb3-3ecb-99329aba4396" testName="Login_LogeoErroneo" computerName="AVAMSERVIDOR" duration="00:00:00.0383499" startTime="2014-03-11T20:14:05.3477459+01:00" endTime="2014-03-11T20:14:05.4011415+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0aab941b-f2d5-43da-a683-3a80c3c146a8">
+      <Output>
+        <StdOut>Given Un usuario con email "ddv@inm.es" y contraseña "ddv"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ddv@inm.es", "ddv") (0,0s)
+When quiero logearme en la red social como "Usuario"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ddv@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Usuario") (0,0s)
+Then debo logearme como usuario y devolver 1
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(1) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="75b5e1b9-5f78-4435-a832-4881231908e0" testId="a6c42b4a-8388-2bde-bb84-218399a678cf" testName="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" computerName="AVAMSERVIDOR" duration="00:00:00.0055334" startTime="2014-03-11T20:14:05.4051427+01:00" endTime="2014-03-11T20:14:05.4211434+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75b5e1b9-5f78-4435-a832-4881231908e0">
+      <Output>
+        <StdOut>Given quiero 3 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(3) (0,0s)
+When creo dos listas de mis anuncios
+NHibernate: SELECT this_.[id] as column1_35_0_, this_.[imagen] as column2_35_0_, this_.[descripcion] as column3_35_0_, this_.[fechaCaducidad] as column4_35_0_, this_.[tipo] as column5_35_0_, this_.[URL] as column6_35_0_ FROM [Anuncio] this_
+NHibernate: SELECT this_.[id] as column1_35_0_, this_.[imagen] as column2_35_0_, this_.[descripcion] as column3_35_0_, this_.[fechaCaducidad] as column4_35_0_, this_.[tipo] as column5_35_0_, this_.[URL] as column6_35_0_ FROM [Anuncio] this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenCreoDosListasDeMisAnuncios() (0,0s)
+Then las listas deberian ser distintas
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.ThenLasListasDeberianSerDistintas() (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="910f8b1a-060e-4719-9cc9-191e7e197d6e" testId="a7c7cd35-ba0b-c491-68a8-373535ee269b" testName="Login_LogeoComoUsuario" computerName="AVAMSERVIDOR" duration="00:00:00.1207247" startTime="2014-03-11T20:14:05.4241440+01:00" endTime="2014-03-11T20:14:05.5501454+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="910f8b1a-060e-4719-9cc9-191e7e197d6e">
+      <Output>
+        <StdOut>Given Un usuario con email "ijsl@inm.es" y contraseña "ijsl"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ijsl@inm.es", "ijsl") (0,0s)
+When quiero logearme en la red social como "Usuario"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Usuario") (0,1s)
+Then debo logearme como usuario y devolver 3
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(3) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fd52cd65-95be-410b-847e-f8566d4ab23c" testId="b0f950f9-726e-26dd-e9a2-0383d6c3889f" testName="EnviarPetcion_UsuarioAToA" computerName="AVAMSERVIDOR" duration="00:00:00.0071786" startTime="2014-03-11T20:14:05.5541451+01:00" endTime="2014-03-11T20:14:05.5685268+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd52cd65-95be-410b-847e-f8566d4ab23c">
+      <Output>
+        <StdOut>Given Usuario a con direccion: "ijsl@inm.es"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioAConDireccion("ijsl@inm.es") (0,0s)
+And Usuario b con direccion: "ijsl@inm.es"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioBConDireccion("ijsl@inm.es") (0,0s)
+When el Usuario a le envía la petición al Usuario b
+-&gt; done: UsuarioCP_EnviarPeticionSteps.WhenElUsuarioALeEnviaLaPeticionAlUsuarioB() (0,0s)
+Then el resultado deberia ser 0
+-&gt; done: UsuarioCP_EnviarPeticionSteps.ThenElResultadoDeberiaSer(0) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="690063be-c959-4baf-b2a6-deca92891516" testId="bf6f8018-6c87-aaf9-8636-e464d8dabd51" testName="Login_LogeoComoModerador" computerName="AVAMSERVIDOR" duration="00:00:00.0091256" startTime="2014-03-11T20:14:05.5711458+01:00" endTime="2014-03-11T20:14:05.5841453+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="690063be-c959-4baf-b2a6-deca92891516">
+      <Output>
+        <StdOut>Given Un moderador con email "avam@inm.es" y contraseña "avam"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnModeradorConEmailYContrasena("avam@inm.es", "avam") (0,0s)
+When quiero logearme en la red social como "Moderador"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'avam@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Moderador") (0,0s)
+Then debo logearme como usuario y devolver 2
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(2) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a30b942d-72e7-44c6-aff6-7a2c2789a798" testId="d0897818-d2aa-a1a3-545c-7b0c51c1776c" testName="Login_LogeoComoInmobiliaria" computerName="AVAMSERVIDOR" duration="00:00:00.0078665" startTime="2014-03-11T20:14:05.5871450+01:00" endTime="2014-03-11T20:14:05.6001462+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a30b942d-72e7-44c6-aff6-7a2c2789a798">
+      <Output>
+        <StdOut>Given Una inmobiliara con email "jpcs@inm.es" y contraseña "jpcs"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnaInmobiliaraConEmailYContrasena("jpcs@inm.es", "jpcs") (0,0s)
+When quiero logearme en la red social como "Inmobiliaria"
+NHibernate: select superusuar0_.[id] as column1_28_, superusuar0_.[nombre] as column2_28_, superusuar0_.[telefono] as column3_28_, superusuar0_.[email] as column4_28_, superusuar0_.[direccion] as column5_28_, superusuar0_.[poblacion] as column6_28_, superusuar0_.[codigoPostal] as column7_28_, superusuar0_.[pais] as column8_28_, superusuar0_.[password] as column9_28_, superusuar0_.[valoracionMedia] as column10_28_, superusuar0_.[FK_id_muro] as column11_28_, superusuar0_1_.[apellidos] as column2_29_, superusuar0_1_.[nif] as column3_29_, superusuar0_1_.[fechaNacimiento] as column4_29_, superusuar0_1_.[privacidad] as column5_29_, superusuar0_1_.[FK_id_preferenciasBusqueda] as column6_29_, superusuar0_1_.[FK_id_gustos] as column7_29_, superusuar0_2_.[descripcion] as column2_33_, superusuar0_2_.[cif] as column3_33_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Usuario] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Inmobiliaria] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'jpcs@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Inmobiliaria") (0,0s)
+Then debo logearme como usuario y devolver 4
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(4) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f7a2ab92-e331-4335-a562-99343f958e15" testId="dc60f9ef-ccae-5e87-5821-861d849908d4" testName="Aceptar_Peticion_Incorrecta3" computerName="AVAMSERVIDOR" duration="00:00:00.0099679" startTime="2014-03-11T20:14:05.6031458+01:00" endTime="2014-03-11T20:14:05.6161462+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7a2ab92-e331-4335-a562-99343f958e15">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor no es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor no es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.Aceptar_Peticion_Incorrecta3() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature:línea 30
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="236a4f4a-2d5b-44b0-aeaa-51ac0a70b40c" testId="dcea4d4c-3b4c-f245-c9ec-997ef13bfb01" testName="Aceptar_Peticion_Incorrecta2" computerName="AVAMSERVIDOR" duration="00:00:00.0043467" startTime="2014-03-11T20:14:05.6311461+01:00" endTime="2014-03-11T20:14:05.6391446+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="236a4f4a-2d5b-44b0-aeaa-51ac0a70b40c">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor no es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.Aceptar_Peticion_Incorrecta2() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature:línea 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bcb77b11-e629-4c44-abc8-206f0d5ff62f" testId="f65e809a-8a70-bb0b-7adc-b5578c726787" testName="Aceptar_Peticion_Incorrecta3" computerName="AVAMSERVIDOR" duration="00:00:00.0033249" startTime="2014-03-11T20:14:05.6471467+01:00" endTime="2014-03-11T20:14:05.6561462+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcb77b11-e629-4c44-abc8-206f0d5ff62f">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.Aceptar_Peticion_Incorrecta3() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature:línea 30
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="89d6a8ff-ccf6-4db5-ae1b-48de9d0ebc61" testId="fe790a83-12fd-8062-c3ce-a2b323a3dcea" testName="ObtenerAnunciosRandom_Obtener15Anuncios" computerName="AVAMSERVIDOR" duration="00:00:00.0060230" startTime="2014-03-11T20:14:05.6651466+01:00" endTime="2014-03-11T20:14:05.6761471+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89d6a8ff-ccf6-4db5-ae1b-48de9d0ebc61">
+      <Output>
+        <StdOut>Given quiero 15 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(15) (0,0s)
+When busco mis anuncios
+NHibernate: SELECT this_.[id] as column1_35_0_, this_.[imagen] as column2_35_0_, this_.[descripcion] as column3_35_0_, this_.[fechaCaducidad] as column4_35_0_, this_.[tipo] as column5_35_0_, this_.[URL] as column6_35_0_ FROM [Anuncio] this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() (0,0s)
+Then deberia otener 10 anuncios
+-&gt; error: Error de Assert.AreEqual. Se esperaba &lt;10&gt;, pero es &lt;1&gt;.</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.AreEqual. Se esperaba &lt;10&gt;, pero es &lt;1&gt;. </Message>
+          <StackTrace>   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomSteps.ThenDeberiaOtenerAnuncios(Int32 pe_esperado) en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandomSteps.cs:línea 42
+   en lambda_method(Closure , IContextManager , Int32 )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ScenarioCleanup() en C:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature.cs:línea 0
+   en NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener15Anuncios() en c:\Users\avam\Desktop\Inmueblate\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature:línea 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

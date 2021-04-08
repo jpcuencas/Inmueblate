@@ -1,0 +1,102 @@
+﻿<Page x:Class="GestorInmobiliaria.views.Entradas.EntradaDetalle"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="414" d:DesignWidth="538"
+	Title="Detalle de una entrada" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="100*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Row="0" Grid.Column="0" Grid.RowSpan="10" Grid.ColumnSpan="2" Stroke="{StaticResource BordeNaranjaTabla}"  Fill="{StaticResource FondoGrisTabla}" StrokeThickness="{StaticResource BordeTabla}" RadiusX="20" RadiusY="20"></Rectangle>
+            
+            <Label Margin="20,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Content="Información de la entrada" Grid.ColumnSpan="2" FontWeight="Bold" Height="Auto" HorizontalAlignment="Left" FontSize="{StaticResource TamFuenteDetalle}" />
+            
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Content="Título:" Height="Auto" Name="label1" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding Titulo}" Grid.Row="2" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+
+            <Label VerticalAlignment="Top" Grid.Column="0" Grid.Row="3" Content="Cuerpo:" Height="Auto" Name="label2" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Grid.Row="3" Grid.Column="1" Height="Auto" Grid.RowSpan="3" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="{StaticResource TamFuenteDetalle}" >
+                <TextBlock Text="{Binding Cuerpo}" TextWrapping="Wrap" />
+            </Label>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="6" Content="Pendiente de moderar:" Height="Auto" Name="label3" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding PendienteModeracion}" Grid.Row="6" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="7" Content="Fecha de publicación:" Height="Auto" Name="label4" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label ContentStringFormat="dd/MM/yyyy" Content="{Binding FechaPublicacion}" Grid.Row="7" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" Name="lblFechaCaducidad" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" />
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="8" Content="Usuarios MeGusta:" Height="Auto" Name="label5" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding UsuariosMeGusta}" Grid.Row="8" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" Name="lblUsuariosMeGusta" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" />
+        </Grid>
+
+        <Grid Grid.Column="6" Grid.ColumnSpan="4" Grid.Row="0" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="100*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="2" Stroke="{StaticResource BordeNaranjaTabla}"  Fill="{StaticResource FondoGrisTabla}" StrokeThickness="{StaticResource BordeTabla}" RadiusX="20" RadiusY="20"></Rectangle>
+
+            <Label Margin="20,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Content="Navegación" Grid.ColumnSpan="2" FontWeight="Bold" Height="Auto" HorizontalAlignment="Left" FontSize="{StaticResource TamFuenteDetalle}" />
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Content="Creador:" Height="Auto" Name="label9" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Button Content="{Binding Creador}" Grid.Row="2" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding NavegarCreadorCommand}">
+                        </i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+        </Grid>
+        <Button Content="Borrar" Grid.Column="8" Grid.ColumnSpan="2" Height="40" FontSize="15" HorizontalAlignment="Right" Name="button1" VerticalAlignment="Bottom" Width="130">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding EntradaBorrarCommand}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+    </Grid>
+</Page>

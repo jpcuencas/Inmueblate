@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				
+<joined-subclass name="ModeradorEN" extends="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN" table="Moderador"> 
+	<key>
+    	
+				<column name="id"/>
+		
+    	
+   	</key>
+
+						
+		
+ 	  
+		 </joined-subclass>
+		  
+		  <query name="ModeradorENReadAllHQL">from ModeradorEN</query>
+		</hibernate-mapping>
+	

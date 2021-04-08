@@ -1,0 +1,186 @@
+﻿<Page x:Class="GestorInmobiliaria.views.Inmobiliaria.InmobiliariaDetalle"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="Detalle de una inmobiliaria">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="100*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Row="0" Grid.Column="0" Grid.RowSpan="11" Grid.ColumnSpan="2" Stroke="{StaticResource BordeNaranjaTabla}"  Fill="{StaticResource FondoGrisTabla}" StrokeThickness="{StaticResource BordeTabla}" RadiusX="20" RadiusY="20"></Rectangle>
+
+            <Label Margin="20,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Content="Información de la inmobiliaria" Grid.ColumnSpan="2" FontWeight="Bold" Height="Auto" HorizontalAlignment="Left" FontSize="{StaticResource TamFuenteDetalle}" />
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Content="CIF:" Height="Auto" Name="label1" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding Cif}" Grid.Row="2" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" Content="Nombre:" Height="Auto" Name="label2" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Grid.Row="3" Grid.Column="1" Height="Auto" Content="{Binding Nombre}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="4" Content="Descripción:" Height="Auto" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Grid.Row="4" Grid.Column="1" Height="Auto" Content="{Binding Descripcion}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+            
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="5" Content="Email:" Height="Auto" Name="label3" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding Email}" Grid.Row="5" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="6" Content="Dirección:" Height="Auto" Name="label5" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding Direccion}" Grid.Row="6" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="7" Content="Población:" Height="Auto" Name="label6" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Grid.Row="7" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Poblacion}" />
+                    <TextBlock Text=" (" />
+                    <TextBlock Text="{Binding CodigoPostal}" />
+                    <TextBlock Text=")" />
+                </StackPanel>
+            </Label>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="8" Content="Teléfono:" Height="Auto" Name="label7" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding Telefono}" Grid.Row="8" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="9" Content="Valoración media:" Height="Auto" Name="label8" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding ValoracionMedia}" Grid.Row="9" Grid.Column="1" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+        </Grid>
+
+        <Grid Grid.Column="6" Grid.ColumnSpan="4" Grid.Row="0" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="100*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Row="0" Grid.Column="0" Grid.RowSpan="11" Grid.ColumnSpan="3" RadiusX="20" RadiusY="20" Stroke="{StaticResource BordeNaranjaTabla}"  Fill="{StaticResource FondoGrisTabla}" StrokeThickness="{StaticResource BordeTabla}"></Rectangle>
+
+            <Label Margin="20,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Content="Navegación" Grid.ColumnSpan="2" FontWeight="Bold" Height="Auto" HorizontalAlignment="Left" FontSize="{StaticResource TamFuenteDetalle}" />
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Content="Bandeja de entrada:" Height="Auto" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding BandejaEntrada}" Grid.Row="2" Grid.Column="1" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Button Grid.Row="2" Grid.Column="2" Height="Auto" Content="Ir a" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" Width="{StaticResource AnchoBotonNumero}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding NavegarBandejaEntradaCommand}">
+                        </i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" Content="Bandeja de salida:" Height="Auto" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding BandejaSalida}" Grid.Row="3" Grid.Column="1" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Button Grid.Row="3" Grid.Column="2" Height="Auto" Content="Ir a" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" Width="{StaticResource AnchoBotonNumero}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding NavegarBandejaSalidaCommand}">
+                        </i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="7" Content="Inmuebles:" Height="Auto" Name="label9" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding Inmuebles}" Grid.Row="7" Grid.Column="1" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Button Grid.Row="7" Grid.Column="2" Height="Auto" Content="Ir a" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" Width="{StaticResource AnchoBotonNumero}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding NavegarInmueblesCommand}">
+                        </i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="8" Content="Página corporativa:" Height="Auto" Name="label10" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Button Grid.Row="8" Grid.Column="2" Height="Auto" Content="{Binding PaginaCorporativa}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" Width="{StaticResource AnchoBotonNumero}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding NavegarPaginaCommand}">
+                        </i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="4" Content="Entradas:" Height="Auto" Name="label11" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding Muro}" Grid.Row="4" Grid.Column="1" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+            <Button Grid.Row="4" Grid.Column="2" Height="Auto" Content="Ir a" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" Width="{StaticResource AnchoBotonNumero}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding NavegarEntradasCommand}">
+                        </i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+
+            
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="5" Content="Eventos:" Height="Auto" Name="label12" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding Eventos}" Grid.Row="5" Grid.Column="1" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}" />
+
+            <Label VerticalAlignment="Center" Grid.Column="0" Grid.Row="6" Content="Grupos:" Height="Auto" Name="label13" HorizontalAlignment="Right" FontSize="{StaticResource TamFuenteDetalle}" />
+            <Label Content="{Binding Grupos}" Grid.Row="6" Grid.Column="1" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{StaticResource TamFuenteDetalle}"/>
+
+            <Button Content="Enviar mensaje" Grid.Column="3" Grid.Row="9" FontSize="15" Height="40" HorizontalAlignment="Right" Name="button1" VerticalAlignment="Bottom" Margin="0,0,20,0" Width="130" Grid.ColumnSpan="3">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding EnviarMensajeCommand}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+        </Grid>
+
+        <!--<Button Content="Borrar" Grid.Column="7" Grid.Row="1" FontSize="15" Height="40" HorizontalAlignment="Right" Name="button1" VerticalAlignment="Bottom" Width="130" Grid.ColumnSpan="3">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding InmobiliariaBorrarCommand}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>-->
+    </Grid>
+</Page>

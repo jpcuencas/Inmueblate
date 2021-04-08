@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+		<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		  <PropertyGroup>
+		    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		    <ProductVersion>9.0.30729</ProductVersion>
+		    <SchemaVersion>2.0</SchemaVersion>
+		    <ProjectGuid>{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}</ProjectGuid>
+		    <OutputType>Library</OutputType>
+		    <AppDesignerFolder>Properties</AppDesignerFolder>
+		    <RootNamespace>NuevoInmueblateGenNHibernate</RootNamespace>
+		    <AssemblyName>NuevoInmueblateGenNHibernate</AssemblyName>
+		    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+		    <FileAlignment>512</FileAlignment>
+		    <PublishUrl>publish\</PublishUrl>
+		    <Install>true</Install>
+		    <InstallFrom>Disk</InstallFrom>
+		    <UpdateEnabled>false</UpdateEnabled>
+		    <UpdateMode>Foreground</UpdateMode>
+		    <UpdateInterval>7</UpdateInterval>
+		    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+		    <UpdatePeriodically>false</UpdatePeriodically>
+		    <UpdateRequired>false</UpdateRequired>
+		    <MapFileExtensions>true</MapFileExtensions>
+		    <ApplicationRevision>0</ApplicationRevision>
+		    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+		    <IsWebBootstrapper>false</IsWebBootstrapper>
+		    <UseApplicationTrust>false</UseApplicationTrust>
+		    <BootstrapperEnabled>true</BootstrapperEnabled>
+		  </PropertyGroup>
+		  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		    <DebugSymbols>true</DebugSymbols>
+		    <DebugType>full</DebugType>
+		    <Optimize>false</Optimize>
+		    <OutputPath>bin\Debug\</OutputPath>
+		    <DefineConstants>DEBUG;TRACE</DefineConstants>
+		    <ErrorReport>prompt</ErrorReport>
+		    <WarningLevel>4</WarningLevel>
+		  </PropertyGroup>
+		  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		    <DebugType>pdbonly</DebugType>
+		    <Optimize>true</Optimize>
+		    <OutputPath>bin\Release\</OutputPath>
+		    <DefineConstants>TRACE</DefineConstants>
+		    <ErrorReport>prompt</ErrorReport>
+		    <WarningLevel>4</WarningLevel>
+		  </PropertyGroup>
+<ItemGroup>
+    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy, Version=1.0.3.14911, Culture=neutral, PublicKeyToken=62a6874124340d6e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+		  <ItemGroup>
+		    <Compile Include="NHibernateHelper.cs" />
+		    <Compile Include="Exceptions\ModelException.cs"/>
+		    <Compile Include="Exceptions\DataLayerException.cs"/>
+		    
+	
+	<Compile Include="CAD\BasicCAD.cs"/>
+	
+	<Compile Include="EN\RedSocial\SuperUsuarioEN.cs" />
+	<Compile Include="CEN\RedSocial\SuperUsuarioCEN.cs" />
+	<Compile Include="CAD\RedSocial\ISuperUsuarioCAD.cs" />
+	<Compile Include="CAD\RedSocial\SuperUsuarioCAD.cs" />
+			<Compile Include="CEN\RedSocial\SuperUsuarioCEN_CrearSuperUsuario.cs" />
+			<Compile Include="CEN\RedSocial\SuperUsuarioCEN_AnyadirEntradasReportadas.cs" />
+			<Compile Include="CEN\RedSocial\SuperUsuarioCEN_BorrarEntradasReportadas.cs" />
+			<Compile Include="CEN\RedSocial\SuperUsuarioCEN_Login.cs" />
+	<Compile Include="EN\RedSocial\ValoracionEN.cs" />
+	<Compile Include="CEN\RedSocial\ValoracionCEN.cs" />
+	<Compile Include="CAD\RedSocial\IValoracionCAD.cs" />
+	<Compile Include="CAD\RedSocial\ValoracionCAD.cs" />
+			<Compile Include="CEN\RedSocial\ValoracionCEN_CrearValoracion.cs" />
+	<Compile Include="EN\RedSocial\UsuarioEN.cs" />
+	<Compile Include="CEN\RedSocial\UsuarioCEN.cs" />
+	<Compile Include="CAD\RedSocial\IUsuarioCAD.cs" />
+	<Compile Include="CAD\RedSocial\UsuarioCAD.cs" />
+			<Compile Include="CEN\RedSocial\UsuarioCEN_EnviarPeticionAmistad.cs" />
+			<Compile Include="CEN\RedSocial\UsuarioCEN_DameUsuariosFiltro.cs" />
+	<Compile Include="EN\RedSocial\GrupoEN.cs" />
+	<Compile Include="CEN\RedSocial\GrupoCEN.cs" />
+	<Compile Include="CAD\RedSocial\IGrupoCAD.cs" />
+	<Compile Include="CAD\RedSocial\GrupoCAD.cs" />
+			<Compile Include="CEN\RedSocial\GrupoCEN_DameGruposFiltro.cs" />
+	<Compile Include="EN\RedSocial\ModeradorEN.cs" />
+	<Compile Include="CEN\RedSocial\ModeradorCEN.cs" />
+	<Compile Include="CAD\RedSocial\IModeradorCAD.cs" />
+	<Compile Include="CAD\RedSocial\ModeradorCAD.cs" />
+	<Compile Include="EN\RedSocial\InmobiliariaEN.cs" />
+	<Compile Include="CEN\RedSocial\InmobiliariaCEN.cs" />
+	<Compile Include="CAD\RedSocial\IInmobiliariaCAD.cs" />
+	<Compile Include="CAD\RedSocial\InmobiliariaCAD.cs" />
+			<Compile Include="CEN\RedSocial\InmobiliariaCEN_DameInmobiliariaFiltro.cs" />
+	<Compile Include="EN\RedSocial\PeticionAmistadEN.cs" />
+	<Compile Include="CEN\RedSocial\PeticionAmistadCEN.cs" />
+	<Compile Include="CAD\RedSocial\IPeticionAmistadCAD.cs" />
+	<Compile Include="CAD\RedSocial\PeticionAmistadCAD.cs" />
+			<Compile Include="CEN\RedSocial\PeticionAmistadCEN_CrearPeticionAmistad.cs" />
+			<Compile Include="CEN\RedSocial\PeticionAmistadCEN_AceptarPeticionAmistad.cs" />
+			<Compile Include="CEN\RedSocial\PeticionAmistadCEN_BloquearPeticionAmistad.cs" />
+			<Compile Include="CEN\RedSocial\PeticionAmistadCEN_DesbloquearPeticionAmistad.cs" />
+	<Compile Include="EN\RedSocial\PreferenciasBusquedaEN.cs" />
+	<Compile Include="CEN\RedSocial\PreferenciasBusquedaCEN.cs" />
+	<Compile Include="CAD\RedSocial\IPreferenciasBusquedaCAD.cs" />
+	<Compile Include="CAD\RedSocial\PreferenciasBusquedaCAD.cs" />
+	<Compile Include="EN\RedSocial\MuroEN.cs" />
+	<Compile Include="CEN\RedSocial\MuroCEN.cs" />
+	<Compile Include="CAD\RedSocial\IMuroCAD.cs" />
+	<Compile Include="CAD\RedSocial\MuroCAD.cs" />
+	<Compile Include="EN\RedSocial\EntradaEN.cs" />
+	<Compile Include="CEN\RedSocial\EntradaCEN.cs" />
+	<Compile Include="CAD\RedSocial\IEntradaCAD.cs" />
+	<Compile Include="CAD\RedSocial\EntradaCAD.cs" />
+			<Compile Include="CEN\RedSocial\EntradaCEN_AnyadirReportador.cs" />
+			<Compile Include="CEN\RedSocial\EntradaCEN_AnyadirUsuariosMeGusta.cs" />
+			<Compile Include="CEN\RedSocial\EntradaCEN_DameEntradasFiltro.cs" />
+	<Compile Include="EN\RedSocial\ComentarioEN.cs" />
+	<Compile Include="CEN\RedSocial\ComentarioCEN.cs" />
+	<Compile Include="CAD\RedSocial\IComentarioCAD.cs" />
+	<Compile Include="CAD\RedSocial\ComentarioCAD.cs" />
+			<Compile Include="CEN\RedSocial\ComentarioCEN_AnyadirReportador.cs" />
+			<Compile Include="CEN\RedSocial\ComentarioCEN_BorrarReportadores.cs" />
+	<Compile Include="EN\RedSocial\GustosEN.cs" />
+	<Compile Include="CEN\RedSocial\GustosCEN.cs" />
+	<Compile Include="CAD\RedSocial\IGustosCAD.cs" />
+	<Compile Include="CAD\RedSocial\GustosCAD.cs" />
+	<Compile Include="EN\RedSocial\MensajeEN.cs" />
+	<Compile Include="CEN\RedSocial\MensajeCEN.cs" />
+	<Compile Include="CAD\RedSocial\IMensajeCAD.cs" />
+	<Compile Include="CAD\RedSocial\MensajeCAD.cs" />
+			<Compile Include="CEN\RedSocial\MensajeCEN_CrearMensaje.cs" />
+			<Compile Include="CEN\RedSocial\MensajeCEN_DameMensajeFiltro.cs" />
+			<Compile Include="CEN\RedSocial\MensajeCEN_CrearMensajeDeModerador.cs" />
+	<Compile Include="EN\RedSocial\ElementoMultimediaEN.cs" />
+	<Compile Include="CEN\RedSocial\ElementoMultimediaCEN.cs" />
+	<Compile Include="CAD\RedSocial\IElementoMultimediaCAD.cs" />
+	<Compile Include="CAD\RedSocial\ElementoMultimediaCAD.cs" />
+	<Compile Include="EN\RedSocial\FotografiaEN.cs" />
+	<Compile Include="CEN\RedSocial\FotografiaCEN.cs" />
+	<Compile Include="CAD\RedSocial\IFotografiaCAD.cs" />
+	<Compile Include="CAD\RedSocial\FotografiaCAD.cs" />
+			<Compile Include="CEN\RedSocial\FotografiaCEN_SubirImagen.cs" />
+	<Compile Include="EN\RedSocial\VideoEN.cs" />
+	<Compile Include="CEN\RedSocial\VideoCEN.cs" />
+	<Compile Include="CAD\RedSocial\IVideoCAD.cs" />
+	<Compile Include="CAD\RedSocial\VideoCAD.cs" />
+	<Compile Include="EN\RedSocial\GaleriaEN.cs" />
+	<Compile Include="CEN\RedSocial\GaleriaCEN.cs" />
+	<Compile Include="CAD\RedSocial\IGaleriaCAD.cs" />
+	<Compile Include="CAD\RedSocial\GaleriaCAD.cs" />
+	<Compile Include="EN\RedSocial\GeolocalizacionEN.cs" />
+	<Compile Include="CEN\RedSocial\GeolocalizacionCEN.cs" />
+	<Compile Include="CAD\RedSocial\IGeolocalizacionCAD.cs" />
+	<Compile Include="CAD\RedSocial\GeolocalizacionCAD.cs" />
+	<Compile Include="EN\RedSocial\CaracteristicaEN.cs" />
+	<Compile Include="CEN\RedSocial\CaracteristicaCEN.cs" />
+	<Compile Include="CAD\RedSocial\ICaracteristicaCAD.cs" />
+	<Compile Include="CAD\RedSocial\CaracteristicaCAD.cs" />
+	<Compile Include="EN\RedSocial\InmuebleEN.cs" />
+	<Compile Include="CEN\RedSocial\InmuebleCEN.cs" />
+	<Compile Include="CAD\RedSocial\IInmuebleCAD.cs" />
+	<Compile Include="CAD\RedSocial\InmuebleCAD.cs" />
+			<Compile Include="CEN\RedSocial\InmuebleCEN_DameInmuebleFiltro.cs" />
+	<Compile Include="EN\RedSocial\HabitacionEN.cs" />
+	<Compile Include="CEN\RedSocial\HabitacionCEN.cs" />
+	<Compile Include="CAD\RedSocial\IHabitacionCAD.cs" />
+	<Compile Include="CAD\RedSocial\HabitacionCAD.cs" />
+			<Compile Include="CEN\RedSocial\HabitacionCEN_DameHabitacionFiltro.cs" />
+	<Compile Include="EN\RedSocial\PaginaCorporativaEN.cs" />
+	<Compile Include="CEN\RedSocial\PaginaCorporativaCEN.cs" />
+	<Compile Include="CAD\RedSocial\IPaginaCorporativaCAD.cs" />
+	<Compile Include="CAD\RedSocial\PaginaCorporativaCAD.cs" />
+	<Compile Include="EN\RedSocial\EventoEN.cs" />
+	<Compile Include="CEN\RedSocial\EventoCEN.cs" />
+	<Compile Include="CAD\RedSocial\IEventoCAD.cs" />
+	<Compile Include="CAD\RedSocial\EventoCAD.cs" />
+			<Compile Include="CEN\RedSocial\EventoCEN_DameEventosFiltro.cs" />
+	<Compile Include="EN\RedSocial\AnuncioEN.cs" />
+	<Compile Include="CEN\RedSocial\AnuncioCEN.cs" />
+	<Compile Include="CAD\RedSocial\IAnuncioCAD.cs" />
+	<Compile Include="CAD\RedSocial\AnuncioCAD.cs" />
+			<Compile Include="CEN\RedSocial\AnuncioCEN_DameTodosLosAnuncios.cs" />
+			<Compile Include="CEN\RedSocial\AnuncioCEN_ObtenerAnunciosRandom.cs" />
+			<Compile Include="CEN\RedSocial\AnuncioCEN_DameAnunciosFiltro.cs" />
+	<Compile Include="Enumerated\RedSocial\EstadoSolicitudAmistadEnum.cs" />
+	<Compile Include="Enumerated\RedSocial\EstadoLoginEnum.cs" />
+	<Compile Include="Enumerated\RedSocial\TipoPrivacidadEnum.cs" />
+	<Compile Include="Enumerated\RedSocial\TipoGrupoEnum.cs" />
+	<Compile Include="Enumerated\RedSocial\TipoInmuebleEnum.cs" />
+	<Compile Include="Enumerated\RedSocial\TipoEventoEnum.cs" />
+	<Compile Include="Enumerated\RedSocial\TipoAnuncioEnum.cs" />
+	
+	
+
+		    
+	
+
+		    <Compile Include="Properties\AssemblyInfo.cs" />
+		    <Compile Include="Properties\Settings.Designer.cs">
+		      <AutoGen>True</AutoGen>
+		      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+		      <DependentUpon>Settings.settings</DependentUpon>
+		    </Compile>
+		  </ItemGroup>
+		  <ItemGroup>
+		  
+	<EmbeddedResource Include="Mappings\RedSocial\superusuario.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\valoracion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\usuario.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\grupo.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\moderador.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\inmobiliaria.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\peticionamistad.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\preferenciasbusqueda.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\muro.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\entrada.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\comentario.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\gustos.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\mensaje.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\elementomultimedia.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\fotografia.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\video.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\galeria.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\geolocalizacion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\caracteristica.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\inmueble.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\habitacion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\paginacorporativa.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\evento.hbm.xml" />
+	<EmbeddedResource Include="Mappings\RedSocial\anuncio.hbm.xml" />
+	
+	
+
+		  </ItemGroup>
+		  <ItemGroup>
+		    <Content Include="hibernate.cfg.xml">
+		      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		    </Content>
+		  </ItemGroup>
+		  <ItemGroup>
+		    <Content Include="AppLib\Antlr3.Runtime.dll" />
+		    <Content Include="AppLib\Castle.DynamicProxy2.dll" />
+		    <Content Include="AppLib\Iesi.Collections.dll" />
+		    <Content Include="AppLib\LinFu.DynamicProxy.dll" />
+		    <Content Include="AppLib\log4net.dll" />
+		    <Content Include="AppLib\NHibernate.ByteCode.Castle.dll" />
+		    <Content Include="AppLib\NHibernate.ByteCode.LinFu.dll" />
+		    <Content Include="AppLib\NHibernate.dll" />
+		    <Content Include="AppLib\nunit.core.dll" />
+		    <Content Include="AppLib\nunit.framework.dll" />
+  		  </ItemGroup>
+		  <ItemGroup>
+		    <None Include="app.config" />
+		    <None Include="Properties\Settings.settings">
+		      <Generator>SettingsSingleFileGenerator</Generator>
+		      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		    </None>
+		        <None Include="Resources\xsd\nhibernate-configuration.xsd">
+      			<SubType>Designer</SubType>
+    		</None>
+    		<None Include="Resources\xsd\nhibernate-mapping.xsd">
+      			<SubType>Designer</SubType>
+    		</None>
+		  </ItemGroup>
+		  <ItemGroup>
+		    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework Client Profile</ProductName>
+		      <Install>false</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+		      <Install>false</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+		      <Install>false</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework 3.5</ProductName>
+		      <Install>false</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework 3.5 SP1</ProductName>
+		      <Install>true</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+		      <Visible>False</Visible>
+		      <ProductName>SQL Server Compact 3.5</ProductName>
+		      <Install>true</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+		      <Visible>False</Visible>
+		      <ProductName>Windows Installer 3.1</ProductName>
+		      <Install>true</Install>
+		    </BootstrapperPackage>
+		  </ItemGroup>
+		  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+		  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+		       Other similar extension points exist, see Microsoft.Common.targets.
+		  <Target Name="BeforeBuild">
+		  </Target>
+		  <Target Name="AfterBuild">
+		  </Target>
+		  -->
+		</Project>

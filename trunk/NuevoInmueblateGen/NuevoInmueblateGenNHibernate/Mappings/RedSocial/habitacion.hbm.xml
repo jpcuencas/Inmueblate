@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="HabitacionEN" table="Habitacion"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="PendienteModeracion" type="boolean"> 
+						<column name="pendienteModeracion"  not-null="true"/>
+					</property>
+					<property name="Descripcion" type="string"> 
+						<column name="descripcion"  not-null="true"/>
+					</property>
+					<property name="MetrosCuadrados" type="integer"> 
+						<column name="metrosCuadrados"  not-null="true"/>
+					</property>
+					<property name="Alquiler" type="boolean"> 
+						<column name="alquiler"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+		  			
+						<bag name="Inquilinos" table="[UsuarioHabitacion]"  >
+							<key>
+								
+									<column name="FK_id_habitaciones"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN">
+									<column name="FK_id_inquilinos"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="Caracteristicas" table="[CaracteristicaHabitacion]"  >
+							<key>
+								
+									<column name="FK_id_habitaciones"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.CaracteristicaEN">
+									<column name="FK_id_caracteristicas"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<many-to-one name="Inmueble" class="NuevoInmueblateGenNHibernate.EN.RedSocial.InmuebleEN" >	
+								<column name="FK_id_inmueble"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="HabitacionENReadAllHQL">from HabitacionEN</query>
+		  <query name="HabitacionENobtenerHabitacionPendienteModeracionHQL"><![CDATA[FROM HabitacionEN ha WHERE ha.PendienteModeracion = true]]></query>
+		  <query name="HabitacionENdameHabitacionFiltroHQL"><![CDATA[FROM HabitacionEN AS h WHERE h.Descripcion LIKE CASE WHEN :p_descripcion = null THEN h.Descripcion ELSE :p_descripcion END AND h.MetrosCuadrados = CASE WHEN :p_metrosCuadrados = -1 THEN h.MetrosCuadrados ELSE :p_metrosCuadrados END AND h.Inmueble.Geolocalizacion.Direccion LIKE CASE WHEN :p_direccion = null THEN h.Inmueble.Geolocalizacion.Direccion ELSE :p_direccion END AND h.Inmueble.Geolocalizacion.Poblacion LIKE CASE WHEN :p_poblacion = null THEN h.Inmueble.Geolocalizacion.Poblacion ELSE :p_poblacion END AND h.Inmueble = CASE WHEN :p_inmueble = -1 THEN h.Inmueble ELSE :p_inmueble END]]></query>
+		</hibernate-mapping>
+	

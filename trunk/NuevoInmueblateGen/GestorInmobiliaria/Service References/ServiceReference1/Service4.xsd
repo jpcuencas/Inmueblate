@@ -1,0 +1,1622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Service/" elementFormDefault="qualified" targetNamespace="http://Service/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:53967/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" />
+  <xs:import schemaLocation="http://localhost:53967/Service.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" />
+  <xs:element name="NuevoInmueblate_Entrada_CrearEntrada">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_fechaPublicacion" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_titulo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_cuerpo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_muro" type="xs:int" />
+        <xs:element minOccurs="0" name="p_creador" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_CrearEntradaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_Entrada_CrearEntradaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ModificarEntrada">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+        <xs:element minOccurs="0" name="p_fechaPublicacion" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_titulo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_cuerpo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ModificarEntradaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_BorrarEntrada">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_BorrarEntradaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ObtenerEntradasPorModerar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_filter" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ObtenerEntradasPorModerarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Entrada_ObtenerEntradasPorModerarResult" nillable="true" type="q1:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pe_ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorGrupoResult" nillable="true" type="q2:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pe_ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Entrada_ObtenerEntradasPendientesPorUsuarioResult" nillable="true" type="q3:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_DameTodasLasEntradas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_DameTodasLasEntradasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Entrada_DameTodasLasEntradasResult" nillable="true" type="q4:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_DameEntradasFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_titulo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_cuerpo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fechaPublicacion" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_filtrarPendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_usuario" type="xs:int" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+        <xs:element minOccurs="0" name="size" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_DameEntradasFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Entrada_DameEntradasFiltroResult" nillable="true" type="q5:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_DameEntradasPorMuro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_muro" type="xs:int" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_DameEntradasPorMuroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Entrada_DameEntradasPorMuroResult" nillable="true" type="q6:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ObtenerEntradasPorMuro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_muro" type="xs:int" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Entrada_ObtenerEntradasPorMuroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Entrada_ObtenerEntradasPorMuroResult" nillable="true" type="q7:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Fotografia_BorrarFotografia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Fotografia_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Fotografia_BorrarFotografiaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerar">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Fotografia_ObtenerTodasFotografiasPorModerarResult" nillable="true" type="q8:ArrayOfFotografiaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Fotografia_DameTodasLasFotografias">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Fotografia_DameTodasLasFotografiasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Fotografia_DameTodasLasFotografiasResult" nillable="true" type="q9:ArrayOfFotografiaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Video_BorrarVideo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Video_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Video_BorrarVideoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Video_ObtenerTodosVideosPorModerar">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Video_ObtenerTodosVideosPorModerarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Video_ObtenerTodosVideosPorModerarResult" nillable="true" type="q10:ArrayOfVideoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Video_DameTodosLosVideos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Video_DameTodosLosVideosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Video_DameTodosLosVideosResult" nillable="true" type="q11:ArrayOfVideoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PreferenciasBusqueda_DamePreferenciasBusquedaPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_PreferenciasBusqueda_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PreferenciasBusqueda_DamePreferenciasBusquedaPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_PreferenciasBusqueda_DamePreferenciasBusquedaPorOIDResult" nillable="true" type="q12:PreferenciasBusquedaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PreferenciasBusqueda_GetGeolocalizacionOfPreferenciasBusqueda">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PreferenciasBusqueda_GetGeolocalizacionOfPreferenciasBusquedaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_PreferenciasBusqueda_GetGeolocalizacionOfPreferenciasBusquedaResult" nillable="true" type="q13:GeolocalizacionDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Geolocalizacion_DameGeolocalizacionPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Geolocalizacion_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Geolocalizacion_DameGeolocalizacionPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Geolocalizacion_DameGeolocalizacionPorOIDResult" nillable="true" type="q14:GeolocalizacionDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Gustos_DameGustosPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Gustos_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Gustos_DameGustosPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Gustos_DameGustosPorOIDResult" nillable="true" type="q15:GustosDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_SuperUsuario_DameSuperUsuarioPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_SuperUsuario_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_SuperUsuario_DameSuperUsuarioPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_SuperUsuario_DameSuperUsuarioPorOIDResult" nillable="true" type="q16:SuperUsuarioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_SuperUsuario_DameSuperUsuariosGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_grupo" type="xs:int" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_SuperUsuario_DameSuperUsuariosGrupoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_SuperUsuario_DameSuperUsuariosGrupoResult" nillable="true" type="q17:ArrayOfSuperUsuarioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Caracteristica_DameCaracteristicaPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Caracteristica_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Caracteristica_DameCaracteristicaPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Caracteristica_DameCaracteristicaPorOIDResult" nillable="true" type="q18:CaracteristicaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Habitacion_DameHabitacionFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_metrosCuadrados" type="xs:int" />
+        <xs:element minOccurs="0" name="p_direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_poblacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_inmueble" type="xs:int" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Habitacion_DameHabitacionFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Habitacion_DameHabitacionFiltroResult" nillable="true" type="q19:ArrayOfHabitacionDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Habitacion_DameHabitacionPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Habitacion_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Habitacion_DameHabitacionPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Habitacion_DameHabitacionPorOIDResult" nillable="true" type="q20:HabitacionDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subirAnuncio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="base64String" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nombreFichero" type="xs:int" />
+        <xs:element minOccurs="0" name="extensionFichero" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subirAnuncioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subirAnuncioResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_Anonimo_Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+        <xs:element minOccurs="0" name="p_email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_pass" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_Anonimo_LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_Anonimo_LoginResult" type="q21:EstadoLoginEnum" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllAnuncio">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllAnuncioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllAnuncioResult" nillable="true" type="q22:ArrayOfAnuncioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllEvento">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllEventoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllEventoResult" nillable="true" type="q23:ArrayOfEventoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllMensaje">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllMensajeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllMensajeResult" nillable="true" type="q24:ArrayOfMensajeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllElementoMultimedia">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllElementoMultimediaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllElementoMultimediaResult" nillable="true" type="q25:ArrayOfElementoMultimediaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllInmobiliaria">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllInmobiliariaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllInmobiliariaResult" nillable="true" type="q26:ArrayOfInmobiliariaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllGrupo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllGrupoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllGrupoResult" nillable="true" type="q27:ArrayOfGrupoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllPaginaCorporativa">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllPaginaCorporativaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllPaginaCorporativaResult" nillable="true" type="q28:ArrayOfPaginaCorporativaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllUsuario">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllUsuarioResult" nillable="true" type="q29:ArrayOfUsuarioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllInmueble">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllInmuebleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllInmuebleResult" nillable="true" type="q30:ArrayOfInmuebleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllEntrada">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllEntradaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllEntradaResult" nillable="true" type="q31:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllSuperUsuario">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Moderador_GetAllSuperUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Moderador_GetAllSuperUsuarioResult" nillable="true" type="q32:ArrayOfSuperUsuarioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_CrearAnuncio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_imagen" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fechaCaducidad" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_tipo" type="q33:TipoAnuncioEnum" />
+        <xs:element minOccurs="0" name="p_URL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_CrearAnuncioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_Anuncio_CrearAnuncioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_ModificarAnuncio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+        <xs:element minOccurs="0" name="p_imagen" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fechaCaducidad" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_tipo" type="q34:TipoAnuncioEnum" />
+        <xs:element minOccurs="0" name="p_URL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_ModificarAnuncioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_BorrarAnuncio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_BorrarAnuncioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_DameTodosLosAnuncios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+        <xs:element minOccurs="0" name="size" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_DameTodosLosAnunciosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Anuncio_DameTodosLosAnunciosResult" nillable="true" type="q35:ArrayOfAnuncioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_DameAnunciosFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_tipo" type="xs:int" />
+        <xs:element minOccurs="0" name="p_fechaCaducidad" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_url" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Anuncio_DameAnunciosFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Anuncio_DameAnunciosFiltroResult" nillable="true" type="q36:ArrayOfAnuncioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_CrearUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_muro" type="xs:int" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_telefono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_poblacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_codigoPostal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_pais" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_valoracionMedia" type="xs:float" />
+        <xs:element minOccurs="0" name="p_apellidos" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_nif" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fechaNacimiento" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_privacidad" type="q37:TipoPrivacidadEnum" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_CrearUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_Usuario_CrearUsuarioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_ModificarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Usuario_OID" type="xs:int" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_telefono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_poblacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_codigoPostal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_pais" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_valoracionMedia" type="xs:float" />
+        <xs:element minOccurs="0" name="p_apellidos" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_nif" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fechaNacimiento" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_privacidad" type="q38:TipoPrivacidadEnum" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_ModificarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_BorrarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Usuario_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_BorrarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_DameUsuarioPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Usuario_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_DameUsuarioPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_DameUsuarioPorOIDResult" nillable="true" type="q39:UsuarioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_DameTodosLosUsuarios">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_DameTodosLosUsuariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_DameTodosLosUsuariosResult" nillable="true" type="q40:ArrayOfUsuarioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_DameUsuariosFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_nif" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_apellidos" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fechaNacimiento" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_poblacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_DameUsuariosFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_DameUsuariosFiltroResult" nillable="true" type="q41:ArrayOfUsuarioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_ObtenerAmigos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pe_usuario" type="xs:int" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_ObtenerAmigosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_ObtenerAmigosResult" nillable="true" type="q42:ArrayOfUsuarioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_ObtenerBloqueados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pe_usuario" type="xs:int" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_ObtenerBloqueadosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_ObtenerBloqueadosResult" nillable="true" type="q43:ArrayOfUsuarioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_GetMuroOfPropietarioUsuarioResult" nillable="true" type="q44:MuroDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_GetAllInmueblesOfInquilinosResult" nillable="true" type="q45:ArrayOfInmuebleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllFotosOfFusuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllFotosOfFusuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_GetAllFotosOfFusuarioResult" nillable="true" type="q46:ArrayOfElementoMultimediaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetPreferenciasBusquedaOfUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetPreferenciasBusquedaOfUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_GetPreferenciasBusquedaOfUsuarioResult" nillable="true" type="q47:PreferenciasBusquedaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetGustosOfUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetGustosOfUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_GetGustosOfUsuarioResult" nillable="true" type="q48:GustosDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllElementosOfUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllElementosOfUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_GetAllElementosOfUsuarioResult" nillable="true" type="q49:ArrayOfElementoMultimediaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllEntradaUsuario">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllEntradaUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_GetAllEntradaUsuarioResult" nillable="true" type="q50:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllMensajeUsuario">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Usuario_GetAllMensajeUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Usuario_GetAllMensajeUsuarioResult" nillable="true" type="q51:ArrayOfMensajeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_CrearGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_tipo" type="q52:TipoGrupoEnum" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_muro" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_CrearGrupoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_Grupo_CrearGrupoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_ModificarGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_tipo" type="q53:TipoGrupoEnum" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_ModificarGrupoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_BorrarGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_BorrarGrupoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_DameTodosLosGrupos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_DameTodosLosGruposResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Grupo_DameTodosLosGruposResult" nillable="true" type="q54:ArrayOfGrupoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Grupo_ObtenerGruposConEntradasReportadasResult" nillable="true" type="q55:ArrayOfGrupoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_DameGruposFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_tipo" type="xs:int" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_DameGruposFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Grupo_DameGruposFiltroResult" nillable="true" type="q56:ArrayOfGrupoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Grupo_GetMuroOfPropietarioGrupoResult" nillable="true" type="q57:MuroDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_CrearInmobiliaria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_muro" type="xs:int" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_telefono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_poblacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_codigoPostal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_pais" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_valoracionMedia" type="xs:float" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_cif" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_CrearInmobiliariaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_Inmobiliaria_CrearInmobiliariaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_ModificarInmobilaria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Inmobiliaria_OID" type="xs:int" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_telefono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_poblacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_codigoPostal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_pais" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_valoracionMedia" type="xs:float" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_cif" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_ModificarInmobilariaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_BorrarInmobiliaria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Inmobiliaria_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_BorrarInmobiliariaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_DameTodasInmobiliarias">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_DameTodasInmobiliariasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmobiliaria_DameTodasInmobiliariasResult" nillable="true" type="q58:ArrayOfInmobiliariaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_DameInmobiliariaPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Inmobiliaria_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_DameInmobiliariaPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmobiliaria_DameInmobiliariaPorOIDResult" nillable="true" type="q59:InmobiliariaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_DameInmobiliariaFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_cif" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_poblacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_DameInmobiliariaFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmobiliaria_DameInmobiliariaFiltroResult" nillable="true" type="q60:ArrayOfInmobiliariaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliaria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliariaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmobiliaria_GetAllPaginaCorporativaOfInmobiliariaResult" nillable="true" type="q61:ArrayOfPaginaCorporativaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliaria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliariaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmobiliaria_GetAllEventosOfInmobiliariaResult" nillable="true" type="q62:ArrayOfEventoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliaria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliariaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmobiliaria_GetAllInmueblesOfInmobiliariaResult" nillable="true" type="q63:ArrayOfInmuebleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_CrearMensaje">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_fechaEnvio" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_asunto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_cuerpo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_leido" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_emisor" type="xs:int" />
+        <xs:element minOccurs="0" name="p_receptor" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_CrearMensajeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_Mensaje_CrearMensajeResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_ModificarMensaje">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_fechaEnvio" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_asunto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_cuerpo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_leido" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_ModificarMensajeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_BorrarMensaje">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_BorrarMensajeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Mensaje_ObtenerMensajePendienteModeracionResult" nillable="true" type="q64:ArrayOfMensajeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_DameTodosLosMensajes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_DameTodosLosMensajesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Mensaje_DameTodosLosMensajesResult" nillable="true" type="q65:ArrayOfMensajeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_DameMensajeFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_asunto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_cuerpo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fechaEnvio" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_filtrarPendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_emisor" type="xs:int" />
+        <xs:element minOccurs="0" name="p_receptor" type="xs:int" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+        <xs:element minOccurs="0" name="size" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_DameMensajeFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Mensaje_DameMensajeFiltroResult" nillable="true" type="q66:ArrayOfMensajeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_CrearMensajeDeModerador">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_emisor" type="xs:int" />
+        <xs:element minOccurs="0" name="p_receptor" type="xs:int" />
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_fechaEnvio" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_asunto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_mensaje" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_leido" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Mensaje_CrearMensajeDeModeradorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_Mensaje_CrearMensajeDeModeradorResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_CrearElementoMultimedia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_galeria" type="xs:int" />
+        <xs:element minOccurs="0" name="p_fecha" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_URL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_CrearElementoMultimediaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_ElementoMultimedia_CrearElementoMultimediaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimedia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_ElementoMultimedia_OID" type="xs:int" />
+        <xs:element minOccurs="0" name="p_fecha" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_URL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_ModificarElementoMultimediaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimedia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_ElementoMultimedia_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_BorrarElementoMultimediaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_ElementoMultimedia_ObtenerElementoPendienteModeracionResult" nillable="true" type="q67:ArrayOfElementoMultimediaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimedia">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimediaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimediaResult" nillable="true" type="q68:ArrayOfElementoMultimediaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimediaP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+        <xs:element minOccurs="0" name="size" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimediaPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_ElementoMultimedia_DameTodosElementosMultimediaPResult" nillable="true" type="q69:ArrayOfElementoMultimediaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_GetAllFotografia">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_GetAllFotografiaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_ElementoMultimedia_GetAllFotografiaResult" nillable="true" type="q70:ArrayOfFotografiaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_GetAllVideo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_ElementoMultimedia_GetAllVideoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_ElementoMultimedia_GetAllVideoResult" nillable="true" type="q71:ArrayOfVideoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_CrearInmueble">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_tipo" type="q72:TipoInmuebleEnum" />
+        <xs:element minOccurs="0" name="p_metrosCuadrados" type="xs:int" />
+        <xs:element minOccurs="0" name="p_alquiler" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_precio" type="xs:float" />
+        <xs:element minOccurs="0" name="p_geolocalizacion" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_CrearInmuebleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_Inmueble_CrearInmuebleResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_ModificarInmueble">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+        <xs:element minOccurs="0" name="p_pendienteModeracion" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_tipo" type="q73:TipoInmuebleEnum" />
+        <xs:element minOccurs="0" name="p_metrosCuadrados" type="xs:int" />
+        <xs:element minOccurs="0" name="p_alquiler" type="xs:boolean" />
+        <xs:element minOccurs="0" name="p_precio" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_ModificarInmuebleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_BorrarInmueble">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_BorrarInmuebleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmueble_ObtenerInmueblePendienteModeracionResult" nillable="true" type="q74:ArrayOfInmuebleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_DameTodosLosInmuebles">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_DameTodosLosInmueblesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmueble_DameTodosLosInmueblesResult" nillable="true" type="q75:ArrayOfInmuebleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_DameInmuebleFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_inmobiliaria" type="xs:int" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_tipo" type="xs:int" />
+        <xs:element minOccurs="0" name="p_metrosCuadrados" type="xs:int" />
+        <xs:element minOccurs="0" name="p_precio" type="xs:int" />
+        <xs:element minOccurs="0" name="p_direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_poblacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_DameInmuebleFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmueble_DameInmuebleFiltroResult" nillable="true" type="q76:ArrayOfInmuebleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_DameInmueblePorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Inmueble_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_DameInmueblePorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmueble_DameInmueblePorOIDResult" nillable="true" type="q77:InmuebleDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmueble">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmuebleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Inmueble_GetAllElementosMultimediaOfInmuebleResult" nillable="true" type="q78:ArrayOfElementoMultimediaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_contenido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_URL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_inmobiliaria" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_PaginaCorporativa_CrearPaginaCorporativaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+        <xs:element minOccurs="0" name="p_contenido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_URL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_ModificarPaginaCorporativaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_BorrarPaginaCorporativaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_DameTodasLasPaginas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_DameTodasLasPaginasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_PaginaCorporativa_DameTodasLasPaginasResult" nillable="true" type="q79:ArrayOfPaginaCorporativaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_DamePaginaCorporativaPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_PaginaCorporativa_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_PaginaCorporativa_DamePaginaCorporativaPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_PaginaCorporativa_DamePaginaCorporativaPorOIDResult" nillable="true" type="q80:PaginaCorporativaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_CrearEvento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fecha" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_categoria" type="q81:TipoEventoEnum" />
+        <xs:element minOccurs="0" name="p_inmobiliaria" type="xs:int" />
+        <xs:element minOccurs="0" name="p_geolocalizacion" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_CrearEventoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NuevoInmueblate_Evento_CrearEventoResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_ModificarEvento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fecha" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="p_categoria" type="q82:TipoEventoEnum" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_ModificarEventoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_BorrarEvento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_oid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_BorrarEventoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_DameTodosLosEventos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_DameTodosLosEventosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Evento_DameTodosLosEventosResult" nillable="true" type="q83:ArrayOfEventoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_DameEventosFiltro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_fecha" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="p_categoria" type="xs:int" />
+        <xs:element minOccurs="0" name="first" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Evento_DameEventosFiltroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Evento_DameEventosFiltroResult" nillable="true" type="q84:ArrayOfEventoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Muro_DameMuroPorOID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="p_Muro_OID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Muro_DameMuroPorOIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Muro_DameMuroPorOIDResult" nillable="true" type="q85:MuroDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Muro_GetAllEntradasOfMuro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NuevoInmueblate_Muro_GetAllEntradasOfMuroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" minOccurs="0" name="NuevoInmueblate_Muro_GetAllEntradasOfMuroResult" nillable="true" type="q86:ArrayOfEntradaDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

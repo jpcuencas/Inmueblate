@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ea8c2704-554a-449c-b8cc-7b4dd45573d9" name="Isidurlll@ISIDURLLL-LAP 2014-03-08 20:10:51" runUser="Isidurlll-Lap\Isidurlll" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1cc17540-264b-4f0b-824a-de0046a06e2c">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Isidurlll_ISIDURLLL-LAP 2014-03-08 20_10_51">
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\packages\NUnit.2.6.3\lib\nunit.framework.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\LinFu.DynamicProxy.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\packages\Moq.4.2.1312.1622\lib\net40\Moq.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateCP\bin\Debug\NuevoInmueblateCP.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NuevoInmueblateGenNHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\nunit.core.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-03-08T20:10:51.1089221+01:00" queuing="2014-03-08T20:10:51.2919326+01:00" start="2014-03-08T20:10:51.3399353+01:00" finish="2014-03-08T20:11:00.2864470+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="7" passed="6" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreoUnNuevoUsuarioExistente" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="b2d6d91a-304a-bf16-b980-e646a672b899">
+      <Description>Creo un nuevo usuario Existente</Description>
+      <Execution id="289b6a10-555c-497b-9ed3-ed0c33d5f735" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_ResgistrarUsuario</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreoUnNuevoUsuarioExistente" />
+    </UnitTest>
+    <UnitTest name="ElUsuarioAEnviaPeticionAlUsuarioB" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="033b7b47-0dee-a1ef-949a-14cb6bb808a7">
+      <Description>El Usuario a envia peticion al usuario b</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="4bd98c60-d14d-42c2-81ad-087a02a224fb" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ElUsuarioAEnviaPeticionAlUsuarioB" />
+    </UnitTest>
+    <UnitTest name="LogeoComoInmobiliaria" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="5aaff9a9-319d-119b-3dac-df677154de98">
+      <Description>Logeo como Inmobiliaria</Description>
+      <Execution id="56e12cde-6b6d-435e-b2f2-7ebb47612c49" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogeoComoInmobiliaria" />
+    </UnitTest>
+    <UnitTest name="CreoUnNuevoUsuario" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="994921e1-624b-e149-03a0-c82c7620da67">
+      <Description>Creo un nuevo usuario</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="976e411e-00fc-47b8-ba0a-079f8e53a16d" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_ResgistrarUsuario</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreoUnNuevoUsuario" />
+    </UnitTest>
+    <UnitTest name="LogeoComoUsuario" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="31083447-b47e-774a-1a46-9659cee2a931">
+      <Description>Logeo como usuario</Description>
+      <Execution id="53f087f4-8a77-4d38-84ff-84764bd55444" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogeoComoUsuario" />
+    </UnitTest>
+    <UnitTest name="LogeoErroneo" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="114a3e1e-b58a-ced9-9384-2cfd5542274b">
+      <Description>Logeo erroneo</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="9e53b3fe-376e-4dd4-acfe-39a3d4f77daa" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogeoErroneo" />
+    </UnitTest>
+    <UnitTest name="LogeoComoModerador" storage="d:\master\svnproyecto\08-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="ca3703f9-2406-85d4-f791-f6345c806385">
+      <Description>Logeo como moderador</Description>
+      <Execution id="d58587d5-7e92-46d7-aa81-e26081e8df85" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/08-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogeoComoModerador" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="033b7b47-0dee-a1ef-949a-14cb6bb808a7" executionId="4bd98c60-d14d-42c2-81ad-087a02a224fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="114a3e1e-b58a-ced9-9384-2cfd5542274b" executionId="9e53b3fe-376e-4dd4-acfe-39a3d4f77daa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="31083447-b47e-774a-1a46-9659cee2a931" executionId="53f087f4-8a77-4d38-84ff-84764bd55444" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5aaff9a9-319d-119b-3dac-df677154de98" executionId="56e12cde-6b6d-435e-b2f2-7ebb47612c49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="994921e1-624b-e149-03a0-c82c7620da67" executionId="976e411e-00fc-47b8-ba0a-079f8e53a16d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2d6d91a-304a-bf16-b980-e646a672b899" executionId="289b6a10-555c-497b-9ed3-ed0c33d5f735" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca3703f9-2406-85d4-f791-f6345c806385" executionId="d58587d5-7e92-46d7-aa81-e26081e8df85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4bd98c60-d14d-42c2-81ad-087a02a224fb" testId="033b7b47-0dee-a1ef-949a-14cb6bb808a7" testName="ElUsuarioAEnviaPeticionAlUsuarioB" computerName="ISIDURLLL-LAP" duration="00:00:03.8266390" startTime="2014-03-08T20:10:51.4289404+01:00" endTime="2014-03-08T20:10:55.7361868+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4bd98c60-d14d-42c2-81ad-087a02a224fb">
+      <Output>
+        <StdOut>Given Usuario a con direccion: "ijsl@inm.es"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioAConDireccion("ijsl@inm.es") (3,7s)
+And Usuario b con direccion: "crt@inm.es"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'crt@inm.es'
+-&gt; done: UsuarioCP_EnviarPeticionSteps.GivenUsuarioBConDireccion("crt@inm.es") (0,0s)
+When el Usuario a le envía la petición al Usuario b
+-&gt; done: UsuarioCP_EnviarPeticionSteps.WhenElUsuarioALeEnviaLaPeticionAlUsuarioB() (0,0s)
+Then el resultado deber ser ditinto a -1
+-&gt; error: Error de Assert.AreNotEqual. Se esperaba cualquier valor excepto &lt;-1&gt;, pero es &lt;-1&gt;.</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.AreNotEqual. Se esperaba cualquier valor excepto &lt;-1&gt;, pero es &lt;-1&gt;. </Message>
+          <StackTrace>   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionSteps.ThenElResultadoDeberSerDitintoA(Int32 pe_noesperado) en D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticionSteps.cs:línea 64
+   en lambda_method(Closure , IContextManager , Int32 )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.ScenarioCleanup() en D:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.ElUsuarioAEnviaPeticionAlUsuarioB() en d:\Master\SVNProyecto\08-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature:línea 8
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9e53b3fe-376e-4dd4-acfe-39a3d4f77daa" testId="114a3e1e-b58a-ced9-9384-2cfd5542274b" testName="LogeoErroneo" computerName="ISIDURLLL-LAP" duration="00:00:03.3845264" startTime="2014-03-08T20:10:55.7471874+01:00" endTime="2014-03-08T20:10:59.6024079+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e53b3fe-376e-4dd4-acfe-39a3d4f77daa">
+      <Output>
+        <StdOut>Given Un usuario con email "ddv@inm.es" y contraseña "ddv"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ddv@inm.es", "ddv") (0,0s)
+When quiero logearme en la red social como "Usuario"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ddv@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Usuario") (3,3s)
+Then debo logearme como usuario y devolver 1
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(1) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="53f087f4-8a77-4d38-84ff-84764bd55444" testId="31083447-b47e-774a-1a46-9659cee2a931" testName="LogeoComoUsuario" computerName="ISIDURLLL-LAP" duration="00:00:00.1331685" startTime="2014-03-08T20:10:59.6034080+01:00" endTime="2014-03-08T20:10:59.7434160+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53f087f4-8a77-4d38-84ff-84764bd55444">
+      <Output>
+        <StdOut>Given Un usuario con email "ijsl@inm.es" y contraseña "ijsl"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ijsl@inm.es", "ijsl") (0,0s)
+When quiero logearme en la red social como "Usuario"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Usuario") (0,1s)
+Then debo logearme como usuario y devolver 3
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(3) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="56e12cde-6b6d-435e-b2f2-7ebb47612c49" testId="5aaff9a9-319d-119b-3dac-df677154de98" testName="LogeoComoInmobiliaria" computerName="ISIDURLLL-LAP" duration="00:00:00.0073336" startTime="2014-03-08T20:10:59.7464162+01:00" endTime="2014-03-08T20:10:59.7564167+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56e12cde-6b6d-435e-b2f2-7ebb47612c49">
+      <Output>
+        <StdOut>Given Una inmobiliara con email "jpcs@inm.es" y contraseña "jpcs"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnaInmobiliaraConEmailYContrasena("jpcs@inm.es", "jpcs") (0,0s)
+When quiero logearme en la red social como "Inmobiliaria"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'jpcs@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Inmobiliaria") (0,0s)
+Then debo logearme como usuario y devolver 4
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(4) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="976e411e-00fc-47b8-ba0a-079f8e53a16d" testId="994921e1-624b-e149-03a0-c82c7620da67" testName="CreoUnNuevoUsuario" computerName="ISIDURLLL-LAP" duration="00:00:00.3795735" startTime="2014-03-08T20:10:59.7594169+01:00" endTime="2014-03-08T20:11:00.1464390+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="976e411e-00fc-47b8-ba0a-079f8e53a16d">
+      <Output>
+        <StdOut>Given El usuario "Diana" con mail "ddvc@inm.es" se quiere registrar
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.GivenElUsuarioConMailSeQuiereRegistrar("Diana", "ddvc@inm.es") (0,0s)
+When lo resgitro en mi base de datos
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ddvc@inm.es'
+NHibernate: INSERT INTO [Muro] ([pendienteModeracion]) VALUES (@p0); select SCOPE_IDENTITY();@p0 = False
+NHibernate: INSERT INTO [Entrada] ([fechaPublicacion], [titulo], [cuerpo], [pendienteModeracion], [FK_id_muro], [FK_id_creador]) VALUES (@p0, @p1, @p2, @p3, @p4, @p5); select SCOPE_IDENTITY();@p0 = 3/8/2014 12:00:00 AM, @p1 = 'Bienvenid@ Diana', @p2 = 'Disfuta de nuestra red social, aquí podrás encontrar el inmuble que buscas', @p3 = False, @p4 = 4, @p5 = NULL
+NHibernate: INSERT INTO [SuperUsuario] ([nombre], [telefono], [email], [direccion], [poblacion], [codigoPostal], [pais], [password], [valoracionMedia], [FK_id_muro]) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); select SCOPE_IDENTITY();@p0 = 'Diana', @p1 = '34234', @p2 = 'ddvc@inm.es', @p3 = 'casa', @p4 = 'pueblo', @p5 = '00', @p6 = 'españa', @p7 = '7bed657a775c37c2570786d0cbeefd88', @p8 = 0, @p9 = 4
+NHibernate: INSERT INTO [Usuario] ([apellidos], [nif], [fechaNacimiento], [privacidad], [FK_id_preferenciasBusqueda], [FK_id_gustos], [id]) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);@p0 = 'a1', @p1 = '444', @p2 = 3/8/2014 12:00:00 AM, @p3 = 2, @p4 = NULL, @p5 = NULL, @p6 = 6
+NHibernate: UPDATE [Entrada] SET [FK_id_muro] = @p0 WHERE [id] = @p1;@p0 = 4, @p1 = 4
+NHibernate: UPDATE [Entrada] SET [FK_id_muro] = @p0 WHERE [id] = @p1;@p0 = 4, @p1 = 4
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.WhenLoResgitroEnMiBaseDeDatos() (0,2s)
+Then el resultado debe ser distinto de -1
+NHibernate: SELECT superusuar0_.[id] as column1_23_0_, superusuar0_.[nombre] as column2_23_0_, superusuar0_.[telefono] as column3_23_0_, superusuar0_.[email] as column4_23_0_, superusuar0_.[direccion] as column5_23_0_, superusuar0_.[poblacion] as column6_23_0_, superusuar0_.[codigoPostal] as column7_23_0_, superusuar0_.[pais] as column8_23_0_, superusuar0_.[password] as column9_23_0_, superusuar0_.[valoracionMedia] as column10_23_0_, superusuar0_.[FK_id_muro] as column11_23_0_, superusuar0_1_.[descripcion] as column2_27_0_, superusuar0_1_.[cif] as column3_27_0_, superusuar0_2_.[apellidos] as column2_30_0_, superusuar0_2_.[nif] as column3_30_0_, superusuar0_2_.[fechaNacimiento] as column4_30_0_, superusuar0_2_.[privacidad] as column5_30_0_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_0_, superusuar0_2_.[FK_id_gustos] as column7_30_0_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_0_ FROM [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] WHERE superusuar0_.[id]=@p0;@p0 = 6
+NHibernate: DELETE FROM [GrupoSuperUsuarios] WHERE [FK_id_miembros] = @p0;@p0 = 6
+NHibernate: UPDATE [Mensaje] SET [FK_id_emisor] = null WHERE [FK_id_emisor] = @p0;@p0 = 6
+NHibernate: UPDATE [Mensaje] SET [FK_id_receptor] = null WHERE [FK_id_receptor] = @p0;@p0 = 6
+NHibernate: UPDATE [Valoracion] SET [FK_id_emisor] = null WHERE [FK_id_emisor] = @p0;@p0 = 6
+NHibernate: UPDATE [Valoracion] SET [FK_id_receptor] = null WHERE [FK_id_receptor] = @p0;@p0 = 6
+NHibernate: UPDATE [Entrada] SET [FK_id_creador] = null WHERE [FK_id_creador] = @p0;@p0 = 6
+NHibernate: UPDATE [Comentario] SET [FK_id_creador] = null WHERE [FK_id_creador] = @p0;@p0 = 6
+NHibernate: UPDATE [PeticionAmistad] SET [FK_id_emisor] = null WHERE [FK_id_emisor] = @p0;@p0 = 6
+NHibernate: UPDATE [PeticionAmistad] SET [FK_id_receptor] = null WHERE [FK_id_receptor] = @p0;@p0 = 6
+NHibernate: UPDATE [ElementoMultimedia] SET [FK_id_fusuario] = null WHERE [FK_id_fusuario] = @p0;@p0 = 6
+NHibernate: UPDATE [ElementoMultimedia] SET [FK_id_vusuario] = null WHERE [FK_id_vusuario] = @p0;@p0 = 6
+NHibernate: DELETE FROM [UsuarioUsuarioAmigos] WHERE [FK_id_listaAmigos] = @p0;@p0 = 6
+NHibernate: DELETE FROM [UsuarioUsuarioBloqueados] WHERE [FK_id_listaBloqueados] = @p0;@p0 = 6
+NHibernate: DELETE FROM [Usuario] WHERE [id] = @p0;@p0 = 6
+NHibernate: DELETE FROM [SuperUsuario] WHERE [id] = @p0;@p0 = 6
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.ThenElResultadoDebeSerDistintoDe(-1) (0,2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="289b6a10-555c-497b-9ed3-ed0c33d5f735" testId="b2d6d91a-304a-bf16-b980-e646a672b899" testName="CreoUnNuevoUsuarioExistente" computerName="ISIDURLLL-LAP" duration="00:00:00.0030926" startTime="2014-03-08T20:11:00.1504393+01:00" endTime="2014-03-08T20:11:00.1564396+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="289b6a10-555c-497b-9ed3-ed0c33d5f735">
+      <Output>
+        <StdOut>Given El usuario "Isido" con mail "ijsl@inm.es" se quiere registrar
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.GivenElUsuarioConMailSeQuiereRegistrar("Isido", "ijsl@inm.es") (0,0s)
+When lo resgitro en mi base de datos
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.WhenLoResgitroEnMiBaseDeDatos() (0,0s)
+Then el resultado debe ser -1
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.ThenElResultadoDebeSer(-1) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d58587d5-7e92-46d7-aa81-e26081e8df85" testId="ca3703f9-2406-85d4-f791-f6345c806385" testName="LogeoComoModerador" computerName="ISIDURLLL-LAP" duration="00:00:00.0066690" startTime="2014-03-08T20:11:00.1664402+01:00" endTime="2014-03-08T20:11:00.1764408+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d58587d5-7e92-46d7-aa81-e26081e8df85">
+      <Output>
+        <StdOut>Given Un moderador con email "avam@inm.es" y contraseña "avam"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnModeradorConEmailYContrasena("avam@inm.es", "avam") (0,0s)
+When quiero logearme en la red social como "Moderador"
+NHibernate: select superusuar0_.[id] as column1_23_, superusuar0_.[nombre] as column2_23_, superusuar0_.[telefono] as column3_23_, superusuar0_.[email] as column4_23_, superusuar0_.[direccion] as column5_23_, superusuar0_.[poblacion] as column6_23_, superusuar0_.[codigoPostal] as column7_23_, superusuar0_.[pais] as column8_23_, superusuar0_.[password] as column9_23_, superusuar0_.[valoracionMedia] as column10_23_, superusuar0_.[FK_id_muro] as column11_23_, superusuar0_1_.[descripcion] as column2_27_, superusuar0_1_.[cif] as column3_27_, superusuar0_2_.[apellidos] as column2_30_, superusuar0_2_.[nif] as column3_30_, superusuar0_2_.[fechaNacimiento] as column4_30_, superusuar0_2_.[privacidad] as column5_30_, superusuar0_2_.[FK_id_preferenciasBusqueda] as column6_30_, superusuar0_2_.[FK_id_gustos] as column7_30_, case when superusuar0_3_.[id] is not null then 3 when superusuar0_1_.[id] is not null then 1 when superusuar0_2_.[id] is not null then 2 when superusuar0_.[id] is not null then 0 end as clazz_ from [SuperUsuario] superusuar0_ left outer join [Inmobiliaria] superusuar0_1_ on superusuar0_.[id]=superusuar0_1_.[id] left outer join [Usuario] superusuar0_2_ on superusuar0_.[id]=superusuar0_2_.[id] left outer join [Moderador] superusuar0_3_ on superusuar0_.[id]=superusuar0_3_.[id] where superusuar0_.[email]=@p0;@p0 = 'avam@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Moderador") (0,0s)
+Then debo logearme como usuario y devolver 2
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(2) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

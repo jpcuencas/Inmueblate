@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				
+<joined-subclass name="FotografiaEN" extends="NuevoInmueblateGenNHibernate.EN.RedSocial.ElementoMultimediaEN" table="Fotografia"> 
+	<key>
+    	
+				<column name="id"/>
+		
+    	
+   	</key>
+
+						
+		
+ 	  
+		 </joined-subclass>
+		  
+		  <query name="FotografiaENReadAllHQL">from FotografiaEN</query>
+		  <query name="FotografiaENobtenerTodasFotografiasPorModerarHQL"><![CDATA[FROM FotografiaEN AS fo WHERE fo.PendienteModeracion = true]]></query>
+		  <query name="FotografiaENobtenerFotografiasPorUsuarioHQL"><![CDATA[FROM FotografiaEN AS fo WHERE fo.Usuario IS NOT NULL AND fo.Usuario.Id = :pe_usuario ORDER BY fo.Fecha DESC]]></query>
+		  <query name="FotografiaENobtenerFotoPerfilHQL"><![CDATA[FROM FotografiaEN AS fo WHERE fo.Usuario IS NOT NULL AND fo.Usuario = :pe_usuario AND fo.Nombre = 'default']]></query>
+		  <query name="FotografiaENobtenerFotosPorGaleriaHQL"><![CDATA[FROM FotografiaEN AS fo WHERE fo.Galeria.Id = :pe_galeria ORDER BY fo.Fecha DESC]]></query>
+		</hibernate-mapping>
+	

@@ -1,0 +1,40 @@
+C:\Users\Isis\Desktop\MvvmExample\MicroMvvm\bin\Debug\MicroMvvm.dll
+C:\Users\Isis\Desktop\MvvmExample\MicroMvvm\bin\Debug\MicroMvvm.pdb
+C:\Users\Isis\Desktop\MvvmExample\MicroMvvm\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Isis\Desktop\MvvmExample\MicroMvvm\obj\Debug\MicroMvvm.dll
+C:\Users\Isis\Desktop\MvvmExample\MicroMvvm\obj\Debug\MicroMvvm.pdb
+D:\Proyecto DSM\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+D:\Proyecto DSM\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+D:\Proyecto DSM\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.csprojResolveAssemblyReference.cache
+D:\Proyecto DSM\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+D:\Proyecto DSM\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.pdb
+C:\Users\windows\Desktop\RAW\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+C:\Users\windows\Desktop\RAW\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+C:\Users\windows\Desktop\RAW\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.csprojResolveAssemblyReference.cache
+C:\Users\windows\Desktop\RAW\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+C:\Users\windows\Desktop\RAW\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.pdb
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\obj\Debug\ResolveAssemblyReference.cache
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+D:\CLASE\RAW-Tortoise\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.pdb
+C:\Users\Alvaro\Desktop\Proyecto RAW\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+C:\Users\Alvaro\Desktop\Proyecto RAW\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+C:\Users\Alvaro\Desktop\Proyecto RAW\raw\RAWGen\MicroMvvm\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alvaro\Desktop\Proyecto RAW\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+C:\Users\Alvaro\Desktop\Proyecto RAW\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.pdb
+D:\TortoiseSVN\DSM - RAW\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+D:\TortoiseSVN\DSM - RAW\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+D:\TortoiseSVN\DSM - RAW\raw\RAWGen\MicroMvvm\obj\Debug\ResolveAssemblyReference.cache
+D:\TortoiseSVN\DSM - RAW\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+D:\TortoiseSVN\DSM - RAW\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.pdb
+C:\Users\FAMILIA\Desktop\Proyecto RAW\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+C:\Users\FAMILIA\Desktop\Proyecto RAW\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+C:\Users\FAMILIA\Desktop\Proyecto RAW\RAWGen\MicroMvvm\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\FAMILIA\Desktop\Proyecto RAW\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+C:\Users\FAMILIA\Desktop\Proyecto RAW\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.pdb
+C:\Users\Alvaro\Desktop\RAW\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.dll
+C:\Users\Alvaro\Desktop\RAW\raw\RAWGen\MicroMvvm\bin\Debug\MicroMvvm.pdb
+C:\Users\Alvaro\Desktop\RAW\raw\RAWGen\MicroMvvm\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alvaro\Desktop\RAW\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.dll
+C:\Users\Alvaro\Desktop\RAW\raw\RAWGen\MicroMvvm\obj\Debug\MicroMvvm.pdb

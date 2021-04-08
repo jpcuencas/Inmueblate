@@ -1,0 +1,1022 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8ed603c2-6ab0-47d1-8ffe-6ec154a1cc9d" name="Isidurlll@ISIDURLLL-LAP 2014-04-09 19:05:38" runUser="Isidurlll-Lap\Isidurlll" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d1257e75-8b55-4ab2-9b84-d5d9040e27ea">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Isidurlll_ISIDURLLL-LAP 2014-04-09 19_05_38">
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\packages\Moq.4.2.1312.1622\lib\net40\Moq.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\bin\Debug\LinFu.DynamicProxy.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NuevoInmueblateGenNHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\nunit.core.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsCustom\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\packages\NUnit.2.6.3\lib\nunit.framework.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\LinFu.DynamicProxy.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\bin\Debug\NuevoInmueblateCP.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-04-09T19:05:38.5868776+02:00" queuing="2014-04-09T19:05:45.2322215+02:00" start="2014-04-09T19:05:45.6072691+02:00" finish="2014-04-09T19:06:12.7767192+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="30" executed="30" passed="9" error="0" failed="21" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="SubirFotos_Incorrecta2" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="34b125f2-6383-be2f-1852-7c394e429476">
+      <Description>SubirFotos_Incorrecta2</Description>
+      <Execution id="053e0fb1-7f6e-4728-a944-187866252c97" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>EntradaCP_SubirFotos</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubirFotos_Incorrecta2" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta2" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="dcea4d4c-3b4c-f245-c9ec-997ef13bfb01">
+      <Description>Aceptar_Peticion_Incorrecta2</Description>
+      <Execution id="d4d903cc-3cd3-40c2-ac8b-f6627c33357f" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta2" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoUsuario" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="a7c7cd35-ba0b-c491-68a8-373535ee269b">
+      <Description>Login_Logeo como usuario</Description>
+      <Execution id="33101ac3-c506-4b02-8075-5aeaff21c3f2" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoUsuario" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Correcta" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="6951d93d-f414-3fc5-e412-43b9c41666e9">
+      <Description>Aceptar_Peticion_Correcta</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="5082d957-9a4a-4565-9d43-795e58146dee" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Correcta" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta3" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="f65e809a-8a70-bb0b-7adc-b5578c726787">
+      <Description>Aceptar_Peticion_Incorrecta3</Description>
+      <Execution id="d200830c-f0ee-4904-b98f-71d04b41f747" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta3" />
+    </UnitTest>
+    <UnitTest name="EnviarPetcion_UsuarioAToA" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="b0f950f9-726e-26dd-e9a2-0383d6c3889f">
+      <Description>EnviarPetcion_Usuario a to a</Description>
+      <Execution id="c64ad9e5-6d85-4a69-8e7f-05c48531ed2a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPetcion_UsuarioAToA" />
+    </UnitTest>
+    <UnitTest name="EnvioDeMensaje" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="f3632137-7a54-823e-9a17-444199b36de1">
+      <Description>Envio de mensaje</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="544e90cf-0df6-41ce-8d89-968a03157518" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MensajeCP_CrearMensaje</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnvioDeMensaje" />
+    </UnitTest>
+    <UnitTest name="EnviarPeticion_YaExistePeticion" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="016c5d57-ee6a-e77b-591b-df22e86568fe">
+      <Description>EnviarPeticion_Ya existe peticion</Description>
+      <Execution id="904b89bf-bb08-4255-bc5b-0d8d7e0fd5b1" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPeticion_YaExistePeticion" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoModerador" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="bf6f8018-6c87-aaf9-8636-e464d8dabd51">
+      <Description>Login_Logeo como moderador</Description>
+      <Execution id="a6b4c6c3-db1c-4fb5-86e9-90b03d8ffcf1" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoModerador" />
+    </UnitTest>
+    <UnitTest name="Rechazar_Peticion_Correcta" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="9399c62f-dfb7-3267-a92b-b94eef466f10">
+      <Description>Rechazar_Peticion_Correcta</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="c8c4f9bf-c84a-46d8-a614-17d05d9e4b13" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Rechazar_Peticion_Correcta" />
+    </UnitTest>
+    <UnitTest name="Rechazar_Peticion_Incorrecta2" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="5b50e441-63ef-87aa-63e8-30641e020210">
+      <Description>Rechazar_Peticion_Incorrecta2</Description>
+      <Execution id="cc518f51-361c-42b7-9f8d-929bbf5ffb68" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Rechazar_Peticion_Incorrecta2" />
+    </UnitTest>
+    <UnitTest name="ElModeradorSeLogeaCorrectamente" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestswcf\bin\debug\nuevoinmueblatetestswcf.dll" id="9f183014-e31a-a45d-e494-1ca53d964db7">
+      <Description>El moderador se logea correctamente</Description>
+      <Execution id="d5254a54-6ec8-46d5-9df3-f60830031806" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Moderador_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsWCF/bin/Debug/NuevoInmueblateTestsWCF.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsWCF.InmueblatePruebas.Moderador_LoginFeature, NuevoInmueblateTestsWCF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ElModeradorSeLogeaCorrectamente" />
+    </UnitTest>
+    <UnitTest name="Rechazar_Peticion_Incorrecta1" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="0cb3bce0-6e44-075f-32b3-bfc1013e2a4b">
+      <Description>Rechazar_Peticion_Incorrecta1</Description>
+      <Execution id="7ccb35f5-e7e1-44a1-890e-09269da7cb06" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Rechazar_Peticion_Incorrecta1" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta3" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="dc60f9ef-ccae-5e87-5821-861d849908d4">
+      <Description>Aceptar_Peticion_Incorrecta3</Description>
+      <Execution id="204382d2-14f0-444a-b515-4ea0d1c0eea6" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta3" />
+    </UnitTest>
+    <UnitTest name="ResgistrarUsuario_NuevoPeroYaExiste" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="5165bcb4-336c-8ad0-f412-09726cec7a6c">
+      <Description>ResgistrarUsuario_Nuevo pero ya Existe</Description>
+      <Execution id="3a3ab15b-f289-4917-a5b1-6e750905530a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_ResgistrarUsuario</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ResgistrarUsuario_NuevoPeroYaExiste" />
+    </UnitTest>
+    <UnitTest name="SubirFotos_Incorrecta3" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="60720a65-cddf-1816-51ea-e150211a0a2d">
+      <Description>SubirFotos_Incorrecta3</Description>
+      <Execution id="e46bf996-d2b8-4c6e-90da-fa1a187b611f" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>EntradaCP_SubirFotos</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubirFotos_Incorrecta3" />
+    </UnitTest>
+    <UnitTest name="EnviarPeticion_UsuarioAToB" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="4a5efe0e-29fc-6f13-b293-784cefe007b5">
+      <Description>EnviarPeticion_Usuario a to b</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="a6ad224c-8901-41ec-a989-3b7033474fdc" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPeticion_UsuarioAToB" />
+    </UnitTest>
+    <UnitTest name="EnviarPeticion_AUsuarioQueNoExiste" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="38477b57-b245-c466-d984-52365250b758">
+      <Description>EnviarPeticion_A Usuario que no existe</Description>
+      <Execution id="240ff5c2-27e4-4ffc-a031-04531a05bbca" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPeticion_AUsuarioQueNoExiste" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoErroneo" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="a3bc3898-adb8-5bb3-3ecb-99329aba4396">
+      <Description>Login_Logeo erroneo</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="0d3cc2c5-cd10-4a15-9376-eedb3d5a87c2" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoErroneo" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta1" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="1dfa8ac7-09b9-66f3-6ee9-c7f24a18280a">
+      <Description>Aceptar_Peticion_Incorrecta1</Description>
+      <Execution id="07a072fb-2a09-4559-b26d-9bdc6065a945" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta1" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="a6c42b4a-8388-2bde-bb84-218399a678cf">
+      <Description>ObtenerAnunciosRandom_Obtener 3 anuncios distintos</Description>
+      <Execution id="402501e6-feee-4184-81d1-bc0815005247" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener5Anuncios" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="701d9078-5cf6-fd0b-4ae6-db03ae770fd8">
+      <Description>ObtenerAnunciosRandom_Obtener 5 anuncios</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="a7b3e2f4-47b1-4e82-8b1d-73df6fb65871" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener5Anuncios" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener_5Anuncios" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="1b957298-fb96-3fab-fc31-b7eb42676af6">
+      <Description>ObtenerAnunciosRandom_Obtener -5 anuncios</Description>
+      <Execution id="737945a3-1ed0-41e5-bcf9-0eaf4db52117" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener_5Anuncios" />
+    </UnitTest>
+    <UnitTest name="SubirFotos_Correcta" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="d037ff8c-14cf-e55b-a6bc-69bbda56f210">
+      <Description>SubirFotos_Correcta</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="632cc91b-6d1b-486e-8651-5ea8d1b7d335" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>EntradaCP_SubirFotos</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubirFotos_Correcta" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoInmobiliaria" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="d0897818-d2aa-a1a3-545c-7b0c51c1776c">
+      <Description>Login_Logeo como Inmobiliaria</Description>
+      <Execution id="d0494954-8eb7-4a73-95ba-f293f510e3b5" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoInmobiliaria" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener15Anuncios" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestscustom\bin\debug\nuevoinmueblatetestscustom.dll" id="fe790a83-12fd-8062-c3ce-a2b323a3dcea">
+      <Description>ObtenerAnunciosRandom_Obtener 15 anuncios</Description>
+      <Execution id="9cfd25bc-4c37-4423-9b88-827bb6d01c5c" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsCustom/bin/Debug/NuevoInmueblateTestsCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestsCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener15Anuncios" />
+    </UnitTest>
+    <UnitTest name="SubirFotos_Incorrecta1" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="ac3018d0-8795-e4a0-d0cf-9ac12d1fe1e8">
+      <Description>SubirFotos_Incorrecta1</Description>
+      <Execution id="1fdb0c3b-239c-42d5-a395-36ccb8e5ae6f" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>EntradaCP_SubirFotos</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubirFotos_Incorrecta1" />
+    </UnitTest>
+    <UnitTest name="ResgistrarUsuario_Nuevo" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="518eb9ff-7c9c-b40b-befc-dc0166e524ff">
+      <Description>ResgistrarUsuario_Nuevo</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="7f76b14b-accb-4aea-8b3f-678d6fb4f671" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_ResgistrarUsuario</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ResgistrarUsuario_Nuevo" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestswcf\bin\debug\nuevoinmueblatetestswcf.dll" id="0627247f-9117-4bb2-bc60-d9b9db32087f">
+      <Execution id="ae3aba8b-b8fd-4b28-b351-ddf2c78b9080" />
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsWCF/bin/Debug/NuevoInmueblateTestsWCF.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsWCF.UnitTest1, NuevoInmueblateTestsWCF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="ElModeradorSeLogeaErroneamente" storage="d:\master\svnproyecto\20140402\trunk\nuevoinmueblategen\nuevoinmueblatetestswcf\bin\debug\nuevoinmueblatetestswcf.dll" id="c614d3bc-1457-8bc0-3aae-186084cf1c89">
+      <Description>El moderador se logea erroneamente</Description>
+      <Execution id="37a51a4a-900d-4ca9-b3b9-27e99cd857c7" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Moderador_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/20140402/trunk/NuevoInmueblateGen/NuevoInmueblateTestsWCF/bin/Debug/NuevoInmueblateTestsWCF.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestsWCF.InmueblatePruebas.Moderador_LoginFeature, NuevoInmueblateTestsWCF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ElModeradorSeLogeaErroneamente" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="016c5d57-ee6a-e77b-591b-df22e86568fe" executionId="904b89bf-bb08-4255-bc5b-0d8d7e0fd5b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0627247f-9117-4bb2-bc60-d9b9db32087f" executionId="ae3aba8b-b8fd-4b28-b351-ddf2c78b9080" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0cb3bce0-6e44-075f-32b3-bfc1013e2a4b" executionId="7ccb35f5-e7e1-44a1-890e-09269da7cb06" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b957298-fb96-3fab-fc31-b7eb42676af6" executionId="737945a3-1ed0-41e5-bcf9-0eaf4db52117" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dfa8ac7-09b9-66f3-6ee9-c7f24a18280a" executionId="07a072fb-2a09-4559-b26d-9bdc6065a945" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34b125f2-6383-be2f-1852-7c394e429476" executionId="053e0fb1-7f6e-4728-a944-187866252c97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38477b57-b245-c466-d984-52365250b758" executionId="240ff5c2-27e4-4ffc-a031-04531a05bbca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a5efe0e-29fc-6f13-b293-784cefe007b5" executionId="a6ad224c-8901-41ec-a989-3b7033474fdc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5165bcb4-336c-8ad0-f412-09726cec7a6c" executionId="3a3ab15b-f289-4917-a5b1-6e750905530a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="518eb9ff-7c9c-b40b-befc-dc0166e524ff" executionId="7f76b14b-accb-4aea-8b3f-678d6fb4f671" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b50e441-63ef-87aa-63e8-30641e020210" executionId="cc518f51-361c-42b7-9f8d-929bbf5ffb68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60720a65-cddf-1816-51ea-e150211a0a2d" executionId="e46bf996-d2b8-4c6e-90da-fa1a187b611f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6951d93d-f414-3fc5-e412-43b9c41666e9" executionId="5082d957-9a4a-4565-9d43-795e58146dee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="701d9078-5cf6-fd0b-4ae6-db03ae770fd8" executionId="a7b3e2f4-47b1-4e82-8b1d-73df6fb65871" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9399c62f-dfb7-3267-a92b-b94eef466f10" executionId="c8c4f9bf-c84a-46d8-a614-17d05d9e4b13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f183014-e31a-a45d-e494-1ca53d964db7" executionId="d5254a54-6ec8-46d5-9df3-f60830031806" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3bc3898-adb8-5bb3-3ecb-99329aba4396" executionId="0d3cc2c5-cd10-4a15-9376-eedb3d5a87c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6c42b4a-8388-2bde-bb84-218399a678cf" executionId="402501e6-feee-4184-81d1-bc0815005247" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7c7cd35-ba0b-c491-68a8-373535ee269b" executionId="33101ac3-c506-4b02-8075-5aeaff21c3f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac3018d0-8795-e4a0-d0cf-9ac12d1fe1e8" executionId="1fdb0c3b-239c-42d5-a395-36ccb8e5ae6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0f950f9-726e-26dd-e9a2-0383d6c3889f" executionId="c64ad9e5-6d85-4a69-8e7f-05c48531ed2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf6f8018-6c87-aaf9-8636-e464d8dabd51" executionId="a6b4c6c3-db1c-4fb5-86e9-90b03d8ffcf1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c614d3bc-1457-8bc0-3aae-186084cf1c89" executionId="37a51a4a-900d-4ca9-b3b9-27e99cd857c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d037ff8c-14cf-e55b-a6bc-69bbda56f210" executionId="632cc91b-6d1b-486e-8651-5ea8d1b7d335" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0897818-d2aa-a1a3-545c-7b0c51c1776c" executionId="d0494954-8eb7-4a73-95ba-f293f510e3b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc60f9ef-ccae-5e87-5821-861d849908d4" executionId="204382d2-14f0-444a-b515-4ea0d1c0eea6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dcea4d4c-3b4c-f245-c9ec-997ef13bfb01" executionId="d4d903cc-3cd3-40c2-ac8b-f6627c33357f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3632137-7a54-823e-9a17-444199b36de1" executionId="544e90cf-0df6-41ce-8d89-968a03157518" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f65e809a-8a70-bb0b-7adc-b5578c726787" executionId="d200830c-f0ee-4904-b98f-71d04b41f747" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe790a83-12fd-8062-c3ce-a2b323a3dcea" executionId="9cfd25bc-4c37-4423-9b88-827bb6d01c5c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="904b89bf-bb08-4255-bc5b-0d8d7e0fd5b1" testId="016c5d57-ee6a-e77b-591b-df22e86568fe" testName="EnviarPeticion_YaExistePeticion" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:05:45.9453120+02:00" endTime="2014-04-09T19:05:47.7135366+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="904b89bf-bb08-4255-bc5b-0d8d7e0fd5b1">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Creacion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ae3aba8b-b8fd-4b28-b351-ddf2c78b9080" testId="0627247f-9117-4bb2-bc60-d9b9db32087f" testName="TestMethod1" computerName="ISIDURLLL-LAP" duration="00:00:00.0212266" startTime="2014-04-09T19:05:47.7165369+02:00" endTime="2014-04-09T19:05:48.2376031+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae3aba8b-b8fd-4b28-b351-ddf2c78b9080">
+    </UnitTestResult>
+    <UnitTestResult executionId="7ccb35f5-e7e1-44a1-890e-09269da7cb06" testId="0cb3bce0-6e44-075f-32b3-bfc1013e2a4b" testName="Rechazar_Peticion_Incorrecta1" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:05:48.2421037+02:00" endTime="2014-04-09T19:05:48.2631063+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ccb35f5-e7e1-44a1-890e-09269da7cb06">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="737945a3-1ed0-41e5-bcf9-0eaf4db52117" testId="1b957298-fb96-3fab-fc31-b7eb42676af6" testName="ObtenerAnunciosRandom_Obtener_5Anuncios" computerName="ISIDURLLL-LAP" duration="00:00:19.7982151" startTime="2014-04-09T19:05:48.2746078+02:00" endTime="2014-04-09T19:06:08.5056768+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="737945a3-1ed0-41e5-bcf9-0eaf4db52117">
+      <Output>
+        <StdOut>Given quiero -5 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(-5) (0,0s)
+When busco mis anuncios
+NHibernate: SELECT this_.id as id33_0_, this_.imagen as imagen33_0_, this_.descripcion as descripc3_33_0_, this_.fechaCaducidad as fechaCad4_33_0_, this_.tipo as tipo33_0_, this_.URL as URL33_0_ FROM Anuncio this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() (19,5s)
+Then deberia otener 0 anuncios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.ThenDeberiaOtenerAnuncios(0) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="07a072fb-2a09-4559-b26d-9bdc6065a945" testId="1dfa8ac7-09b9-66f3-6ee9-c7f24a18280a" testName="Aceptar_Peticion_Incorrecta1" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.5176783+02:00" endTime="2014-04-09T19:06:08.5276796+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07a072fb-2a09-4559-b26d-9bdc6065a945">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="053e0fb1-7f6e-4728-a944-187866252c97" testId="34b125f2-6383-be2f-1852-7c394e429476" testName="SubirFotos_Incorrecta2" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.5306800+02:00" endTime="2014-04-09T19:06:08.5501825+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="053e0fb1-7f6e-4728-a944-187866252c97">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\EntradaCP_SubirFotos.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="240ff5c2-27e4-4ffc-a031-04531a05bbca" testId="38477b57-b245-c466-d984-52365250b758" testName="EnviarPeticion_AUsuarioQueNoExiste" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.5556832+02:00" endTime="2014-04-09T19:06:08.5691849+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="240ff5c2-27e4-4ffc-a031-04531a05bbca">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\EntradaCP_SubirFotos.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a6ad224c-8901-41ec-a989-3b7033474fdc" testId="4a5efe0e-29fc-6f13-b293-784cefe007b5" testName="EnviarPeticion_UsuarioAToB" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.5736855+02:00" endTime="2014-04-09T19:06:08.5901876+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6ad224c-8901-41ec-a989-3b7033474fdc">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\EntradaCP_SubirFotos.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3a3ab15b-f289-4917-a5b1-6e750905530a" testId="5165bcb4-336c-8ad0-f412-09726cec7a6c" testName="ResgistrarUsuario_NuevoPeroYaExiste" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.5931879+02:00" endTime="2014-04-09T19:06:08.6106902+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a3ab15b-f289-4917-a5b1-6e750905530a">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7f76b14b-accb-4aea-8b3f-678d6fb4f671" testId="518eb9ff-7c9c-b40b-befc-dc0166e524ff" testName="ResgistrarUsuario_Nuevo" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.6131905+02:00" endTime="2014-04-09T19:06:08.6266922+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f76b14b-accb-4aea-8b3f-678d6fb4f671">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cc518f51-361c-42b7-9f8d-929bbf5ffb68" testId="5b50e441-63ef-87aa-63e8-30641e020210" testName="Rechazar_Peticion_Incorrecta2" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.6291925+02:00" endTime="2014-04-09T19:06:08.6421942+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc518f51-361c-42b7-9f8d-929bbf5ffb68">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e46bf996-d2b8-4c6e-90da-fa1a187b611f" testId="60720a65-cddf-1816-51ea-e150211a0a2d" testName="SubirFotos_Incorrecta3" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.6516954+02:00" endTime="2014-04-09T19:06:08.6606965+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e46bf996-d2b8-4c6e-90da-fa1a187b611f">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5082d957-9a4a-4565-9d43-795e58146dee" testId="6951d93d-f414-3fc5-e412-43b9c41666e9" testName="Aceptar_Peticion_Correcta" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.6631968+02:00" endTime="2014-04-09T19:06:08.6711978+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5082d957-9a4a-4565-9d43-795e58146dee">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a7b3e2f4-47b1-4e82-8b1d-73df6fb65871" testId="701d9078-5cf6-fd0b-4ae6-db03ae770fd8" testName="ObtenerAnunciosRandom_Obtener5Anuncios" computerName="ISIDURLLL-LAP" duration="00:00:00.0434693" startTime="2014-04-09T19:06:08.6746983+02:00" endTime="2014-04-09T19:06:08.7282051+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7b3e2f4-47b1-4e82-8b1d-73df6fb65871">
+      <Output>
+        <StdOut>Given quiero 5 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(5) (0,0s)
+When busco mis anuncios
+NHibernate: SELECT this_.id as id33_0_, this_.imagen as imagen33_0_, this_.descripcion as descripc3_33_0_, this_.fechaCaducidad as fechaCad4_33_0_, this_.tipo as tipo33_0_, this_.URL as URL33_0_ FROM Anuncio this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() (0,0s)
+Then deberia otener 5 anuncios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.ThenDeberiaOtenerAnuncios(5) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c8c4f9bf-c84a-46d8-a614-17d05d9e4b13" testId="9399c62f-dfb7-3267-a92b-b94eef466f10" testName="Rechazar_Peticion_Correcta" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.7327057+02:00" endTime="2014-04-09T19:06:08.7462074+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8c4f9bf-c84a-46d8-a614-17d05d9e4b13">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d5254a54-6ec8-46d5-9df3-f60830031806" testId="9f183014-e31a-a45d-e494-1ca53d964db7" testName="ElModeradorSeLogeaCorrectamente" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:08.7492078+02:00" endTime="2014-04-09T19:06:09.2662734+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5254a54-6ec8-46d5-9df3-f60830031806">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase NuevoInmueblateTestsWCF.InmueblatePruebas.Moderador_LoginFeature.FeatureSetup produjo una excepción. System.IO.FileNotFoundException: System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateGenNHibernate.CAD.RedSocial.ModeradorCAD.CrearModerador(ModeradorEN moderador)
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.ModeradorCEN.CrearModerador(String p_apellidos, String p_nif, Nullable`1 p_fechaNacimiento, TipoPrivacidadEnum p_privacidad, String p_nombre, String p_telefono, String p_email, String p_direccion, String p_poblacion, String p_codigoPostal, String p_pais, String p_password, Single p_valoracionMedia) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\ModeradorCEN.cs:línea 74
+   en NuevoInmueblateTestsWCF.InmueblatePruebas.Moderador_LoginSteps.Creacion() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsWCF\InmueblatePruebas\Moderador_LoginSteps.cs:línea 20
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en NuevoInmueblateTestsWCF.InmueblatePruebas.Moderador_LoginFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsWCF\InmueblatePruebas\Moderador_Login.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0d3cc2c5-cd10-4a15-9376-eedb3d5a87c2" testId="a3bc3898-adb8-5bb3-3ecb-99329aba4396" testName="Login_LogeoErroneo" computerName="ISIDURLLL-LAP" duration="00:00:00.7796003" startTime="2014-04-09T19:06:09.2737744+02:00" endTime="2014-04-09T19:06:10.0658749+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d3cc2c5-cd10-4a15-9376-eedb3d5a87c2">
+      <Output>
+        <StdOut>Given Un usuario con email "ddv@inm.es" y contraseña "ddv"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ddv@inm.es", "ddv") (0,0s)
+When quiero logearme en la red social como "Usuario"
+NHibernate: select superusuar0_.id as id22_, superusuar0_.nombre as nombre22_, superusuar0_.telefono as telefono22_, superusuar0_.email as email22_, superusuar0_.direccion as direccion22_, superusuar0_.poblacion as poblacion22_, superusuar0_.codigoPostal as codigoPo7_22_, superusuar0_.pais as pais22_, superusuar0_.password as password22_, superusuar0_.valoracionMedia as valorac10_22_, superusuar0_.FK_id_muro as FK11_22_, superusuar0_1_.apellidos as apellidos24_, superusuar0_1_.nif as nif24_, superusuar0_1_.fechaNacimiento as fechaNac4_24_, superusuar0_1_.privacidad as privacidad24_, superusuar0_1_.FK_id_preferenciasBusqueda as FK6_24_, superusuar0_1_.FK_id_gustos as FK7_24_, superusuar0_2_.descripcion as descripc2_28_, superusuar0_2_.cif as cif28_, case when superusuar0_3_.id is not null then 3 when superusuar0_1_.id is not null then 1 when superusuar0_2_.id is not null then 2 when superusuar0_.id is not null then 0 end as clazz_ from SuperUsuario superusuar0_ left outer join Usuario superusuar0_1_ on superusuar0_.id=superusuar0_1_.id left outer join Inmobiliaria superusuar0_2_ on superusuar0_.id=superusuar0_2_.id left outer join Moderador superusuar0_3_ on superusuar0_.id=superusuar0_3_.id where superusuar0_.email=@p0;@p0 = 'ddv@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Usuario") (0,7s)
+Then debo logearme como usuario y devolver 1
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(1) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="402501e6-feee-4184-81d1-bc0815005247" testId="a6c42b4a-8388-2bde-bb84-218399a678cf" testName="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" computerName="ISIDURLLL-LAP" duration="00:00:00.0261387" startTime="2014-04-09T19:06:10.0698755+02:00" endTime="2014-04-09T19:06:10.1068802+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="402501e6-feee-4184-81d1-bc0815005247">
+      <Output>
+        <StdOut>Given quiero 3 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(3) (0,0s)
+When creo dos listas de mis anuncios
+NHibernate: SELECT this_.id as id33_0_, this_.imagen as imagen33_0_, this_.descripcion as descripc3_33_0_, this_.fechaCaducidad as fechaCad4_33_0_, this_.tipo as tipo33_0_, this_.URL as URL33_0_ FROM Anuncio this_
+NHibernate: SELECT this_.id as id33_0_, this_.imagen as imagen33_0_, this_.descripcion as descripc3_33_0_, this_.fechaCaducidad as fechaCad4_33_0_, this_.tipo as tipo33_0_, this_.URL as URL33_0_ FROM Anuncio this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenCreoDosListasDeMisAnuncios() (0,0s)
+Then las listas deberian ser distintas
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.ThenLasListasDeberianSerDistintas() (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="33101ac3-c506-4b02-8075-5aeaff21c3f2" testId="a7c7cd35-ba0b-c491-68a8-373535ee269b" testName="Login_LogeoComoUsuario" computerName="ISIDURLLL-LAP" duration="00:00:00.3572333" startTime="2014-04-09T19:06:10.1093805+02:00" endTime="2014-04-09T19:06:10.4714264+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33101ac3-c506-4b02-8075-5aeaff21c3f2">
+      <Output>
+        <StdOut>Given Un usuario con email "ijsl@inm.es" y contraseña "ijsl"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ijsl@inm.es", "ijsl") (0,0s)
+When quiero logearme en la red social como "Usuario"
+NHibernate: select superusuar0_.id as id22_, superusuar0_.nombre as nombre22_, superusuar0_.telefono as telefono22_, superusuar0_.email as email22_, superusuar0_.direccion as direccion22_, superusuar0_.poblacion as poblacion22_, superusuar0_.codigoPostal as codigoPo7_22_, superusuar0_.pais as pais22_, superusuar0_.password as password22_, superusuar0_.valoracionMedia as valorac10_22_, superusuar0_.FK_id_muro as FK11_22_, superusuar0_1_.apellidos as apellidos24_, superusuar0_1_.nif as nif24_, superusuar0_1_.fechaNacimiento as fechaNac4_24_, superusuar0_1_.privacidad as privacidad24_, superusuar0_1_.FK_id_preferenciasBusqueda as FK6_24_, superusuar0_1_.FK_id_gustos as FK7_24_, superusuar0_2_.descripcion as descripc2_28_, superusuar0_2_.cif as cif28_, case when superusuar0_3_.id is not null then 3 when superusuar0_1_.id is not null then 1 when superusuar0_2_.id is not null then 2 when superusuar0_.id is not null then 0 end as clazz_ from SuperUsuario superusuar0_ left outer join Usuario superusuar0_1_ on superusuar0_.id=superusuar0_1_.id left outer join Inmobiliaria superusuar0_2_ on superusuar0_.id=superusuar0_2_.id left outer join Moderador superusuar0_3_ on superusuar0_.id=superusuar0_3_.id where superusuar0_.email=@p0;@p0 = 'ijsl@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Usuario") (0,4s)
+Then debo logearme como usuario y devolver 3
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(3) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1fdb0c3b-239c-42d5-a395-36ccb8e5ae6f" testId="ac3018d0-8795-e4a0-d0cf-9ac12d1fe1e8" testName="SubirFotos_Incorrecta1" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:10.4754270+02:00" endTime="2014-04-09T19:06:10.4894287+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fdb0c3b-239c-42d5-a395-36ccb8e5ae6f">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c64ad9e5-6d85-4a69-8e7f-05c48531ed2a" testId="b0f950f9-726e-26dd-e9a2-0383d6c3889f" testName="EnviarPetcion_UsuarioAToA" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:10.4919290+02:00" endTime="2014-04-09T19:06:10.5089312+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c64ad9e5-6d85-4a69-8e7f-05c48531ed2a">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a6b4c6c3-db1c-4fb5-86e9-90b03d8ffcf1" testId="bf6f8018-6c87-aaf9-8636-e464d8dabd51" testName="Login_LogeoComoModerador" computerName="ISIDURLLL-LAP" duration="00:00:00.0267129" startTime="2014-04-09T19:06:10.5124317+02:00" endTime="2014-04-09T19:06:10.5519367+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6b4c6c3-db1c-4fb5-86e9-90b03d8ffcf1">
+      <Output>
+        <StdOut>Given Un moderador con email "avam@inm.es" y contraseña "avam"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnModeradorConEmailYContrasena("avam@inm.es", "avam") (0,0s)
+When quiero logearme en la red social como "Moderador"
+NHibernate: select superusuar0_.id as id22_, superusuar0_.nombre as nombre22_, superusuar0_.telefono as telefono22_, superusuar0_.email as email22_, superusuar0_.direccion as direccion22_, superusuar0_.poblacion as poblacion22_, superusuar0_.codigoPostal as codigoPo7_22_, superusuar0_.pais as pais22_, superusuar0_.password as password22_, superusuar0_.valoracionMedia as valorac10_22_, superusuar0_.FK_id_muro as FK11_22_, superusuar0_1_.apellidos as apellidos24_, superusuar0_1_.nif as nif24_, superusuar0_1_.fechaNacimiento as fechaNac4_24_, superusuar0_1_.privacidad as privacidad24_, superusuar0_1_.FK_id_preferenciasBusqueda as FK6_24_, superusuar0_1_.FK_id_gustos as FK7_24_, superusuar0_2_.descripcion as descripc2_28_, superusuar0_2_.cif as cif28_, case when superusuar0_3_.id is not null then 3 when superusuar0_1_.id is not null then 1 when superusuar0_2_.id is not null then 2 when superusuar0_.id is not null then 0 end as clazz_ from SuperUsuario superusuar0_ left outer join Usuario superusuar0_1_ on superusuar0_.id=superusuar0_1_.id left outer join Inmobiliaria superusuar0_2_ on superusuar0_.id=superusuar0_2_.id left outer join Moderador superusuar0_3_ on superusuar0_.id=superusuar0_3_.id where superusuar0_.email=@p0;@p0 = 'avam@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Moderador") (0,0s)
+Then debo logearme como usuario y devolver 2
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(2) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="37a51a4a-900d-4ca9-b3b9-27e99cd857c7" testId="c614d3bc-1457-8bc0-3aae-186084cf1c89" testName="ElModeradorSeLogeaErroneamente" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:10.5574374+02:00" endTime="2014-04-09T19:06:10.5714391+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37a51a4a-900d-4ca9-b3b9-27e99cd857c7">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase NuevoInmueblateTestsWCF.InmueblatePruebas.Moderador_LoginFeature.FeatureSetup produjo una excepción. System.IO.FileNotFoundException: System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateGenNHibernate.CAD.RedSocial.ModeradorCAD.CrearModerador(ModeradorEN moderador)
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.ModeradorCEN.CrearModerador(String p_apellidos, String p_nif, Nullable`1 p_fechaNacimiento, TipoPrivacidadEnum p_privacidad, String p_nombre, String p_telefono, String p_email, String p_direccion, String p_poblacion, String p_codigoPostal, String p_pais, String p_password, Single p_valoracionMedia) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\ModeradorCEN.cs:línea 74
+   en NuevoInmueblateTestsWCF.InmueblatePruebas.Moderador_LoginSteps.Creacion() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsWCF\InmueblatePruebas\Moderador_LoginSteps.cs:línea 20
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en NuevoInmueblateTestsWCF.InmueblatePruebas.Moderador_LoginFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateTestsWCF\InmueblatePruebas\Moderador_Login.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="632cc91b-6d1b-486e-8651-5ea8d1b7d335" testId="d037ff8c-14cf-e55b-a6bc-69bbda56f210" testName="SubirFotos_Correcta" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:10.5744395+02:00" endTime="2014-04-09T19:06:10.5889414+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="632cc91b-6d1b-486e-8651-5ea8d1b7d335">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.EntradaCP_SubirFotosFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d0494954-8eb7-4a73-95ba-f293f510e3b5" testId="d0897818-d2aa-a1a3-545c-7b0c51c1776c" testName="Login_LogeoComoInmobiliaria" computerName="ISIDURLLL-LAP" duration="00:00:00.0201862" startTime="2014-04-09T19:06:10.5919417+02:00" endTime="2014-04-09T19:06:10.6229457+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0494954-8eb7-4a73-95ba-f293f510e3b5">
+      <Output>
+        <StdOut>Given Una inmobiliara con email "jpcs@inm.es" y contraseña "jpcs"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnaInmobiliaraConEmailYContrasena("jpcs@inm.es", "jpcs") (0,0s)
+When quiero logearme en la red social como "Inmobiliaria"
+NHibernate: select superusuar0_.id as id22_, superusuar0_.nombre as nombre22_, superusuar0_.telefono as telefono22_, superusuar0_.email as email22_, superusuar0_.direccion as direccion22_, superusuar0_.poblacion as poblacion22_, superusuar0_.codigoPostal as codigoPo7_22_, superusuar0_.pais as pais22_, superusuar0_.password as password22_, superusuar0_.valoracionMedia as valorac10_22_, superusuar0_.FK_id_muro as FK11_22_, superusuar0_1_.apellidos as apellidos24_, superusuar0_1_.nif as nif24_, superusuar0_1_.fechaNacimiento as fechaNac4_24_, superusuar0_1_.privacidad as privacidad24_, superusuar0_1_.FK_id_preferenciasBusqueda as FK6_24_, superusuar0_1_.FK_id_gustos as FK7_24_, superusuar0_2_.descripcion as descripc2_28_, superusuar0_2_.cif as cif28_, case when superusuar0_3_.id is not null then 3 when superusuar0_1_.id is not null then 1 when superusuar0_2_.id is not null then 2 when superusuar0_.id is not null then 0 end as clazz_ from SuperUsuario superusuar0_ left outer join Usuario superusuar0_1_ on superusuar0_.id=superusuar0_1_.id left outer join Inmobiliaria superusuar0_2_ on superusuar0_.id=superusuar0_2_.id left outer join Moderador superusuar0_3_ on superusuar0_.id=superusuar0_3_.id where superusuar0_.email=@p0;@p0 = 'jpcs@inm.es'
+-&gt; done: SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo("Inmobiliaria") (0,0s)
+Then debo logearme como usuario y devolver 4
+-&gt; done: SuperUsuarioCEN_LoginSteps.ThenDeboLogearmeComoUsuarioYDevolver(4) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="204382d2-14f0-444a-b515-4ea0d1c0eea6" testId="dc60f9ef-ccae-5e87-5821-861d849908d4" testName="Aceptar_Peticion_Incorrecta3" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:10.6259461+02:00" endTime="2014-04-09T19:06:10.6314468+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="204382d2-14f0-444a-b515-4ea0d1c0eea6">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d4d903cc-3cd3-40c2-ac8b-f6627c33357f" testId="dcea4d4c-3b4c-f245-c9ec-997ef13bfb01" testName="Aceptar_Peticion_Incorrecta2" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:10.6339471+02:00" endTime="2014-04-09T19:06:10.6479489+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4d903cc-3cd3-40c2-ac8b-f6627c33357f">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="544e90cf-0df6-41ce-8d89-968a03157518" testId="f3632137-7a54-823e-9a17-444199b36de1" testName="EnvioDeMensaje" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:10.6504492+02:00" endTime="2014-04-09T19:06:10.6649510+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="544e90cf-0df6-41ce-8d89-968a03157518">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensaje.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d200830c-f0ee-4904-b98f-71d04b41f747" testId="f65e809a-8a70-bb0b-7adc-b5578c726787" testName="Aceptar_Peticion_Incorrecta3" computerName="ISIDURLLL-LAP" startTime="2014-04-09T19:06:10.6679514+02:00" endTime="2014-04-09T19:06:10.6789528+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d200830c-f0ee-4904-b98f-71d04b41f747">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de inicialización de la clase InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.FeatureSetup produjo una excepción. System.TypeInitializationException: System.TypeInitializationException: Se produjo una excepción en el inicializador de tipo de 'InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps'. ---&gt; System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.AVS: El registro del enlace de ensamblado está desactivado.
+Para habilitar el registro de errores del enlace de ensamblado, establezca el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Nota: existe una disminución del rendimiento asociada registro de errores del enlace de ensamblado.
+Para desactivar esta característica, elimine el valor de Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+.</Message>
+          <StackTrace>    en NuevoInmueblateCP.BasicCP..ctor()
+   en NuevoInmueblateCP.InmueblateCP.UsuarioCP..ctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 15
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps..cctor() en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensajeSteps.cs:línea 15
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeSteps.Destruccion()
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureEnd()
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnFeatureStart(FeatureInfo featureInfo)
+   en TechTalk.SpecFlow.TestRunner.OnFeatureStart(FeatureInfo featureInfo)
+   en InmueblateTestCP.InmueblatePruebas.MensajeCP_CrearMensajeFeature.FeatureSetup(TestContext testContext) en D:\Master\SVNProyecto\20140402\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\MensajeCP_CrearMensaje.feature.cs:línea 0
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9cfd25bc-4c37-4423-9b88-827bb6d01c5c" testId="fe790a83-12fd-8062-c3ce-a2b323a3dcea" testName="ObtenerAnunciosRandom_Obtener15Anuncios" computerName="ISIDURLLL-LAP" duration="00:00:00.0129772" startTime="2014-04-09T19:06:10.6814531+02:00" endTime="2014-04-09T19:06:10.7054562+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9cfd25bc-4c37-4423-9b88-827bb6d01c5c">
+      <Output>
+        <StdOut>Given quiero 15 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(15) (0,0s)
+When busco mis anuncios
+NHibernate: SELECT this_.id as id33_0_, this_.imagen as imagen33_0_, this_.descripcion as descripc3_33_0_, this_.fechaCaducidad as fechaCad4_33_0_, this_.tipo as tipo33_0_, this_.URL as URL33_0_ FROM Anuncio this_
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() (0,0s)
+Then deberia otener 10 anuncios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.ThenDeberiaOtenerAnuncios(10) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

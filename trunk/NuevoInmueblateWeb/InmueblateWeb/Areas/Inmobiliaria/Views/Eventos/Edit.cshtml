@@ -1,0 +1,129 @@
+﻿@model InmueblateWeb.Models.Evento
+@{
+    ViewBag.Title = "Editar Evento";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+    
+}
+
+<script type="text/javascript">
+
+        $(document).ready(function () {
+            //$("#SignupForm").formToWizard({ submitButton: 'SaveAccount' });
+    
+            $('#Latitud').change(function () {
+
+                updateMap()
+            });
+            $('#Longitud').change(function () {
+
+                updateMap()
+            });
+            $('#btn_calendar').click(function () {
+                $("#Fecha").datepicker().focus();
+            });
+            updateMap()
+        });
+        function updateMap() {
+            lat = $('#Latitud').val();
+            lng = $('#Longitud').val();
+            var latlng = new google.maps.LatLng(lat, lng);
+
+            var opciones = { zoom: 15, center: latlng, mapTypeId: google.maps.MapTypeId.SATELLITE };
+
+            var map = new google.maps.Map(document.getElementById("mapa"), opciones);
+
+            //Para poner una marca
+            var marker = new google.maps.Marker(
+				{ position: new google.maps.LatLng(lat, lng), map: map }
+				);
+
+        }
+       
+		
+</script>
+
+<div class="well bs-component">
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm("Edit", "Eventos", FormMethod.Post, new { id = "EditForm" }))
+{
+    Html.ValidationSummary(true, "Se han producido errores en la validacion de los campos corrija los errores y vuelva a intentarlo.");
+    
+        <fieldset>
+            <legend>Formulario de edicion de eventos</legend>
+
+            <div class="editor-label" id="labelEventoNombre">
+                @Html.LabelFor(m => m.Nombre)
+            </div>
+            <div class="editor-field" id="inputEventoNombre">
+                @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control inputName", Value = ViewBag.evento.Nombre })
+                @Html.ValidationMessageFor(m => m.Nombre)
+            </div>
+
+            <div class="editor-label" id="labelEventoDescripcion">
+                @Html.LabelFor(m => m.Descripcion)
+            </div>
+            <div class="editor-field" id="inputEventoDescripcion">
+                @Html.TextBoxFor(m => m.Descripcion, new { @class = "form-control", @Value = @ViewBag.evento.Descripcion })
+                @Html.ValidationMessageFor(m => m.Descripcion)
+            </div>
+
+            
+            <div class="editor-label" id="labelEventoGeolocalizacionLaltitud">
+                @Html.LabelFor(m => m.Latitud)
+            </div>
+            <div class="editor-field" id="inputEventoGeolocalizacionLaltitud">
+                @Html.TextBoxFor(m => m.Latitud, new { @class = "form-control", @Value = @ViewBag.Latitud })
+                @Html.ValidationMessageFor(m => m.Latitud)
+            </div>
+             <div class="editor-label" id="labelEventoGeolocalizacionLongitud">
+                @Html.LabelFor(m => m.Longitud)
+            </div>
+            <div class="editor-field" id="inputEventoGeolocalizacionLongitud">
+                @Html.TextBoxFor(m => m.Longitud, new { @class = "form-control", @Value = @ViewBag.Longuitud })
+                @Html.ValidationMessageFor(m => m.Longitud)
+            </div>
+            <div class="editor-label" id="labelFechaNac">
+                @Html.LabelFor(m => m.Fecha)
+            </div>
+            <div class="editor-field" id="inputFechaNac">
+                <div class="form-group">
+                    <div class="input-group smallInput">
+                        @Html.TextBoxFor(m => m.Fecha, new { @class = "form-control",@Value = @ViewBag.Fecha })
+                        <span class="input-group-addon" id="btn_calendar" style="cursor:pointer;">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                @Html.ValidationMessageFor(m => m.Fecha)
+            </div>
+             <div class="editor-label" id="labelCategoria">
+                @Html.LabelFor(m => m.Categoria)
+            </div>
+            <div class="editor-field" id="inputUsuarioCategoria">
+                @Html.DropDownListFor(m => m.Categoria, new SelectList(@ViewBag.lista, ViewBag.Tipo), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Categoria)
+            </div>
+             
+            </fieldset>
+            <article id="entradaMapa">
+			    <h2>Geolocalizaciòn</h2>
+			<div id="mapa" style="width:100%;height:400px;">
+			</div>
+
+		</article>
+            <hr />
+            <p>
+              <input type="submit" id="btnEditar" class="btn btn-default" value="Editar" />
+            </p>
+            <div>
+                @Html.ActionLink("Volver", "Index", "Eventos", new { id = id_sesion, area = "Inmobiliaria" }, null)
+            </div>
+    
+
+}
+
+</div>

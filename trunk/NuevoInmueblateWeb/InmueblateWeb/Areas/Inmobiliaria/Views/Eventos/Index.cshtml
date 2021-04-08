@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Eventos";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+
+<h2>@ViewBag.Title</h2>
+<div class="well bs-component">
+	<table id="tblList">
+     @if (ViewBag.Evento != null)
+     {
+        for (int i = 0; i < ViewBag.Evento.Count; i++)
+        { 
+            <tr><td><h4><strong>Nombre:</strong> @ViewBag.Evento[i].Nombre</h4></td></tr>
+            <tr><td><h4><strong>Descripción:</strong> @ViewBag.Evento[i].Descripcion</h4></td></tr>
+            <tr><td><strong>Fecha:</strong> @ViewBag.Evento[i].Fecha</td></tr>
+         <tr><td>@Html.ActionLink(" Editar ", "Edit", "Eventos", new { id = ViewBag.ids[i], area = "Inmobiliaria" }, null)</td>
+         <td style="margin-right:10px;">@Html.ActionLink("Borrar", "Delete", "Eventos", new { id = ViewBag.ids[i], area = "Inmobiliaria" }, null) </td></tr>
+          <tr><td> @Html.ActionLink("Ver", "Details", "Eventos", new { id = ViewBag.ids[i], area = "Inmobiliaria" }, null)</td></tr> 
+        <tr><td><hr /></td></tr>
+         }
+     }
+   </table>
+    <div>
+   @Html.ActionLink("Nuevo", "Create", "Eventos", new { id = id_sesion, area = "Inmobiliaria" }, null)
+   </div>
+</div>

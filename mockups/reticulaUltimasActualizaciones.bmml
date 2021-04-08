@@ -1,0 +1,65 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1060" measuredH="888" mockupW="960" mockupH="868">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="100" y="20" w="960" h="868" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::ModalScreen" x="190" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::ModalScreen" x="270" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::ModalScreen" x="350" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::ModalScreen" x="430" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::ModalScreen" x="510" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::ModalScreen" x="590" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::ModalScreen" x="670" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::ModalScreen" x="750" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::ModalScreen" x="830" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::ModalScreen" x="910" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::ModalScreen" x="990" y="93" w="60" h="767" measuredW="320" measuredH="240" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="128" w="940" h="60" measuredW="320" measuredH="240" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="208" w="940" h="60" measuredW="320" measuredH="240" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="288" w="940" h="60" measuredW="320" measuredH="240" zOrder="15" locked="false" isInGroup="-1"/>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="368" w="940" h="60" measuredW="320" measuredH="240" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="448" w="940" h="60" measuredW="320" measuredH="240" zOrder="17" locked="false" isInGroup="-1"/>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="528" w="940" h="60" measuredW="320" measuredH="240" zOrder="18" locked="false" isInGroup="-1"/>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="608" w="940" h="60" measuredW="320" measuredH="240" zOrder="19" locked="false" isInGroup="-1"/>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="688" w="940" h="60" measuredW="320" measuredH="240" zOrder="20" locked="false" isInGroup="-1"/>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::ModalScreen" x="110" y="768" w="940" h="60" measuredW="320" measuredH="240" zOrder="21" locked="false" isInGroup="-1"/>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Image" x="110" y="128" w="940" h="60" measuredW="77" measuredH="79" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>T%EDtulo%2C%20notificaciones%20y%20cabecera</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Image" x="110" y="208" w="220" h="540" measuredW="77" measuredH="79" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Men%FA</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Image" x="910" y="528" w="140" h="220" measuredW="77" measuredH="79" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%DAltimos%20mensajes</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Image" x="110" y="768" w="940" h="60" measuredW="77" measuredH="79" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pie%20de%20p%E1gina</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Image" x="909" y="207" w="140" h="300" measuredW="77" measuredH="79" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Publicidad</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Image" x="350" y="368" w="540" h="380" measuredW="77" measuredH="79" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ultimas%20actualizaciones%20con%20muro</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Image" x="350" y="207" w="540" h="138" measuredW="77" measuredH="79" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Herramientas%20de%20muro</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

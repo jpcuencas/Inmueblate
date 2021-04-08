@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Detalles de Inmueble";
+    int id_sesion = 0;
+    if ((int)HttpContext.Current.Session["idUsuario"] != null)
+    {
+        id_sesion = (int)HttpContext.Current.Session["idUsuario"];
+    }
+}
+<script type="text/javascript">
+
+
+    function updateMap(latitud, longitud) {
+
+         var   lat =  latitud;
+         var   lng =  longitud;
+        
+        $('#mapa').html("");
+
+            var latlng = new google.maps.LatLng(lat, lng);
+
+            var opciones = { zoom: 15, center: latlng, mapTypeId: google.maps.MapTypeId.SATELLITE };
+
+            var map = new google.maps.Map(document.getElementById("mapa"), opciones);
+
+            //Para poner una marca
+            var marker = new google.maps.Marker(
+				{ position: new google.maps.LatLng(lat, lng), map: map }
+				);
+
+        }
+       
+		
+</script>
+<h2>@ViewBag.Title</h2>
+
+<div class="well bs-component">
+   @if (ViewBag.Inmueble != null)
+   {
+           <fieldset>
+            <legend>Inmuebles selecionados</legend>
+     @for (int i = 0; i < ViewBag.Inmueble.Count; i++)
+        { 
+        <div class="well bs-component">
+            @if (ViewBag.Inmueble != null)
+            {
+                
+            <div class="editor-label" id="labelEventoDescripcion">
+            <h4><strong> Descripción:</strong>   @ViewBag.Inmueble[i].Descripcion</h4>
+            </div>
+            <div class="editor-label" id="labelInmuebleMetros">
+            <h4> <strong>Metros:</strong>   @ViewBag.Inmueble[i].MetrosCuadrados</h4>
+            </div>
+  
+            <div class="editor-label" id="labelInmueblePrecio">
+             <h4><strong>Precio:</strong>   @ViewBag.Inmueble[i].Precio</h4>
+            </div>
+                if (@ViewBag.Inmueble[i].Alquiler)
+                { 
+                    <h4>Esta en alquiler</h4>
+                }
+                
+            }
+            <a href="javascript:updateMap( @ViewBag.Geo[i].Latitud,@ViewBag.Geo[i].Longitud); return false;" >Ver en mapa</a>
+
+     </div>
+            }
+     @if (ViewBag.Inmueble != null)
+     {
+    <article id="entradaMapa">
+			    <h2>Geolocalización</h2>
+			<div id="mapa" style="width:100%;height:400px;">
+			</div>
+
+		</article>
+     }
+    </fieldset>
+
+
+   }
+<div>
+    @Html.ActionLink("Volver", "BuscarInmueble", "BusquedaUS", new { id = id_sesion, area = "Usuarios" }, null)
+</div>
+</div>

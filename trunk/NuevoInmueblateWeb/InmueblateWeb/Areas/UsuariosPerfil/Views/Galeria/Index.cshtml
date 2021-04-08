@@ -1,0 +1,118 @@
+﻿@model InmueblateWeb.Models.Galeria
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@section Head {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nuevaGaleria").click(function () {
+                $("#divGaleria").fadeToggle();
+                $("#nuevaGaleria").val(($("#nuevaGaleria").val() == "Añadir Galeria" ? "Ocultar" : "Añadir Galeria"));
+            });
+        });
+    </script>
+}
+
+
+<div class="well bs-component">
+    <h1>@ViewBag.Titulo</h1>
+    @if (ViewBag.Mios)
+    {
+        
+        <input id="nuevaGaleria" class="btn btn-primary" style="width:125px;" value="Añadir Galeria" />
+        <div id="divGaleria" style="display:none;">
+            @using (Html.BeginForm("NuevaGaleria", "Galeria", FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+            <div class="form-group">
+                <div class="col-md-11">
+                    @Html.LabelFor(m => m.nombre)
+                </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.nombre, new { @class = "form-control inp-ent", placeholder = "Nombre de la nueva galeria..." })
+                    @Html.ValidationMessageFor(m => m.nombre)
+                </div>
+                <div class="col-md-11">
+                    @Html.LabelFor(m => m.descripcion)
+                </div>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.descripcion, new { @class = "form-control", placeholder = "Descripcion de la galeria..." })
+                    @Html.ValidationMessageFor(m => m.descripcion)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <input type="submit" class="btn btn-primary" value="Crear"/>
+                </div>
+            </div>
+            }
+        </div>
+    }
+</div>
+<div class="well bs-component">
+    <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+        <li class="@ViewBag.GalExist"><a href="#galeria" data-toggle="tab">Galerias</a></li>
+        <li class="@ViewBag.FotExist"><a href="#fotos" data-toggle="tab">Fotografías</a></li>
+        <li class="@ViewBag.VidExist"><a href="#videos" data-toggle="tab">Videos</a></li>
+    </ul>
+
+
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="galeria">
+            @for (int i = 0; i < ViewBag.Galerias.Count; i++)
+            {
+                <div class="row">
+                    <div class="col-md-3">
+                    @using (Html.BeginForm("Details", "Galeria", new { gal = ViewBag.Galerias[i].Id}, FormMethod.Post, null))
+                    {
+                        <input type="submit" class="btn btn-primary" value="@ViewBag.Galerias[i].Nombre" />
+                        @*<label>Galeria: @Html.ActionLink((string)ViewBag.Galerias[i].Nombre,"Details","Galeria", new {id = ViewBag.Galerias[i].Id},null)</label>*@
+                    }
+                    </div>
+                    <div class="col-md-8">
+                        <label>@ViewBag.Galerias[i].Descripcion</label>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="tab-pane fade" id="fotos">
+            @if (ViewBag.Mios)
+            {
+                <div class="row" id="subir-img">
+                    @using (Html.BeginForm("SubirImagen", "Galeria", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+                     
+                            <div class="editor-field">
+                                @Html.TextBox("file", "", new { @class = "filestyle", type = "file" })
+                            </div> 
+                            <div class="editor-field">
+                                <input type="submit" value="Subir" class="btn btn-primary lbl-fot-per"/>
+                            </div>
+                    }
+                </div>
+            }
+            @if (ViewBag.Fotos.Count > 0)
+            {
+                int id = 0;
+                for (int i = 0; i < ViewBag.Fotos.Count; i++)
+                {
+                    <div class="row">
+                    @for (int j = 0; j < 4 && id < ViewBag.Fotos.Count; j++)
+                    {
+                        <div class="col-md-3">
+                            <img src="@Url.Content("~/img")@ViewBag.Fotos[id].URL" alt="@ViewBag.Fotos[id].Nombre"/>
+                        </div>
+                        i++;
+                        id++;
+                    }
+                    </div>
+                }
+            }
+        </div>
+        <div class="tab-pane fade" id="videos">
+        </div>
+    </div>
+
+</div>

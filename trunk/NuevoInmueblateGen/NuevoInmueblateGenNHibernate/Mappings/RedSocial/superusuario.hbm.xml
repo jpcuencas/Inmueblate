@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="SuperUsuarioEN" table="SuperUsuario"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="Nombre" type="string"> 
+						<column name="nombre"  not-null="true"/>
+					</property>
+					<property name="Telefono" type="string"> 
+						<column name="telefono"  not-null="true"/>
+					</property>
+					<property name="Email" type="string"> 
+						<column name="email"  not-null="true"/>
+					</property>
+					<property name="Direccion" type="string"> 
+						<column name="direccion"  not-null="true"/>
+					</property>
+					<property name="Poblacion" type="string"> 
+						<column name="poblacion"  not-null="true"/>
+					</property>
+					<property name="CodigoPostal" type="string"> 
+						<column name="codigoPostal"  not-null="true"/>
+					</property>
+					<property name="Pais" type="string"> 
+						<column name="pais"  not-null="true"/>
+					</property>
+					<property name="Password" type="string"> 
+						<column name="password"  not-null="true"/>
+					</property>
+					<property name="ValoracionMedia" type="float"> 
+						<column name="valoracionMedia"  not-null="true"/>
+					</property>
+			
+			
+		  			
+					
+							<many-to-one name="Muro" class="NuevoInmueblateGenNHibernate.EN.RedSocial.MuroEN" >
+								<column name="FK_id_muro"/> 
+        					</many-to-one>
+					 
+						
+			
+		  			
+						<bag name="Grupos" table="[GrupoSuperUsuarios]"  >
+							<key>
+								
+									<column name="FK_id_miembros"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.GrupoEN">
+									<column name="FK_id_grupos"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="MensajesEnviados" >
+							<key>
+							
+								<column name="FK_id_mensajesEnviados"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.MensajeEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="MensajesRecibidos" >
+							<key>
+							
+								<column name="FK_id_mensajesRecibidos"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.MensajeEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="ValoracionEmitida" >
+							<key>
+							
+								<column name="FK_id_valoracionEmitida"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ValoracionEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="ValoracionRecibida" >
+							<key>
+							
+								<column name="FK_id_valoracionRecibida"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ValoracionEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="EntradasMeGusta" table="[UsuarioMeGustaEntrada]" inverse="true" >
+							<key>
+								
+									<column name="FK_id_usuariosMeGusta"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.EntradaEN">
+									<column name="FK_id_entradasMeGusta"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="Entradas" >
+							<key>
+							
+								<column name="FK_id_entradas"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.EntradaEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="EntradasReportadas" table="[UsuarioEntrada]" inverse="true" >
+							<key>
+								
+									<column name="FK_id_reportadores"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.EntradaEN">
+									<column name="FK_id_entradasReportadas"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="Comentarios" >
+							<key>
+							
+								<column name="FK_id_comentarios"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ComentarioEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="ComentariosReportados" table="[UsuarioComentario]" inverse="true" >
+							<key>
+								
+									<column name="FK_id_reportadores"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ComentarioEN">
+									<column name="FK_id_comentariosReportados"/> 
+      						</many-to-many>
+    					</bag>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="SuperUsuarioENReadAllHQL">from SuperUsuarioEN</query>
+		  <query name="SuperUsuarioENobtenerUsuarioPorEmailHQL"><![CDATA[FROM SuperUsuarioEN AS su WHERE su.Email = :pe_email]]></query>
+		  <query name="SuperUsuarioENObtenerGruposPorUsuarioHQL"><![CDATA[SELECT Grupos FROM SuperUsuarioEN AS sp WHERE sp.Id = :pe_usuario]]></query>
+		  <query name="SuperUsuarioENObtenerGruposPorUsuarioNPHQL"><![CDATA[SELECT Grupos FROM SuperUsuarioEN AS sp WHERE sp.Id = :pe_usuario]]></query>
+		  <query name="SuperUsuarioENobtenerValoracionesRecibidasHQL"><![CDATA[SELECT ValoracionRecibida FROM SuperUsuarioEN as sp WHERE sp.Id = :pe_id]]></query>
+		  <query name="SuperUsuarioENobtenerValoracionesEmitidasHQL"><![CDATA[SELECT ValoracionEmitida FROM SuperUsuarioEN AS sp WHERE sp.Id = :pe_id]]></query>
+		  <query name="SuperUsuarioENdameSuperUsuariosGrupoHQL"><![CDATA[FROM SuperUsuarioEN AS su WHERE :p_grupo MEMBER OF su.Grupos]]></query>
+		</hibernate-mapping>
+	

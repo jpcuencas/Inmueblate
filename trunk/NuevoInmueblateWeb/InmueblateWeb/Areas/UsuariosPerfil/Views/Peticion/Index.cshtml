@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Peticiones";
+}
+
+<div class="well bs-component peti-sep">
+    <h2>Peticiones de Amistad</h2>
+</div>
+
+<div class="well bs-component peti-bloq">
+    <div class="peti-sep">
+        <h2>Peticiones Recibidas Pendientes</h2>
+    </div>
+    @for (int i = 0; i < ViewBag.PeticionesPen.Count; i++)
+    {
+        <div class="well">
+            <div class="row peti">
+                <div class="col-md-2">
+                    <img src="" alt="foto"/>
+                </div>
+                <div class="col-md-2">
+                    @Html.ActionLink((string)ViewBag.EmiPeticionesPen[i].Nombre + " " + (string)@ViewBag.EmiPeticionesPen[i].Apellidos, "Index", "HomeUSPE", new { id = ViewBag.EmiPeticionesPen[i].Id }, new { @class = "nombre" })
+                </div>
+                <div class="col-md-8">
+                    <label>@ViewBag.PeticionesPen[i].Cuerpo</label>
+                </div>
+            </div>
+            <div class="row peti-btn">
+                <div class="col-md-12">
+                    @Html.ActionLink("Aceptar", "Aceptar", "Peticion", new { id = ViewBag.PeticionesPen[i].Id }, new { @class = "btn btn-primary btn-sm" })
+                    @Html.ActionLink("Cancelar", "Cancelar", "Peticion", new { id = ViewBag.PeticionesPen[i].Id }, new { @class = "btn btn-primary btn-sm" })
+                    @Html.ActionLink("Bloquear", "Bloquear", "Peticion", new { id = ViewBag.PeticionesPen[i].Id }, new { @class = "btn btn-primary btn-sm" })
+                </div>
+            </div>
+        </div>
+    }
+    @if (ViewBag.PeticionesPen.Count == 0)
+    {
+        <label>No tienes peticiones pendientes.</label>
+    }
+</div>
+
+<div class="well bs-component peti-bloq">
+    <div class="peti-sep">
+        <h2>Peticiones Enviadas Pendientes</h2>
+    </div>
+    @for (int i = 0; i < ViewBag.PeticionesPenEnv.Count; i++)
+    {
+        <div class="well">
+            <div class="row peti">
+                <div class="col-md-2">
+                    <img src="" alt="foto"/>
+                </div>
+                <div class="col-md-2">
+                    @Html.ActionLink((string)ViewBag.EnvPeticionesPen[i].Nombre + " " + (string)@ViewBag.EnvPeticionesPen[i].Apellidos, "Index", "HomeUSPE", new { id = ViewBag.EnvPeticionesPen[i].Id }, new { @class = "nombre" })
+                </div>
+                <div class="col-md-8">
+                    <label>@ViewBag.PeticionesPenEnv[i].Cuerpo</label>
+                </div>
+            </div>
+            <div class="row peti-btn">
+                <div class="col-md-12">                    
+                    @Html.ActionLink("Cancelar", "Cancelar", "Peticion", new { id = ViewBag.PeticionesPenEnv[i].Id }, new { @class = "btn btn-primary btn-sm" })
+                </div>
+            </div>
+        </div>
+    }
+    @if (ViewBag.PeticionesPenEnv.Count == 0)
+    {
+        <label>No tienes peticiones pendientes.</label>
+    }
+</div>
+
+<div class="well bs-component  peti-bloq">
+    <div class="peti-sep">
+        <h2>Peticiones Bloqueadas</h2>
+    </div>
+    @for (int i = 0; i < ViewBag.PeticionesBlo.Count; i++)
+    {
+        <div class="well">
+            <div class="row peti">
+                <div class="col-md-2">
+                    <img src="" alt="foto"/>
+                </div>
+                <div class="col-md-2">
+                    @Html.ActionLink((string)ViewBag.EmiPeticionesBlo[i].Nombre + " " + (string)@ViewBag.EmiPeticionesBlo[i].Apellidos, "Index", "HomeUSPE", new { id = ViewBag.EmiPeticionesBlo[i].Id }, new { @class = "nombre" })
+                </div>
+                <div class="col-md-8">
+                    <label>@ViewBag.PeticionesBlo[i].Cuerpo</label>
+                </div>
+            </div>
+            <div class="row peti-btn">
+                <div class="col-md-12">
+                    @Html.ActionLink("Desbloquear y Aceptar", "DesbloquearYAceptar", "Peticion", new { id = ViewBag.PeticionesBlo[i].Id }, new { @class = "btn btn-primary btn-sm" })
+                    @Html.ActionLink("Desbloquear", "Desbloquear", "Peticion", new { id = ViewBag.PeticionesBlo[i].Id }, new { @class = "btn btn-primary btn-sm" })
+                </div>
+            </div>
+        </div>
+    }
+    @if (ViewBag.PeticionesBlo.Count == 0)
+    {
+        <label>No tienes peticiones bloqueadas.</label>
+    }
+</div>

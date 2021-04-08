@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="EventoEN" table="Evento"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="Nombre" type="string"> 
+						<column name="nombre"  not-null="true"/>
+					</property>
+					<property name="Descripcion" type="string"> 
+						<column name="descripcion"  not-null="true"/>
+					</property>
+					<property name="Fecha" type="timestamp"> 
+						<column name="fecha"  not-null="true"/>
+					</property>
+					<property name="Categoria" > 
+						<column name="categoria"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Inmobiliaria" class="NuevoInmueblateGenNHibernate.EN.RedSocial.InmobiliariaEN" >	
+								<column name="FK_id_inmobiliaria"/> 
+						</many-to-one>
+											 					
+			
+		  			
+					
+							<many-to-one name="Geolocalizacion" class="NuevoInmueblateGenNHibernate.EN.RedSocial.GeolocalizacionEN" >
+								<column name="FK_id_geolocalizacion"/> 
+        					</many-to-one>
+					 
+						
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="EventoENReadAllHQL">from EventoEN</query>
+		  <query name="EventoENdameEventosFiltroHQL"><![CDATA[FROM EventoEN AS e WHERE e.Nombre LIKE CASE WHEN :p_nombre = null THEN e.Nombre ELSE :p_nombre END AND e.Descripcion LIKE CASE WHEN :p_descripcion = null THEN e.Descripcion ELSE :p_descripcion END AND e.Fecha = CASE WHEN :p_fecha = null THEN e.Fecha ELSE :p_fecha END AND e.Categoria = CASE WHEN :p_categoria = -1 THEN e.Categoria ELSE :p_categoria END ]]></query>
+		</hibernate-mapping>
+	

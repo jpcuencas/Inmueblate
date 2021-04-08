@@ -1,0 +1,15 @@
+﻿@using InmueblateWeb.Helpers;
+
+@if(Request.IsAuthenticated) {
+
+    @Html.MenuCabeceraUsuario("home")
+    @*<a class="drowdown-toglle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user ico-ami"></span> <span class="badge">0</span></a>
+    <text>¡Hola, <strong>@Session["nombreUsuario"] @Session["apellUsuario"]</strong>!
+    @Html.ActionLink("Perfil", "Index", "HomeUSPE", new { id = (int)Session["idUsuario"], area = "UsuariosPerfil" }, new { @class = " btn btn-link btnSalir" })
+    @Html.ActionLink("Cerrar sesión", "LogOff", "Account", new { area = "" }, new { @class = " btn btn-link btnSalir" })</text>*@
+
+}
+else
+{
+    @:[ @Html.ActionLink("Iniciar sesión", "LogOn", "Account", new { area = "" }, null) ]
+}

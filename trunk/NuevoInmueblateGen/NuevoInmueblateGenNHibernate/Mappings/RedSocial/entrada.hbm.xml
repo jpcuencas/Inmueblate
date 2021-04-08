@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="EntradaEN" table="Entrada"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="FechaPublicacion" type="timestamp"> 
+						<column name="fechaPublicacion"  not-null="true"/>
+					</property>
+					<property name="Titulo" type="string"> 
+						<column name="titulo"  not-null="true"/>
+					</property>
+					<property name="Cuerpo" type="string"> 
+						<column name="cuerpo"  not-null="true"/>
+					</property>
+					<property name="PendienteModeracion" type="boolean"> 
+						<column name="pendienteModeracion"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Muro" class="NuevoInmueblateGenNHibernate.EN.RedSocial.MuroEN" >	
+								<column name="FK_id_muro"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="UsuariosMeGusta" table="[UsuarioMeGustaEntrada]"  >
+							<key>
+								
+									<column name="FK_id_entradasMeGusta"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN">
+									<column name="FK_id_usuariosMeGusta"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<many-to-one name="Creador" class="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN" >	
+								<column name="FK_id_creador"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="Reportadores" table="[UsuarioEntrada]"  >
+							<key>
+								
+									<column name="FK_id_entradasReportadas"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN">
+									<column name="FK_id_reportadores"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="Comentarios" >
+							<key>
+							
+								<column name="FK_id_comentarios"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ComentarioEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="ElementosMultimedia" table="[EntradaElementoMultimedia]" inverse="true" >
+							<key>
+								
+									<column name="FK_id_entradas"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ElementoMultimediaEN">
+									<column name="FK_id_elementosMultimedia"/> 
+      						</many-to-many>
+    					</bag>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="EntradaENReadAllHQL">from EntradaEN</query>
+		  <query name="EntradaENObtenerEntradasPorModerarHQL"><![CDATA[FROM EntradaEN AS en WHERE en.PendienteModeracion = true]]></query>
+		  <query name="EntradaENObtenerEntradasPorMuroHQL"><![CDATA[FROM EntradaEN AS en WHERE en.Muro.Id = :p_muro ORDER BY FechaPublicacion DESC]]></query>
+		  <query name="EntradaENObtenerEntradasPendientesPorGrupoHQL"><![CDATA[SELECT distinct en FROM EntradaEN AS en INNER JOIN en.Muro AS mu INNER JOIN mu.PropietarioGrupo AS pg WHERE pg IS NOT null AND en.PendienteModeracion = true AND pg.Id = :pe_ID]]></query>
+		  <query name="EntradaENObtenerEntradasPendientesPorUsuarioHQL"><![CDATA[SELECT distinct en FROM EntradaEN AS en INNER JOIN en.Creador AS cr WHERE cr IS NOT null AND en.PendienteModeracion = true AND cr.Id = :pe_ID]]></query>
+		  <query name="EntradaENdameEntradasFiltroConModeracionHQL"><![CDATA[FROM EntradaEN AS e WHERE e.Titulo LIKE CASE WHEN :p_titulo = null THEN e.Titulo ELSE :p_titulo END AND e.Cuerpo LIKE CASE WHEN :p_cuerpo = null THEN e.Cuerpo ELSE :p_cuerpo END AND e.FechaPublicacion = CASE WHEN :p_fechaPublicacion = null THEN e.FechaPublicacion ELSE :p_fechaPublicacion END AND e.PendienteModeracion = :p_pendienteModeracion AND e.Creador = CASE WHEN :p_usuario = -1 THEN e.Creador ELSE :p_usuario END]]></query>
+		  <query name="EntradaENdameEntradasFiltroSinModeracionHQL"><![CDATA[FROM EntradaEN AS e WHERE e.Titulo LIKE CASE WHEN :p_titulo = null THEN e.Titulo ELSE :p_titulo END AND e.Cuerpo LIKE CASE WHEN :p_cuerpo = null THEN e.Cuerpo ELSE :p_cuerpo END AND e.FechaPublicacion = CASE WHEN :p_fechaPublicacion = null THEN e.FechaPublicacion ELSE :p_fechaPublicacion END AND e.Creador = CASE WHEN :p_usuario = -1 THEN e.Creador ELSE :p_usuario END]]></query>
+		  <query name="EntradaENdameEntradasPorMuroHQL"><![CDATA[FROM EntradaEN AS en WHERE en.Muro.Id = :p_muro ORDER BY FechaPublicacion DESC]]></query>
+		  <query name="EntradaENobtenerElementosMultimediaHQL"><![CDATA[SELECT ElementosMultimedia FROM EntradaEN AS en WHERE en.Id = :pe_entrada]]></query>
+		</hibernate-mapping>
+	

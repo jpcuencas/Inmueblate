@@ -1,0 +1,61 @@
+﻿<Page x:Class="GestorInmobiliaria.views.Paginas.PaginaDetalle"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      xmlns:local="clr-namespace:GestorInmobiliaria"
+      d:DesignHeight="478" d:DesignWidth="634"
+	Title="Página corporativa" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="34*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>     
+        
+        <WebBrowser local:BrowserBehavior.Html="{Binding Contenido}" Name="webBrowser1" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="8" Grid.RowSpan="2" Margin="0,100,0,100" />
+        
+        <!--
+            <Button Content="Borrar" Grid.Column="1" Grid.Row="5" FontSize="15" Height="40" HorizontalAlignment="Right" Margin="0,0,50,0" Name="button1" VerticalAlignment="Center" Width="130">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding PaginaBorrarCommand}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+        <Button Content="Modificar" Grid.Column="1" Grid.Row="5" FontSize="15" Height="40" HorizontalAlignment="Right" Margin="0,0,230,0" Name="button2" VerticalAlignment="Center" Width="130">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding PaginaModificarCommand}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+        <Button Content="Volver" Grid.Row="5" FontSize="15" Height="40" HorizontalAlignment="Center" Name="button3" VerticalAlignment="Center" Width="130" Grid.Column="0">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding VolverCommand}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>-->
+        <Button Content="Borrar" Grid.Column="7" Grid.Row="1" FontSize="15" Height="40" HorizontalAlignment="Right" Margin="0,123,0,0" Name="button1" VerticalAlignment="Bottom" Width="130" Grid.ColumnSpan="3">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding PaginaBorrarCommand}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+    </Grid>
+</Page>

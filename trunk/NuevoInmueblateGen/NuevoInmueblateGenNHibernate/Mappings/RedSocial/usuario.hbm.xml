@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				
+<joined-subclass name="UsuarioEN" extends="NuevoInmueblateGenNHibernate.EN.RedSocial.SuperUsuarioEN" table="Usuario"> 
+	<key>
+    	
+				<column name="id"/>
+		
+    	
+   	</key>
+
+						
+					<property name="Apellidos" type="string"> 
+						<column name="apellidos"  not-null="true"/>
+					</property>
+					<property name="Nif" type="string"> 
+						<column name="nif"  not-null="true"/>
+					</property>
+					<property name="FechaNacimiento" type="date"> 
+						<column name="fechaNacimiento"  not-null="true"/>
+					</property>
+					<property name="Privacidad" > 
+						<column name="privacidad"  not-null="true"/>
+					</property>
+			
+			
+			
+		  			
+						<bag name="Inmuebles" table="[UsuarioInmueble]" inverse="true" >
+							<key>
+								
+									<column name="FK_id_inquilinos"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.InmuebleEN">
+									<column name="FK_id_inmuebles"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="Habitaciones" table="[UsuarioHabitacion]" inverse="true" >
+							<key>
+								
+									<column name="FK_id_inquilinos"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.HabitacionEN">
+									<column name="FK_id_habitaciones"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="PeticionesEnviadas" >
+							<key>
+							
+								<column name="FK_id_peticionesEnviadas"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.PeticionAmistadEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="PeticionesRecibidas" >
+							<key>
+							
+								<column name="FK_id_peticionesRecibidas"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.PeticionAmistadEN"/>
+					    </bag>
+					
+			
+		  			
+					
+							<many-to-one name="PreferenciasBusqueda" class="NuevoInmueblateGenNHibernate.EN.RedSocial.PreferenciasBusquedaEN" >
+								<column name="FK_id_preferenciasBusqueda"/> 
+        					</many-to-one>
+					 
+						
+			
+		  			
+					
+							<many-to-one name="Gustos" class="NuevoInmueblateGenNHibernate.EN.RedSocial.GustosEN" >
+								<column name="FK_id_gustos"/> 
+        					</many-to-one>
+					 
+						
+			
+		  			
+						<bag name="Elementos" >
+							<key>
+							
+								<column name="FK_id_elementos"/> 
+					      	</key>
+							<one-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.ElementoMultimediaEN"/>
+					    </bag>
+					
+			
+			
+			
+			
+					
+					
+						<bag name="ListaAmigos" table="[UsuarioUsuarioAmigos]" >
+							<key>
+									<column name="FK_id_listaAmigos"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN">
+									<column name="FK_id_noNavegableAmigos"/> 
+      						</many-to-many>
+    					</bag>		
+					
+					
+						<bag name="ListaBloqueados" table="[UsuarioUsuarioBloqueados]" >
+							<key>
+									<column name="FK_id_listaBloqueados"/> 
+							</key>
+      						<many-to-many class="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN">
+									<column name="FK_id_noNavegableBloqueados"/> 
+      						</many-to-many>
+    					</bag>		
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+ 	  
+		 </joined-subclass>
+		  
+		  <query name="UsuarioENReadAllHQL">from UsuarioEN</query>
+		  <query name="UsuarioENobtenerPorApellidosHQL"><![CDATA[FROM UsuarioEN AS us WHERE us.Apellidos=:p_apellido]]></query>
+		  <query name="UsuarioENdameUsuariosFiltroHQL"><![CDATA[FROM UsuarioEN AS u WHERE u.Apellidos LIKE CASE WHEN :p_apellidos = null THEN u.Apellidos ELSE :p_apellidos END AND u.Email LIKE CASE WHEN :p_email = null THEN u.Email ELSE :p_email END AND u.FechaNacimiento = CASE WHEN :p_fechaNacimiento = null THEN u.FechaNacimiento ELSE :p_fechaNacimiento END AND u.Nif LIKE CASE WHEN :p_nif = null THEN u.Nif ELSE :p_nif END AND u.Direccion LIKE CASE WHEN :p_direccion = null THEN u.Direccion ELSE :p_direccion END AND u.Poblacion LIKE CASE WHEN :p_poblacion = null THEN u.Poblacion ELSE :p_poblacion END]]></query>
+		  <query name="UsuarioENobtenerAmigosHQL"><![CDATA[SELECT ListaAmigos FROM UsuarioEN AS us WHERE us.Id = :pe_usuario]]></query>
+		  <query name="UsuarioENobtenerAmigosSPHQL"><![CDATA[SELECT ListaAmigos FROM UsuarioEN AS us WHERE us.Id = :pe_usuario]]></query>
+		  <query name="UsuarioENobtenerBloqueadosSPHQL"><![CDATA[SELECT ListaBloqueados FROM UsuarioEN AS us WHERE us.Id = :pe_usuario]]></query>
+		  <query name="UsuarioENobtenerBloqueadosHQL"><![CDATA[SELECT ListaBloqueados FROM UsuarioEN AS us WHERE us.Id = :pe_usuario]]></query>
+		</hibernate-mapping>
+	

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NuevoInmueblateGenNHibernate"
+		                   namespace="NuevoInmueblateGenNHibernate.EN.RedSocial">
+		    
+		    
+			
+				<class name="PreferenciasBusquedaEN" table="PreferenciasBusqueda"> 
+				  	
+						<id name="Id" column="id" type="integer"> 
+							<generator class="identity"/>
+						</id>
+						
+					<property name="DistanciaTolerable" type="integer"> 
+						<column name="distanciaTolerable"  not-null="true"/>
+					</property>
+					<property name="PrecioMax" type="float"> 
+						<column name="precioMax"  not-null="true"/>
+					</property>
+					<property name="PrecioMin" type="float"> 
+						<column name="precioMin"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+		  			
+					
+							   <one-to-one name="Usuario" class="NuevoInmueblateGenNHibernate.EN.RedSocial.UsuarioEN" property-ref="PreferenciasBusqueda" />							
+					 
+						
+			
+		  			
+					
+							   <one-to-one name="Grupo" class="NuevoInmueblateGenNHibernate.EN.RedSocial.GrupoEN" property-ref="PreferenciasBusqueda" />							
+					 
+						
+			
+		  			
+					
+							<many-to-one name="Geolocalizacion" class="NuevoInmueblateGenNHibernate.EN.RedSocial.GeolocalizacionEN" >
+								<column name="FK_id_geolocalizacion"/> 
+        					</many-to-one>
+					 
+						
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="PreferenciasBusquedaENReadAllHQL">from PreferenciasBusquedaEN</query>
+		</hibernate-mapping>
+	

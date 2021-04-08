@@ -1,0 +1,1284 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f58d3783-0103-4378-a92c-b1c1e42c89b4" name="Isidurlll@ISIDURLLL-LAP 2014-03-11 18:59:50" runUser="Isidurlll-Lap\Isidurlll" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Configuración de pruebas predeterminada" id="36d8d1c5-31da-466d-ac95-092d9c821939">
+    <Deployment runDeploymentRoot="Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50">
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Castle.DynamicProxy2.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NuevoInmueblateGenNHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\packages\Moq.4.2.1312.1622\lib\net40\Moq.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\nunit.core.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateCP\bin\Debug\NuevoInmueblateCP.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\packages\NUnit.2.6.3\lib\nunit.framework.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InitializeDB\bin\Debug\LinFu.DynamicProxy.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-03-11T18:59:50.5817216+01:00" queuing="2014-03-11T18:59:51.6197810+01:00" start="2014-03-11T18:59:51.6587832+01:00" finish="2014-03-11T18:59:53.8669095+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="22" executed="22" error="0" failed="14" timeout="0" aborted="0" inconclusive="8" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ResgistrarUsuario_NuevoPeroYaExiste" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="5165bcb4-336c-8ad0-f412-09726cec7a6c">
+      <Description>ResgistrarUsuario_Nuevo pero ya Existe</Description>
+      <Execution id="d18fd084-b4dd-4066-bc23-e62a38b2ebe1" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_ResgistrarUsuario</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ResgistrarUsuario_NuevoPeroYaExiste" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoInmobiliaria" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="00952f56-31d6-d22b-e313-b7986565c621">
+      <Description>Login_Logeo como Inmobiliaria</Description>
+      <Execution id="7fd2acb9-d77b-457c-b1fe-82de8ee35f34" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoInmobiliaria" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener5Anuncios" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="db9255f2-fa2c-71cd-8d2e-3a49670c6bd6">
+      <Description>ObtenerAnunciosRandom_Obtener 5 anuncios</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="d2296fab-3c7b-4fb9-8d7b-8f4899db10f1" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener5Anuncios" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoErroneo" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="045d05a4-cbf6-728f-368d-3c4852e02d35">
+      <Description>Login_Logeo erroneo</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="da4abc0b-a259-4b69-9b48-98a739982376" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoErroneo" />
+    </UnitTest>
+    <UnitTest name="EnviarPetcion_UsuarioAToA" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="b0f950f9-726e-26dd-e9a2-0383d6c3889f">
+      <Description>EnviarPetcion_Usuario a to a</Description>
+      <Execution id="70e89304-a306-4dd0-91b2-d76d4de5d3af" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPetcion_UsuarioAToA" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta3" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="f65e809a-8a70-bb0b-7adc-b5578c726787">
+      <Description>Aceptar_Peticion_Incorrecta3</Description>
+      <Execution id="94baee86-42bb-4cf8-8998-1e76fe739b39" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta3" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="1d573309-85dd-68be-b0c6-d2c46acf4ceb">
+      <Description>ObtenerAnunciosRandom_Obtener 3 anuncios distintos</Description>
+      <Execution id="fe9d0bff-9a66-4e63-bb1b-8aadd3b8693e" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" />
+    </UnitTest>
+    <UnitTest name="Rechazar_Peticion_Incorrecta1" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="0cb3bce0-6e44-075f-32b3-bfc1013e2a4b">
+      <Description>Rechazar_Peticion_Incorrecta1</Description>
+      <Execution id="c72db0d2-33cb-4282-acf2-8c9efb676f67" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Rechazar_Peticion_Incorrecta1" />
+    </UnitTest>
+    <UnitTest name="EnviarPeticion_AUsuarioQueNoExiste" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="38477b57-b245-c466-d984-52365250b758">
+      <Description>EnviarPeticion_A Usuario que no existe</Description>
+      <Execution id="b6a8efc1-3f65-4e7e-8804-44a4bc6473f2" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPeticion_AUsuarioQueNoExiste" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta3" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="dc60f9ef-ccae-5e87-5821-861d849908d4">
+      <Description>Aceptar_Peticion_Incorrecta3</Description>
+      <Execution id="c469b417-efee-4639-8d82-9d5faf4e81d8" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta3" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoUsuario" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="ea4b81a9-1664-4046-9b10-00e87cb982e5">
+      <Description>Login_Logeo como usuario</Description>
+      <Execution id="9a9bf3dd-f899-44d4-90c8-bbb3ea7f95a2" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoUsuario" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Correcta" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="6951d93d-f414-3fc5-e412-43b9c41666e9">
+      <Description>Aceptar_Peticion_Correcta</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="a7b15b80-98e7-4d4d-9252-8bad1a2f727e" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Correcta" />
+    </UnitTest>
+    <UnitTest name="EnviarPeticion_UsuarioAToB" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="4a5efe0e-29fc-6f13-b293-784cefe007b5">
+      <Description>EnviarPeticion_Usuario a to b</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="180bc38c-8645-4700-8b8d-f68d766aa104" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPeticion_UsuarioAToB" />
+    </UnitTest>
+    <UnitTest name="Rechazar_Peticion_Correcta" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="9399c62f-dfb7-3267-a92b-b94eef466f10">
+      <Description>Rechazar_Peticion_Correcta</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="22b09b8c-42c3-4e4b-9cac-b7458ab2e937" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Rechazar_Peticion_Correcta" />
+    </UnitTest>
+    <UnitTest name="Rechazar_Peticion_Incorrecta2" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="5b50e441-63ef-87aa-63e8-30641e020210">
+      <Description>Rechazar_Peticion_Incorrecta2</Description>
+      <Execution id="e551e6f0-6d8d-4453-a47a-298d86a0ab01" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_RechazarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Rechazar_Peticion_Incorrecta2" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener15Anuncios" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="45dbb885-c276-72e4-847f-ec8c00850b98">
+      <Description>ObtenerAnunciosRandom_Obtener 15 anuncios</Description>
+      <Execution id="85e2ae0b-5010-4ea5-b733-6ad74079d5d2" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener15Anuncios" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta1" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="1dfa8ac7-09b9-66f3-6ee9-c7f24a18280a">
+      <Description>Aceptar_Peticion_Incorrecta1</Description>
+      <Execution id="80830475-3575-4967-bdf6-f72a4050187f" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta1" />
+    </UnitTest>
+    <UnitTest name="Aceptar_Peticion_Incorrecta2" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="dcea4d4c-3b4c-f245-c9ec-997ef13bfb01">
+      <Description>Aceptar_Peticion_Incorrecta2</Description>
+      <Execution id="07de4a3f-fe76-4c79-96e1-ffa99ae1806a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_AceptarPeticionAmistad</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Aceptar_Peticion_Incorrecta2" />
+    </UnitTest>
+    <UnitTest name="ResgistrarUsuario_Nuevo" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="518eb9ff-7c9c-b40b-befc-dc0166e524ff">
+      <Description>ResgistrarUsuario_Nuevo</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="mytag" />
+      </TestCategory>
+      <Execution id="33c1266b-6408-4d1e-adeb-c772b6ca6153" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_ResgistrarUsuario</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ResgistrarUsuario_Nuevo" />
+    </UnitTest>
+    <UnitTest name="ObtenerAnunciosRandom_Obtener_5Anuncios" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="345f4970-bc1c-2ce6-5fc0-e43fe4b1ae6b">
+      <Description>ObtenerAnunciosRandom_Obtener -5 anuncios</Description>
+      <Execution id="1e7183f6-4404-4050-bebd-af7916862616" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>AnuncioCEN_ObtenerAnunciosRandom</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerAnunciosRandom_Obtener_5Anuncios" />
+    </UnitTest>
+    <UnitTest name="EnviarPeticion_YaExistePeticion" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\inmueblatetestcp\bin\debug\inmueblatetestcp.dll" id="016c5d57-ee6a-e77b-591b-df22e86568fe">
+      <Description>EnviarPeticion_Ya existe peticion</Description>
+      <Execution id="eff99c5d-c1f4-41ed-b2bb-8d2316a3d2ae" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UsuarioCP_EnviarPeticion</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/InmueblateTestCP/bin/Debug/InmueblateTestCP.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature, InmueblateTestCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnviarPeticion_YaExistePeticion" />
+    </UnitTest>
+    <UnitTest name="Login_LogeoComoModerador" storage="d:\master\svnproyecto\11-03-14\trunk\nuevoinmueblategen\nuevoinmueblatetestcustom\bin\debug\nuevoinmueblatetestcustom.dll" id="01cfc0a0-5fb4-aedb-fe2e-1ed5623507f2">
+      <Description>Login_Logeo como moderador</Description>
+      <Execution id="6240bfa4-edfa-413a-8735-1e1f7fb65a7b" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>SuperUsuarioCEN_Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Master/SVNProyecto/11-03-14/trunk/NuevoInmueblateGen/NuevoInmueblateTestCustom/bin/Debug/NuevoInmueblateTestCustom.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature, NuevoInmueblateTestCustom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LogeoComoModerador" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="00952f56-31d6-d22b-e313-b7986565c621" executionId="7fd2acb9-d77b-457c-b1fe-82de8ee35f34" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="016c5d57-ee6a-e77b-591b-df22e86568fe" executionId="eff99c5d-c1f4-41ed-b2bb-8d2316a3d2ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="01cfc0a0-5fb4-aedb-fe2e-1ed5623507f2" executionId="6240bfa4-edfa-413a-8735-1e1f7fb65a7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="045d05a4-cbf6-728f-368d-3c4852e02d35" executionId="da4abc0b-a259-4b69-9b48-98a739982376" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0cb3bce0-6e44-075f-32b3-bfc1013e2a4b" executionId="c72db0d2-33cb-4282-acf2-8c9efb676f67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d573309-85dd-68be-b0c6-d2c46acf4ceb" executionId="fe9d0bff-9a66-4e63-bb1b-8aadd3b8693e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dfa8ac7-09b9-66f3-6ee9-c7f24a18280a" executionId="80830475-3575-4967-bdf6-f72a4050187f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="345f4970-bc1c-2ce6-5fc0-e43fe4b1ae6b" executionId="1e7183f6-4404-4050-bebd-af7916862616" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38477b57-b245-c466-d984-52365250b758" executionId="b6a8efc1-3f65-4e7e-8804-44a4bc6473f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45dbb885-c276-72e4-847f-ec8c00850b98" executionId="85e2ae0b-5010-4ea5-b733-6ad74079d5d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a5efe0e-29fc-6f13-b293-784cefe007b5" executionId="180bc38c-8645-4700-8b8d-f68d766aa104" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5165bcb4-336c-8ad0-f412-09726cec7a6c" executionId="d18fd084-b4dd-4066-bc23-e62a38b2ebe1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="518eb9ff-7c9c-b40b-befc-dc0166e524ff" executionId="33c1266b-6408-4d1e-adeb-c772b6ca6153" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b50e441-63ef-87aa-63e8-30641e020210" executionId="e551e6f0-6d8d-4453-a47a-298d86a0ab01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6951d93d-f414-3fc5-e412-43b9c41666e9" executionId="a7b15b80-98e7-4d4d-9252-8bad1a2f727e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9399c62f-dfb7-3267-a92b-b94eef466f10" executionId="22b09b8c-42c3-4e4b-9cac-b7458ab2e937" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0f950f9-726e-26dd-e9a2-0383d6c3889f" executionId="70e89304-a306-4dd0-91b2-d76d4de5d3af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db9255f2-fa2c-71cd-8d2e-3a49670c6bd6" executionId="d2296fab-3c7b-4fb9-8d7b-8f4899db10f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc60f9ef-ccae-5e87-5821-861d849908d4" executionId="c469b417-efee-4639-8d82-9d5faf4e81d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dcea4d4c-3b4c-f245-c9ec-997ef13bfb01" executionId="07de4a3f-fe76-4c79-96e1-ffa99ae1806a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea4b81a9-1664-4046-9b10-00e87cb982e5" executionId="9a9bf3dd-f899-44d4-90c8-bbb3ea7f95a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f65e809a-8a70-bb0b-7adc-b5578c726787" executionId="94baee86-42bb-4cf8-8998-1e76fe739b39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7fd2acb9-d77b-457c-b1fe-82de8ee35f34" testId="00952f56-31d6-d22b-e313-b7986565c621" testName="Login_LogeoComoInmobiliaria" computerName="ISIDURLLL-LAP" duration="00:00:00.3004017" startTime="2014-03-11T18:59:51.6687838+01:00" endTime="2014-03-11T18:59:52.4938310+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fd2acb9-d77b-457c-b1fe-82de8ee35f34">
+      <Output>
+        <StdOut>Given Una inmobiliara con email "jpcs@inm.es" y contraseña "jpcs"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnaInmobiliaraConEmailYContrasena("jpcs@inm.es", "jpcs") (0,0s)
+When quiero logearme en la red social como "Inmobiliaria"
+-&gt; error: Error in SuperUsuarioCAD.
+Then debo logearme como usuario y devolver 4
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.Login_LogeoComoInmobiliaria produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in SuperUsuarioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 242
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 257
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN.cs:línea 63
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.Login(Int32 p_oid, String p_email, String p_pass) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN_Login.cs:línea 30
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo(String tipo) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_LoginSteps.cs:línea 47
+   en lambda_method(Closure , IContextManager , String )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.Login_LogeoComoInmobiliaria() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature:línea 22
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="eff99c5d-c1f4-41ed-b2bb-8d2316a3d2ae" testId="016c5d57-ee6a-e77b-591b-df22e86568fe" testName="EnviarPeticion_YaExistePeticion" computerName="ISIDURLLL-LAP" duration="00:00:00.2437901" startTime="2014-03-11T18:59:52.4958311+01:00" endTime="2014-03-11T18:59:53.2588747+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eff99c5d-c1f4-41ed-b2bb-8d2316a3d2ae">
+      <Output>
+        <StdOut>Given Usuario a con direccion: "4@inm.es"
+-&gt; error: Error in SuperUsuarioCAD.
+And Usuario b con direccion: "5@inm.es"
+-&gt; skipped because of previous errors
+When el Usuario a le envía la petición al Usuario b
+-&gt; skipped because of previous errors
+Then el resultado deberia ser 3
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.EnviarPeticion_YaExistePeticion produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in SuperUsuarioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 242
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 257
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN.cs:línea 63
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionSteps.GivenUsuarioAConDireccion(String pe_mail) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticionSteps.cs:línea 24
+   en lambda_method(Closure , IContextManager , String )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.EnviarPeticion_YaExistePeticion() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature:línea 26
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6240bfa4-edfa-413a-8735-1e1f7fb65a7b" testId="01cfc0a0-5fb4-aedb-fe2e-1ed5623507f2" testName="Login_LogeoComoModerador" computerName="ISIDURLLL-LAP" duration="00:00:00.0063836" startTime="2014-03-11T18:59:53.2688753+01:00" endTime="2014-03-11T18:59:53.2828761+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6240bfa4-edfa-413a-8735-1e1f7fb65a7b">
+      <Output>
+        <StdOut>Given Un moderador con email "avam@inm.es" y contraseña "avam"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnModeradorConEmailYContrasena("avam@inm.es", "avam") (0,0s)
+When quiero logearme en la red social como "Moderador"
+-&gt; error: Error in SuperUsuarioCAD.
+Then debo logearme como usuario y devolver 2
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.Login_LogeoComoModerador produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in SuperUsuarioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 242
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 257
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN.cs:línea 63
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.Login(Int32 p_oid, String p_email, String p_pass) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN_Login.cs:línea 30
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo(String tipo) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_LoginSteps.cs:línea 46
+   en lambda_method(Closure , IContextManager , String )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.Login_LogeoComoModerador() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature:línea 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="da4abc0b-a259-4b69-9b48-98a739982376" testId="045d05a4-cbf6-728f-368d-3c4852e02d35" testName="Login_LogeoErroneo" computerName="ISIDURLLL-LAP" duration="00:00:00.0104474" startTime="2014-03-11T18:59:53.2848762+01:00" endTime="2014-03-11T18:59:53.3058774+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da4abc0b-a259-4b69-9b48-98a739982376">
+      <Output>
+        <StdOut>Given Un usuario con email "ddv@inm.es" y contraseña "ddv"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ddv@inm.es", "ddv") (0,0s)
+When quiero logearme en la red social como "Usuario"
+-&gt; error: Error in SuperUsuarioCAD.
+Then debo logearme como usuario y devolver 1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.Login_LogeoErroneo produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in SuperUsuarioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 242
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 257
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN.cs:línea 63
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.Login(Int32 p_oid, String p_email, String p_pass) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN_Login.cs:línea 30
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo(String tipo) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_LoginSteps.cs:línea 45
+   en lambda_method(Closure , IContextManager , String )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.Login_LogeoErroneo() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature:línea 7
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c72db0d2-33cb-4282-acf2-8c9efb676f67" testId="0cb3bce0-6e44-075f-32b3-bfc1013e2a4b" testName="Rechazar_Peticion_Incorrecta1" computerName="ISIDURLLL-LAP" duration="00:00:00.0208688" startTime="2014-03-11T18:59:53.3088776+01:00" endTime="2014-03-11T18:59:53.3358791+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c72db0d2-33cb-4282-acf2-8c9efb676f67">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor no es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.Rechazar_Peticion_Incorrecta1() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature:línea 16
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fe9d0bff-9a66-4e63-bb1b-8aadd3b8693e" testId="1d573309-85dd-68be-b0c6-d2c46acf4ceb" testName="ObtenerAnunciosRandom_Obtener3AnunciosDistintos" computerName="ISIDURLLL-LAP" duration="00:00:00.1742624" startTime="2014-03-11T18:59:53.3438796+01:00" endTime="2014-03-11T18:59:53.5248900+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe9d0bff-9a66-4e63-bb1b-8aadd3b8693e">
+      <Output>
+        <StdOut>Given quiero 3 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(3) (0,0s)
+When creo dos listas de mis anuncios
+-&gt; error: Error in AnuncioCAD.
+Then las listas deberian ser distintas
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener3AnunciosDistintos produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in AnuncioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.AnuncioCAD.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\AnuncioCAD.cs:línea 147
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.AnuncioCAD.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\AnuncioCAD.cs:línea 160
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.AnuncioCEN.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\AnuncioCEN_DameTodosLosAnuncios.cs:línea 23
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.AnuncioCEN.ObtenerAnunciosRandom(Int32 pe_numero) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\AnuncioCEN_ObtenerAnunciosRandom.cs:línea 25
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomSteps.WhenCreoDosListasDeMisAnuncios() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandomSteps.cs:línea 35
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener3AnunciosDistintos() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature:línea 22
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="80830475-3575-4967-bdf6-f72a4050187f" testId="1dfa8ac7-09b9-66f3-6ee9-c7f24a18280a" testName="Aceptar_Peticion_Incorrecta1" computerName="ISIDURLLL-LAP" duration="00:00:00.0035137" startTime="2014-03-11T18:59:53.5288902+01:00" endTime="2014-03-11T18:59:53.5388908+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80830475-3575-4967-bdf6-f72a4050187f">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor no es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.Aceptar_Peticion_Incorrecta1() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature:línea 16
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1e7183f6-4404-4050-bebd-af7916862616" testId="345f4970-bc1c-2ce6-5fc0-e43fe4b1ae6b" testName="ObtenerAnunciosRandom_Obtener_5Anuncios" computerName="ISIDURLLL-LAP" duration="00:00:00.0061727" startTime="2014-03-11T18:59:53.5428910+01:00" endTime="2014-03-11T18:59:53.5578918+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e7183f6-4404-4050-bebd-af7916862616">
+      <Output>
+        <StdOut>Given quiero -5 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(-5) (0,0s)
+When busco mis anuncios
+-&gt; error: Error in AnuncioCAD.
+Then deberia otener 0 anuncios
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener_5Anuncios produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in AnuncioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.AnuncioCAD.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\AnuncioCAD.cs:línea 147
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.AnuncioCAD.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\AnuncioCAD.cs:línea 160
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.AnuncioCEN.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\AnuncioCEN_DameTodosLosAnuncios.cs:línea 23
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.AnuncioCEN.ObtenerAnunciosRandom(Int32 pe_numero) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\AnuncioCEN_ObtenerAnunciosRandom.cs:línea 25
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandomSteps.cs:línea 29
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener_5Anuncios() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature:línea 17
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b6a8efc1-3f65-4e7e-8804-44a4bc6473f2" testId="38477b57-b245-c466-d984-52365250b758" testName="EnviarPeticion_AUsuarioQueNoExiste" computerName="ISIDURLLL-LAP" duration="00:00:00.0058442" startTime="2014-03-11T18:59:53.5628921+01:00" endTime="2014-03-11T18:59:53.5748928+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6a8efc1-3f65-4e7e-8804-44a4bc6473f2">
+      <Output>
+        <StdOut>Given Usuario a con direccion: "ijsl@inm.es"
+-&gt; error: Error in SuperUsuarioCAD.
+And Usuario b con direccion: "noexsite@inm.es"
+-&gt; skipped because of previous errors
+When el Usuario a le envía la petición al Usuario b
+-&gt; skipped because of previous errors
+Then el resultado deberia ser 1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.EnviarPeticion_AUsuarioQueNoExiste produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in SuperUsuarioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 242
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 257
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN.cs:línea 63
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionSteps.GivenUsuarioAConDireccion(String pe_mail) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticionSteps.cs:línea 24
+   en lambda_method(Closure , IContextManager , String )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.EnviarPeticion_AUsuarioQueNoExiste() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature:línea 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="85e2ae0b-5010-4ea5-b733-6ad74079d5d2" testId="45dbb885-c276-72e4-847f-ec8c00850b98" testName="ObtenerAnunciosRandom_Obtener15Anuncios" computerName="ISIDURLLL-LAP" duration="00:00:00.0052753" startTime="2014-03-11T18:59:53.5778930+01:00" endTime="2014-03-11T18:59:53.5918938+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85e2ae0b-5010-4ea5-b733-6ad74079d5d2">
+      <Output>
+        <StdOut>Given quiero 15 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(15) (0,0s)
+When busco mis anuncios
+-&gt; error: Error in AnuncioCAD.
+Then deberia otener 10 anuncios
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener15Anuncios produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in AnuncioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.AnuncioCAD.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\AnuncioCAD.cs:línea 147
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.AnuncioCAD.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\AnuncioCAD.cs:línea 160
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.AnuncioCEN.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\AnuncioCEN_DameTodosLosAnuncios.cs:línea 23
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.AnuncioCEN.ObtenerAnunciosRandom(Int32 pe_numero) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\AnuncioCEN_ObtenerAnunciosRandom.cs:línea 25
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandomSteps.cs:línea 29
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener15Anuncios() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature:línea 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="180bc38c-8645-4700-8b8d-f68d766aa104" testId="4a5efe0e-29fc-6f13-b293-784cefe007b5" testName="EnviarPeticion_UsuarioAToB" computerName="ISIDURLLL-LAP" duration="00:00:00.0057657" startTime="2014-03-11T18:59:53.5998942+01:00" endTime="2014-03-11T18:59:53.6188953+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="180bc38c-8645-4700-8b8d-f68d766aa104">
+      <Output>
+        <StdOut>Given Usuario a con direccion: "ijsl@inm.es"
+-&gt; error: Error in SuperUsuarioCAD.
+And Usuario b con direccion: "crt@inm.es"
+-&gt; skipped because of previous errors
+When el Usuario a le envía la petición al Usuario b
+-&gt; skipped because of previous errors
+Then el resultado deber ser ditinto a -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.EnviarPeticion_UsuarioAToB produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in SuperUsuarioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 242
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 257
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN.cs:línea 63
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionSteps.GivenUsuarioAConDireccion(String pe_mail) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticionSteps.cs:línea 24
+   en lambda_method(Closure , IContextManager , String )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.EnviarPeticion_UsuarioAToB() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature:línea 8
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d18fd084-b4dd-4066-bc23-e62a38b2ebe1" testId="5165bcb4-336c-8ad0-f412-09726cec7a6c" testName="ResgistrarUsuario_NuevoPeroYaExiste" computerName="ISIDURLLL-LAP" duration="00:00:00.0132629" startTime="2014-03-11T18:59:53.6258957+01:00" endTime="2014-03-11T18:59:53.6478970+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d18fd084-b4dd-4066-bc23-e62a38b2ebe1">
+      <Output>
+        <StdOut>Given El usuario "Isido" con mail "ijsl@inm.es" se quiere registrar
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.GivenElUsuarioConMailSeQuiereRegistrar("Isido", "ijsl@inm.es") (0,0s)
+When lo resgitro en mi base de datos
+-&gt; error: An exception occurred during configuration of persistence layer.
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.ResgistrarUsuario_NuevoPeroYaExiste produjo la excepción: 
+NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateCP.InmueblateCP.UsuarioCP.RegistrarUsuario(String pe_nombre, String pe_apellido, String pe_nif, String pe_mail, String pe_direccion, String pe_poblacion, String pe_cp, String pe_pais, String pe_pass, String pe_urlFoto, String pe_telefono, DateTime pe_fNacimiento, TipoPrivacidadEnum pe_tipo) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 75
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioSteps.WhenLoResgitroEnMiBaseDeDatos() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuarioSteps.cs:línea 29
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.ResgistrarUsuario_NuevoPeroYaExiste() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature:línea 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="33c1266b-6408-4d1e-adeb-c772b6ca6153" testId="518eb9ff-7c9c-b40b-befc-dc0166e524ff" testName="ResgistrarUsuario_Nuevo" computerName="ISIDURLLL-LAP" duration="00:00:00.0045594" startTime="2014-03-11T18:59:53.6558974+01:00" endTime="2014-03-11T18:59:53.6638979+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33c1266b-6408-4d1e-adeb-c772b6ca6153">
+      <Output>
+        <StdOut>Given El usuario "Diana" con mail "ddvc@inm.es" se quiere registrar
+-&gt; done: UsuarioCP_ResgistrarUsuarioSteps.GivenElUsuarioConMailSeQuiereRegistrar("Diana", "ddvc@inm.es") (0,0s)
+When lo resgitro en mi base de datos
+-&gt; error: An exception occurred during configuration of persistence layer.
+Then el resultado debe ser distinto de -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.ResgistrarUsuario_Nuevo produjo la excepción: 
+NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateCP.InmueblateCP.UsuarioCP.RegistrarUsuario(String pe_nombre, String pe_apellido, String pe_nif, String pe_mail, String pe_direccion, String pe_poblacion, String pe_cp, String pe_pais, String pe_pass, String pe_urlFoto, String pe_telefono, DateTime pe_fNacimiento, TipoPrivacidadEnum pe_tipo) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateCP\InmueblateCP\UsuarioCP.cs:línea 75
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioSteps.WhenLoResgitroEnMiBaseDeDatos() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuarioSteps.cs:línea 29
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_ResgistrarUsuarioFeature.ResgistrarUsuario_Nuevo() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_ResgistrarUsuario.feature:línea 7
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e551e6f0-6d8d-4453-a47a-298d86a0ab01" testId="5b50e441-63ef-87aa-63e8-30641e020210" testName="Rechazar_Peticion_Incorrecta2" computerName="ISIDURLLL-LAP" duration="00:00:00.0032839" startTime="2014-03-11T18:59:53.6668981+01:00" endTime="2014-03-11T18:59:53.6748985+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e551e6f0-6d8d-4453-a47a-298d86a0ab01">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor no es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.Rechazar_Peticion_Incorrecta2() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature:línea 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a7b15b80-98e7-4d4d-9252-8bad1a2f727e" testId="6951d93d-f414-3fc5-e412-43b9c41666e9" testName="Aceptar_Peticion_Correcta" computerName="ISIDURLLL-LAP" duration="00:00:00.0026288" startTime="2014-03-11T18:59:53.6818989+01:00" endTime="2014-03-11T18:59:53.6948997+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7b15b80-98e7-4d4d-9252-8bad1a2f727e">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor no es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor no es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser distinto de -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.Aceptar_Peticion_Correcta() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature:línea 9
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="22b09b8c-42c3-4e4b-9cac-b7458ab2e937" testId="9399c62f-dfb7-3267-a92b-b94eef466f10" testName="Rechazar_Peticion_Correcta" computerName="ISIDURLLL-LAP" duration="00:00:00.0026518" startTime="2014-03-11T18:59:53.6978998+01:00" endTime="2014-03-11T18:59:53.7149008+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22b09b8c-42c3-4e4b-9cac-b7458ab2e937">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser distinto de -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.Rechazar_Peticion_Correcta() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature:línea 9
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="70e89304-a306-4dd0-91b2-d76d4de5d3af" testId="b0f950f9-726e-26dd-e9a2-0383d6c3889f" testName="EnviarPetcion_UsuarioAToA" computerName="ISIDURLLL-LAP" duration="00:00:00.0050432" startTime="2014-03-11T18:59:53.7229013+01:00" endTime="2014-03-11T18:59:53.7309017+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="70e89304-a306-4dd0-91b2-d76d4de5d3af">
+      <Output>
+        <StdOut>Given Usuario a con direccion: "ijsl@inm.es"
+-&gt; error: Error in SuperUsuarioCAD.
+And Usuario b con direccion: "ijsl@inm.es"
+-&gt; skipped because of previous errors
+When el Usuario a le envía la petición al Usuario b
+-&gt; skipped because of previous errors
+Then el resultado deberia ser 0
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.EnviarPetcion_UsuarioAToA produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in SuperUsuarioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 242
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 257
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN.cs:línea 63
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionSteps.GivenUsuarioAConDireccion(String pe_mail) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticionSteps.cs:línea 24
+   en lambda_method(Closure , IContextManager , String )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_EnviarPeticionFeature.EnviarPetcion_UsuarioAToA() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_EnviarPeticion.feature:línea 14
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d2296fab-3c7b-4fb9-8d7b-8f4899db10f1" testId="db9255f2-fa2c-71cd-8d2e-3a49670c6bd6" testName="ObtenerAnunciosRandom_Obtener5Anuncios" computerName="ISIDURLLL-LAP" duration="00:00:00.0052482" startTime="2014-03-11T18:59:53.7389022+01:00" endTime="2014-03-11T18:59:53.7479027+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2296fab-3c7b-4fb9-8d7b-8f4899db10f1">
+      <Output>
+        <StdOut>Given quiero 5 anuncios aleatorios
+-&gt; done: AnuncioCEN_ObtenerAnunciosRandomSteps.GivenQuieroAnunciosAleatorios(5) (0,0s)
+When busco mis anuncios
+-&gt; error: Error in AnuncioCAD.
+Then deberia otener 5 anuncios
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener5Anuncios produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in AnuncioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.AnuncioCAD.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\AnuncioCAD.cs:línea 147
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.AnuncioCAD.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\AnuncioCAD.cs:línea 160
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.AnuncioCEN.DameTodosLosAnuncios(Int32 first, Int32 size) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\AnuncioCEN_DameTodosLosAnuncios.cs:línea 23
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.AnuncioCEN.ObtenerAnunciosRandom(Int32 pe_numero) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\AnuncioCEN_ObtenerAnunciosRandom.cs:línea 25
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomSteps.WhenBuscoMisAnuncios() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandomSteps.cs:línea 29
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.AnuncioCEN_ObtenerAnunciosRandomFeature.ObtenerAnunciosRandom_Obtener5Anuncios() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\AnuncioCEN_ObtenerAnunciosRandom.feature:línea 7
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c469b417-efee-4639-8d82-9d5faf4e81d8" testId="dc60f9ef-ccae-5e87-5821-861d849908d4" testName="Aceptar_Peticion_Incorrecta3" computerName="ISIDURLLL-LAP" duration="00:00:00.0025473" startTime="2014-03-11T18:59:53.7519029+01:00" endTime="2014-03-11T18:59:53.7639036+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c469b417-efee-4639-8d82-9d5faf4e81d8">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor no es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor no es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_RechazarPeticionAmistadFeature.Aceptar_Peticion_Incorrecta3() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_RechazarPeticionAmistad.feature:línea 30
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="07de4a3f-fe76-4c79-96e1-ffa99ae1806a" testId="dcea4d4c-3b4c-f245-c9ec-997ef13bfb01" testName="Aceptar_Peticion_Incorrecta2" computerName="ISIDURLLL-LAP" duration="00:00:00.0025455" startTime="2014-03-11T18:59:53.7689039+01:00" endTime="2014-03-11T18:59:53.7779044+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07de4a3f-fe76-4c79-96e1-ffa99ae1806a">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor no es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.Aceptar_Peticion_Incorrecta2() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature:línea 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9a9bf3dd-f899-44d4-90c8-bbb3ea7f95a2" testId="ea4b81a9-1664-4046-9b10-00e87cb982e5" testName="Login_LogeoComoUsuario" computerName="ISIDURLLL-LAP" duration="00:00:00.0051743" startTime="2014-03-11T18:59:53.7809046+01:00" endTime="2014-03-11T18:59:53.7959055+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a9bf3dd-f899-44d4-90c8-bbb3ea7f95a2">
+      <Output>
+        <StdOut>Given Un usuario con email "ijsl@inm.es" y contraseña "ijsl"
+-&gt; done: SuperUsuarioCEN_LoginSteps.GivenUnUsuarioConEmailYContrasena("ijsl@inm.es", "ijsl") (0,0s)
+When quiero logearme en la red social como "Usuario"
+-&gt; error: Error in SuperUsuarioCAD.
+Then debo logearme como usuario y devolver 3
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.Login_LogeoComoUsuario produjo la excepción: 
+NuevoInmueblateGenNHibernate.Exceptions.DataLayerException: Error in SuperUsuarioCAD. ---&gt; NHibernate.Cfg.HibernateConfigException: An exception occurred during configuration of persistence layer. ---&gt; System.IO.FileNotFoundException: No se pudo encontrar el archivo 'D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\TestResults\Isidurlll_ISIDURLLL-LAP 2014-03-11 18_59_50\Out\hibernate.cfg.xml'.</Message>
+          <StackTrace>    en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   en System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   en System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   en System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   en System.Threading.CompressedStack.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   en System.Xml.XmlTextReaderImpl.OpenUrl()
+   en System.Xml.XmlTextReaderImpl.Read()
+   en System.Xml.XmlTextReader.Read()
+   en System.Xml.XmlCharCheckingReader.Read()
+   en System.Xml.XsdValidatingReader.Read()
+   en System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   en System.Xml.XPath.XPathDocument..ctor(XmlReader reader, XmlSpace space)
+   en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NHibernate.Cfg.ConfigurationSchema.HibernateConfiguration..ctor(XmlReader hbConfigurationReader, Boolean fromAppSetting)
+   en NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+   en NHibernate.Cfg.Configuration.Configure(String fileName, Boolean ignoreSessionFactoryConfig)
+   en NHibernate.Cfg.Configuration.Configure()
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.get_SessionFactory() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 24
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.NHibernateHelper.OpenSession() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\NHibernateHelper.cs:línea 35
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.BasicCAD.SessionInitializeTransaction() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\BasicCAD.cs:línea 32
+   en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 242
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en NuevoInmueblateGenNHibernate.CAD.RedSocial.SuperUsuarioCAD.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CAD\RedSocial\SuperUsuarioCAD.cs:línea 257
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.ObtenerUsuarioPorEmail(String pe_email) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN.cs:línea 63
+   en NuevoInmueblateGenNHibernate.CEN.RedSocial.SuperUsuarioCEN.Login(Int32 p_oid, String p_email, String p_pass) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateGenNHibernate\CEN\RedSocial\SuperUsuarioCEN_Login.cs:línea 30
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginSteps.WhenQuieroLogearmeEnLaRedSocialComo(String tipo) en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_LoginSteps.cs:línea 45
+   en lambda_method(Closure , IContextManager , String )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature.cs:línea 0
+   en NuevoInmueblateTestCustom.NuevoInmueblatePruebas.SuperUsuarioCEN_LoginFeature.Login_LogeoComoUsuario() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\NuevoInmueblateTestCustom\NuevoInmueblatePruebas\SuperUsuarioCEN_Login.feature:línea 17
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="94baee86-42bb-4cf8-8998-1e76fe739b39" testId="f65e809a-8a70-bb0b-7adc-b5578c726787" testName="Aceptar_Peticion_Incorrecta3" computerName="ISIDURLLL-LAP" duration="00:00:00.0024852" startTime="2014-03-11T18:59:53.7989056+01:00" endTime="2014-03-11T18:59:53.8109063+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94baee86-42bb-4cf8-8998-1e76fe739b39">
+      <Output>
+        <StdOut>Given La peticion con id 2 a sido aceptada
+-&gt; pending: UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)
+And El emisor es amigo del receptor
+-&gt; skipped because of previous errors
+And El receptor es amigo del emisor
+-&gt; skipped because of previous errors
+When Registo el evento en la base de datos
+-&gt; skipped because of previous errors
+Then el resultado debe ser -1
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. One or more step definitions are not implemented yet.
+  UsuarioCP_AceptarPeticionAmistadSteps.GivenLaPeticionConIdASidoAceptada(2)</Message>
+          <StackTrace>   en lambda_method(Closure , String , Object[] )
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   en TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   en TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.ScenarioCleanup() en D:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature.cs:línea 0
+   en InmueblateTestCP.InmueblatePruebas.UsuarioCP_AceptarPeticionAmistadFeature.Aceptar_Peticion_Incorrecta3() en d:\Master\SVNProyecto\11-03-14\trunk\NuevoInmueblateGen\InmueblateTestCP\InmueblatePruebas\UsuarioCP_AceptarPeticionAmistad.feature:línea 30
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

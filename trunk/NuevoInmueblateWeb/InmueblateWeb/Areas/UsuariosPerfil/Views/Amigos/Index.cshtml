@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "Amigos";
+}
+@section Head {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cuadroDetalle').modal({ show: false })
+            $("button").click(function () {
+                $.ajax({
+                    url: "@Url.Action("eliminarAmigoAviso", "Amigos")",
+                    type: "POST",
+                    data: { id: $(this).attr("dato") },
+                    dataType: "html"
+                }).done(function (data) {
+                    $("#cuerpoDetalle").html(data);
+                    $('#cuadroDetalle').modal('show');
+                });
+            });
+        });
+    </script>
+}
+
+<div class="well bs-component">
+<h1>@ViewBag.Titulo</h1>
+
+
+@if (true)
+{            
+    @*<div class="col-lg-7">
+            <input class="form-control" type="text" 
+                   id="txtBuscarAmigos" name="buscarAmigos"
+                   placeholder="Buscar amigo..." />
+        
+    </div>
+    <button class="btn btn-primary btn-buscarAmigo">Buscar</button>*@
+
+    <div id="listaAmigos" class="lst-amig">
+        <h1>Lista de amigos</h1>
+
+        @if (ViewBag.Amigos.Count > 0)
+        {
+            int id = 0;
+            for (int i = 0; i < ViewBag.Amigos.Count; i++)
+            {
+                <div class="row">
+                @for (int j = 0; j < 3 && id < ViewBag.Amigos.Count; j++)
+                {
+                    <div class="col-lg-4 amig">
+                        <img src="@Url.Content("~/img")@ViewBag.FotosPerfil[id]" alt="amigo"/>
+                        <br />
+                        <br />
+                        @Html.ActionLink((string)ViewBag.Amigos[id].Nombre + " " + (string)@ViewBag.Amigos[id].Apellidos, "Index", "HomeUSPE", new { id = ViewBag.Amigos[id].Id }, new { @class = "nombre" })
+                        <br />
+                        @if (ViewBag.Mios)
+                        {
+                            <button dato="@ViewBag.Amigos[id].Id" type="button" class="btn btn-default btn-xs">
+                                Ya no es mi amigo
+                            </button>
+                        }
+                    </div>
+                    
+                    i++;
+                    id++;
+
+                }
+                </div>
+                
+            }
+            if (ViewBag.Visible)
+            {
+                <ul class="pager">
+                    <li class="disabled"><a href="#" >Anterior</a></li>
+                    <li>@Html.ActionLink("Siguiente", "Index", "Amigos", null, null)</li>
+                </ul>
+                <h1>@ViewBag.Tam</h1>
+            }
+        }
+        else
+        {
+            <h2>@ViewBag.SinAmigos</h2>
+        }
+
+
+    </div>
+
+    <div class="modal fade" id="cuadroDetalle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            @Html.ActionLink("X", "Index", "Amigos", null, new { @class = "close" })
+            @*<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>*@
+            <h4 class="modal-title" id="myModalLabel">Eliminar Amigo</h4>
+          </div>
+          <div class="modal-body" id="cuerpoDetalle">
+
+          </div>
+          <div class="modal-footer">
+            @Html.ActionLink("Cerrar", "Index", "Amigos", null, new { @class = "btn btn-primary btn-large" })
+            @*<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>*@
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+}
+else
+{
+    <h1>@ViewBag.Titulo</h1>
+}
+</div>

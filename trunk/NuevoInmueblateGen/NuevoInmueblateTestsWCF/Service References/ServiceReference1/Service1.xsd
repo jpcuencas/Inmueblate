@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/NuevoInmueblateGen_NuevoInmueblateWCF.DTO.RedSocial" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:53967/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" />
+  <xs:import schemaLocation="http://localhost:53967/Service.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfAnuncioDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AnuncioDTO" nillable="true" type="tns:AnuncioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnuncioDTO" nillable="true" type="tns:ArrayOfAnuncioDTO" />
+  <xs:complexType name="AnuncioDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCaducidad" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Imagen" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="Tipo" type="q1:TipoAnuncioEnum" />
+      <xs:element minOccurs="0" name="URL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AnuncioDTO" nillable="true" type="tns:AnuncioDTO" />
+  <xs:complexType name="ArrayOfEventoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventoDTO" nillable="true" type="tns:EventoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEventoDTO" nillable="true" type="tns:ArrayOfEventoDTO" />
+  <xs:complexType name="EventoDTO">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="Categoria" type="q2:TipoEventoEnum" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fecha" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Geolocalizacion" type="xs:int" />
+      <xs:element minOccurs="0" name="Geolocalizacion_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Inmobiliaria" type="xs:int" />
+      <xs:element minOccurs="0" name="Inmobiliaria_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventoDTO" nillable="true" type="tns:EventoDTO" />
+  <xs:complexType name="ArrayOfMensajeDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MensajeDTO" nillable="true" type="tns:MensajeDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMensajeDTO" nillable="true" type="tns:ArrayOfMensajeDTO" />
+  <xs:complexType name="MensajeDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Asunto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cuerpo" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ElementosMultimedia" nillable="true" type="q3:ArrayOfint" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ElementosMultimedia_oid" nillable="true" type="q4:ArrayOfint" />
+      <xs:element minOccurs="0" name="Emisor" type="xs:int" />
+      <xs:element minOccurs="0" name="Emisor_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="FechaEnvio" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Leido" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PendienteModeracion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Receptor" type="xs:int" />
+      <xs:element minOccurs="0" name="Receptor_oid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MensajeDTO" nillable="true" type="tns:MensajeDTO" />
+  <xs:complexType name="ArrayOfElementoMultimediaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ElementoMultimediaDTO" nillable="true" type="tns:ElementoMultimediaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfElementoMultimediaDTO" nillable="true" type="tns:ArrayOfElementoMultimediaDTO" />
+  <xs:complexType name="ElementoMultimediaDTO">
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AparicionComentarios" nillable="true" type="q5:ArrayOfint" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AparicionComentarios_oid" nillable="true" type="q6:ArrayOfint" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Entradas" nillable="true" type="q7:ArrayOfint" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Entradas_oid" nillable="true" type="q8:ArrayOfint" />
+      <xs:element minOccurs="0" name="Fecha" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Fusuario" type="xs:int" />
+      <xs:element minOccurs="0" name="Fusuario_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="Galeria" type="xs:int" />
+      <xs:element minOccurs="0" name="Galeria_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Inmueble" type="xs:int" />
+      <xs:element minOccurs="0" name="Inmueble_oid" type="xs:int" />
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Mensaje" nillable="true" type="q9:ArrayOfint" />
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Mensaje_oid" nillable="true" type="q10:ArrayOfint" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PendienteModeracion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="URL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vusuario" type="xs:int" />
+      <xs:element minOccurs="0" name="Vusuario_oid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ElementoMultimediaDTO" nillable="true" type="tns:ElementoMultimediaDTO" />
+  <xs:complexType name="ArrayOfInmobiliariaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InmobiliariaDTO" nillable="true" type="tns:InmobiliariaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInmobiliariaDTO" nillable="true" type="tns:ArrayOfInmobiliariaDTO" />
+  <xs:complexType name="InmobiliariaDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SuperUsuarioDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Cif" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+          <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Eventos" nillable="true" type="q11:ArrayOfint" />
+          <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Eventos_oid" nillable="true" type="q12:ArrayOfint" />
+          <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Inmuebles" nillable="true" type="q13:ArrayOfint" />
+          <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Inmuebles_oid" nillable="true" type="q14:ArrayOfint" />
+          <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PaginaCorporativa" nillable="true" type="q15:ArrayOfint" />
+          <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PaginaCorporativa_oid" nillable="true" type="q16:ArrayOfint" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InmobiliariaDTO" nillable="true" type="tns:InmobiliariaDTO" />
+  <xs:complexType name="SuperUsuarioDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoPostal" nillable="true" type="xs:string" />
+      <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Comentarios" nillable="true" type="q17:ArrayOfint" />
+      <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ComentariosReportados" nillable="true" type="q18:ArrayOfint" />
+      <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ComentariosReportados_oid" nillable="true" type="q19:ArrayOfint" />
+      <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Comentarios_oid" nillable="true" type="q20:ArrayOfint" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Entradas" nillable="true" type="q21:ArrayOfint" />
+      <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="EntradasMeGusta" nillable="true" type="q22:ArrayOfint" />
+      <xs:element xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="EntradasMeGusta_oid" nillable="true" type="q23:ArrayOfint" />
+      <xs:element xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="EntradasReportadas" nillable="true" type="q24:ArrayOfint" />
+      <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="EntradasReportadas_oid" nillable="true" type="q25:ArrayOfint" />
+      <xs:element xmlns:q26="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Entradas_oid" nillable="true" type="q26:ArrayOfint" />
+      <xs:element xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Grupos" nillable="true" type="q27:ArrayOfint" />
+      <xs:element xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Grupos_oid" nillable="true" type="q28:ArrayOfint" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MensajesEnviados" nillable="true" type="q29:ArrayOfint" />
+      <xs:element xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MensajesEnviados_oid" nillable="true" type="q30:ArrayOfint" />
+      <xs:element xmlns:q31="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MensajesRecibidos" nillable="true" type="q31:ArrayOfint" />
+      <xs:element xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MensajesRecibidos_oid" nillable="true" type="q32:ArrayOfint" />
+      <xs:element minOccurs="0" name="Muro" type="xs:int" />
+      <xs:element minOccurs="0" name="Muro_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Poblacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+      <xs:element xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ValoracionEmitida" nillable="true" type="q33:ArrayOfint" />
+      <xs:element xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ValoracionEmitida_oid" nillable="true" type="q34:ArrayOfint" />
+      <xs:element minOccurs="0" name="ValoracionMedia" type="xs:float" />
+      <xs:element xmlns:q35="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ValoracionRecibida" nillable="true" type="q35:ArrayOfint" />
+      <xs:element xmlns:q36="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ValoracionRecibida_oid" nillable="true" type="q36:ArrayOfint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SuperUsuarioDTO" nillable="true" type="tns:SuperUsuarioDTO" />
+  <xs:complexType name="ArrayOfGrupoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GrupoDTO" nillable="true" type="tns:GrupoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGrupoDTO" nillable="true" type="tns:ArrayOfGrupoDTO" />
+  <xs:complexType name="GrupoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Miembros" nillable="true" type="q37:ArrayOfint" />
+      <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Miembros_oid" nillable="true" type="q38:ArrayOfint" />
+      <xs:element minOccurs="0" name="Muro" type="xs:int" />
+      <xs:element minOccurs="0" name="Muro_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreferenciasBusqueda" type="xs:int" />
+      <xs:element minOccurs="0" name="PreferenciasBusqueda_oid" type="xs:int" />
+      <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="Tipo" type="q39:TipoGrupoEnum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GrupoDTO" nillable="true" type="tns:GrupoDTO" />
+  <xs:complexType name="ArrayOfPaginaCorporativaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaginaCorporativaDTO" nillable="true" type="tns:PaginaCorporativaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaginaCorporativaDTO" nillable="true" type="tns:ArrayOfPaginaCorporativaDTO" />
+  <xs:complexType name="PaginaCorporativaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Contenido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Inmobiliaria" type="xs:int" />
+      <xs:element minOccurs="0" name="Inmobiliaria_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="URL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaginaCorporativaDTO" nillable="true" type="tns:PaginaCorporativaDTO" />
+  <xs:complexType name="ArrayOfUsuarioDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UsuarioDTO" nillable="true" type="tns:UsuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuarioDTO" nillable="true" type="tns:ArrayOfUsuarioDTO" />
+  <xs:complexType name="UsuarioDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SuperUsuarioDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FechaNacimiento" nillable="true" type="xs:dateTime" />
+          <xs:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Fotos" nillable="true" type="q40:ArrayOfint" />
+          <xs:element xmlns:q41="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Fotos_oid" nillable="true" type="q41:ArrayOfint" />
+          <xs:element minOccurs="0" name="Gustos" type="xs:int" />
+          <xs:element minOccurs="0" name="Gustos_oid" type="xs:int" />
+          <xs:element xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Habitaciones" nillable="true" type="q42:ArrayOfint" />
+          <xs:element xmlns:q43="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Habitaciones_oid" nillable="true" type="q43:ArrayOfint" />
+          <xs:element xmlns:q44="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Inmuebles" nillable="true" type="q44:ArrayOfint" />
+          <xs:element xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Inmuebles_oid" nillable="true" type="q45:ArrayOfint" />
+          <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListaAmigos" nillable="true" type="q46:ArrayOfint" />
+          <xs:element xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListaAmigos_oid" nillable="true" type="q47:ArrayOfint" />
+          <xs:element xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListaBloqueados" nillable="true" type="q48:ArrayOfint" />
+          <xs:element xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListaBloqueados_oid" nillable="true" type="q49:ArrayOfint" />
+          <xs:element minOccurs="0" name="Nif" nillable="true" type="xs:string" />
+          <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PeticionesEnviadas" nillable="true" type="q50:ArrayOfint" />
+          <xs:element xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PeticionesEnviadas_oid" nillable="true" type="q51:ArrayOfint" />
+          <xs:element xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PeticionesRecibidas" nillable="true" type="q52:ArrayOfint" />
+          <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PeticionesRecibidas_oid" nillable="true" type="q53:ArrayOfint" />
+          <xs:element minOccurs="0" name="PreferenciasBusqueda" type="xs:int" />
+          <xs:element minOccurs="0" name="PreferenciasBusqueda_oid" type="xs:int" />
+          <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="Privacidad" type="q54:TipoPrivacidadEnum" />
+          <xs:element xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Videos" nillable="true" type="q55:ArrayOfint" />
+          <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Videos_oid" nillable="true" type="q56:ArrayOfint" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuarioDTO" nillable="true" type="tns:UsuarioDTO" />
+  <xs:complexType name="ArrayOfInmuebleDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InmuebleDTO" nillable="true" type="tns:InmuebleDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInmuebleDTO" nillable="true" type="tns:ArrayOfInmuebleDTO" />
+  <xs:complexType name="InmuebleDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alquiler" type="xs:boolean" />
+      <xs:element xmlns:q57="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Caracteristicas" nillable="true" type="q57:ArrayOfint" />
+      <xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Caracteristicas_oid" nillable="true" type="q58:ArrayOfint" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ElementosMultimedia" nillable="true" type="q59:ArrayOfint" />
+      <xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ElementosMultimedia_oid" nillable="true" type="q60:ArrayOfint" />
+      <xs:element minOccurs="0" name="Geolocalizacion" type="xs:int" />
+      <xs:element minOccurs="0" name="Geolocalizacion_oid" type="xs:int" />
+      <xs:element xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Habitaciones" nillable="true" type="q61:ArrayOfint" />
+      <xs:element xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Habitaciones_oid" nillable="true" type="q62:ArrayOfint" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Inmobiliaria" type="xs:int" />
+      <xs:element minOccurs="0" name="Inmobiliaria_oid" type="xs:int" />
+      <xs:element xmlns:q63="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Inquilinos" nillable="true" type="q63:ArrayOfint" />
+      <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Inquilinos_oid" nillable="true" type="q64:ArrayOfint" />
+      <xs:element minOccurs="0" name="MetrosCuadrados" type="xs:int" />
+      <xs:element minOccurs="0" name="PendienteModeracion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Precio" type="xs:float" />
+      <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/NuevoInmueblateGenNHibernate.Enumerated.RedSocial" minOccurs="0" name="Tipo" type="q65:TipoInmuebleEnum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InmuebleDTO" nillable="true" type="tns:InmuebleDTO" />
+  <xs:complexType name="ArrayOfEntradaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntradaDTO" nillable="true" type="tns:EntradaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntradaDTO" nillable="true" type="tns:ArrayOfEntradaDTO" />
+  <xs:complexType name="EntradaDTO">
+    <xs:sequence>
+      <xs:element xmlns:q66="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Comentarios" nillable="true" type="q66:ArrayOfint" />
+      <xs:element xmlns:q67="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Comentarios_oid" nillable="true" type="q67:ArrayOfint" />
+      <xs:element minOccurs="0" name="Creador" type="xs:int" />
+      <xs:element minOccurs="0" name="Creador_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="Cuerpo" nillable="true" type="xs:string" />
+      <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ElementosMultimedia" nillable="true" type="q68:ArrayOfint" />
+      <xs:element xmlns:q69="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ElementosMultimedia_oid" nillable="true" type="q69:ArrayOfint" />
+      <xs:element minOccurs="0" name="FechaPublicacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Muro" type="xs:int" />
+      <xs:element minOccurs="0" name="Muro_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="PendienteModeracion" type="xs:boolean" />
+      <xs:element xmlns:q70="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Reportadores" nillable="true" type="q70:ArrayOfint" />
+      <xs:element xmlns:q71="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Reportadores_oid" nillable="true" type="q71:ArrayOfint" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+      <xs:element xmlns:q72="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="UsuariosMeGusta" nillable="true" type="q72:ArrayOfint" />
+      <xs:element xmlns:q73="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="UsuariosMeGusta_oid" nillable="true" type="q73:ArrayOfint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EntradaDTO" nillable="true" type="tns:EntradaDTO" />
+  <xs:complexType name="MuroDTO">
+    <xs:sequence>
+      <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Entradas" nillable="true" type="q74:ArrayOfint" />
+      <xs:element xmlns:q75="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Entradas_oid" nillable="true" type="q75:ArrayOfint" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="PendienteModeracion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PropietarioGrupo" type="xs:int" />
+      <xs:element minOccurs="0" name="PropietarioGrupo_oid" type="xs:int" />
+      <xs:element minOccurs="0" name="PropietarioUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="PropietarioUsuario_oid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MuroDTO" nillable="true" type="tns:MuroDTO" />
+  <xs:complexType name="ArrayOfFotografiaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FotografiaDTO" nillable="true" type="tns:FotografiaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFotografiaDTO" nillable="true" type="tns:ArrayOfFotografiaDTO" />
+  <xs:complexType name="FotografiaDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ElementoMultimediaDTO">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FotografiaDTO" nillable="true" type="tns:FotografiaDTO" />
+  <xs:complexType name="ArrayOfVideoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VideoDTO" nillable="true" type="tns:VideoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVideoDTO" nillable="true" type="tns:ArrayOfVideoDTO" />
+  <xs:complexType name="VideoDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ElementoMultimediaDTO">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VideoDTO" nillable="true" type="tns:VideoDTO" />
+</xs:schema>
